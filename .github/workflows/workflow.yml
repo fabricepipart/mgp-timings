@@ -66,4 +66,4 @@ jobs:
         run: |
           kubectl delete all -n mgp-timings -l app=mgp-timings --wait=true
           kubectl kustomize target/classes/overlays/prod | kubectl apply -n mgp-timings -f -
-          while ! curl -fs https://mgp-timings.teknichrono.fr > /dev/null; do echo 'Not started yet ...'; sleep 5; done
+          while ! curl -fs https://mgp-timings.teknichrono.fr/q/health/live > /dev/null; do echo 'Not started yet ...'; sleep 5; done
