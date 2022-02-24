@@ -38,8 +38,7 @@ jobs:
       - name: Build Maven and Docker
         env:
           VERSION: ${{ steps.versioning.outputs.new_tag }}
-          REPO: fabricepipart/teknichrono-backend
-          TESTS_REPO: fabricepipart/teknichrono-backend-tests
+          REPO: fabricepipart/mgp-timings
         run: |
           mvn -B -U versions:set -DnewVersion=${VERSION} &> /dev/null
           mvn -B -U clean verify
