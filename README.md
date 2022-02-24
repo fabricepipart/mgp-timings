@@ -38,7 +38,7 @@ The CI is done thanks to GitHub actions and runs the following:
   * Version is bumped automatically. Add `#major` or `#patch` in your commit tags if you want to bump the corresponding number. By default, the minor is bumped.
   * Repository is tagged for each version
   * All changes are gathered in a ChangeLog and GH releases are used
-  * Builds of the `master` branch are directly loaded on the Production environment
+  * Builds of the `main` branch are directly loaded on the Production environment
 
 ## How to run
 

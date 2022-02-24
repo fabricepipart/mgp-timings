@@ -33,7 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO_OWNER: fabricepipart
-          RELEASE_BRANCHES: master
+          RELEASE_BRANCHES: main
           DRY_RUN: ${{ env.secrets-available == '' }}
       - name: Build Maven and Docker
         env:
@@ -61,7 +61,7 @@ jobs:
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
       - name: Update Production environment
-        if: ${{ github.ref == 'refs/heads/master' && env.secrets-available != '' }}
+        if: ${{ github.ref == 'refs/heads/main' && env.secrets-available != '' }}
         timeout-minutes: 10
         run: |
           kubectl delete all -n mgp-timings -l app=mgp-timings --wait=true
