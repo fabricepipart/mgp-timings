@@ -1,0 +1,5 @@
+commonLabels:
+  app: mgp-timings
+resources:
+  - deployment.yaml
+  - service.yaml

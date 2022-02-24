@@ -1,0 +1,36 @@
+version: 2
+updates:
+# Maintain dependencies for GitHub Actions
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "daily"
+# Maintain dependencies for Maven
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: io.quarkus:quarkus-maven-plugin
+    versions:
+    - 1.11.1.Final
+    - 1.11.2.Final
+    - 1.11.3.Final
+  - dependency-name: io.quarkus:quarkus-junit5
+    versions:
+    - 1.11.1.Final
+    - 1.11.2.Final
+    - 1.11.3.Final
+  - dependency-name: io.quarkus:quarkus-bom
+    versions:
+    - 1.11.1.Final
+    - 1.11.2.Final
+    - 1.11.3.Final
+  - dependency-name: org.mapstruct:mapstruct-processor
+    versions:
+    - 1.4.1.Final
+  - dependency-name: org.mapstruct:mapstruct
+    versions:
+    - 1.4.1.Final

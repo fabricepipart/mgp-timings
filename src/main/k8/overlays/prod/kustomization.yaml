@@ -1,0 +1,6 @@
+commonLabels:
+  env: production
+bases:
+- ../../base
+resources:
+- ingress.yaml
