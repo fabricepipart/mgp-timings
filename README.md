@@ -4,7 +4,7 @@
 
 ### Purpose of the project
 
-
+The goal of this project is to give access to all laptimes that are registered and publicly available for Motorcycles Grand Prix sessions.
 
 ### Architecture
 
