@@ -1,0 +1,372 @@
+[
+  {
+    "id": "db8dc197-c7b2-4c1b-b3a4-6dc534c014ef",
+    "year": 2022,
+    "current": true
+  },
+  {
+    "id": "db8dc197-c7b2-4c1b-b3a4-7dc723c087ed",
+    "year": 2021,
+    "current": false
+  },
+  {
+    "id": "fa729c5c-a34a-40b9-8ebf-2578d9433517",
+    "year": 2020,
+    "current": false
+  },
+  {
+    "id": "cbc5dc8d-3aae-4327-bd88-d1cdeea9b654",
+    "year": 2019,
+    "current": false
+  },
+  {
+    "id": "c0844c71-783c-4f86-abce-a9a67adcc1a9",
+    "year": 2018,
+    "current": false
+  },
+  {
+    "id": "e24e8a8c-4673-498d-86e0-731581d7c586",
+    "year": 2017,
+    "current": false
+  },
+  {
+    "id": "ba354746-c4da-4dc8-8b8e-776fcc43287d",
+    "year": 2016,
+    "current": false
+  },
+  {
+    "id": "cbe871d8-d8fa-47cb-8b63-cabe0015223e",
+    "year": 2015,
+    "current": false
+  },
+  {
+    "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+    "year": 2014,
+    "current": false
+  },
+  {
+    "id": "a0def534-ce1b-492c-bc46-e87e95d28230",
+    "year": 2013,
+    "current": false
+  },
+  {
+    "id": "1b0857d2-afa8-4b59-b876-079c68084527",
+    "year": 2012,
+    "current": false
+  },
+  {
+    "id": "b6cf5327-3c57-41d6-874c-bf330fcfc0fc",
+    "year": 2011,
+    "current": false
+  },
+  {
+    "id": "d5bd3042-f4dc-4fdc-897a-e284d07592e6",
+    "year": 2010,
+    "current": false
+  },
+  {
+    "id": "6487b826-eaaa-43e6-a2d2-4c5cafa948ae",
+    "year": 2009,
+    "current": false
+  },
+  {
+    "id": "46e254dc-f6d6-402c-b7c8-8e7c14469678",
+    "year": 2008,
+    "current": false
+  },
+  {
+    "id": "a3f86bb3-b914-4dc0-984d-e4949a4f037e",
+    "year": 2007,
+    "current": false
+  },
+  {
+    "id": "dbb075a1-44f4-46f5-9f9b-95f5ac24949b",
+    "year": 2006,
+    "current": false
+  },
+  {
+    "id": "6b581433-8531-4c5b-afca-15c7eb27e809",
+    "year": 2005,
+    "current": false
+  },
+  {
+    "id": "6c0e0734-0e32-4c4a-9987-0439449543ab",
+    "year": 2004,
+    "current": false
+  },
+  {
+    "id": "632718a6-f1fe-4f5a-b95d-03b8e7635d70",
+    "year": 2003,
+    "current": false
+  },
+  {
+    "id": "445a3d24-886b-48c2-97f7-73af994ffec0",
+    "year": 2002,
+    "current": false
+  },
+  {
+    "id": "ddcfcd44-02fe-4370-8904-6b953075caeb",
+    "year": 2001,
+    "current": false
+  },
+  {
+    "id": "ef1e2970-0ff9-4933-95ac-404845820462",
+    "year": 2000,
+    "current": false
+  },
+  {
+    "id": "2fd3e95f-5aca-46ba-a8f3-513a36f304b9",
+    "year": 1999,
+    "current": false
+  },
+  {
+    "id": "a61f83c3-8a0f-446f-b48e-b468fb5c6476",
+    "year": 1998,
+    "current": false
+  },
+  {
+    "id": "6288b239-6282-4411-86db-9dbdbf0351b3",
+    "year": 1997,
+    "current": false
+  },
+  {
+    "id": "907eee47-4666-4cd4-b41e-b2278821b8f3",
+    "year": 1996,
+    "current": false
+  },
+  {
+    "id": "5518c28f-48db-423f-8241-b2fe0654ee19",
+    "year": 1995,
+    "current": false
+  },
+  {
+    "id": "8e97de51-4291-4162-8952-e222ee738041",
+    "year": 1994,
+    "current": false
+  },
+  {
+    "id": "42940628-e094-4932-ae21-d4dc4c339ecb",
+    "year": 1993,
+    "current": false
+  },
+  {
+    "id": "7163a8f0-30a6-4265-99af-d0f8d8002265",
+    "year": 1992,
+    "current": false
+  },
+  {
+    "id": "af5f5823-349b-40ba-b3a5-4ecd9f7f167e",
+    "year": 1991,
+    "current": false
+  },
+  {
+    "id": "79ccac73-5093-489c-9d37-e77a005723f9",
+    "year": 1990,
+    "current": false
+  },
+  {
+    "id": "e6dac447-28af-4394-a570-93d33d138cc9",
+    "year": 1989,
+    "current": false
+  },
+  {
+    "id": "b9332591-9e09-441e-938b-9396daf74930",
+    "year": 1988,
+    "current": false
+  },
+  {
+    "id": "1b77d8dc-001c-40cc-8a71-8ccd5ef96214",
+    "year": 1987,
+    "current": false
+  },
+  {
+    "id": "8dd7d599-ac03-4486-8d46-edf2edc3146d",
+    "year": 1986,
+    "current": false
+  },
+  {
+    "id": "d6747634-7a17-4e50-a5a4-71fdcd5b65bb",
+    "year": 1985,
+    "current": false
+  },
+  {
+    "id": "9e96c443-0c9f-4f67-a3a0-d678cfeab933",
+    "year": 1984,
+    "current": false
+  },
+  {
+    "id": "17a1aefb-dd07-4fb9-bf03-05e1efd28435",
+    "year": 1983,
+    "current": false
+  },
+  {
+    "id": "502d13a9-3f2e-4e51-aa0f-0a6de157a170",
+    "year": 1982,
+    "current": false
+  },
+  {
+    "id": "8a939600-760d-440f-8e45-0c18d73631e1",
+    "year": 1981,
+    "current": false
+  },
+  {
+    "id": "a6215585-eab4-4100-9b8a-365f4e056805",
+    "year": 1980,
+    "current": false
+  },
+  {
+    "id": "6339eb76-3390-4312-8c83-43a9512c8c25",
+    "year": 1979,
+    "current": false
+  },
+  {
+    "id": "2ab6e465-bc0d-40a5-be66-fe0dbf0e6ab2",
+    "year": 1978,
+    "current": false
+  },
+  {
+    "id": "f64bbe89-30bb-461c-acdc-cca30b21fed7",
+    "year": 1977,
+    "current": false
+  },
+  {
+    "id": "357e99b8-cc05-4fcd-b11d-2edfbb019809",
+    "year": 1976,
+    "current": false
+  },
+  {
+    "id": "82e72174-0426-4b33-af3f-e2f2e3f413e2",
+    "year": 1975,
+    "current": false
+  },
+  {
+    "id": "7a7c657c-401c-4946-8ee7-f1c66990b608",
+    "year": 1974,
+    "current": false
+  },
+  {
+    "id": "e39a9e8b-7aa8-4d8d-9372-91091f15d98b",
+    "year": 1973,
+    "current": false
+  },
+  {
+    "id": "a13b4cfc-89a9-47d5-9734-af4d61bf8b90",
+    "year": 1972,
+    "current": false
+  },
+  {
+    "id": "14cd72be-713f-474d-a6af-cc57ca58f252",
+    "year": 1971,
+    "current": false
+  },
+  {
+    "id": "fea3cb28-5c7c-4888-8dae-6e851259775a",
+    "year": 1970,
+    "current": false
+  },
+  {
+    "id": "3826b414-4a3b-4674-90e1-94f7ff3dc9bc",
+    "year": 1969,
+    "current": false
+  },
+  {
+    "id": "c01c1c33-6457-4755-b1ba-6fd23bf73563",
+    "year": 1968,
+    "current": false
+  },
+  {
+    "id": "7b04bc94-fa67-472b-88cf-76563ebd5be6",
+    "year": 1967,
+    "current": false
+  },
+  {
+    "id": "05f340dd-61dd-4673-b1a9-1ec6d92b93e3",
+    "year": 1966,
+    "current": false
+  },
+  {
+    "id": "3625dc59-bf95-4c13-96b1-56e3064ff62e",
+    "year": 1965,
+    "current": false
+  },
+  {
+    "id": "3ff1f0bb-074a-4a8b-94b7-eb536c6589ff",
+    "year": 1964,
+    "current": false
+  },
+  {
+    "id": "473191ae-cd39-443c-bf30-920403670c07",
+    "year": 1963,
+    "current": false
+  },
+  {
+    "id": "03b2bfac-203c-4b1f-8656-0cbb8c6d7961",
+    "year": 1962,
+    "current": false
+  },
+  {
+    "id": "690cd02f-f143-4efd-9198-05bbd64bb86a",
+    "year": 1961,
+    "current": false
+  },
+  {
+    "id": "0aaccf7d-e525-4505-85aa-ae6e57c60bd8",
+    "year": 1960,
+    "current": false
+  },
+  {
+    "id": "438fc379-7133-47fa-9b73-d8d217f42b88",
+    "year": 1959,
+    "current": false
+  },
+  {
+    "id": "cb64a721-de5b-4fc4-a543-b15c5e5dcf6a",
+    "year": 1958,
+    "current": false
+  },
+  {
+    "id": "fdbe09f1-381c-43eb-bdf0-c035068f3f32",
+    "year": 1957,
+    "current": false
+  },
+  {
+    "id": "5272bf19-bfe0-4017-b7e7-9754b1ee9aa7",
+    "year": 1956,
+    "current": false
+  },
+  {
+    "id": "e93dc09a-1035-4c14-bd0e-0ae762aad51b",
+    "year": 1955,
+    "current": false
+  },
+  {
+    "id": "c8497a73-5ac9-4e4d-bc69-3e0bd93d7907",
+    "year": 1954,
+    "current": false
+  },
+  {
+    "id": "f3cd4e65-3deb-4fac-9755-3360324b2bed",
+    "year": 1953,
+    "current": false
+  },
+  {
+    "id": "fbfa8959-79b0-4ec1-8ae1-d9082d0233da",
+    "year": 1952,
+    "current": false
+  },
+  {
+    "id": "296ab92c-cd8d-48ba-ace1-aad1455d557f",
+    "year": 1951,
+    "current": false
+  },
+  {
+    "id": "fc8a9643-cc67-4952-b589-d26eb6f9f855",
+    "year": 1950,
+    "current": false
+  },
+  {
+    "id": "72de1fab-255c-4b9a-9d4b-79ce47ab61c5",
+    "year": 1949,
+    "current": false
+  }
+]

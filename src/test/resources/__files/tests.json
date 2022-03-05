@@ -1,0 +1,42 @@
+[
+  {
+    "id": "db8dc197-c7b2-4c1b-b3a4-6dc534c014ef",
+    "year": 2022,
+    "current": true
+  },
+  {
+    "id": "db8dc197-c7b2-4c1b-b3a4-7dc723c087ed",
+    "year": 2021,
+    "current": false
+  },
+  {
+    "id": "fa729c5c-a34a-40b9-8ebf-2578d9433517",
+    "year": 2020,
+    "current": false
+  },
+  {
+    "id": "cbc5dc8d-3aae-4327-bd88-d1cdeea9b654",
+    "year": 2019,
+    "current": false
+  },
+  {
+    "id": "c0844c71-783c-4f86-abce-a9a67adcc1a9",
+    "year": 2018,
+    "current": false
+  },
+  {
+    "id": "e24e8a8c-4673-498d-86e0-731581d7c586",
+    "year": 2017,
+    "current": false
+  },
+  {
+    "id": "ba354746-c4da-4dc8-8b8e-776fcc43287d",
+    "year": 2016,
+    "current": false
+  },
+  {
+    "id": "cbe871d8-d8fa-47cb-8b63-cabe0015223e",
+    "year": 2015,
+    "current": false
+  }
+]

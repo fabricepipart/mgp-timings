@@ -1,0 +1,1074 @@
+[
+  {
+    "id": "20bb257f-b1ba-4289-9030-c4eb528c6155",
+    "name": "GRAND PRIX OF QATAR",
+    "sponsored_name": "Barwa Grand Prix of Qatar",
+    "date_start": "2021-03-26",
+    "date_end": "2021-03-28",
+    "country": {
+      "iso": "QA",
+      "name": "Qatar",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 1
+      },
+      {
+        "categoryId": 2,
+        "eventId": 1
+      },
+      {
+        "categoryId": 3,
+        "eventId": 1
+      }
+    ],
+    "circuit": {
+      "id": "e9a71399-cea9-400a-b2ef-48bfdcdf6526",
+      "name": "Losail International Circuit",
+      "legacy_id": 93,
+      "place": "Doha",
+      "nation": "QAT"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "QAT",
+    "world_standing_files": null
+  },
+  {
+    "id": "650d990f-3a6e-454c-b555-33368490f98f",
+    "name": "GRAND PRIX OF DOHA",
+    "sponsored_name": "TISSOT Grand Prix of Doha",
+    "date_start": "2021-04-02",
+    "date_end": "2021-04-04",
+    "country": {
+      "iso": "QA",
+      "name": "Qatar",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 2
+      },
+      {
+        "categoryId": 2,
+        "eventId": 2
+      },
+      {
+        "categoryId": 3,
+        "eventId": 2
+      }
+    ],
+    "circuit": {
+      "id": "e9a71399-cea9-400a-b2ef-48bfdcdf6526",
+      "name": "Losail International Circuit",
+      "legacy_id": 93,
+      "place": "Doha",
+      "nation": "QAT"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "DOH",
+    "world_standing_files": null
+  },
+  {
+    "id": "ccdb4ef1-1216-475c-89c6-2a1f750fdf45",
+    "name": "GRANDE PR\u00c9MIO DE PORTUGAL",
+    "sponsored_name": "Grande Pr\u00e9mio 888 de Portugal",
+    "date_start": "2021-04-16",
+    "date_end": "2021-04-18",
+    "country": {
+      "iso": "PT",
+      "name": "Portugal",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 3
+      },
+      {
+        "categoryId": 2,
+        "eventId": 3
+      },
+      {
+        "categoryId": 3,
+        "eventId": 3
+      }
+    ],
+    "circuit": {
+      "id": "912a9d7f-2864-4311-bebb-19851e9c2620",
+      "name": "Aut\u00f3dromo Internacional do Algarve",
+      "legacy_id": 109,
+      "place": "Portimao",
+      "nation": "POR"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "POR",
+    "world_standing_files": null
+  },
+  {
+    "id": "dc77824d-d23b-4491-a171-1b3610515fd3",
+    "name": "GRAN PREMIO DE ESPA\u00d1A",
+    "sponsored_name": "Gran Premio Red Bull de Espa\u00f1a",
+    "date_start": "2021-04-30",
+    "date_end": "2021-05-02",
+    "country": {
+      "iso": "ES",
+      "name": "Spain",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 4
+      },
+      {
+        "categoryId": 2,
+        "eventId": 4
+      },
+      {
+        "categoryId": 3,
+        "eventId": 4
+      },
+      {
+        "categoryId": 19,
+        "eventId": 4
+      }
+    ],
+    "circuit": {
+      "id": "763812ea-9435-4c1c-b61b-a0c14ccdfbe4",
+      "name": "Circuito de Jerez - Angel Nieto",
+      "legacy_id": 4,
+      "place": "Jerez de la Frontera",
+      "nation": "SPA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/SPA\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/SPA\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/SPA\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/SPA\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "SPA",
+    "world_standing_files": null
+  },
+  {
+    "id": "bc083625-3366-4194-a1a7-42f3917d961c",
+    "name": "GRAND PRIX DE FRANCE",
+    "sponsored_name": "SHARK Grand Prix de France",
+    "date_start": "2021-05-14",
+    "date_end": "2021-05-16",
+    "country": {
+      "iso": "FR",
+      "name": "France",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 5
+      },
+      {
+        "categoryId": 2,
+        "eventId": 5
+      },
+      {
+        "categoryId": 3,
+        "eventId": 5
+      },
+      {
+        "categoryId": 19,
+        "eventId": 5
+      }
+    ],
+    "circuit": {
+      "id": "ebb41e75-8664-4dfd-b0eb-07f24bd5fb92",
+      "name": "Le Mans",
+      "legacy_id": 8,
+      "place": "Le Mans",
+      "nation": "FRA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/FRA\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/FRA\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/FRA\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/FRA\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "FRA",
+    "world_standing_files": null
+  },
+  {
+    "id": "0d106a9a-95c9-4e13-9084-90c78c149f4a",
+    "name": "GRAN PREMIO D\u0027ITALIA",
+    "sponsored_name": "Gran Premio d\u0027Italia Oakley",
+    "date_start": "2021-05-28",
+    "date_end": "2021-05-30",
+    "country": {
+      "iso": "IT",
+      "name": "Italy",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 6
+      },
+      {
+        "categoryId": 2,
+        "eventId": 6
+      },
+      {
+        "categoryId": 3,
+        "eventId": 6
+      }
+    ],
+    "circuit": {
+      "id": "1ab286fc-eb24-4980-85a8-b7b940f46e13",
+      "name": "Autodromo Internazionale del Mugello",
+      "legacy_id": 6,
+      "place": "Mugello",
+      "nation": "ITA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "ITA",
+    "world_standing_files": null
+  },
+  {
+    "id": "fa88ecf9-e689-4d57-a2f9-aafae8d2e6c5",
+    "name": "GRAN PREMI DE CATALUNYA",
+    "sponsored_name": "Gran Premi Monster Energy de Catalunya",
+    "date_start": "2021-06-04",
+    "date_end": "2021-06-06",
+    "country": {
+      "iso": "ES",
+      "name": "Spain",
+      "region_iso": "CT"
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 7
+      },
+      {
+        "categoryId": 2,
+        "eventId": 7
+      },
+      {
+        "categoryId": 3,
+        "eventId": 7
+      },
+      {
+        "categoryId": 19,
+        "eventId": 7
+      }
+    ],
+    "circuit": {
+      "id": "2218098d-ab2d-498b-a633-1a4a39119e9e",
+      "name": "Circuit de Barcelona-Catalunya",
+      "legacy_id": 13,
+      "place": "Barcelona",
+      "nation": "SPA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "CAT",
+    "world_standing_files": null
+  },
+  {
+    "id": "1579be5c-314d-4e0e-b528-8079ccc69516",
+    "name": "MOTORRAD GRAND PRIX DEUTSCHLAND",
+    "sponsored_name": "Liqui Moly Motorrad Grand Prix Deutschland",
+    "date_start": "2021-06-18",
+    "date_end": "2021-06-20",
+    "country": {
+      "iso": "DE",
+      "name": "Germany",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 8
+      },
+      {
+        "categoryId": 2,
+        "eventId": 8
+      },
+      {
+        "categoryId": 3,
+        "eventId": 8
+      }
+    ],
+    "circuit": {
+      "id": "551f87c7-1940-48b0-bce7-1ad8de7ce548",
+      "name": "Sachsenring",
+      "legacy_id": 51,
+      "place": "Sachsenring",
+      "nation": "GER"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "GER",
+    "world_standing_files": null
+  },
+  {
+    "id": "75f346b4-128c-4115-b808-55e125d29bfc",
+    "name": "TT ASSEN",
+    "sponsored_name": "Motul TT Assen",
+    "date_start": "2021-06-25",
+    "date_end": "2021-06-27",
+    "country": {
+      "iso": "NL",
+      "name": "Netherlands",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 9
+      },
+      {
+        "categoryId": 2,
+        "eventId": 9
+      },
+      {
+        "categoryId": 3,
+        "eventId": 9
+      },
+      {
+        "categoryId": 19,
+        "eventId": 9
+      }
+    ],
+    "circuit": {
+      "id": "f4f9b0e8-1319-4d4f-a5ae-6cf193b01fca",
+      "name": "TT Circuit Assen",
+      "legacy_id": 7,
+      "place": "Assen",
+      "nation": "NED"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "NED",
+    "world_standing_files": null
+  },
+  {
+    "id": "34695330-d85d-4515-b6f9-1ffdddb5dba7",
+    "name": "GRAND PRIX OF STYRIA",
+    "sponsored_name": "Michelin\u00ae Grand Prix of Styria",
+    "date_start": "2021-08-06",
+    "date_end": "2021-08-08",
+    "country": {
+      "iso": "AT",
+      "name": "Austria",
+      "region_iso": "6"
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 10
+      },
+      {
+        "categoryId": 2,
+        "eventId": 10
+      },
+      {
+        "categoryId": 3,
+        "eventId": 10
+      }
+    ],
+    "circuit": {
+      "id": "8dc64efd-25f8-41cf-aa4f-dfbfa41a762a",
+      "name": "Red Bull Ring - Spielberg",
+      "legacy_id": 24,
+      "place": "Spielberg",
+      "nation": "AUT"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "STY",
+    "world_standing_files": null
+  },
+  {
+    "id": "8a0c2d86-8de6-4d46-a040-5160c6b58add",
+    "name": "MOTORRAD GRAND PRIX VON \u00d6STERREICH",
+    "sponsored_name": "Bitci Motorrad Grand Prix von \u00d6sterreich",
+    "date_start": "2021-08-13",
+    "date_end": "2021-08-15",
+    "country": {
+      "iso": "AT",
+      "name": "Austria",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 11
+      },
+      {
+        "categoryId": 2,
+        "eventId": 11
+      },
+      {
+        "categoryId": 3,
+        "eventId": 11
+      },
+      {
+        "categoryId": 19,
+        "eventId": 11
+      }
+    ],
+    "circuit": {
+      "id": "8dc64efd-25f8-41cf-aa4f-dfbfa41a762a",
+      "name": "Red Bull Ring - Spielberg",
+      "legacy_id": 24,
+      "place": "Spielberg",
+      "nation": "AUT"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "AUT",
+    "world_standing_files": null
+  },
+  {
+    "id": "40e91715-2872-4510-910d-79c9b879ac50",
+    "name": "BRITISH GRAND PRIX",
+    "sponsored_name": "Monster Energy British Grand Prix ",
+    "date_start": "2021-08-27",
+    "date_end": "2021-08-29",
+    "country": {
+      "iso": "GB",
+      "name": "United Kingdom of Great Britain and Northern Ireland",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 12
+      },
+      {
+        "categoryId": 2,
+        "eventId": 12
+      },
+      {
+        "categoryId": 3,
+        "eventId": 12
+      }
+    ],
+    "circuit": {
+      "id": "473ee5fa-b4e5-4c00-a0fe-28051700e20d",
+      "name": "Silverstone Circuit",
+      "legacy_id": 42,
+      "place": "Silverstone",
+      "nation": "GBR"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "GBR",
+    "world_standing_files": null
+  },
+  {
+    "id": "90164916-6f03-408d-b708-aa11713bc9eb",
+    "name": "GRAN PREMIO DE ARAG\u00d3N",
+    "sponsored_name": "Gran Premio TISSOT de Arag\u00f3n",
+    "date_start": "2021-09-10",
+    "date_end": "2021-09-12",
+    "country": {
+      "iso": "ES",
+      "name": "Spain",
+      "region_iso": "AR"
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 13
+      },
+      {
+        "categoryId": 2,
+        "eventId": 13
+      },
+      {
+        "categoryId": 3,
+        "eventId": 13
+      }
+    ],
+    "circuit": {
+      "id": "50209e25-6cd8-4d8d-912e-c48a06275a8a",
+      "name": "MotorLand Arag\u00f3n",
+      "legacy_id": 100,
+      "place": "Alca\u00f1iz",
+      "nation": "SPA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "ARA",
+    "world_standing_files": null
+  },
+  {
+    "id": "4e7274fd-ba06-4b1e-8b33-8299be78f01b",
+    "name": "GRAN PREMIO DI SAN MARINO E DELLA RIVIERA DI RIMINI",
+    "sponsored_name": "Gran Premio Octo di San Marino e della Riviera di Rimini",
+    "date_start": "2021-09-19",
+    "date_end": "2021-09-19",
+    "country": {
+      "iso": "SM",
+      "name": "San Marino",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 14
+      },
+      {
+        "categoryId": 2,
+        "eventId": 14
+      },
+      {
+        "categoryId": 3,
+        "eventId": 14
+      },
+      {
+        "categoryId": 19,
+        "eventId": 14
+      },
+      {
+        "categoryId": 19,
+        "eventId": 71
+      }
+    ],
+    "circuit": {
+      "id": "e0d07d48-0b62-40fa-9d36-411b15af406f",
+      "name": "Misano World Circuit Marco Simoncelli",
+      "legacy_id": 38,
+      "place": "Misano Adriatico",
+      "nation": "ITA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "RSM",
+    "world_standing_files": null
+  },
+  {
+    "id": "ff62171b-a631-42cc-93ca-15101668670c",
+    "name": "GRAND PRIX OF THE AMERICAS",
+    "sponsored_name": "Red Bull Grand Prix of The Americas",
+    "date_start": "2021-10-01",
+    "date_end": "2021-10-03",
+    "country": {
+      "iso": "US",
+      "name": "United States of America",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 15
+      },
+      {
+        "categoryId": 2,
+        "eventId": 15
+      },
+      {
+        "categoryId": 3,
+        "eventId": 15
+      }
+    ],
+    "circuit": {
+      "id": "5b97d826-e527-43e9-b696-09f61cf4559c",
+      "name": "Circuit Of The Americas",
+      "legacy_id": 101,
+      "place": "Austin",
+      "nation": "USA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "AME",
+    "world_standing_files": null
+  },
+  {
+    "id": "0adb8e17-c66e-41f9-8ceb-9c5fce279721",
+    "name": "GRAN PREMIO DELL\u0027EMILIA-ROMAGNA",
+    "sponsored_name": "Gran Premio Nolan del Made in Italy e dell\u0027Emilia-Romagna",
+    "date_start": "2021-10-22",
+    "date_end": "2021-10-24",
+    "country": {
+      "iso": "IT",
+      "name": "Italy",
+      "region_iso": "45"
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 16
+      },
+      {
+        "categoryId": 2,
+        "eventId": 16
+      },
+      {
+        "categoryId": 3,
+        "eventId": 16
+      }
+    ],
+    "circuit": {
+      "id": "e0d07d48-0b62-40fa-9d36-411b15af406f",
+      "name": "Misano World Circuit Marco Simoncelli",
+      "legacy_id": 38,
+      "place": "Misano Adriatico",
+      "nation": "ITA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "EMI",
+    "world_standing_files": null
+  },
+  {
+    "id": "f2103156-e092-4bfc-9413-363bb49147a0",
+    "name": "GRANDE PR\u00c9MIO DO ALGARVE",
+    "sponsored_name": "Grande Pr\u00e9mio Brembo do Algarve",
+    "date_start": "2021-11-05",
+    "date_end": "2021-11-07",
+    "country": {
+      "iso": "PT",
+      "name": "Portugal",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 17
+      },
+      {
+        "categoryId": 2,
+        "eventId": 17
+      },
+      {
+        "categoryId": 3,
+        "eventId": 17
+      }
+    ],
+    "circuit": {
+      "id": "912a9d7f-2864-4311-bebb-19851e9c2620",
+      "name": "Aut\u00f3dromo Internacional do Algarve",
+      "legacy_id": 109,
+      "place": "Portimao",
+      "nation": "POR"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "ALR",
+    "world_standing_files": null
+  },
+  {
+    "id": "ad0d1071-5ea6-4f59-b6ba-56453935c51a",
+    "name": "GRAN PREMIO DE LA COMUNITAT VALENCIANA",
+    "sponsored_name": "Gran Premio Motul de la Comunitat Valenciana",
+    "date_start": "2021-11-12",
+    "date_end": "2021-11-14",
+    "country": {
+      "iso": "ES",
+      "name": "Spain",
+      "region_iso": "VC"
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 18
+      },
+      {
+        "categoryId": 2,
+        "eventId": 18
+      },
+      {
+        "categoryId": 3,
+        "eventId": 18
+      }
+    ],
+    "circuit": {
+      "id": "664c40ff-8deb-4613-91cd-62c945f95e1e",
+      "name": "Circuit Ricardo Tormo",
+      "legacy_id": 77,
+      "place": "Cheste",
+      "nation": "SPA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/CircuitInformation.pdf",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/Podiums.pdf",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/PolePositions.pdf",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/table2.pdf",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/table4.pdf",
+        "menu_position": 2
+      }
+    },
+    "test": false,
+    "short_name": "VAL",
+    "world_standing_files": null
+  }
+]

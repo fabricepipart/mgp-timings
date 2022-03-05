@@ -68,11 +68,5 @@ public class SeasonEndpoint {
     return resultsService.getTestSeasons(true).stream().filter(s -> s.current).findAny().get();
   }
 
-  @GET
-  @Produces(MediaType.TEXT_PLAIN)
-  @Path("/hello")
-  public String hello() {
-    return "Hello MotoGP";
-  }
 }
 
