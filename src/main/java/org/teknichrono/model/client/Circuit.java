@@ -2,9 +2,9 @@ package org.teknichrono.model.client;
 
 public class Circuit {
 
-  String id;
-  String name;
-  int legacy_id;
-  String place;
-  String nation;
+  public String id;
+  public String name;
+  public int legacy_id;
+  public String place;
+  public String nation;
 }

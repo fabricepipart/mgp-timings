@@ -2,6 +2,6 @@ package org.teknichrono.model.client;
 
 public class LegacyCategory {
 
-  int categoryId;
-  int eventId;
+  public int categoryId;
+  public int eventId;
 }

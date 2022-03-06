@@ -2,7 +2,7 @@ package org.teknichrono.model.client;
 
 
 public class Country {
-  String iso;
-  String name;
-  String region_iso;
+  public String iso;
+  public String name;
+  public String region_iso;
 }

@@ -13,6 +13,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Path("/event")
 public class EventEndpoint {
@@ -31,6 +32,16 @@ public class EventEndpoint {
   public List<Event> eventsOfYear(@PathParam("year") int year) {
     Season season = seasonEndpoint.listAll().stream().filter(s -> s.year == year).findFirst().get();
     return resultsService.getEventsOfSeason(season.id);
+  }
+
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
+  @Path("/{year}/names")
+  public List<String> eventsNamesOfYear(@PathParam("year") int year) {
+    Season season = seasonEndpoint.listAll().stream().filter(s -> s.year == year).findFirst().get();
+    return resultsService.getEventsOfSeason(season.id).stream().map(e -> e.short_name).collect(Collectors.toList());
   }
 
 }

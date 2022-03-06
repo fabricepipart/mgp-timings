@@ -2,6 +2,7 @@ package org.teknichrono.client;
 
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 import org.jboss.resteasy.annotations.jaxrs.QueryParam;
+import org.teknichrono.model.client.Category;
 import org.teknichrono.model.client.Event;
 import org.teknichrono.model.client.Season;
 
@@ -34,6 +35,9 @@ public interface ResultsService {
   @Path("/season/{season}/events")
   List<Event> getFinishedEventsOfSeason(@PathParam("season") String season, @QueryParam("finished") boolean finished);
 
+  @GET
+  @Path("/event/{event}/categories")
+  List<Category> getCategoriesOfEvent(@PathParam("event") String event);
 
 // $seasons_url = "https://www.motogp.com/api/results-front/be/results-api/seasons?test=1";
 // $events_url = "https://www.motogp.com/api/results-front/be/results-api/season/$season/events?finished=1";
