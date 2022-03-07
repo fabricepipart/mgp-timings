@@ -1,3 +1,6 @@
+
+[![codecov](https://codecov.io/gh/fabricepipart/mgp-timings/branch/main/graph/badge.svg)](https://codecov.io/gh/fabricepipart/mgp-timings)
+[![GitHub actions workflow](https://github.com/fabricepipart/mgp-timings/actions/workflows/workflow.yml/badge.svg)](https://github.com/fabricepipart/mgp-timing/blob/main/.github/workflows/workflow.yml)
 # mgp-timings
 
 ## Description
