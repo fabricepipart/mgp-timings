@@ -30,7 +30,7 @@ public class EventEndpoint {
   @Transactional
   @Path("/{year}")
   public List<Event> eventsOfYear(@PathParam("year") int year) {
-    Season season = seasonEndpoint.listAll().stream().filter(s -> s.year == year).findFirst().get();
+    Season season = seasonEndpoint.listAll().stream().filter(s -> s.year.intValue() == year).findFirst().get();
     return resultsService.getEventsOfSeason(season.id);
   }
 
@@ -40,7 +40,7 @@ public class EventEndpoint {
   @Transactional
   @Path("/{year}/names")
   public List<String> eventsNamesOfYear(@PathParam("year") int year) {
-    Season season = seasonEndpoint.listAll().stream().filter(s -> s.year == year).findFirst().get();
+    Season season = seasonEndpoint.listAll().stream().filter(s -> s.year.intValue() == year).findFirst().get();
     return resultsService.getEventsOfSeason(season.id).stream().map(e -> e.short_name).collect(Collectors.toList());
   }
 

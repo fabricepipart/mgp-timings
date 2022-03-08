@@ -3,7 +3,7 @@ package org.teknichrono.model.client;
 public class Season {
 
   public String id;
-  public int year;
+  public Integer year;
   public boolean current;
 
 }

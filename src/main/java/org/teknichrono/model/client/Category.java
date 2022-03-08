@@ -4,5 +4,5 @@ public class Category {
 
   public String id;
   public String name;
-  public int legacyId;
+  public Integer legacyId;
 }

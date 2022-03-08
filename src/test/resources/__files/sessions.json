@@ -1,0 +1,554 @@
+[
+  {
+    "id": "117144ae-2a0b-4d42-8d89-ab96253470d2",
+    "type": "FP",
+    "number": 1,
+    "condition": {
+      "track": "Dry",
+      "air": "28\u00ba",
+      "humidity": "54%",
+      "ground": "26\u00ba",
+      "weather": "Clear"
+    },
+    "date": "2021-03-26T15:40:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/Session.pdf",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Lusail International Circuit"
+  },
+  {
+    "id": "64e9d65b-12cd-4436-8b63-549ac516bf02",
+    "type": "FP",
+    "number": 2,
+    "condition": {
+      "track": "Dry",
+      "air": "25\u00ba",
+      "humidity": "70%",
+      "ground": "26\u00ba",
+      "weather": "Clear"
+    },
+    "date": "2021-03-26T20:00:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/Session.pdf",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/CombinedPracticeTimes.pdf",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Lusail International Circuit"
+  },
+  {
+    "id": "fae273c4-defb-4bac-84c8-e3283c5b088b",
+    "type": "FP",
+    "number": 3,
+    "condition": {
+      "track": "Dry",
+      "air": "37\u00ba",
+      "humidity": "19%",
+      "ground": "49\u00ba",
+      "weather": "Clear"
+    },
+    "date": "2021-03-27T15:15:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/Session.pdf",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/CombinedPracticeTimes.pdf",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Lusail International Circuit"
+  },
+  {
+    "id": "b239e98b-9739-4fe3-ab6e-a6c3f5348226",
+    "type": "FP",
+    "number": 4,
+    "condition": {
+      "track": "Dry",
+      "air": "27\u00ba",
+      "humidity": "51%",
+      "ground": "31\u00ba",
+      "weather": "Clear"
+    },
+    "date": "2021-03-27T19:20:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/Session.pdf",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Lusail International Circuit"
+  },
+  {
+    "id": "295b876d-90f2-4cd0-b329-88f238535c10",
+    "type": "Q",
+    "number": 1,
+    "condition": {
+      "track": "Dry",
+      "air": "27\u00ba",
+      "humidity": "45%",
+      "ground": "30\u00ba",
+      "weather": "Clear"
+    },
+    "date": "2021-03-27T20:00:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/Session.pdf",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Lusail International Circuit"
+  },
+  {
+    "id": "effe50dc-9afe-4e4d-9694-c975d65e9545",
+    "type": "Q",
+    "number": 2,
+    "condition": {
+      "track": "Dry",
+      "air": "28\u00ba",
+      "humidity": "34%",
+      "ground": "29\u00ba",
+      "weather": "Clear"
+    },
+    "date": "2021-03-27T20:25:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Grid.pdf",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Session.pdf",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/QualifyingResults.pdf",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Lusail International Circuit"
+  },
+  {
+    "id": "fe9c4152-1526-4bcb-974c-d45e72658f0e",
+    "type": "WUP",
+    "number": null,
+    "condition": {
+      "track": "Dry",
+      "air": "25\u00ba",
+      "humidity": "41%",
+      "ground": "33\u00ba",
+      "weather": "Clear"
+    },
+    "date": "2021-03-28T15:40:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Grid.pdf",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Session.pdf",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Lusail International Circuit"
+  },
+  {
+    "id": "cfa834e4-91e8-458c-a12e-fc628dd071bf",
+    "type": "RAC",
+    "number": null,
+    "condition": {
+      "track": "Dry",
+      "air": "20\u00ba",
+      "humidity": "60%",
+      "ground": "22\u00ba",
+      "weather": "Clear"
+    },
+    "date": "2021-03-28T20:00:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/LapChart.pdf",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/analysisbylap.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/FastLapRider.pdf",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Grid.pdf",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Session.pdf",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Lusail International Circuit"
+  }
+]

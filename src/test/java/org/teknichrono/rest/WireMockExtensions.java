@@ -25,10 +25,26 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
     stubSeasons();
     stubEvents();
     stubCategories();
+    stubSessions();
+    stubClassifications();
 
     //stubFor(get(urlMatching(".*")).atPriority(10).willReturn(aResponse().proxiedFrom("https://www.motogp.com/api/results-front/be/results-api")));
 
     return Collections.singletonMap("quarkus.rest-client.results-api.url", wireMockServer.baseUrl());
+  }
+
+  private void stubSessions() {
+    stubFor(get(urlEqualTo("/event/20bb257f-b1ba-4289-9030-c4eb528c6155/category/e8c110ad-64aa-4e8e-8a86-f2f152f6a942/sessions"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("sessions.json")));
+  }
+
+  private void stubClassifications() {
+    stubFor(get(urlEqualTo("/session/fae273c4-defb-4bac-84c8-e3283c5b088b/classifications"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("classifications.json")));
   }
 
   private void stubSeasons() {

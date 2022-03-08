@@ -1,10 +1,12 @@
 package org.teknichrono.model.client;
 
-public class Circuit {
+public class Team {
 
   public String id;
   public String name;
   public Integer legacy_id;
-  public String place;
-  public String nation;
+
+  public String toString() {
+    return name;
+  }
 }

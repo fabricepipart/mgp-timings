@@ -3,7 +3,7 @@ package org.teknichrono.rest;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.teknichrono.client.ResultsService;
 import org.teknichrono.model.client.Season;
-import org.teknichrono.util.CsvConverter;
+import org.teknichrono.util.SeasonCsvConverter;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -36,7 +36,7 @@ public class SeasonEndpoint {
   @Transactional
   public Response listAllToCsv() {
     try {
-      CsvConverter csvConverter = new CsvConverter();
+      SeasonCsvConverter csvConverter = new SeasonCsvConverter();
       String csvResults = csvConverter.convertToCsv(resultsService.getSeasons());
       return Response.ok().entity(csvResults).build();
     } catch (IOException e) {

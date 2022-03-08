@@ -5,6 +5,8 @@ import org.jboss.resteasy.annotations.jaxrs.QueryParam;
 import org.teknichrono.model.client.Category;
 import org.teknichrono.model.client.Event;
 import org.teknichrono.model.client.Season;
+import org.teknichrono.model.client.Session;
+import org.teknichrono.model.client.SessionClassification;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -38,6 +40,14 @@ public interface ResultsService {
   @GET
   @Path("/event/{event}/categories")
   List<Category> getCategoriesOfEvent(@PathParam("event") String event);
+
+  @GET
+  @Path("/event/{event}/category/{category}/sessions")
+  List<Session> getSessions(@PathParam("event") String event, @PathParam("category") String category);
+
+  @GET
+  @Path("/session/{session}/classifications")
+  SessionClassification getClassification(@PathParam("session") String session);
 
 // $seasons_url = "https://www.motogp.com/api/results-front/be/results-api/seasons?test=1";
 // $events_url = "https://www.motogp.com/api/results-front/be/results-api/season/$season/events?finished=1";
