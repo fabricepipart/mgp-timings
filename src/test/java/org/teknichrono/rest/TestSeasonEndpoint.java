@@ -1,11 +1,15 @@
 package org.teknichrono.rest;
 
 import io.quarkus.test.common.QuarkusTestResource;
+import io.quarkus.test.junit.QuarkusMock;
 import io.quarkus.test.junit.QuarkusTest;
 import org.jboss.logging.Logger;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.teknichrono.util.CsvConverter;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -53,6 +57,17 @@ class TestSeasonEndpoint {
     assertThat(lines.get(0)).contains("CURRENT");
     assertThat(lines).anyMatch(s -> s.chars().filter(c -> c == ',').count() == 2);
     assertThat(lines).noneMatch(s -> s.contains("null"));
+  }
+
+  @Test
+  public void getSessionClassificationAsCsvFails() throws IOException {
+    CsvConverter mock = Mockito.mock(CsvConverter.class);
+    Mockito.when(mock.convertToCsv(Mockito.anyList())).thenThrow(new IOException("Nope"));
+    QuarkusMock.installMockForType(mock, CsvConverter.class);
+    given()
+        .when().get("/season/csv")
+        .then()
+        .statusCode(500);
   }
 
   @Test

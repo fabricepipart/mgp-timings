@@ -1,12 +1,16 @@
 package org.teknichrono.rest;
 
 import io.quarkus.test.common.QuarkusTestResource;
+import io.quarkus.test.junit.QuarkusMock;
 import io.quarkus.test.junit.QuarkusTest;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 import org.teknichrono.model.client.SessionClassification;
+import org.teknichrono.util.CsvConverter;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -35,6 +39,20 @@ public class TestClassificationEndpoint {
 
 
   @Test
+  public void getRaceClassification() {
+    SessionClassification classification = given()
+        .when().get("/classification/2021/QAT/motogp/rac")
+        .then()
+        .statusCode(200).extract().as(SessionClassification.class);
+    Assertions.assertThat(classification.classification.size()).isEqualTo(22);
+    Assertions.assertThat(classification.classification.get(0).position).isEqualTo(1);
+    Assertions.assertThat(classification.classification.get(0).total_laps).isEqualTo(22);
+    Assertions.assertThat(classification.file).containsIgnoringCase("Classification.pdf");
+    Assertions.assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("poleLap")).findFirst().get().rider.full_name).containsIgnoringCase("Bagnaia");
+  }
+
+
+  @Test
   public void getSessionClassificationAsCsv() {
     String content = given()
         .when().get("/classification/2021/QAT/motogp/fp3/csv")
@@ -51,4 +69,17 @@ public class TestClassificationEndpoint {
     assertThat(lines).anyMatch(s -> s.chars().filter(c -> c == ',').count() == 7);
     assertThat(lines).noneMatch(s -> s.contains("null"));
   }
+
+  @Test
+  public void getSessionClassificationAsCsvFails() throws IOException {
+    CsvConverter mock = Mockito.mock(CsvConverter.class);
+    Mockito.when(mock.convertToCsv(Mockito.anyList())).thenThrow(new IOException("Nope"));
+    QuarkusMock.installMockForType(mock, CsvConverter.class);
+    given()
+        .when().get("/classification/2021/QAT/motogp/fp3/csv")
+        .then()
+        .statusCode(500);
+  }
+
+
 }

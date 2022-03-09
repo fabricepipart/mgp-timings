@@ -3,9 +3,10 @@ package org.teknichrono.rest;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
 import org.teknichrono.client.ResultsService;
+import org.teknichrono.model.client.Classification;
 import org.teknichrono.model.client.Session;
 import org.teknichrono.model.client.SessionClassification;
-import org.teknichrono.util.ClassificationCsvConverter;
+import org.teknichrono.util.CsvConverter;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -31,6 +32,9 @@ public class ClassificationEndpoint {
   @Inject
   SessionEndpoint sessionEndpoint;
 
+  @Inject
+  CsvConverter<Classification> csvConverter;
+
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
@@ -55,7 +59,6 @@ public class ClassificationEndpoint {
   @Transactional
   public Response listAllToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String session) {
     try {
-      ClassificationCsvConverter csvConverter = new ClassificationCsvConverter();
       String csvResults = csvConverter.convertToCsv(this.getClassifications(year, eventShortName, category, session).classification);
       return Response.ok().entity(csvResults).build();
     } catch (IOException e) {

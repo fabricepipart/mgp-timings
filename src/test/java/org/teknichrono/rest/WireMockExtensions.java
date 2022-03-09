@@ -45,6 +45,10 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
             .withBodyFile("classifications.json")));
+    stubFor(get(urlEqualTo("/session/cfa834e4-91e8-458c-a12e-fc628dd071bf/classifications"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("classifications-rac.json")));
   }
 
   private void stubSeasons() {
