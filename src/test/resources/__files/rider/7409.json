@@ -1,0 +1,591 @@
+{
+  "id": "71df6f0d-51c3-4cdb-9f5c-51939e6f33f2",
+  "name": "Maverick",
+  "surname": "Viñales",
+  "nickname": null,
+  "country": {
+    "iso": "ES",
+    "name": "Spain"
+  },
+  "birth_city": "Figueres",
+  "birth_date": "1995-01-12",
+  "physical_attributes": {
+    "height": 171,
+    "weight": 64
+  },
+  "career": [
+    {
+      "season": 2022,
+      "number": 12,
+      "sponsored_team": "Aprilia Racing",
+      "team": {
+        "id": "11d18b37-baba-400a-80c2-f8ddf040f97e",
+        "constructor": {
+          "id": "21fbe597-b587-42e1-b571-a06af5cc2487",
+          "name": "Aprilia",
+          "legacy_id": 7
+        },
+        "name": "Aprilia Racing",
+        "legacy_id": 21,
+        "color": "#2db914",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/0/a/0a912f7c-da05-4942-9fd3-282d0a15f10b/Apriliaracing.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MV12",
+      "current": true,
+      "pictures": {
+        "profile": {
+          "main": "https://photos.motogp.com/riders/2/3/23a96a16-899d-4543-bfe1-833002a446f6/profile/main/12_Maverick_Vinales_MotoGP_Rider_DS_5246.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/riders/2/3/23a96a16-899d-4543-bfe1-833002a446f6/bike/main/_0009_12-Maverick-Vinales_Bike45.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/riders/3/9/393e0718-15b1-403b-9749-8c091bc51be3/helmet/main/12MaverickVinales_HelmetLG6_6362.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/riders/4/0/4026c7e8-b9f7-49d4-ac25-a07541f2657e/number/12-Maverick-Vinales_.png",
+        "portrait": "https://photos.motogp.com/riders/2/3/23a96a16-899d-4543-bfe1-833002a446f6/portrait/12-Maverick-VinalesRider_DS_5239.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 12,
+      "sponsored_team": "Aprilia Racing Team Gresini",
+      "team": {
+        "id": "01736702-c133-4918-90f9-2ddba33af122",
+        "constructor": {
+          "id": "21fbe597-b587-42e1-b571-a06af5cc2487",
+          "name": "Aprilia",
+          "legacy_id": 7
+        },
+        "name": "Aprilia Racing Team Gresini",
+        "legacy_id": 10,
+        "color": "#9baee4",
+        "text_color": "#323232",
+        "picture": "https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MV12",
+      "current": true,
+      "pictures": {
+        "profile": {
+          "main": "https://photos.motogp.com/riders/c/f/cf00bee4-d957-42d7-9c5a-bdf384d49b01/profile/main/12-Maverick-Vinales.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/riders/4/0/4026c7e8-b9f7-49d4-ac25-a07541f2657e/number/12-Maverick-Vinales_.png",
+        "portrait": "https://photos.motogp.com/riders/c/f/cf00bee4-d957-42d7-9c5a-bdf384d49b01/portrait/12-Maverick-Vinales.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 12,
+      "sponsored_team": "Monster Energy Yamaha MotoGP",
+      "team": {
+        "id": "141b6f0f-7e53-4d27-9bdb-0ea8fba7e842",
+        "constructor": {
+          "id": "f2e835be-7fab-4782-a26b-de3d583d132c",
+          "name": "Yamaha",
+          "legacy_id": 3
+        },
+        "name": "Monster Energy Yamaha MotoGP™",
+        "legacy_id": 19,
+        "color": "#183dc7",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": false,
+      "short_nickname": "MV12",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "https://photos.motogp.com/riders/8/1/816b12f2-f8cf-45bf-98cc-ad8079a0c998/profile/main/_0010_12-Maverick-Vinales,-Rider_A7R1590.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/riders/8/1/816b12f2-f8cf-45bf-98cc-ad8079a0c998/bike/main/_0010_12-Maverick-Vinales,-Bike_LG87361.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/riders/8/1/816b12f2-f8cf-45bf-98cc-ad8079a0c998/helmet/main/_0000_12_Maverick_Vinales,_Helmet_LG61662.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/riders/5/5/559396a2-ca31-444c-9e11-b97df5a1921b/number/12-Maverick-Vinales.png",
+        "portrait": "https://photos.motogp.com/riders/b/4/b413b4a7-2db6-4309-a3ea-7a09291ad39e/portrait/_0010_12-Maverick-Vinales,-Rider_A7R1584.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 12,
+      "sponsored_team": "Monster Energy Yamaha MotoGP",
+      "team": {
+        "id": "141b6f0f-7e53-4d27-9bdb-0ea8fba7e842",
+        "constructor": {
+          "id": "f2e835be-7fab-4782-a26b-de3d583d132c",
+          "name": "Yamaha",
+          "legacy_id": 3
+        },
+        "name": "Monster Energy Yamaha MotoGP™",
+        "legacy_id": 19,
+        "color": "#183dc7",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MV12",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "https://photos.motogp.com/riders/a/d/ad566937-bad4-42ca-a601-0a233aabd199/profile/main/1_0003_12-Maverick-Vinales-ESP,-Body_DSC7063.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/riders/d/f/dfa0d417-7e23-4899-807b-b4e8273f536e/bike/main/12-Maverick-Vinales.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/riders/f/e/fe32366d-1e0a-40bc-a696-2947df54dfb7/helmet/main/12-Maverick-Vinales.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/2019/dorsales/3/7409.png",
+        "portrait": "https://photos.motogp.com/riders/4/9/49234c3d-a839-4bf1-aea5-7cc9691cc82a/portrait/-_0003_12-Maverick-Vinales-ESP,-Body_DSC7058.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 12,
+      "sponsored_team": "Monster Energy Yamaha MotoGP",
+      "team": {
+        "id": "141b6f0f-7e53-4d27-9bdb-0ea8fba7e842",
+        "constructor": {
+          "id": "f2e835be-7fab-4782-a26b-de3d583d132c",
+          "name": "Yamaha",
+          "legacy_id": 3
+        },
+        "name": "Monster Energy Yamaha MotoGP™",
+        "legacy_id": 19,
+        "color": "#183dc7",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2019/riders/motogp/bike/original/rider_7409_1552058371.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/2019/dorsales/3/7409.png",
+        "portrait": "https://photos.motogp.com/2019/riders/motogp/grid/original/rider_7409_1554806128.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 12,
+      "sponsored_team": "Monster Energy Yamaha MotoGP",
+      "team": {
+        "id": "141b6f0f-7e53-4d27-9bdb-0ea8fba7e842",
+        "constructor": {
+          "id": "f2e835be-7fab-4782-a26b-de3d583d132c",
+          "name": "Yamaha",
+          "legacy_id": 3
+        },
+        "name": "Monster Energy Yamaha MotoGP™",
+        "legacy_id": 19,
+        "color": "#183dc7",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2018/riders/motogp/bike/original/rider_7409_1521313173.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2018/riders/motogp/helmet/original/rider_7409_1521312785.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/2018/dorsales/3/7409.png",
+        "portrait": "https://photos.motogp.com/2018/riders/motogp/grid/original/rider_7409_1521213854.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 25,
+      "sponsored_team": "Movistar Yamaha MotoGP",
+      "team": {
+        "id": "a9d4c4e8-1233-4f5b-a83a-d6437d91d9c4",
+        "constructor": {
+          "id": "f2e835be-7fab-4782-a26b-de3d583d132c",
+          "name": "Yamaha",
+          "legacy_id": 3
+        },
+        "name": "Movistar Yamaha MotoGP",
+        "legacy_id": 19,
+        "color": null,
+        "text_color": null,
+        "picture": "https://photos.motogp.com/2020/teams/motogp/original/team_bike_19_1574329098.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2017/riders/motogp/bike/original/rider_7409_1490542034.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2017/riders/motogp/helmet/original/rider_7409_1490543513.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://photos.motogp.com/2017/riders/motogp/grid/original/rider_7409_1490883976.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 25,
+      "sponsored_team": "Team SUZUKI ECSTAR",
+      "team": {
+        "id": "baac93d0-3068-4c7a-8d3f-ca215b568f77",
+        "constructor": {
+          "id": "de2d5a0a-83e3-4114-b5c6-72d10d8a9619",
+          "name": "Suzuki",
+          "legacy_id": 2
+        },
+        "name": "Team SUZUKI ECSTAR",
+        "legacy_id": 37,
+        "color": "#4294c1",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2016/riders/motogp/bike/original/rider_7409_1458324129.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2016/riders/motogp/helmet/original/rider_7409_1458324070.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://photos.motogp.com/2016/riders/motogp/grid/original/rider_7409_1479303985.jpg"
+      }
+    },
+    {
+      "season": 2015,
+      "number": 25,
+      "sponsored_team": "Team SUZUKI ECSTAR",
+      "team": {
+        "id": "baac93d0-3068-4c7a-8d3f-ca215b568f77",
+        "constructor": {
+          "id": "de2d5a0a-83e3-4114-b5c6-72d10d8a9619",
+          "name": "Suzuki",
+          "legacy_id": 2
+        },
+        "name": "Team SUZUKI ECSTAR",
+        "legacy_id": 37,
+        "color": "#4294c1",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+      }
+    },
+    {
+      "season": 2014,
+      "number": 40,
+      "sponsored_team": "Paginas Amarillas HP 40",
+      "team": {
+        "id": "4d67eea8-8244-44a5-9dcd-424e2b4e4bdf",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Paginas Amarillas HP 40",
+        "legacy_id": 213,
+        "color": null,
+        "text_color": null,
+        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_213_1583857100.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+      }
+    },
+    {
+      "season": 2013,
+      "number": 25,
+      "sponsored_team": "Team Calvo",
+      "team": {
+        "id": "dde90fb8-ae3e-4920-9b3d-8e07524dab16",
+        "constructor": {
+          "id": "fe62d196-ff34-409a-aa32-4aae146e2e3c",
+          "name": "Speed Up",
+          "legacy_id": 431
+        },
+        "name": "Team Calvo",
+        "legacy_id": 107,
+        "color": null,
+        "text_color": null,
+        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_107_1583857096.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+      }
+    },
+    {
+      "season": 2012,
+      "number": 25,
+      "sponsored_team": "Blusens Avintia",
+      "team": {
+        "id": "1df5c5d4-3a59-44b6-86db-abdd3c776406",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Blusens Avintia",
+        "legacy_id": 218,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+      }
+    },
+    {
+      "season": 2011,
+      "number": 25,
+      "sponsored_team": "Blusens by Paris Hilton Racing",
+      "team": {
+        "id": "e489a81c-b8c4-4fb2-9d95-43c5741b5558",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Blusens by Paris Hilton Racing",
+        "legacy_id": 111,
+        "color": null,
+        "text_color": null,
+        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_111_1584628514.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "578be24b-3cd6-498f-9ed8-f0817be88467",
+        "name": "125cc",
+        "legacy_id": 10
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+      }
+    }
+  ],
+  "biography": {
+    "text": "2013 Moto3™ World Champion Maverick Viñales took the lightweight title in the CEV in 2010, as well as the European 125 Championship the following year, and debuted in the 125 World Championship in 2011. He won four races in his rookie year – third in the Championship and Rookie of the Year – and then took that title in 2013. As a Moto2™ rookie in 2014, Viñales was again Rookie of the Year and won four races – moving up to MotoGP™ the year after with Team Suzuki Ecstar. Another Rookie of the Year trophy followed, before the Spaniard then took Suzuki’s first race win since 2007 – and his maiden MotoGP™ win – at the British GP in 2016. For 2017, Viñales moved to Movistar Yamaha MotoGP to partner none other than Italian legend Valentino Rossi. After dominating pre-season testing, the Yamaha rider won the first two races of the year and the French GP, but the Movistar Yamaha team’s struggles with low grip then saw a more difficult latter half of the season. Viñales came third overall, and the struggles continued into 2018. It was the Spaniard who brought Yamaha's longest losing streak to an end, however, as he won in Australia. 2019 started slowly for Viñales, picking up just the solitary podium in the first seven races. However, victory at Assen then put the wheels in motion for a fantastic latter half of the season. Five podiums, including a win in Malaysia, saw Viñales claim P3 in the Championship. 2020 brought hopes of a title attack for Viñales, and he was in contention from the very beginning thanks to successive second places in the Jerez double, while victory at the Emilia Romagna GP bolstered his hopes. However, inconsistent form and an inability to follow up on promising Qualifying sessions saw the Spaniard slip out of the title race and finish 6th in the Championship. 2021, his fifth year at Yamaha, started in remarkable fashion with victory at the opening round. But the relationship deteriorated from there in unprecedented circumstances. 24 hours on from a podium in Assen, it was announced he'd leave Yamaha at the end of the season, one year earlier than planned, but he didn't even make it to Valencia. After over-revving his engine in Austria, Yamaha sacked the Spaniard with immediate effect. Rumours began to grow that he'd sign for Aprilia and, before long, that deal was announced and he was testing the RS-GP in Misano. The Noale factory handed him the final five rounds of the year to adapt to the new machine and prepare for a hugely important 2022 campaign alongside Aleix Espargaro.",
+    "media": {
+      "video": null,
+      "picture": "https://photos.motogp.com/riders/e/8/e877cab5-d604-4bf3-95ee-482682968a8a/biography/12-maverick-vinales-esp---lg5_3231.gallery_full_top_fullscreen.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 7409,
+  "merchandise_url": "https://store.motogp.com/en/maverick-vinales-12-clothing-merchandise?utm_source=motogp.com&utm_medium=Link&utm_content=MV25&utm_campaign=Store&o=motogp-riders-stats",
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

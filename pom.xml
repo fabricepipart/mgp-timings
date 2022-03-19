@@ -39,6 +39,11 @@
                 <artifactId>opencsv</artifactId>
                 <version>5.6</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.pdfbox</groupId>
+                <artifactId>pdfbox</artifactId>
+                <version>2.0.25</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -56,7 +61,7 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-rest-client-jsonb</artifactId>
+            <artifactId>quarkus-rest-client-jackson</artifactId>
         </dependency>
         <!-- Transaction Manager extension -->
         <dependency>
@@ -99,6 +104,10 @@
         <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
         </dependency>
 
         <!-- Testing -->

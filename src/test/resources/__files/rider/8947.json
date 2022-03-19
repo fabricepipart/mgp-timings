@@ -1,0 +1,333 @@
+{
+  "id": "92d574d5-d064-4612-bf3e-421d01572512",
+  "name": "Iker",
+  "surname": "Lecuona",
+  "nickname": null,
+  "country": {
+    "iso": "ES",
+    "name": "Spain"
+  },
+  "birth_city": "Valencia",
+  "birth_date": "2000-01-06",
+  "physical_attributes": {
+    "height": 179,
+    "weight": 70
+  },
+  "career": [
+    {
+      "season": 2021,
+      "number": 27,
+      "sponsored_team": "Tech3 KTM Factory Racing",
+      "team": {
+        "id": "e7de07e2-4309-4a30-8f70-67ead4d6794e",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Tech3 KTM Factory Racing",
+        "legacy_id": 11,
+        "color": "#b7340b",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "IL27",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "https://photos.motogp.com/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/profile/main/_0001_27-Iker-Lecuona,-Rider_A7R0708.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/bike/main/_0006_27-Iker-Lecuona,-Bike_LG86626.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/helmet/main/_0005_27-Iker-Lecuona,-Helmet_LG60611.png",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/riders/0/5/0539cf1f-c16c-4c41-8c33-daf8ecb392ed/number/27-Iker-Lecuona.png",
+        "portrait": "https://photos.motogp.com/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/portrait/_0005_27-Iker-Lecuona,-Rider_A7R0704.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 27,
+      "sponsored_team": "Red Bull KTM Tech 3",
+      "team": {
+        "id": "e7de07e2-4309-4a30-8f70-67ead4d6794e",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Tech3 KTM Factory Racing",
+        "legacy_id": 11,
+        "color": "#b7340b",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "IL27",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "https://photos.motogp.com/riders/e/d/ed4b8922-1425-4b57-87f4-19865c1ad4ea/profile/main/1_0006_27-Iker-Lecuona,-Body_DSC5518.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/riders/d/f/dff3a90b-5d6c-48a6-b9b9-dbc0bc8cf41b/bike/main/27-Iker-Lecuona.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/riders/8/3/8368dc9a-4740-40ef-a99a-d49438839b8b/helmet/main/27-Iker-Lecuona.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/riders/6/2/62485032-8b7d-45b0-a539-6df63fb26df7/number/27_Iker_Lecuona-.png",
+        "portrait": "https://photos.motogp.com/riders/6/f/6fc1e444-8207-433c-9f89-7ce1a305c3d7/portrait/27_Iker_Lecuona.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 0,
+      "sponsored_team": null,
+      "team": {
+        "id": "12a50d23-6759-4262-af27-5a781cda7869",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "American Team",
+        "legacy_id": 207,
+        "color": "#ff1d1d",
+        "text_color": null,
+        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": false,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2019/riders/moto2/bike/original/rider_8947_1551966390.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2019/riders/moto2/helmet/original/rider_8947_1551784655.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/2019/dorsales/3/8947.png",
+        "portrait": "https://photos.motogp.com/2019/riders/motogp/grid/original/rider_8947_1573810573.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 0,
+      "sponsored_team": null,
+      "team": {
+        "id": "12a50d23-6759-4262-af27-5a781cda7869",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "American Team",
+        "legacy_id": 207,
+        "color": "#ff1d1d",
+        "text_color": null,
+        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2019/riders/moto2/bike/original/rider_8947_1551966390.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2019/riders/moto2/helmet/original/rider_8947_1551784655.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://photos.motogp.com/2019/riders/motogp/grid/original/rider_8947_1573810573.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 27,
+      "sponsored_team": "American Team",
+      "team": {
+        "id": "12a50d23-6759-4262-af27-5a781cda7869",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "American Team",
+        "legacy_id": 207,
+        "color": "#ff1d1d",
+        "text_color": null,
+        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2018/riders/moto2/bike/original/rider_8947_1521135583.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2018/riders/moto2/helmet/original/rider_8947_1521312670.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/2020/dorsales/others/27.png",
+        "portrait": "https://photos.motogp.com/2018/riders/moto2/grid/original/rider_8947_1521039377.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 27,
+      "sponsored_team": "Garage Plus Interwetten",
+      "team": {
+        "id": "0b55116e-da66-4965-9280-109dda66b30c",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Garage Plus Interwetten",
+        "legacy_id": 216,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2017/riders/moto2/bike/original/rider_8947_1490204585.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2017/riders/moto2/helmet/original/rider_8947_1490546532.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://photos.motogp.com/2017/riders/moto2/grid/original/rider_8947_1490540306.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 27,
+      "sponsored_team": "CarXpert Interwetten",
+      "team": {
+        "id": "5577b70e-5760-4b79-91b8-98bc171597f1",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "CarXpert Interwetten",
+        "legacy_id": 218,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://photos.motogp.com/2016/riders/moto2/grid/original/rider_8947_1472833153.jpg"
+      }
+    }
+  ],
+  "biography": {
+    "text": "A 16-year-old Iker Lecuona debuted in the Moto2™ World Championship at the minimum age for the catgeory. Born in 2000, Lecuona raced in the FIM CEV Repsol International Championship in Moto2™ in 2015 and 2016, with a slew of impressive top five results. His debut in the Moto2™ World Championship saw the Spaniard race for the Garage Plus Interwetten team to replace Dominique Aegerter, and Lecuona remains with the team for 2017 on Kalex machinery. He stayed with the team for 2018 as they switched to KTM machinery, with Lecuona securing his first Grand Prix podium at the season finale in Valencia. Lecuona remained with the same team for 2019 and picked up a rostrum finish at the Thai GP, and even debuted in the premier class for the season finale in Valencia. 2020 saw him become a full-time Tech 3 rider and he impressed without sparkling in his rookie year, securing three Top 10 finishes. More will be expected of him in 2021, his sophomore year. ",
+    "media": {
+      "video": null,
+      "picture": "https://photos.motogp.com/riders/e/3/e3b40517-e1c5-4104-9834-c6188049d84c/biography/27_Iker_Lecuona_DSC1039.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 8947,
+  "merchandise_url": null,
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

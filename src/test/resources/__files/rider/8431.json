@@ -1,0 +1,333 @@
+{
+  "id": "5dfc20db-c3c4-4ecd-9c7c-f6cfd042031a",
+  "name": "Luca",
+  "surname": "Marini",
+  "nickname": null,
+  "country": {
+    "iso": "IT",
+    "name": "Italy"
+  },
+  "birth_city": "Urbino",
+  "birth_date": "1997-08-10",
+  "physical_attributes": {
+    "height": 184,
+    "weight": 69
+  },
+  "career": [
+    {
+      "season": 2022,
+      "number": 10,
+      "sponsored_team": "Mooney VR46 Racing Team",
+      "team": {
+        "id": "a62502b0-87f1-427f-aaa2-5f7c893c8387",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Mooney VR46 Racing Team",
+        "legacy_id": 43,
+        "color": "#dbff03",
+        "text_color": "#323232",
+        "picture": "https://photos.motogp.com/teams/f/9/f939b79d-2007-4fd8-842b-7bfdd32f4ef1/MooneyVR46.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "LM10",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "https://photos.motogp.com/riders/8/0/807d9f63-4b52-4450-b080-aa063b73bbde/profile/main/10_Luca_Marini_GP_0503.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/riders/2/5/25155175-3491-4613-b409-b796e203711d/bike/main/_0009_10-Luca-Marini-Bike-MotoGPDSC04406.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/riders/2/5/25155175-3491-4613-b409-b796e203711d/helmet/main/10-Luca-Marini.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/riders/f/6/f6cd2b6d-24c7-49ec-a4c2-7ec69275c792/number/10_Luca_Marini_.png",
+        "portrait": "https://photos.motogp.com/riders/2/5/25155175-3491-4613-b409-b796e203711d/portrait/10_Luca_Marini.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 10,
+      "sponsored_team": "Sky VR46 Avintia",
+      "team": {
+        "id": "04581ef4-b873-4501-9026-33bfcad6ead8",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Sky VR46 Avintia",
+        "legacy_id": 115,
+        "color": "#1e4374",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/9/2/927bbed8-8d40-4324-a531-ae7a894232c8/SKY-vr46-Esponsorama.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "LM10",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "https://photos.motogp.com/riders/d/f/dffad82b-031e-408c-aead-8df9d02f6e50/profile/main/_0002_10-Luca-Marini,-Rider_A7R1020.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/riders/d/f/dffad82b-031e-408c-aead-8df9d02f6e50/bike/main/_0002_10-Luca-Marini,-Bike_LG86817.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/riders/d/f/dffad82b-031e-408c-aead-8df9d02f6e50/helmet/main/_0006_10-Luca-Marini,-Helmet_LG60945.png",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/riders/f/6/f6cd2b6d-24c7-49ec-a4c2-7ec69275c792/number/10_Luca_Marini_.png",
+        "portrait": "https://photos.motogp.com/riders/d/f/dffad82b-031e-408c-aead-8df9d02f6e50/portrait/_0006_10-Luca-Marini,-Rider_A7R1012.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 10,
+      "sponsored_team": "SKY Racing Team VR46",
+      "team": {
+        "id": "f7018a62-3aee-41f1-b196-6b7e1b7387da",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "SKY Racing Team VR46",
+        "legacy_id": 101,
+        "color": "#008ac5",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/2/0/20a547d5-23fe-4c17-8125-fa0a6a47891d/Sky-Racing-Team-VR46.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": "LM10",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "https://photos.motogp.com/riders/c/6/c69bbb5f-d0a2-4ba5-9e8c-05d7ed64f726/profile/main/10-Luca-Marini-ITA---DSC_0799.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2020/riders/moto2/bike/original/rider_8431_1583840766.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2020/riders/moto2/helmet/original/rider_8431_1584104117.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/2020/dorsales/others/10.png",
+        "portrait": "https://photos.motogp.com/2020/riders/moto2/grid/original/rider_8431_1583402910.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 10,
+      "sponsored_team": "SKY Racing Team VR46",
+      "team": {
+        "id": "f7018a62-3aee-41f1-b196-6b7e1b7387da",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "SKY Racing Team VR46",
+        "legacy_id": 101,
+        "color": "#008ac5",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/2/0/20a547d5-23fe-4c17-8125-fa0a6a47891d/Sky-Racing-Team-VR46.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2019/riders/moto2/bike/original/rider_8431_1551780674.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2019/riders/moto2/helmet/original/rider_8431_1551784612.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/2020/dorsales/others/10.png",
+        "portrait": "https://photos.motogp.com/2019/riders/moto2/grid/original/rider_8431_1551890363.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 10,
+      "sponsored_team": "SKY Racing Team VR46",
+      "team": {
+        "id": "f7018a62-3aee-41f1-b196-6b7e1b7387da",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "SKY Racing Team VR46",
+        "legacy_id": 101,
+        "color": "#008ac5",
+        "text_color": "#ffffff",
+        "picture": "https://photos.motogp.com/teams/2/0/20a547d5-23fe-4c17-8125-fa0a6a47891d/Sky-Racing-Team-VR46.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2018/riders/moto2/bike/original/rider_8431_1521135611.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2018/riders/moto2/helmet/original/rider_8431_1521312753.jpg",
+          "secondary": null
+        },
+        "number": "https://photos.motogp.com/2020/dorsales/others/10.png",
+        "portrait": "https://photos.motogp.com/2018/riders/moto2/grid/original/rider_8431_1521039270.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 10,
+      "sponsored_team": "Forward Racing Team",
+      "team": {
+        "id": "6c2827e1-a727-40c1-8816-782fbf058712",
+        "constructor": {
+          "id": "3a65ce7d-ee63-4fc4-acd7-578fa220e3b1",
+          "name": "MV Agusta",
+          "legacy_id": 83
+        },
+        "name": "Forward Racing Team",
+        "legacy_id": 202,
+        "color": null,
+        "text_color": null,
+        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_202_1583857104.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2017/riders/moto2/bike/original/rider_8431_1490204526.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2017/riders/moto2/helmet/original/rider_8431_1490546601.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://photos.motogp.com/2017/riders/moto2/grid/original/rider_8431_1490198326.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 10,
+      "sponsored_team": "Forward Team",
+      "team": {
+        "id": "828f7873-2b32-43f9-9ff7-c17356981b10",
+        "constructor": {
+          "id": "3a65ce7d-ee63-4fc4-acd7-578fa220e3b1",
+          "name": "MV Agusta",
+          "legacy_id": 83
+        },
+        "name": "Forward Team",
+        "legacy_id": 202,
+        "color": null,
+        "text_color": null,
+        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_202_1583857104.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "https://photos.motogp.com/2016/riders/moto2/bike/original/rider_8431_1458824268.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "https://photos.motogp.com/2016/riders/moto2/helmet/original/rider_8431_1458821577.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "https://photos.motogp.com/2016/riders/moto2/grid/original/rider_8431_1458821471.jpg"
+      }
+    }
+  ],
+  "biography": {
+    "text": "Luca Marini, half brother of Valentino Rossi, cut his teeth racing in the Italian CIV series, ending the 2013 CIV Moto3™ championship in fourth with six podium finishes. He moved to the Spanish CEV Moto3™ series in 2014, before in 2015 he moved to the Moto2™ European Championship with the Paginas Amarillas HP 40 Junior team, taking second in just his third race. A run of aggressive rides saw him finish the year in fifth overall, and he was a regular top five contender. 2016 saw the Italian make his full time World Championship debut with the Forward Racing team alongside fellow Italian and VR46 Academy rider Lorenzo Baldassarri, where he remained for 2017. A move to Sky Racing Team VR46 for the 2018 season saw Marini string together his best year yet - claiming five podium finishes, including a maiden Grand Prix win in Sepang. Starting the season as a title favourite, Marini’s winter shoulder surgery would mean he had a difficult opening to the year. However, P2 at Mugello kick-started the Italian’s campaign, with two victories coming his way in Thailand and Japan. Marini was once again among the favourites for the Moto2™ crown in 2020 with SKY Racing Team VR46, and he lived up to the tag as he lead the chasing pack for much of the Championship. However, a nasty crash in the French GP Qualifying took its toll on the Italian as he finished P17, losing his title lead in the process. Despite battling through the injury and securing P2 in Portimao, Marini couldn’t reach the summit again and finished second in the Championship. As one of the most promising youngsters in the sport, he made the jump up to the premier class and partnered the man who edged him to the title, Enea Bastianini, at Esponsorama Racing in 2021. The young Italian found it tough at first, his big frame not suited to modern MotoGP™, but he cracked it late in 2021. A front-row start at home in Misano and a top five finish in Austria are likely to give him a boost heading into 2022 with the new VR46 Racing squad.",
+    "media": {
+      "video": null,
+      "picture": "https://photos.motogp.com/riders/f/4/f4a1843d-c0a9-44e5-8380-f3c9d2e70c8d/biography/10_Luca_Marini_DSC0819.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 8431,
+  "merchandise_url": null,
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

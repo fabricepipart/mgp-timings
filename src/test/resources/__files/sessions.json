@@ -54,7 +54,7 @@
         "menu_position": 2
       },
       "maximum_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/MaximumSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP1\/MaximumSpeed.pdf",
         "menu_position": 2
       },
       "combined_practice": {
@@ -123,7 +123,7 @@
         "menu_position": 2
       },
       "maximum_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/MaximumSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP2\/CorruptedMaximumSpeed.pdf",
         "menu_position": 2
       },
       "combined_practice": {
@@ -189,10 +189,6 @@
       },
       "best_partial_time": {
         "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/BestPartialTime.pdf",
-        "menu_position": 2
-      },
-      "maximum_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/MaximumSpeed.pdf",
         "menu_position": 2
       },
       "combined_practice": {
