@@ -62,7 +62,7 @@ class TestSeasonEndpoint {
   @Test
   public void getSessionClassificationAsCsvFails() throws IOException {
     CsvConverter mock = Mockito.mock(CsvConverter.class);
-    Mockito.when(mock.convertToCsv(Mockito.anyList())).thenThrow(new IOException("Nope"));
+    Mockito.when(mock.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
     QuarkusMock.installMockForType(mock, CsvConverter.class);
     given()
         .when().get("/season/csv")

@@ -504,7 +504,7 @@
       "total_laps": 6
     }
   ],
-  "file": "https://resources.motogp.com/files/results/2021/QAT/MotoGP/RAC/Classification.pdf",
+  "file": "http://localhost:8089/files/results/2021/QAT/MotoGP/RAC/Classification.pdf",
   "records": [
     {
       "bestLap": {

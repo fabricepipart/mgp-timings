@@ -50,8 +50,6 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/pdf")
             .withBodyFile("pdf/Analysis.pdf")));
-
-
   }
 
   private void stubClassifications() {
@@ -63,6 +61,14 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
             .withBodyFile("classifications-rac.json")));
+    stubFor(get(urlEqualTo("/session/64e9d65b-12cd-4436-8b63-549ac516bf02/classifications"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("classification-fp2.json")));
+    stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/RAC/Classification.pdf"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/pdf")
+            .withBodyFile("pdf/Classification-rac.pdf")));
   }
 
   private void stubSeasons() {

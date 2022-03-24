@@ -23,7 +23,7 @@ class TestCsvConverter {
   @Test
   public void converts() throws IOException {
     CsvConverter<String> converter = new CsvConverter<String>();
-    String csv = converter.convertToCsv(Arrays.asList("One", "Two", "Three"));
+    String csv = converter.convertToCsv(Arrays.asList("One", "Two", "Three"), String.class);
     Assertions.assertNotNull(csv);
     Assertions.assertNotEquals(0, csv.length());
   }
@@ -31,7 +31,7 @@ class TestCsvConverter {
   @Test
   public void nullReturnEmptyString() throws IOException {
     CsvConverter<String> converter = new CsvConverter<String>();
-    String csv = converter.convertToCsv(null);
+    String csv = converter.convertToCsv(null, String.class);
     Assertions.assertNotNull(csv);
     Assertions.assertEquals(0, csv.length());
   }
@@ -40,7 +40,7 @@ class TestCsvConverter {
   public void fails() throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
     CsvConverter<String> converter = new CSVConverterStub(true);
     Assertions.assertThrows(IOException.class, () -> {
-      converter.convertToCsv(Arrays.asList("One", "Two", "Three"));
+      converter.convertToCsv(Arrays.asList("One", "Two", "Three"), String.class);
     });
   }
 
@@ -53,7 +53,7 @@ class TestCsvConverter {
       }
     }
 
-    StatefulBeanToCsv<String> getBeanToCsv() {
+    StatefulBeanToCsv<String> getBeanToCsv(Class beanClass) {
       return beanToCsv;
     }
   }

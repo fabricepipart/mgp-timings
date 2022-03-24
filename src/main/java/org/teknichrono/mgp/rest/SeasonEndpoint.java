@@ -39,7 +39,7 @@ public class SeasonEndpoint {
   @Transactional
   public Response listAllToCsv() {
     try {
-      String csvResults = csvConverter.convertToCsv(resultsService.getSeasons());
+      String csvResults = csvConverter.convertToCsv(resultsService.getSeasons(), Season.class);
       return Response.ok().entity(csvResults).build();
     } catch (IOException e) {
       return Response.serverError().build();

@@ -25,4 +25,8 @@ public class RiderDetails {
     return career.stream().filter(s -> s.season == year).findFirst().get();
   }
 
+  public String riderFullName() {
+    return name + " " + surname;
+  }
+
 }

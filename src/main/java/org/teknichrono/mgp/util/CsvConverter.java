@@ -18,17 +18,17 @@ public class CsvConverter<T> {
 
   private StringWriter writer = new StringWriter();
 
-  public String convertToCsv(List<T> results) throws IOException {
+  public String convertToCsv(List<T> results, Class<T> beanClass) throws IOException {
     String csvResult;
-    StatefulBeanToCsv<T> beanToCsv = getBeanToCsv();
+    StatefulBeanToCsv<T> beanToCsv = getBeanToCsv(beanClass);
     csvResult = getCsvString(results, beanToCsv);
     return csvResult;
   }
 
-  private String getCsvString(List results, StatefulBeanToCsv<T> seasonToCsv) throws IOException {
+  private String getCsvString(List results, StatefulBeanToCsv<T> beanToCsv) throws IOException {
     String csvResult;
     try {
-      seasonToCsv.write(results);
+      beanToCsv.write(results);
       csvResult = this.writer.toString();
       this.writer.close();
     } catch (CsvRequiredFieldEmptyException | CsvDataTypeMismatchException e) {
@@ -38,8 +38,10 @@ public class CsvConverter<T> {
     return csvResult;
   }
 
-  StatefulBeanToCsv<T> getBeanToCsv() {
-    return new StatefulBeanToCsvBuilder<T>(this.writer).build();
+  StatefulBeanToCsv<T> getBeanToCsv(Class<T> beanClass) {
+    CustomMappingStrategy<T> mappingStrategy = new CustomMappingStrategy<T>();
+    mappingStrategy.setType(beanClass);
+    return new StatefulBeanToCsvBuilder<T>(this.writer).withMappingStrategy(mappingStrategy).build();
   }
 
 }
