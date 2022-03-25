@@ -30,7 +30,7 @@ public class PracticeResultsPdfParser {
     for (String line : lines) {
       for (PracticeClassificationDetails details : toReturn) {
         String lowerCaseLine = line.toLowerCase();
-        if (Character.isDigit(line.charAt(0)) &&
+        if (PdfParserUtils.startsWithNumber(line) &&
             lowerCaseLine.contains(details.riderNumber.toString()) &&
             lowerCaseLine.contains(details.riderName.toLowerCase())) {
           details.nation = PdfParserUtils.parseNation(line);

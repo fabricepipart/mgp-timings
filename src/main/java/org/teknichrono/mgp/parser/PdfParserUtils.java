@@ -74,4 +74,10 @@ public class PdfParserUtils {
       return null;
     }
   }
+
+  public static boolean startsWithNumber(String line) {
+    Pattern p = Pattern.compile("^[0-9]{1,2}\\s+.*");
+    Matcher m = p.matcher(line);
+    return m.matches();
+  }
 }
