@@ -5,6 +5,8 @@ import org.jboss.logging.Logger;
 import org.teknichrono.mgp.client.ResultsService;
 import org.teknichrono.mgp.model.out.ClassificationDetails;
 import org.teknichrono.mgp.model.out.MaxSpeed;
+import org.teknichrono.mgp.model.out.PracticeClassificationDetails;
+import org.teknichrono.mgp.model.out.RaceClassificationDetails;
 import org.teknichrono.mgp.model.result.Category;
 import org.teknichrono.mgp.model.result.Classification;
 import org.teknichrono.mgp.model.result.Entry;
@@ -63,6 +65,12 @@ public class SessionEndpoint {
 
   @Inject
   CsvConverter<Classification> csvConverter;
+
+  @Inject
+  CsvConverter<RaceClassificationDetails> raceCsvConverter;
+
+  @Inject
+  CsvConverter<PracticeClassificationDetails> practiceCsvConverter;
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
@@ -166,6 +174,27 @@ public class SessionEndpoint {
     } catch (PdfParsingException e) {
       LOGGER.error("Error when parsing the PDF " + classifications.file, e);
       throw new InternalServerErrorException("Could not parse the PDF " + classifications.file, e);
+    }
+  }
+
+
+  @GET
+  @Path("/{year}/{eventShortName}/{category}/{session}/results/details/csv")
+  @Produces("text/csv")
+  @Transactional
+  public Response getClassificationsPdfDetailsToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
+    try {
+      String csvResults;
+      if (sessionShortName.equalsIgnoreCase(Session.RACE_TYPE)) {
+        List<RaceClassificationDetails> details = (List<RaceClassificationDetails>) getClassificationsPdfDetails(year, eventShortName, category, sessionShortName);
+        csvResults = raceCsvConverter.convertToCsv(details, RaceClassificationDetails.class);
+      } else {
+        List<PracticeClassificationDetails> details = (List<PracticeClassificationDetails>) getClassificationsPdfDetails(year, eventShortName, category, sessionShortName);
+        csvResults = practiceCsvConverter.convertToCsv(details, PracticeClassificationDetails.class);
+      }
+      return Response.ok().entity(csvResults).build();
+    } catch (IOException e) {
+      return Response.serverError().build();
     }
   }
 }

@@ -186,6 +186,21 @@ public class TestSessionEndpoint {
     Assertions.assertTrue(details.stream().anyMatch(d -> d.totalTime != null));
   }
 
+  @Test
+  public void getRaceClassificationDetailsAsCsv() {
+    String content = given()
+        .when().get("/session/2021/QAT/motogp/rac/results/details/csv")
+        .then()
+        .statusCode(200)
+        .header("Content-Type", containsString("text/csv")).extract().asString();
+
+    List<String> lines = content.lines().collect(Collectors.toList());
+
+    assertThat(lines.size()).isEqualTo(23);
+    assertThat(lines.get(0)).containsAnyOf("POSITION", "POINTS", "NUMBER", "NAME", "NATION", "TEAM", "CONSTRUCTOR", "TOTAL_TIME", "TOTAL_LAPS", "GAP_TO_FIRST", "AVERAGE_SPEED");
+    assertThat(lines).anyMatch(s -> s.chars().filter(c -> c == ',').count() == 10);
+  }
+
 
   @Test
   public void getPracticeClassificationDetailsError() {
@@ -238,6 +253,22 @@ public class TestSessionEndpoint {
     }
   }
 
+  @Test
+  public void getPracticeClassificationDetailsAsCsv() {
+    String content = given()
+        .when().get("/session/2021/QAT/motogp/fp3/results/details/csv")
+        .then()
+        .statusCode(200)
+        .header("Content-Type", containsString("text/csv")).extract().asString();
+
+    List<String> lines = content.lines().collect(Collectors.toList());
+
+    assertThat(lines.size()).isEqualTo(23);
+    assertThat(lines.get(0)).containsAnyOf("POSITION", "POINTS", "NUMBER", "NAME", "NATION", "TEAM", "CONSTRUCTOR", "TOTAL_TIME", "TOTAL_LAPS", "GAP_TO_FIRST", "AVERAGE_SPEED");
+    assertThat(lines).anyMatch(s -> s.chars().filter(c -> c == ',').count() == 11);
+    assertThat(lines).noneMatch(s -> s.contains("null") || s.contains("\"\""));
+  }
+
 
   public Float topSpeed;
 
@@ -245,6 +276,17 @@ public class TestSessionEndpoint {
   public void throwsErrorIfCantParsePdfWhenRaceClassificationDetails() {
     given()
         .when().get("/session/2021/QAT/motogp/FP2/topspeed")
+        .then()
+        .statusCode(500);
+  }
+
+  @Test
+  public void getPracticeClassificationDetailsAsCsvFails() throws IOException {
+    CsvConverter mock = Mockito.mock(CsvConverter.class);
+    Mockito.when(mock.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
+    QuarkusMock.installMockForType(mock, CsvConverter.class);
+    given()
+        .when().get("/session/2021/QAT/motogp/fp3/results/details/csv")
         .then()
         .statusCode(500);
   }
