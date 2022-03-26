@@ -3,10 +3,13 @@ package org.teknichrono.mgp.it;
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusMock;
 import io.quarkus.test.junit.QuarkusTest;
-import org.assertj.core.api.Assertions;
+import io.restassured.common.mapper.TypeRef;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.teknichrono.mgp.model.out.PracticeClassificationDetails;
+import org.teknichrono.mgp.model.out.RaceClassificationDetails;
 import org.teknichrono.mgp.model.result.SessionClassification;
 import org.teknichrono.mgp.util.CsvConverter;
 
@@ -83,11 +86,11 @@ public class TestSessionEndpoint {
         .when().get("/session/2021/QAT/motogp/fp3/results")
         .then()
         .statusCode(200).extract().as(SessionClassification.class);
-    Assertions.assertThat(classification.classification.size()).isEqualTo(22);
-    Assertions.assertThat(classification.classification.get(0).rider.full_name).containsIgnoringCase("Franco");
-    Assertions.assertThat(classification.classification.get(0).total_laps).isEqualTo(17);
-    Assertions.assertThat(classification.file).isNotNull();
-    Assertions.assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("bestLap")).findFirst().get().rider.full_name).containsIgnoringCase("Marquez");
+    assertThat(classification.classification.size()).isEqualTo(22);
+    assertThat(classification.classification.get(0).rider.full_name).containsIgnoringCase("Franco");
+    assertThat(classification.classification.get(0).total_laps).isEqualTo(17);
+    assertThat(classification.file).isNotNull();
+    assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("bestLap")).findFirst().get().rider.full_name).containsIgnoringCase("Marquez");
   }
 
 
@@ -97,11 +100,11 @@ public class TestSessionEndpoint {
         .when().get("/session/2021/QAT/motogp/rac/results")
         .then()
         .statusCode(200).extract().as(SessionClassification.class);
-    Assertions.assertThat(classification.classification.size()).isEqualTo(22);
-    Assertions.assertThat(classification.classification.get(0).position).isEqualTo(1);
-    Assertions.assertThat(classification.classification.get(0).total_laps).isEqualTo(22);
-    Assertions.assertThat(classification.file).containsIgnoringCase("Classification.pdf");
-    Assertions.assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("poleLap")).findFirst().get().rider.full_name).containsIgnoringCase("Bagnaia");
+    assertThat(classification.classification.size()).isEqualTo(22);
+    assertThat(classification.classification.get(0).position).isEqualTo(1);
+    assertThat(classification.classification.get(0).total_laps).isEqualTo(22);
+    assertThat(classification.file).containsIgnoringCase("Classification.pdf");
+    assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("poleLap")).findFirst().get().rider.full_name).containsIgnoringCase("Bagnaia");
   }
 
 
@@ -137,19 +140,50 @@ public class TestSessionEndpoint {
 
   @Test
   public void getRaceClassificationDetails() {
-    given()
+    List<RaceClassificationDetails> details = given()
         .when().get("/session/2021/QAT/motogp/rac/results/details")
         .then()
-        .statusCode(200)
-        .body("$.size()", is(22),
-            "[0].averageSpeed", is(167.1f),
-            "[0].position", is(1),
-            "[0].points", is(25),
-            "[0].nation", is("SPA"),
-            "[0].totalLaps", is(22),
-            "[0].totalTime", is("42'28.663"),
-            "[1].constructor", is("Ducati"),
-            "[1].riderName", is("Johann Zarco"));
+        .statusCode(200).extract().as(new TypeRef<List<RaceClassificationDetails>>() {
+        });
+
+    assertThat(details.size()).isEqualTo(22);
+    assertThat(details.get(0).averageSpeed).isEqualTo(167.1f);
+    assertThat(details.get(0).position).isEqualTo(1);
+    assertThat(details.get(0).points).isEqualTo(25);
+    assertThat(details.get(0).nation).isEqualTo("SPA");
+    assertThat(details.get(0).totalLaps).isEqualTo(22);
+    assertThat(details.get(0).totalTime).isEqualTo("42'28.663");
+
+    assertThat(details.get(1).constructor).containsIgnoringCase("Ducati");
+    assertThat(details.get(1).riderName).containsIgnoringCase("Zarco");
+
+    Float currentGapToFirst = 0f;
+    Integer currentPosition = 0;
+    Integer currentPoints = 0;
+    for (RaceClassificationDetails d : details) {
+      assertThat(d.gapToFirst == null || d.gapToFirst.floatValue() >= currentGapToFirst);
+      if (currentGapToFirst == null) {
+        assertThat(d.gapToFirst).isNull();
+      } else {
+        currentGapToFirst = d.gapToFirst;
+      }
+      assertThat(d.points == null || d.points.intValue() < currentPoints);
+      if (currentPoints == null) {
+        assertThat(d.points).isNull();
+      } else {
+        currentPoints = d.points;
+      }
+    }
+
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.position > 0));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.riderNumber > 0));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.riderName != null));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.nation.length() == 3));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.team != null));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.constructor != null));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.totalLaps > 0));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.averageSpeed > 0));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.totalTime != null));
   }
 
 
@@ -163,25 +197,45 @@ public class TestSessionEndpoint {
 
   @Test
   public void getPracticeClassificationDetails() {
-    given()
+    List<PracticeClassificationDetails> details = given()
         .when().get("/session/2021/QAT/motogp/fp3/results/details")
         .then()
-        .statusCode(200)
-        .body("$.size()", is(22),
-            "[0].position", is(1),
-            "[0].riderNumber", is(21),
-            "[0].riderName", containsStringIgnoringCase("MORBIDELLI"),
-            "[0].nation", is("ITA"),
-            "[0].team", containsStringIgnoringCase("Yamaha"),
-            "[0].constructor", containsStringIgnoringCase("Yamaha"),
-            "[0].totalLaps", is(17),
-            "[0].gapToFirst", is(0f),
-            "[0].bestLapTime", is("1'54.921"),
-            "[0].bestLapNumber", is(16),
-            "[0].topSpeed", is(342.8f),
-            "[1].constructor", is("Aprilia"),
-            "[1].gapToPrevious", is(0.125f),
-            "[1].nation", is("SPA"));
+        .statusCode(200).extract().as(new TypeRef<List<PracticeClassificationDetails>>() {
+        });
+
+    assertThat(details.size()).isEqualTo(22);
+    assertThat(details.get(0).position).isEqualTo(1);
+    assertThat(details.get(0).riderNumber).isEqualTo(21);
+    assertThat(details.get(0).riderName).containsIgnoringCase("MORBIDELLI");
+    assertThat(details.get(0).nation).isEqualTo("ITA");
+    assertThat(details.get(0).team).containsIgnoringCase("Yamaha");
+    assertThat(details.get(0).constructor).containsIgnoringCase("Yamaha");
+    assertThat(details.get(0).totalLaps).isEqualTo(17);
+    assertThat(details.get(0).gapToFirst).isEqualTo(0f);
+    assertThat(details.get(0).bestLapTime).isEqualTo("1'54.921");
+    assertThat(details.get(0).bestLapNumber).isEqualTo(16);
+    assertThat(details.get(0).topSpeed).isEqualTo(342.8f);
+
+    assertThat(details.get(1).constructor).isEqualTo("Aprilia");
+    assertThat(details.get(1).gapToPrevious).isEqualTo(0.125f);
+    assertThat(details.get(1).nation).isEqualTo("SPA");
+
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.position > 0));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.riderNumber > 0));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.riderName != null));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.nation.length() == 3));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.team != null));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.constructor != null));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.totalLaps > 0));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.bestLapNumber > 0));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.topSpeed > 0));
+    Assertions.assertTrue(details.stream().anyMatch(d -> d.bestLapTime != null));
+
+    float current = 0f;
+    for (PracticeClassificationDetails d : details) {
+      assertThat(d.gapToFirst).isGreaterThanOrEqualTo(current);
+      current = d.gapToFirst;
+    }
   }
 
 
