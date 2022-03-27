@@ -1,8 +1,9 @@
 package org.teknichrono.mgp.model.rider;
 
-public class Category {
+public class RiderConstructor {
 
   public String id;
   public String name;
-  public Integer legacyId;
+  public Integer legacy_id;
+
 }

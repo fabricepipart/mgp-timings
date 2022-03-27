@@ -1,7 +1,6 @@
 package org.teknichrono.mgp.client;
 
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
-import org.jboss.resteasy.annotations.jaxrs.QueryParam;
 import org.teknichrono.mgp.model.result.Category;
 import org.teknichrono.mgp.model.result.EntryList;
 import org.teknichrono.mgp.model.result.Event;
@@ -12,6 +11,7 @@ import org.teknichrono.mgp.model.result.SessionClassification;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.QueryParam;
 import java.util.List;
 
 @RegisterRestClient(configKey = "results-api")

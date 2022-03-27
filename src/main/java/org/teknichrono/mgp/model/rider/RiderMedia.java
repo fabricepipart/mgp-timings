@@ -1,6 +1,6 @@
 package org.teknichrono.mgp.model.rider;
 
-public class Media {
+public class RiderMedia {
 
   public String video;
   public String picture;

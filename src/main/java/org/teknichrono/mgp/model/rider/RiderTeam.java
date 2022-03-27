@@ -1,8 +1,8 @@
 package org.teknichrono.mgp.model.rider;
 
-public class Team {
+public class RiderTeam {
   public String id;
-  public Constructor constructor;
+  public RiderConstructor constructor;
   public String name;
   public Integer legacy_id;
   public String color;

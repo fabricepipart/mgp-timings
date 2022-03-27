@@ -7,7 +7,7 @@ public class RiderDetails {
   public String name;
   public String surname;
   public String nickname;
-  public Country country;
+  public RiderCountry country;
   public String birth_city;
   public String birth_date;
   public RiderAttributes physical_attributes;

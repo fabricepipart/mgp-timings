@@ -5,8 +5,8 @@ public class RiderSeason {
   public Integer season;
   public Integer number;
   public String sponsored_team;
-  public Team team;
-  public Category category;
+  public RiderTeam team;
+  public RiderCategory category;
   public Boolean in_grid;
   public String short_nickname;
   public Boolean current;

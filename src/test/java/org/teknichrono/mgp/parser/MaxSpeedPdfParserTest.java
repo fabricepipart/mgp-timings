@@ -3,10 +3,10 @@ package org.teknichrono.mgp.parser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.teknichrono.mgp.model.out.MaxSpeed;
-import org.teknichrono.mgp.model.rider.Constructor;
+import org.teknichrono.mgp.model.rider.RiderConstructor;
 import org.teknichrono.mgp.model.rider.RiderDetails;
 import org.teknichrono.mgp.model.rider.RiderSeason;
-import org.teknichrono.mgp.model.rider.Team;
+import org.teknichrono.mgp.model.rider.RiderTeam;
 
 import java.util.ArrayList;
 
@@ -39,9 +39,9 @@ class MaxSpeedPdfParserTest {
     season.sponsored_team = "Red Bull KTM Factory Racing";
     season.season = 2022;
     season.number = 33;
-    Constructor ducati = new Constructor();
+    RiderConstructor ducati = new RiderConstructor();
     ducati.name = "Ducati";
-    season.team = new Team();
+    season.team = new RiderTeam();
     season.team.constructor = ducati;
     brad.career = new ArrayList<>();
     brad.career.add(season);
