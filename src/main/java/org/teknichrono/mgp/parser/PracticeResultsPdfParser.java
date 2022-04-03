@@ -2,9 +2,9 @@ package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.model.out.PracticeClassificationDetails;
+import org.teknichrono.mgp.model.out.SessionRider;
 import org.teknichrono.mgp.model.result.Classification;
 import org.teknichrono.mgp.model.result.SessionClassification;
-import org.teknichrono.mgp.model.rider.RiderDetails;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
@@ -19,10 +19,10 @@ public class PracticeResultsPdfParser {
 
   private static final Logger LOGGER = Logger.getLogger(PracticeResultsPdfParser.class);
 
-  public List<PracticeClassificationDetails> parse(SessionClassification classifications, List<RiderDetails> ridersOfEvent, int year) throws PdfParsingException {
+  public List<PracticeClassificationDetails> parse(SessionClassification classifications, List<SessionRider> ridersOfEvent) throws PdfParsingException {
     List<PracticeClassificationDetails> toReturn = new ArrayList<>();
     for (Classification c : classifications.classification) {
-      PracticeClassificationDetails details = PracticeClassificationDetails.from(c, ridersOfEvent, year);
+      PracticeClassificationDetails details = PracticeClassificationDetails.from(c, ridersOfEvent);
       toReturn.add(details);
     }
     String[] lines = PdfParserUtils.readPdfLines(classifications.file);

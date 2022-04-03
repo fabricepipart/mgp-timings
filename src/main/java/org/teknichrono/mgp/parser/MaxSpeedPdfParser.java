@@ -2,7 +2,7 @@ package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.model.out.MaxSpeed;
-import org.teknichrono.mgp.model.rider.RiderDetails;
+import org.teknichrono.mgp.model.out.SessionRider;
 import org.teknichrono.mgp.model.rider.RiderSeason;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -14,7 +14,7 @@ public class MaxSpeedPdfParser {
   private static final Logger LOGGER = Logger.getLogger(MaxSpeedPdfParser.class);
 
 
-  public List<MaxSpeed> parse(String url, List<RiderDetails> ridersOfEvent, int year) throws PdfParsingException {
+  public List<MaxSpeed> parse(String url, List<SessionRider> ridersOfEvent, int year) throws PdfParsingException {
     List<MaxSpeed> toReturn = new ArrayList<>();
     String[] lines = PdfParserUtils.readPdfLines(url);
     boolean start = false;
@@ -36,7 +36,7 @@ public class MaxSpeedPdfParser {
     return toReturn;
   }
 
-  MaxSpeed parseLine(String line, List<RiderDetails> ridersOfEvent, int year) throws PdfParsingException {
+  MaxSpeed parseLine(String line, List<SessionRider> ridersOfEvent, int year) throws PdfParsingException {
     MaxSpeed maxSpeed = new MaxSpeed();
     parseRider(line, maxSpeed, ridersOfEvent, year);
     maxSpeed.speed = PdfParserUtils.parseSpeed(line);
@@ -47,9 +47,9 @@ public class MaxSpeedPdfParser {
     return maxSpeed;
   }
 
-  private void parseRider(String line, MaxSpeed maxSpeed, List<RiderDetails> ridersOfEvent, int year) {
-    for (RiderDetails rider : ridersOfEvent) {
-      RiderSeason season = rider.getSeasonOfYear(year);
+  private void parseRider(String line, MaxSpeed maxSpeed, List<SessionRider> ridersOfEvent, int year) {
+    for (SessionRider rider : ridersOfEvent) {
+      RiderSeason season = rider.season;
       String riderNumber = season.number.toString();
       if (line.startsWith(riderNumber)) {
         maxSpeed.number = season.number;

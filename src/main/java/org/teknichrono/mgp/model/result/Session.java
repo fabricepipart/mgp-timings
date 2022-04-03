@@ -5,6 +5,7 @@ import java.util.Map;
 public class Session {
 
   public static final String FILENAME_MAX_SPEED = "maximum_speed";
+  public static final String FILENAME_ANALYSIS = "analysis";
 
   public static final String RACE_TYPE = "RAC";
 

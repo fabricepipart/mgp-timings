@@ -3,8 +3,8 @@ package org.teknichrono.mgp.parser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.teknichrono.mgp.model.out.MaxSpeed;
+import org.teknichrono.mgp.model.out.SessionRider;
 import org.teknichrono.mgp.model.rider.RiderConstructor;
-import org.teknichrono.mgp.model.rider.RiderDetails;
 import org.teknichrono.mgp.model.rider.RiderSeason;
 import org.teknichrono.mgp.model.rider.RiderTeam;
 
@@ -25,14 +25,14 @@ class MaxSpeedPdfParserTest {
   @Test
   public void canReadLine() throws PdfParsingException {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
-    ArrayList<RiderDetails> riderDetails = getRiderDetails();
+    ArrayList<SessionRider> riderDetails = getRiderDetails();
     MaxSpeed maxSpeed = parser.parseLine("33 Brad BINDER RSA Red Bull KTM Factory Racing KTM 347.2", riderDetails, 2022);
     Assertions.assertTrue(!maxSpeed.testIfIncomplete());
   }
 
-  private ArrayList<RiderDetails> getRiderDetails() {
-    ArrayList<RiderDetails> riderDetails = new ArrayList<>();
-    RiderDetails brad = new RiderDetails();
+  private ArrayList<SessionRider> getRiderDetails() {
+    ArrayList<SessionRider> riderDetails = new ArrayList<>();
+    SessionRider brad = new SessionRider();
     brad.surname = "Binder";
     brad.name = "Brad";
     RiderSeason season = new RiderSeason();
@@ -43,8 +43,7 @@ class MaxSpeedPdfParserTest {
     ducati.name = "Ducati";
     season.team = new RiderTeam();
     season.team.constructor = ducati;
-    brad.career = new ArrayList<>();
-    brad.career.add(season);
+    brad.season = season;
     riderDetails.add(brad);
     return riderDetails;
   }
@@ -53,7 +52,7 @@ class MaxSpeedPdfParserTest {
   @Test
   public void cantReadLine() {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
-    ArrayList<RiderDetails> riderDetails = getRiderDetails();
+    ArrayList<SessionRider> riderDetails = getRiderDetails();
     Assertions.assertThrows(PdfParsingException.class, () -> {
       parser.parseLine("33 Brad BINDER RSA Red Bull KTM Factory Racing KTM 347.2 somethingelse", new ArrayList<>(), 2022);
     });

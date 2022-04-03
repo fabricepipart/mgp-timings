@@ -3,7 +3,6 @@ package org.teknichrono.mgp.model.out;
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
 import org.teknichrono.mgp.model.result.Classification;
-import org.teknichrono.mgp.model.rider.RiderDetails;
 import org.teknichrono.mgp.model.rider.RiderSeason;
 
 import java.util.List;
@@ -60,28 +59,25 @@ public class PracticeClassificationDetails implements ClassificationDetails {
   @CsvBindByPosition(position = 11)
   public Float topSpeed;
 
-  public static PracticeClassificationDetails from(Classification c, List<RiderDetails> ridersDetails, int year) {
+  public static PracticeClassificationDetails from(Classification c, List<SessionRider> ridersDetails) {
     PracticeClassificationDetails toReturn = new PracticeClassificationDetails();
-    toReturn.fill(c, ridersDetails, year);
+    toReturn.fill(c, ridersDetails);
     return toReturn;
   }
 
-  public void fill(Classification c, List<RiderDetails> ridersDetails, int year) {
+  public void fill(Classification c, List<SessionRider> ridersDetails) {
     position = c.position;
-    if (position.intValue() == FIRST) {
-      gapToFirst = 0f;
-      gapToPrevious = 0f;
-    }
     riderName = c.rider.full_name;
-    for (RiderDetails details : ridersDetails) {
-      if (c.rider.full_name.equalsIgnoreCase(details.riderFullName())) {
-        RiderSeason season = details.getSeasonOfYear(year);
+    for (SessionRider details : ridersDetails) {
+      if (c.rider.full_name.equalsIgnoreCase(details.fullName())) {
+        RiderSeason season = details.season;
         riderNumber = season.number;
         team = season.sponsored_team;
         constructor = season.team.constructor.name;
       }
     }
     gapToFirst = c.gap.first;
+    gapToPrevious = c.gap.prev;
     totalLaps = c.total_laps;
   }
 }

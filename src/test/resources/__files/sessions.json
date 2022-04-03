@@ -14,19 +14,19 @@
     "status": "Official",
     "session_files": {
       "classification": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/Classification.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP1\/Classification.pdf",
         "menu_position": 1
       },
       "analysis": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/Analysis.pdf",
+        "url": "http://localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP1\/Analysis.pdf",
         "menu_position": 2
       },
       "average_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/AverageSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP1\/AverageSpeed.pdf",
         "menu_position": 2
       },
       "fast_lap_sequence": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/FastLapSequence.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP1\/FastLapSequence.pdf",
         "menu_position": 2
       },
       "lap_chart": {
@@ -46,11 +46,11 @@
         "menu_position": 2
       },
       "session": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/Session.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP1\/Session.pdf",
         "menu_position": 2
       },
       "best_partial_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP1\/BestPartialTime.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP1\/BestPartialTime.pdf",
         "menu_position": 2
       },
       "maximum_speed": {
@@ -83,19 +83,19 @@
     "status": "Official",
     "session_files": {
       "classification": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/Classification.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP2\/Classification.pdf",
         "menu_position": 1
       },
       "analysis": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/Analysis.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP2\/CorruptedAnalysis.pdf",
         "menu_position": 2
       },
       "average_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/AverageSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP2\/AverageSpeed.pdf",
         "menu_position": 2
       },
       "fast_lap_sequence": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/FastLapSequence.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP2\/FastLapSequence.pdf",
         "menu_position": 2
       },
       "lap_chart": {
@@ -115,11 +115,11 @@
         "menu_position": 2
       },
       "session": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/Session.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP2\/Session.pdf",
         "menu_position": 2
       },
       "best_partial_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/BestPartialTime.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP2\/BestPartialTime.pdf",
         "menu_position": 2
       },
       "maximum_speed": {
@@ -127,7 +127,7 @@
         "menu_position": 2
       },
       "combined_practice": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP2\/CombinedPracticeTimes.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP2\/CombinedPracticeTimes.pdf",
         "menu_position": 2
       },
       "combined_classification": {
@@ -152,19 +152,19 @@
     "status": "Official",
     "session_files": {
       "classification": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/Classification.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP3\/Classification.pdf",
         "menu_position": 1
       },
       "analysis": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/Analysis.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP3\/Analysis.pdf",
         "menu_position": 2
       },
       "average_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/AverageSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP3\/AverageSpeed.pdf",
         "menu_position": 2
       },
       "fast_lap_sequence": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/FastLapSequence.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP3\/FastLapSequence.pdf",
         "menu_position": 2
       },
       "lap_chart": {
@@ -184,15 +184,15 @@
         "menu_position": 2
       },
       "session": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/Session.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP3\/Session.pdf",
         "menu_position": 2
       },
       "best_partial_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/BestPartialTime.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP3\/BestPartialTime.pdf",
         "menu_position": 2
       },
       "combined_practice": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP3\/CombinedPracticeTimes.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP3\/CombinedPracticeTimes.pdf",
         "menu_position": 2
       },
       "combined_classification": {
@@ -217,19 +217,15 @@
     "status": "Official",
     "session_files": {
       "classification": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/Classification.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP4\/Classification.pdf",
         "menu_position": 1
       },
-      "analysis": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/Analysis.pdf",
-        "menu_position": 2
-      },
       "average_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/AverageSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP4\/AverageSpeed.pdf",
         "menu_position": 2
       },
       "fast_lap_sequence": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/FastLapSequence.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP4\/FastLapSequence.pdf",
         "menu_position": 2
       },
       "lap_chart": {
@@ -249,15 +245,15 @@
         "menu_position": 2
       },
       "session": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/Session.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP4\/Session.pdf",
         "menu_position": 2
       },
       "best_partial_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/BestPartialTime.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP4\/BestPartialTime.pdf",
         "menu_position": 2
       },
       "maximum_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/FP4\/MaximumSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/FP4\/MaximumSpeed.pdf",
         "menu_position": 2
       },
       "combined_practice": {
@@ -286,19 +282,19 @@
     "status": "Official",
     "session_files": {
       "classification": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/Classification.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q1\/Classification.pdf",
         "menu_position": 1
       },
       "analysis": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/Analysis.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q1\/Analysis.pdf",
         "menu_position": 2
       },
       "average_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/AverageSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q1\/AverageSpeed.pdf",
         "menu_position": 2
       },
       "fast_lap_sequence": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/FastLapSequence.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q1\/FastLapSequence.pdf",
         "menu_position": 2
       },
       "lap_chart": {
@@ -318,15 +314,15 @@
         "menu_position": 2
       },
       "session": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/Session.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q1\/Session.pdf",
         "menu_position": 2
       },
       "best_partial_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/BestPartialTime.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q1\/BestPartialTime.pdf",
         "menu_position": 2
       },
       "maximum_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q1\/MaximumSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q1\/MaximumSpeed.pdf",
         "menu_position": 2
       },
       "combined_practice": {
@@ -355,19 +351,19 @@
     "status": "Official",
     "session_files": {
       "classification": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Classification.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Classification.pdf",
         "menu_position": 1
       },
       "analysis": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Analysis.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Analysis.pdf",
         "menu_position": 2
       },
       "average_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/AverageSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q2\/AverageSpeed.pdf",
         "menu_position": 2
       },
       "fast_lap_sequence": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/FastLapSequence.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q2\/FastLapSequence.pdf",
         "menu_position": 2
       },
       "lap_chart": {
@@ -383,19 +379,19 @@
         "menu_position": 2
       },
       "grid": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Grid.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Grid.pdf",
         "menu_position": 2
       },
       "session": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Session.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q2\/Session.pdf",
         "menu_position": 2
       },
       "best_partial_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/BestPartialTime.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q2\/BestPartialTime.pdf",
         "menu_position": 2
       },
       "maximum_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/MaximumSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q2\/MaximumSpeed.pdf",
         "menu_position": 2
       },
       "combined_practice": {
@@ -403,7 +399,7 @@
         "menu_position": 2
       },
       "combined_classification": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Q2\/QualifyingResults.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Q2\/QualifyingResults.pdf",
         "menu_position": 2
       }
     },
@@ -424,19 +420,19 @@
     "status": "Official",
     "session_files": {
       "classification": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Classification.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Classification.pdf",
         "menu_position": 1
       },
       "analysis": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Analysis.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Analysis.pdf",
         "menu_position": 2
       },
       "average_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/AverageSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/WUP\/AverageSpeed.pdf",
         "menu_position": 2
       },
       "fast_lap_sequence": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/FastLapSequence.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/WUP\/FastLapSequence.pdf",
         "menu_position": 2
       },
       "lap_chart": {
@@ -452,19 +448,19 @@
         "menu_position": 2
       },
       "grid": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Grid.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Grid.pdf",
         "menu_position": 2
       },
       "session": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Session.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/WUP\/Session.pdf",
         "menu_position": 2
       },
       "best_partial_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/BestPartialTime.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/WUP\/BestPartialTime.pdf",
         "menu_position": 2
       },
       "maximum_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/WUP\/MaximumSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/WUP\/MaximumSpeed.pdf",
         "menu_position": 2
       },
       "combined_practice": {
@@ -493,39 +489,39 @@
     "status": "Official",
     "session_files": {
       "classification": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Classification.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Classification.pdf",
         "menu_position": 1
       },
       "analysis": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Analysis.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Analysis.pdf",
         "menu_position": 2
       },
       "average_speed": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/AverageSpeed.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/RAC\/AverageSpeed.pdf",
         "menu_position": 2
       },
       "fast_lap_sequence": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/FastLapSequence.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/RAC\/FastLapSequence.pdf",
         "menu_position": 2
       },
       "lap_chart": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/LapChart.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/RAC\/LapChart.pdf",
         "menu_position": 2
       },
       "analysis_by_lap": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/analysisbylap.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/RAC\/analysisbylap.pdf",
         "menu_position": 2
       },
       "fast_lap_rider": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/FastLapRider.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/RAC\/FastLapRider.pdf",
         "menu_position": 2
       },
       "grid": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Grid.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Grid.pdf",
         "menu_position": 2
       },
       "session": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Session.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/RAC\/Session.pdf",
         "menu_position": 2
       },
       "best_partial_time": {

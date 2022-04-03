@@ -33,23 +33,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -91,23 +91,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/DOH\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/DOH\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/DOH\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/DOH\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/DOH\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/DOH\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -149,23 +149,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/POR\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/POR\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/POR\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/POR\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/POR\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/POR\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -211,11 +211,11 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/SPA\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/SPA\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/SPA\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/SPA\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
@@ -223,11 +223,11 @@
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/SPA\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/SPA\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/SPA\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/SPA\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -273,11 +273,11 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/FRA\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/FRA\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/FRA\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/FRA\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
@@ -285,11 +285,11 @@
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/FRA\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/FRA\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/FRA\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/FRA\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -331,23 +331,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ITA\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ITA\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ITA\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ITA\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ITA\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ITA\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -393,23 +393,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/CAT\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/CAT\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/CAT\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/CAT\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/CAT\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/CAT\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -451,23 +451,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GER\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GER\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GER\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GER\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GER\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GER\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -513,23 +513,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/NED\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/NED\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/NED\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/NED\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/NED\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/NED\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -571,23 +571,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/STY\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/STY\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/STY\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/STY\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/STY\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/STY\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -633,23 +633,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AUT\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AUT\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AUT\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AUT\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AUT\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AUT\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -691,23 +691,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GBR\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GBR\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GBR\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GBR\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/GBR\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/GBR\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -749,23 +749,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ARA\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ARA\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ARA\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ARA\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ARA\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ARA\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -815,23 +815,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/RSM\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/RSM\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/RSM\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/RSM\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/RSM\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/RSM\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -873,23 +873,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AME\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AME\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AME\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AME\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/AME\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/AME\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -931,23 +931,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/EMI\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/EMI\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/EMI\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/EMI\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/EMI\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/EMI\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -989,23 +989,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ALR\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ALR\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ALR\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ALR\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/ALR\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/ALR\/table4.pdf",
         "menu_position": 2
       }
     },
@@ -1047,23 +1047,23 @@
     },
     "event_files": {
       "circuit_information": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/CircuitInformation.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/VAL\/CircuitInformation.pdf",
         "menu_position": 1
       },
       "podiums": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/Podiums.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/VAL\/Podiums.pdf",
         "menu_position": 2
       },
       "pole_positions": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/PolePositions.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/VAL\/PolePositions.pdf",
         "menu_position": 2
       },
       "nations_statistics": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/table2.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/VAL\/table2.pdf",
         "menu_position": 2
       },
       "riders_all_time": {
-        "url": "https:\/\/resources.motogp.com\/files\/results\/2021\/VAL\/table4.pdf",
+        "url": "http:\/\/localhost:8089\/files\/results\/2021\/VAL\/table4.pdf",
         "menu_position": 2
       }
     },

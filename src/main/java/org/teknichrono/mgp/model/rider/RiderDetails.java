@@ -21,12 +21,8 @@ public class RiderDetails {
   public Boolean banned;
   public Boolean wildcard;
 
-  public RiderSeason getSeasonOfYear(int year) {
-    return career.stream().filter(s -> s.season == year).findFirst().get();
-  }
-
-  public String riderFullName() {
-    return name + " " + surname;
+  public RiderSeason getSeasonOfYear(String constructorName, int year) {
+    return career.stream().filter(s -> s.season == year && s.team.constructor.name.equalsIgnoreCase(constructorName)).findFirst().get();
   }
 
 }

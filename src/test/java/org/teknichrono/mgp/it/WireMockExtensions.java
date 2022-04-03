@@ -3,7 +3,9 @@ package org.teknichrono.mgp.it;
 import com.github.tomakehurst.wiremock.WireMockServer;
 import io.quarkus.test.common.QuarkusTestResourceLifecycleManager;
 
-import java.util.Collections;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
@@ -28,9 +30,24 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
     stubSessions();
     stubClassifications();
 
+    stubRiders();
     //stubFor(get(urlMatching(".*")).atPriority(10).willReturn(aResponse().proxiedFrom("https://www.motogp.com/api/results-front/be/results-api")));
 
-    return Collections.singletonMap("quarkus.rest-client.results-api.url", wireMockServer.baseUrl());
+    Map<String, String> config = new HashMap<>();
+    config.put("quarkus.rest-client.results-api.url", wireMockServer.baseUrl());
+    config.put("quarkus.rest-client.riders-api.url", wireMockServer.baseUrl());
+
+    return config;
+  }
+
+  private void stubRiders() {
+    List<Integer> ridersLegacyId = Arrays.asList(158, 6267, 6854, 6976, 7086, 7199, 7236, 7246, 7409, 7444, 7646, 7741, 8049, 8141, 8146, 8148, 8150, 8173, 8273, 8295, 8431, 8520, 8947);
+    for (Integer riderLegacyId : ridersLegacyId) {
+      stubFor(get(urlEqualTo("/riders/" + riderLegacyId))
+          .willReturn(aResponse()
+              .withHeader("Content-Type", "application/json")
+              .withBodyFile("rider/" + riderLegacyId + ".json")));
+    }
   }
 
   private void stubSessions() {
@@ -46,10 +63,22 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/pdf")
             .withBodyFile("pdf/MaximumSpeed.pdf")));
-    stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/FP2/CorruptedMaximumSpeed.pdf"))
+    stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/FP1/Analysis.pdf"))
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/pdf")
             .withBodyFile("pdf/Analysis.pdf")));
+    stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/FP3/Analysis.pdf"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/pdf")
+            .withBodyFile("pdf/Analysis-fp3.pdf")));
+    stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/FP2/CorruptedMaximumSpeed.pdf"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/pdf")
+            .withBodyFile("pdf/BestPartialTime.pdf")));
+    stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/RAC/Analysis.pdf"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/pdf")
+            .withBodyFile("pdf/Analysis-rac.pdf")));
   }
 
   private void stubClassifications() {
@@ -69,6 +98,12 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/pdf")
             .withBodyFile("pdf/Classification-rac.pdf")));
+    stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/FP1/Classification.pdf"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/pdf")
+            .withBodyFile("pdf/Classification-fp1.pdf")));
+
+
   }
 
   private void stubSeasons() {

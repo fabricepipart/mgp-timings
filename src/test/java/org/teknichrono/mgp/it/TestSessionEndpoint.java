@@ -4,10 +4,10 @@ import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusMock;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.common.mapper.TypeRef;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.teknichrono.mgp.model.out.LapAnalysis;
 import org.teknichrono.mgp.model.out.PracticeClassificationDetails;
 import org.teknichrono.mgp.model.out.RaceClassificationDetails;
 import org.teknichrono.mgp.model.result.SessionClassification;
@@ -23,6 +23,8 @@ import static org.assertj.core.api.Assertions.*;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.containsStringIgnoringCase;
 import static org.hamcrest.CoreMatchers.is;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("integration")
 @QuarkusTest
@@ -175,15 +177,15 @@ public class TestSessionEndpoint {
       }
     }
 
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.position > 0));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.riderNumber > 0));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.riderName != null));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.nation.length() == 3));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.team != null));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.constructor != null));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.totalLaps > 0));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.averageSpeed > 0));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.totalTime != null));
+    assertTrue(details.stream().anyMatch(d -> d.position > 0));
+    assertTrue(details.stream().anyMatch(d -> d.riderNumber > 0));
+    assertTrue(details.stream().anyMatch(d -> d.riderName != null));
+    assertTrue(details.stream().anyMatch(d -> d.nation.length() == 3));
+    assertTrue(details.stream().anyMatch(d -> d.team != null));
+    assertTrue(details.stream().anyMatch(d -> d.constructor != null));
+    assertTrue(details.stream().anyMatch(d -> d.totalLaps > 0));
+    assertTrue(details.stream().anyMatch(d -> d.averageSpeed > 0));
+    assertTrue(details.stream().anyMatch(d -> d.totalTime != null));
   }
 
   @Test
@@ -198,7 +200,7 @@ public class TestSessionEndpoint {
 
     assertThat(lines.size()).isEqualTo(23);
     assertThat(lines.get(0)).containsAnyOf("POSITION", "POINTS", "NUMBER", "NAME", "NATION", "TEAM", "CONSTRUCTOR", "TOTAL_TIME", "TOTAL_LAPS", "GAP_TO_FIRST", "AVERAGE_SPEED");
-    assertThat(lines).anyMatch(s -> s.chars().filter(c -> c == ',').count() == 10);
+    assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 10);
   }
 
 
@@ -235,16 +237,16 @@ public class TestSessionEndpoint {
     assertThat(details.get(1).gapToPrevious).isEqualTo(0.125f);
     assertThat(details.get(1).nation).isEqualTo("SPA");
 
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.position > 0));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.riderNumber > 0));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.riderName != null));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.nation.length() == 3));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.team != null));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.constructor != null));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.totalLaps > 0));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.bestLapNumber > 0));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.topSpeed > 0));
-    Assertions.assertTrue(details.stream().anyMatch(d -> d.bestLapTime != null));
+    assertTrue(details.stream().allMatch(d -> d.position > 0));
+    assertTrue(details.stream().allMatch(d -> d.riderNumber > 0));
+    assertTrue(details.stream().allMatch(d -> d.riderName != null));
+    assertTrue(details.stream().allMatch(d -> d.nation.length() == 3));
+    assertTrue(details.stream().allMatch(d -> d.team != null));
+    assertTrue(details.stream().allMatch(d -> d.constructor != null));
+    assertTrue(details.stream().allMatch(d -> d.totalLaps > 0));
+    assertTrue(details.stream().allMatch(d -> d.bestLapNumber > 0));
+    assertTrue(details.stream().allMatch(d -> d.topSpeed > 0));
+    assertTrue(details.stream().allMatch(d -> d.bestLapTime != null));
 
     float current = 0f;
     for (PracticeClassificationDetails d : details) {
@@ -265,12 +267,9 @@ public class TestSessionEndpoint {
 
     assertThat(lines.size()).isEqualTo(23);
     assertThat(lines.get(0)).containsAnyOf("POSITION", "POINTS", "NUMBER", "NAME", "NATION", "TEAM", "CONSTRUCTOR", "TOTAL_TIME", "TOTAL_LAPS", "GAP_TO_FIRST", "AVERAGE_SPEED");
-    assertThat(lines).anyMatch(s -> s.chars().filter(c -> c == ',').count() == 11);
+    assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 11);
     assertThat(lines).noneMatch(s -> s.contains("null") || s.contains("\"\""));
   }
-
-
-  public Float topSpeed;
 
   @Test
   public void throwsErrorIfCantParsePdfWhenRaceClassificationDetails() {
@@ -289,6 +288,137 @@ public class TestSessionEndpoint {
         .when().get("/session/2021/QAT/motogp/fp3/results/details/csv")
         .then()
         .statusCode(500);
+  }
+
+  @Test
+  public void getPracticeAnalysis() {
+    List<LapAnalysis> details = given()
+        .when().get("/session/2021/QAT/motogp/fp3/analysis")
+        .then()
+        .statusCode(200).extract().as(new TypeRef<List<LapAnalysis>>() {
+        });
+
+    assertThat(details.size()).isEqualTo(313);
+    assertThat(details.get(0).number).isEqualTo(21);
+    assertThat(details.get(0).rider).containsIgnoringCase("Morbidelli");
+    assertThat(details.get(0).nation).isEqualTo("ITA");
+    assertThat(details.get(0).team).containsIgnoringCase("Yamaha");
+    assertThat(details.get(0).motorcycle).containsIgnoringCase("Yamaha");
+    assertThat(details.get(0).lapNumber).isEqualTo(1);
+    assertThat(details.get(0).time).isNotNull();
+    assertThat(details.get(0).maxSpeed).isEqualTo(171.1f);
+    assertThat(details.get(0).frontTyre).isEqualTo("Slick-Hard");
+    assertThat(details.get(0).backTyre).isEqualTo("Slick-Hard");
+    assertThat(details.get(0).frontTyreLapNumber).isEqualTo(0);
+    assertThat(details.get(0).backTyreLapNumber).isEqualTo(0);
+    assertThat(details.get(0).cancelled).isEqualTo(false);
+    assertThat(details.get(0).pit).isEqualTo(false);
+
+    assertTrue(details.stream().allMatch(l -> l.number > 0));
+    assertTrue(details.stream().allMatch(l -> l.rider != null));
+    assertTrue(details.stream().allMatch(l -> l.nation.length() == 3));
+    assertTrue(details.stream().allMatch(l -> l.team != null));
+    assertTrue(details.stream().allMatch(l -> l.motorcycle != null));
+    assertTrue(details.stream().allMatch(l -> l.lapNumber > 0));
+    assertTrue(details.stream().allMatch(l -> l.maxSpeed > 0));
+    assertTrue(details.stream().filter(l -> !l.unfinished.booleanValue()).allMatch(l -> l.time != null));
+    assertTrue(details.stream().allMatch(l -> l.frontTyre != null));
+    assertTrue(details.stream().allMatch(l -> l.backTyre != null));
+    assertTrue(details.stream().allMatch(l -> l.frontTyreLapNumber >= 0));
+    assertTrue(details.stream().allMatch(l -> l.backTyreLapNumber >= 0));
+    assertTrue(details.stream().anyMatch(l -> l.cancelled));
+    assertTrue(details.stream().anyMatch(l -> l.pit));
+
+    assertEquals(2, details.stream().filter(l -> l.unfinished.booleanValue()).collect(Collectors.toList()).size());
+
+    List<LapAnalysis> mariniLaps = details.stream().filter(l -> l.rider.contains("Marini")).collect(Collectors.toList());
+    assertThat(mariniLaps.size()).isEqualTo(16);
+    List<Integer> frontTyreLaps = mariniLaps.stream().map(l -> l.frontTyreLapNumber).collect(Collectors.toList());
+    List<Integer> rearTyreLaps = mariniLaps.stream().map(l -> l.backTyreLapNumber).collect(Collectors.toList());
+    for (int i = 5; i <= 16; i++) {
+      assertTrue(frontTyreLaps.contains(Integer.valueOf(i)));
+      assertTrue(rearTyreLaps.contains(Integer.valueOf(i)));
+    }
+    for (int i = 0; i <= 3; i++) {
+      assertTrue(frontTyreLaps.contains(Integer.valueOf(i)));
+      assertTrue(rearTyreLaps.contains(Integer.valueOf(i)));
+    }
+    List<LapAnalysis> bagnaiaLaps = details.stream().filter(l -> l.rider.contains("bagnaia")).collect(Collectors.toList());
+    assertTrue(bagnaiaLaps.stream().allMatch(l -> l.backTyreLapNumber.intValue() != l.frontTyreLapNumber.intValue()));
+    assertTrue(bagnaiaLaps.stream().noneMatch(l -> l.backTyre.equalsIgnoreCase(l.frontTyre)));
+
+  }
+
+  @Test
+  public void throwsErrorIfCantParseAnalysisPdf() {
+    given()
+        .when().get("/session/2021/QAT/motogp/fp2/analysis")
+        .then()
+        .statusCode(500);
+  }
+
+  @Test
+  public void throwsErrorIfNoAnalysisPdf() {
+    given()
+        .when().get("/session/2021/QAT/motogp/fp4/analysis")
+        .then()
+        .statusCode(404);
+  }
+
+  @Test
+  public void getRaceAnalysis() {
+    List<LapAnalysis> details = given()
+        .when().get("/session/2021/QAT/motogp/RAC/analysis")
+        .then()
+        .statusCode(200).extract().as(new TypeRef<List<LapAnalysis>>() {
+        });
+
+
+    assertThat(details.size()).isEqualTo(439);
+    assertThat(details.get(0).number).isEqualTo(12);
+    assertThat(details.get(0).rider).containsIgnoringCase("Maverick");
+    assertThat(details.get(0).nation).isEqualTo("SPA");
+    assertThat(details.get(0).team).containsIgnoringCase("Yamaha");
+    assertThat(details.get(0).motorcycle).containsIgnoringCase("Yamaha");
+    assertThat(details.get(0).lapNumber).isEqualTo(1);
+    assertThat(details.get(0).time).isNotNull();
+    assertThat(details.get(0).maxSpeed).isEqualTo(192.8f);
+    assertThat(details.get(0).frontTyre).isEqualTo("Slick-Soft");
+    assertThat(details.get(0).backTyre).isEqualTo("Slick-Soft");
+    assertThat(details.get(0).frontTyreLapNumber).isEqualTo(0);
+    assertThat(details.get(0).backTyreLapNumber).isEqualTo(0);
+    assertThat(details.get(0).cancelled).isEqualTo(false);
+    assertThat(details.get(0).pit).isEqualTo(false);
+    assertThat(details.get(0).pit).isEqualTo(false);
+
+    assertTrue(details.stream().allMatch(l -> l.number > 0));
+    assertTrue(details.stream().allMatch(l -> l.rider != null));
+    assertTrue(details.stream().allMatch(l -> l.nation.length() == 3));
+    assertTrue(details.stream().allMatch(l -> l.team != null));
+    assertTrue(details.stream().allMatch(l -> l.motorcycle != null));
+    assertTrue(details.stream().allMatch(l -> l.lapNumber > 0));
+    assertTrue(details.stream().allMatch(l -> l.maxSpeed > 0));
+    assertTrue(details.stream().filter(l -> !l.unfinished.booleanValue()).allMatch(l -> l.time != null));
+    assertTrue(details.stream().allMatch(l -> l.frontTyre != null));
+    assertTrue(details.stream().allMatch(l -> l.backTyre != null));
+    assertTrue(details.stream().allMatch(l -> l.frontTyreLapNumber >= 0));
+    assertTrue(details.stream().allMatch(l -> l.backTyreLapNumber >= 0));
+    assertTrue(details.stream().anyMatch(l -> l.cancelled));
+    assertTrue(details.stream().anyMatch(l -> l.unfinished));
+
+    assertEquals(2, details.stream().filter(l -> l.unfinished.booleanValue()).collect(Collectors.toList()).size());
+
+    List<LapAnalysis> mariniLaps = details.stream().filter(l -> l.rider.contains("Marini")).collect(Collectors.toList());
+    assertThat(mariniLaps.size()).isEqualTo(22);
+    List<Integer> frontTyreLaps = mariniLaps.stream().map(l -> l.frontTyreLapNumber).collect(Collectors.toList());
+    List<Integer> rearTyreLaps = mariniLaps.stream().map(l -> l.backTyreLapNumber).collect(Collectors.toList());
+    for (int i = 0; i <= 21; i++) {
+      assertTrue(frontTyreLaps.contains(Integer.valueOf(i)));
+      assertTrue(rearTyreLaps.contains(Integer.valueOf(i)));
+    }
+    List<LapAnalysis> bagnaiaLaps = details.stream().filter(l -> l.rider.contains("bagnaia")).collect(Collectors.toList());
+    assertTrue(bagnaiaLaps.stream().allMatch(l -> l.backTyreLapNumber.intValue() != l.frontTyreLapNumber.intValue()));
+    assertTrue(bagnaiaLaps.stream().noneMatch(l -> l.backTyre.equalsIgnoreCase(l.frontTyre)));
   }
 
 }

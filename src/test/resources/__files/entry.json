@@ -668,5 +668,5 @@
       "independentTeamRider": false
     }
   ],
-  "file": "https:\/\/resources.motogp.com\/files\/results\/2021\/QAT\/MotoGP\/Entry.pdf"
+  "file": "http:\/\/localhost:8089\/files\/results\/2021\/QAT\/MotoGP\/Entry.pdf"
 }

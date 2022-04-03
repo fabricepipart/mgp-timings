@@ -4,16 +4,18 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.client.ResultsService;
 import org.teknichrono.mgp.model.out.ClassificationDetails;
+import org.teknichrono.mgp.model.out.LapAnalysis;
 import org.teknichrono.mgp.model.out.MaxSpeed;
 import org.teknichrono.mgp.model.out.PracticeClassificationDetails;
 import org.teknichrono.mgp.model.out.RaceClassificationDetails;
+import org.teknichrono.mgp.model.out.SessionRider;
 import org.teknichrono.mgp.model.result.Category;
 import org.teknichrono.mgp.model.result.Classification;
 import org.teknichrono.mgp.model.result.Entry;
 import org.teknichrono.mgp.model.result.Event;
 import org.teknichrono.mgp.model.result.Session;
 import org.teknichrono.mgp.model.result.SessionClassification;
-import org.teknichrono.mgp.model.rider.RiderDetails;
+import org.teknichrono.mgp.parser.AnalysisPdfParser;
 import org.teknichrono.mgp.parser.MaxSpeedPdfParser;
 import org.teknichrono.mgp.parser.PdfParsingException;
 import org.teknichrono.mgp.parser.PracticeResultsPdfParser;
@@ -34,6 +36,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.teknichrono.mgp.model.result.Session.FILENAME_ANALYSIS;
 import static org.teknichrono.mgp.model.result.Session.FILENAME_MAX_SPEED;
 
 @Path("/session")
@@ -62,6 +65,9 @@ public class SessionEndpoint {
 
   @Inject
   RaceResultsPdfParser raceResultsPdfParser;
+
+  @Inject
+  AnalysisPdfParser analysisPdfParser;
 
   @Inject
   CsvConverter<Classification> csvConverter;
@@ -98,13 +104,15 @@ public class SessionEndpoint {
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
   @Path("/{year}/{eventShortName}/{category}/ridersdetails")
-  public List<RiderDetails> getRidersOfEvent(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
+  public List<SessionRider> getRidersOfEvent(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
     List<Entry> entries = getEntries(year, eventShortName, category);
-    List<RiderDetails> details = new ArrayList<>();
+    List<SessionRider> riders = new ArrayList<>();
     for (Entry e : entries) {
-      details.add(riderEndpoint.getRider(e.rider.legacy_id));
+      SessionRider rider = new SessionRider();
+      rider.fill(e, riderEndpoint.getRider(e.rider.legacy_id), year);
+      riders.add(rider);
     }
-    return details;
+    return riders;
   }
 
   @GET
@@ -122,7 +130,7 @@ public class SessionEndpoint {
   @Path("/{year}/{eventShortName}/{category}/{session}/topspeed")
   public List<MaxSpeed> sessionTopSpeeds(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     Session session = getSessionByName(year, eventShortName, category, sessionShortName);
-    List<RiderDetails> ridersOfEvent = getRidersOfEvent(year, eventShortName, category);
+    List<SessionRider> ridersOfEvent = getRidersOfEvent(year, eventShortName, category);
     if (session.session_files.keySet().contains(FILENAME_MAX_SPEED) && session.session_files.get(FILENAME_MAX_SPEED).url != null) {
       String url = session.session_files.get(FILENAME_MAX_SPEED).url;
       try {
@@ -164,12 +172,12 @@ public class SessionEndpoint {
   @Path("/{year}/{eventShortName}/{category}/{session}/results/details")
   public List<? extends ClassificationDetails> getClassificationsPdfDetails(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     SessionClassification classifications = getClassifications(year, eventShortName, category, sessionShortName);
-    List<RiderDetails> ridersOfEvent = getRidersOfEvent(year, eventShortName, category);
+    List<SessionRider> ridersOfEvent = getRidersOfEvent(year, eventShortName, category);
     try {
       if (sessionShortName.equalsIgnoreCase(Session.RACE_TYPE)) {
-        return raceResultsPdfParser.parse(classifications, ridersOfEvent, year);
+        return raceResultsPdfParser.parse(classifications, ridersOfEvent);
       } else {
-        return practiceResultsPdfParser.parse(classifications, ridersOfEvent, year);
+        return practiceResultsPdfParser.parse(classifications, ridersOfEvent);
       }
     } catch (PdfParsingException e) {
       LOGGER.error("Error when parsing the PDF " + classifications.file, e);
@@ -196,5 +204,24 @@ public class SessionEndpoint {
     } catch (IOException e) {
       return Response.serverError().build();
     }
+  }
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
+  @Path("/{year}/{eventShortName}/{category}/{session}/analysis")
+  public List<LapAnalysis> getAnalysis(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
+    Session session = getSessionByName(year, eventShortName, category, sessionShortName);
+    List<SessionRider> ridersOfEvent = getRidersOfEvent(year, eventShortName, category);
+    if (session.session_files.keySet().contains(FILENAME_ANALYSIS) && session.session_files.get(FILENAME_ANALYSIS).url != null) {
+      String url = session.session_files.get(FILENAME_ANALYSIS).url;
+      try {
+        return analysisPdfParser.parse(url, ridersOfEvent);
+      } catch (PdfParsingException e) {
+        LOGGER.error("Error when parsing the PDF " + url, e);
+        throw new InternalServerErrorException("Could not parse the PDF " + url, e);
+      }
+    }
+    throw new NotFoundException();
   }
 }

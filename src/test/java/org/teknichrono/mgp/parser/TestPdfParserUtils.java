@@ -21,4 +21,13 @@ class TestPdfParserUtils {
     Assertions.assertNull(PdfParserUtils.parseIntegerIfYouCan("not an integer"));
   }
 
+  @Test
+  public void cantReadPdf() {
+    MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
+    Assertions.assertThrows(PdfParsingException.class, () -> {
+      PdfParserUtils.readPdfLinesTwoColumns("file://nowayitexists", 1, 2, 3, 4, 5);
+    });
+  }
+
+
 }

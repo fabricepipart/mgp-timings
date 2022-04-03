@@ -2,9 +2,9 @@ package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.model.out.RaceClassificationDetails;
+import org.teknichrono.mgp.model.out.SessionRider;
 import org.teknichrono.mgp.model.result.Classification;
 import org.teknichrono.mgp.model.result.SessionClassification;
-import org.teknichrono.mgp.model.rider.RiderDetails;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
@@ -15,12 +15,12 @@ public class RaceResultsPdfParser {
 
   private static final Logger LOGGER = Logger.getLogger(RaceResultsPdfParser.class);
 
-  public List<RaceClassificationDetails> parse(SessionClassification classifications, List<RiderDetails> ridersOfEvent, int year) throws PdfParsingException {
+  public List<RaceClassificationDetails> parse(SessionClassification classifications, List<SessionRider> ridersOfEvent) throws PdfParsingException {
     List<RaceClassificationDetails> toReturn = new ArrayList<>();
 
     List<RaceClassificationDetails> partialResults = new ArrayList<>();
     for (Classification c : classifications.classification) {
-      RaceClassificationDetails details = RaceClassificationDetails.from(c, ridersOfEvent, year);
+      RaceClassificationDetails details = RaceClassificationDetails.from(c, ridersOfEvent);
       partialResults.add(details);
     }
     String[] lines = PdfParserUtils.readPdfLines(classifications.file);
