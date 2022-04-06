@@ -9,8 +9,6 @@ import java.util.List;
 
 public class PracticeClassificationDetails implements ClassificationDetails {
 
-  private static final int FIRST = 1;
-
   @CsvBindByName(column = "POSITION")
   @CsvBindByPosition(position = 0)
   public Integer position;

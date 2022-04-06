@@ -40,7 +40,7 @@ public class SeasonEndpoint {
   public Response listAllToCsv() {
     try {
       String csvResults = csvConverter.convertToCsv(resultsService.getSeasons(), Season.class);
-      return Response.ok().entity(csvResults).build();
+      return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=seasons.csv").build();
     } catch (IOException e) {
       return Response.serverError().build();
     }

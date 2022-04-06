@@ -421,4 +421,32 @@ public class TestSessionEndpoint {
     assertTrue(bagnaiaLaps.stream().noneMatch(l -> l.backTyre.equalsIgnoreCase(l.frontTyre)));
   }
 
+  @Test
+  public void getPracticeAnalysisAsCsv() {
+    String content = given()
+        .when().get("/session/2021/QAT/motogp/RAC/analysis/csv")
+        .then()
+        .statusCode(200)
+        .header("Content-Type", containsString("text/csv")).extract().asString();
+
+    List<String> lines = content.lines().collect(Collectors.toList());
+
+    assertThat(lines.size()).isEqualTo(440);
+    assertThat(lines.get(0)).containsAnyOf("NUMBER", "RIDER", "NATION", "TEAM", "MOTORCYCLE", "LAP_NUMBER", "TIME", "MAX_SPEED", "FRONT_TYRE", "BACK_TYRE", "FRONT_TYRE_LAP_NUMBER", "BACK_TYRE_LAP_NUMBER", "CANCELLED", "PIT", "UNFINISHED");
+    assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 14);
+    assertThat(lines).noneMatch(s -> s.contains("null"));
+    assertThat(lines.stream().filter(s -> s.contains("\"\"")).collect(Collectors.toList()).size()).isEqualTo(2);
+  }
+
+  @Test
+  public void getPracticeAnalysisAsCsvFails() throws IOException {
+    CsvConverter mock = Mockito.mock(CsvConverter.class);
+    Mockito.when(mock.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
+    QuarkusMock.installMockForType(mock, CsvConverter.class);
+    given()
+        .when().get("/session/2021/QAT/motogp/RAC/analysis/csv")
+        .then()
+        .statusCode(500);
+  }
+
 }
