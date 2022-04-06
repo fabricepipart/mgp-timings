@@ -16,7 +16,7 @@
         <fabric8.openshift.imageChangeTrigger>false</fabric8.openshift.imageChangeTrigger>
         <fabric8.openshift.enableAutomaticTrigger>true</fabric8.openshift.enableAutomaticTrigger>
 
-        <jacoco.version>0.8.7</jacoco.version>
+        <jacoco.version>0.8.8</jacoco.version>
         <surefire-plugin.version>2.22.2</surefire-plugin.version>
         <quarkus.version>2.7.5.Final</quarkus.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
