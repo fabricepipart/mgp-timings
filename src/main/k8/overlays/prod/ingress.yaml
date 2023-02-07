@@ -4,7 +4,6 @@ kind: Ingress
 metadata:
   name: mgp-timings-http-ingress
   annotations:
-    kubernetes.io/ingress.class: "nginx"
     nginx.org/ssl-services: "mgp-timings"
     ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
@@ -13,6 +12,7 @@ metadata:
     # Specify the verification depth in the client certificates chain
     nginx.ingress.kubernetes.io/auth-tls-verify-depth: "1"
 spec:
+  ingressClassName: public
   tls:
     - hosts:
         - mgp-timings.teknichrono.fr
