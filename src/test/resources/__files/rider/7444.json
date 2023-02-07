@@ -1,1 +1,677 @@
-{"id":"23e50438-a657-4fb0-a190-3262b5472f29","name":"Marc","surname":"Marquez","nickname":null,"country":{"iso":"ES","name":"Spain"},"birth_city":"Cervera","birth_date":"1993-02-17","physical_attributes":{"height":169,"weight":65},"career":[{"season":2022,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"MM93","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/e/0/e03e7860-40be-4079-beef-7dd7d2ccee8a/profile/main/93_Marc_Marquez.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/e/0/e03e7860-40be-4079-beef-7dd7d2ccee8a/bike/main/93_Marc_Marquez_B.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/e/0/e03e7860-40be-4079-beef-7dd7d2ccee8a/helmet/main/93-Marc-Marquez.jpg","secondary":null},"number":"https://photos.motogp.com/riders/6/4/64c06f69-343f-4808-88a6-3e0c03e9a99a/number/93-Marc-Marquez.png","portrait":"https://photos.motogp.com/riders/e/0/e03e7860-40be-4079-beef-7dd7d2ccee8a/portrait/93_Marc_Marquez.jpg"}},{"season":2021,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"MM93","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/b/5/b5bb7fc0-48d7-47c3-a1de-9667a485c6d1/profile/main/_0005_93-Marc-Marquez-Rider_A7R4509.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/7/9/79b584ac-9fe7-4fb7-8d94-91d80cfb8066/bike/main/93-Marc-Marquez.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/6/1/613b7da7-ac5b-4267-a4e8-4021be6a829e/helmet/main/93-Marc-Marquez.png","secondary":null},"number":"https://photos.motogp.com/riders/6/4/64c06f69-343f-4808-88a6-3e0c03e9a99a/number/93-Marc-Marquez.png","portrait":"https://photos.motogp.com/riders/7/4/74f87828-a702-41df-b565-5ab9ede21c2e/portrait/_0001_93-Marc-Marquez,-Rider_A7R4499.jpg"}},{"season":2020,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"MM93","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/3/a/3aaccb86-985b-440b-8090-1754bae87fd4/profile/main/1_0021_93-Marc-Marquez-ESP,-Body_DSC1526.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/7/9/79b584ac-9fe7-4fb7-8d94-91d80cfb8066/bike/main/93-Marc-Marquez.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/6/1/613b7da7-ac5b-4267-a4e8-4021be6a829e/helmet/main/93-Marc-Marquez.png","secondary":null},"number":"https://photos.motogp.com/2019/dorsales/3/7444.png","portrait":"https://photos.motogp.com/riders/6/f/6f646538-ce6c-41a0-a404-c8183c57a93d/portrait/93_Marc_Marquez.jpg"}},{"season":2019,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2019/riders/motogp/bike/original/rider_7444_1552058420.jpg","secondary":null},"helmet":{"main":null,"secondary":null},"number":"https://photos.motogp.com/2019/dorsales/3/7444.png","portrait":"https://photos.motogp.com/2019/riders/motogp/grid/original/rider_7444_1554806167.jpg"}},{"season":2018,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2018/riders/motogp/bike/original/rider_7444_1521313168.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2018/riders/motogp/helmet/original/rider_7444_1521312763.jpg","secondary":null},"number":"https://photos.motogp.com/2018/dorsales/3/7444.png","portrait":"https://photos.motogp.com/2018/riders/motogp/grid/original/rider_7444_1521214024.jpg"}},{"season":2017,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2017/riders/motogp/bike/original/rider_7444_1490377873.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2017/riders/motogp/helmet/original/rider_7444_1490543508.jpg","secondary":null},"number":null,"portrait":"https://photos.motogp.com/2017/riders/motogp/grid/original/rider_7444_1490884017.jpg"}},{"season":2016,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2016/riders/motogp/bike/original/rider_7444_1458324190.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2016/riders/motogp/helmet/original/rider_7444_1458324123.jpg","secondary":null},"number":null,"portrait":"https://photos.motogp.com/2016/riders/motogp/grid/original/rider_7444_1464880376.jpg"}},{"season":2015,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7444"}},{"season":2014,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7444"}},{"season":2013,"number":93,"sponsored_team":"Repsol Honda Team","team":{"id":"ce837bd3-bc07-40ef-83cf-6a8025bededf","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol Honda Team","legacy_id":14,"color":"#ff9912","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7444"}},{"season":2012,"number":93,"sponsored_team":"Team Catalunya Caixa Repsol","team":{"id":"40574e55-b9c0-482e-a50d-72ad75c398ee","constructor":{"id":"cdb641bf-2ec0-41cd-9959-e4322000fae9","name":"Energica","legacy_id":589},"name":"Team Catalunya Caixa Repsol","legacy_id":219,"color":null,"text_color":null,"picture":null,"published":true},"category":{"id":"ea854a67-73a4-4a28-ac77-d67b3b2a530a","name":"Moto2","legacy_id":2},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7444"}},{"season":2011,"number":93,"sponsored_team":"Team CatalunyaCaixa Repsol","team":{"id":"039472e0-77f9-4169-97f0-0c818f3f97c5","constructor":{"id":"cdb641bf-2ec0-41cd-9959-e4322000fae9","name":"Energica","legacy_id":589},"name":"Team CatalunyaCaixa Repsol","legacy_id":220,"color":null,"text_color":null,"picture":null,"published":true},"category":{"id":"ea854a67-73a4-4a28-ac77-d67b3b2a530a","name":"Moto2","legacy_id":2},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7444"}},{"season":2010,"number":93,"sponsored_team":"Red Bull Ajo Motorsport","team":{"id":"5461c333-4de4-495f-8611-125bb8c1f71f","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Red Bull Ajo Motorsport","legacy_id":104,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto3/original/team_bike_104_1584101119.jpg","published":true},"category":{"id":"578be24b-3cd6-498f-9ed8-f0817be88467","name":"125cc","legacy_id":10},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7444"}},{"season":2009,"number":93,"sponsored_team":"Red Bull KTM Moto Sport","team":{"id":"035587c9-80f5-4d76-8e05-42e910cc9b95","constructor":{"id":"5ecd8db7-d87b-4b3e-87b6-1f72ee457ede","name":"KTM","legacy_id":298},"name":"Red Bull KTM Moto Sport","legacy_id":108,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto3/original/team_bike_108_1584101112.jpg","published":true},"category":{"id":"578be24b-3cd6-498f-9ed8-f0817be88467","name":"125cc","legacy_id":10},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7444"}},{"season":2008,"number":93,"sponsored_team":"Repsol KTM 125cc","team":{"id":"81652d16-a1e6-458d-a455-717f9593d132","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Repsol KTM 125cc","legacy_id":106,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto3/original/team_bike_106_1584101117.jpg","published":true},"category":{"id":"578be24b-3cd6-498f-9ed8-f0817be88467","name":"125cc","legacy_id":10},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7444"}}],"biography":{"text":"Marc Marquez became the youngest ever six-time World Champion after taking his fourth premier class crown in 2017. On the podium in his rookie 125 campaign in 2008, Marquez won that crown in 2010 before moving up to Moto2™ for 2011. After a tough start, the rider from Cervera went on an incredible winning spree and had closed the gap to Championship leader Stefan Bradl to a handful of points, before a crash in practice for the Malaysian GP saw Marquez forced to cede the fight and miss the two remaining races of the year. Problems with his vision in the off season saw surgery then finally fix the problem, and despite the shortened preparation for 2012 the Spaniard took the crown in stunning style by the Australian GP. Replacing outgoing Casey Stoner in 2013 at the Repsol Honda Team, Marquez won his second ever MotoGP™ race and incredibly took the Championship in his rookie year. Then beginning 2014 with 10 wins in a row, Marquez won that crown in Motegi to successfully defend the title. Before 2015 proved more difficult with some mistakes and too many DNFs. Losing out to Jorge Lorenzo and Valentino Rossi, Marquez began 2016 with a point to prove and took another incredible Championship title – redesigning his mentality and thinking about the long game as he put consistency at the top of the agenda. The reigning Champion then fought down to the wire against Andrea Dovizioso for the 2017 crown, with everything going down to the final round and Marquez - despite an incredible moment into Turn 1 - keeping it on the podium to break another record and take another title. He began 2018 as the reigning Champion once more and went on to make more history, taking nine wins and wrapping up the title in Japan - becoming the youngest ever seven-time World Champion. 2019 saw the number 93 take yet another step up, fighting off Dovizioso once more, as well as new rivals in Alex Rins and Fabio Quartararo, with a series of tough last lap battles. After a season of only finishing second or better in every race - bar a DNF at the Circuit of the Americas - the Repsol Honda rider went on to make it Magic Number 8, needing just 15 rounds, getting the job done in Thailand. Any hopes of another record breaking year were put on hold in 2020 however, as Marquez sustained an injury to his right humerus in the season opener in Jerez, which eventually ruled him out of the season. Thankfully, Marquez was able to return to action at Round 3 in Portimao in 2021. Slowly but surely, the number 93 regained speed and fitness and at the Sachsenring, he was back on the top step. A P2 in Aragon was followed by back-to-back victories in Austin and Misano, signalling Marquez was returning to some real form. However, a training accident caused the return of diplopia (double vision) that he suffered with in 2011. Marquez missed the last two rounds of the season, as we hopefully await to see a fully fit eight-time Champion back on the Repsol Honda in 2022. ","media":{"video":null,"picture":"https://photos.motogp.com/riders/e/e/ee5ffc77-0022-47dc-8697-b6c0e2ff29c7/biography/93_Marc_Marquez_DSC8152.jpg"}},"legend":false,"legacy_id":7444,"merchandise_url":"https://store.motogp.com/en/merchandise-marc-marquez-mm93?utm_source=motogp.com&utm_medium=Link&utm_content=MM93&utm_campaign=Store&o=motogp-riders-stats","published":true,"injured":false,"banned":false,"wildcard":false}
+{
+  "id": "23e50438-a657-4fb0-a190-3262b5472f29",
+  "name": "Marc",
+  "surname": "Marquez",
+  "nickname": null,
+  "country": {
+    "iso": "ES",
+    "name": "Spain"
+  },
+  "birth_city": "Cervera",
+  "birth_date": "1993-02-17",
+  "physical_attributes": {
+    "height": 169,
+    "weight": 65
+  },
+  "career": [
+    {
+      "season": 2022,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MM93",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/e/0/e03e7860-40be-4079-beef-7dd7d2ccee8a/profile/main/93_Marc_Marquez.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/e/0/e03e7860-40be-4079-beef-7dd7d2ccee8a/bike/main/93_Marc_Marquez_B.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/e/0/e03e7860-40be-4079-beef-7dd7d2ccee8a/helmet/main/93-Marc-Marquez.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/6/4/64c06f69-343f-4808-88a6-3e0c03e9a99a/number/93-Marc-Marquez.png",
+        "portrait": "http://localhost:8089/riders/e/0/e03e7860-40be-4079-beef-7dd7d2ccee8a/portrait/93_Marc_Marquez.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MM93",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/b/5/b5bb7fc0-48d7-47c3-a1de-9667a485c6d1/profile/main/_0005_93-Marc-Marquez-Rider_A7R4509.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/7/9/79b584ac-9fe7-4fb7-8d94-91d80cfb8066/bike/main/93-Marc-Marquez.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/6/1/613b7da7-ac5b-4267-a4e8-4021be6a829e/helmet/main/93-Marc-Marquez.png",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/6/4/64c06f69-343f-4808-88a6-3e0c03e9a99a/number/93-Marc-Marquez.png",
+        "portrait": "http://localhost:8089/riders/7/4/74f87828-a702-41df-b565-5ab9ede21c2e/portrait/_0001_93-Marc-Marquez,-Rider_A7R4499.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MM93",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/3/a/3aaccb86-985b-440b-8090-1754bae87fd4/profile/main/1_0021_93-Marc-Marquez-ESP,-Body_DSC1526.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/7/9/79b584ac-9fe7-4fb7-8d94-91d80cfb8066/bike/main/93-Marc-Marquez.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/6/1/613b7da7-ac5b-4267-a4e8-4021be6a829e/helmet/main/93-Marc-Marquez.png",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2019/dorsales/3/7444.png",
+        "portrait": "http://localhost:8089/riders/6/f/6f646538-ce6c-41a0-a404-c8183c57a93d/portrait/93_Marc_Marquez.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2019/riders/motogp/bike/original/rider_7444_1552058420.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2019/dorsales/3/7444.png",
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_7444_1554806167.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2018/riders/motogp/bike/original/rider_7444_1521313168.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2018/riders/motogp/helmet/original/rider_7444_1521312763.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2018/dorsales/3/7444.png",
+        "portrait": "http://localhost:8089/2018/riders/motogp/grid/original/rider_7444_1521214024.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2017/riders/motogp/bike/original/rider_7444_1490377873.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2017/riders/motogp/helmet/original/rider_7444_1490543508.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/motogp/grid/original/rider_7444_1490884017.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2016/riders/motogp/bike/original/rider_7444_1458324190.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2016/riders/motogp/helmet/original/rider_7444_1458324123.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2016/riders/motogp/grid/original/rider_7444_1464880376.jpg"
+      }
+    },
+    {
+      "season": 2015,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7444"
+      }
+    },
+    {
+      "season": 2014,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7444"
+      }
+    },
+    {
+      "season": 2013,
+      "number": 93,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ff9912",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7444"
+      }
+    },
+    {
+      "season": 2012,
+      "number": 93,
+      "sponsored_team": "Team Catalunya Caixa Repsol",
+      "team": {
+        "id": "40574e55-b9c0-482e-a50d-72ad75c398ee",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Team Catalunya Caixa Repsol",
+        "legacy_id": 219,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7444"
+      }
+    },
+    {
+      "season": 2011,
+      "number": 93,
+      "sponsored_team": "Team CatalunyaCaixa Repsol",
+      "team": {
+        "id": "039472e0-77f9-4169-97f0-0c818f3f97c5",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Team CatalunyaCaixa Repsol",
+        "legacy_id": 220,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7444"
+      }
+    },
+    {
+      "season": 2010,
+      "number": 93,
+      "sponsored_team": "Red Bull Ajo Motorsport",
+      "team": {
+        "id": "5461c333-4de4-495f-8611-125bb8c1f71f",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Red Bull Ajo Motorsport",
+        "legacy_id": 104,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_104_1584101119.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "578be24b-3cd6-498f-9ed8-f0817be88467",
+        "name": "125cc",
+        "legacy_id": 10
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7444"
+      }
+    },
+    {
+      "season": 2009,
+      "number": 93,
+      "sponsored_team": "Red Bull KTM Moto Sport",
+      "team": {
+        "id": "035587c9-80f5-4d76-8e05-42e910cc9b95",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Red Bull KTM Moto Sport",
+        "legacy_id": 108,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_108_1584101112.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "578be24b-3cd6-498f-9ed8-f0817be88467",
+        "name": "125cc",
+        "legacy_id": 10
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7444"
+      }
+    },
+    {
+      "season": 2008,
+      "number": 93,
+      "sponsored_team": "Repsol KTM 125cc",
+      "team": {
+        "id": "81652d16-a1e6-458d-a455-717f9593d132",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol KTM 125cc",
+        "legacy_id": 106,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_106_1584101117.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "578be24b-3cd6-498f-9ed8-f0817be88467",
+        "name": "125cc",
+        "legacy_id": 10
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7444"
+      }
+    }
+  ],
+  "biography": {
+    "text": "Marc Marquez became the youngest ever six-time World Champion after taking his fourth premier class crown in 2017. On the podium in his rookie 125 campaign in 2008, Marquez won that crown in 2010 before moving up to Moto2™ for 2011. After a tough start, the rider from Cervera went on an incredible winning spree and had closed the gap to Championship leader Stefan Bradl to a handful of points, before a crash in practice for the Malaysian GP saw Marquez forced to cede the fight and miss the two remaining races of the year. Problems with his vision in the off season saw surgery then finally fix the problem, and despite the shortened preparation for 2012 the Spaniard took the crown in stunning style by the Australian GP. Replacing outgoing Casey Stoner in 2013 at the Repsol Honda Team, Marquez won his second ever MotoGP™ race and incredibly took the Championship in his rookie year. Then beginning 2014 with 10 wins in a row, Marquez won that crown in Motegi to successfully defend the title. Before 2015 proved more difficult with some mistakes and too many DNFs. Losing out to Jorge Lorenzo and Valentino Rossi, Marquez began 2016 with a point to prove and took another incredible Championship title – redesigning his mentality and thinking about the long game as he put consistency at the top of the agenda. The reigning Champion then fought down to the wire against Andrea Dovizioso for the 2017 crown, with everything going down to the final round and Marquez - despite an incredible moment into Turn 1 - keeping it on the podium to break another record and take another title. He began 2018 as the reigning Champion once more and went on to make more history, taking nine wins and wrapping up the title in Japan - becoming the youngest ever seven-time World Champion. 2019 saw the number 93 take yet another step up, fighting off Dovizioso once more, as well as new rivals in Alex Rins and Fabio Quartararo, with a series of tough last lap battles. After a season of only finishing second or better in every race - bar a DNF at the Circuit of the Americas - the Repsol Honda rider went on to make it Magic Number 8, needing just 15 rounds, getting the job done in Thailand. Any hopes of another record breaking year were put on hold in 2020 however, as Marquez sustained an injury to his right humerus in the season opener in Jerez, which eventually ruled him out of the season. Thankfully, Marquez was able to return to action at Round 3 in Portimao in 2021. Slowly but surely, the number 93 regained speed and fitness and at the Sachsenring, he was back on the top step. A P2 in Aragon was followed by back-to-back victories in Austin and Misano, signalling Marquez was returning to some real form. However, a training accident caused the return of diplopia (double vision) that he suffered with in 2011. Marquez missed the last two rounds of the season, as we hopefully await to see a fully fit eight-time Champion back on the Repsol Honda in 2022. ",
+    "media": {
+      "video": null,
+      "picture": "http://localhost:8089/riders/e/e/ee5ffc77-0022-47dc-8697-b6c0e2ff29c7/biography/93_Marc_Marquez_DSC8152.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 7444,
+  "merchandise_url": "http://localhost:8089/en/merchandise-marc-marquez-mm93?utm_source=localhost:8089&utm_medium=Link&utm_content=MM93&utm_campaign=Store&o=motogp-riders-stats",
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

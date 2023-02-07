@@ -29,7 +29,7 @@
         "legacy_id": 11,
         "color": "#b7340b",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "picture": "http://localhost:8089/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
         "published": true
       },
       "category": {
@@ -42,19 +42,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/profile/main/_0001_27-Iker-Lecuona,-Rider_A7R0708.png",
+          "main": "http://localhost:8089/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/profile/main/_0001_27-Iker-Lecuona,-Rider_A7R0708.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/bike/main/_0006_27-Iker-Lecuona,-Bike_LG86626.png",
+          "main": "http://localhost:8089/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/bike/main/_0006_27-Iker-Lecuona,-Bike_LG86626.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/helmet/main/_0005_27-Iker-Lecuona,-Helmet_LG60611.png",
+          "main": "http://localhost:8089/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/helmet/main/_0005_27-Iker-Lecuona,-Helmet_LG60611.png",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/0/5/0539cf1f-c16c-4c41-8c33-daf8ecb392ed/number/27-Iker-Lecuona.png",
-        "portrait": "https://photos.motogp.com/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/portrait/_0005_27-Iker-Lecuona,-Rider_A7R0704.jpg"
+        "number": "http://localhost:8089/riders/0/5/0539cf1f-c16c-4c41-8c33-daf8ecb392ed/number/27-Iker-Lecuona.png",
+        "portrait": "http://localhost:8089/riders/b/b/bb3a1140-3dc4-4697-bb0e-1272f11c680b/portrait/_0005_27-Iker-Lecuona,-Rider_A7R0704.jpg"
       }
     },
     {
@@ -72,7 +72,7 @@
         "legacy_id": 11,
         "color": "#b7340b",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "picture": "http://localhost:8089/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
         "published": true
       },
       "category": {
@@ -85,19 +85,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/e/d/ed4b8922-1425-4b57-87f4-19865c1ad4ea/profile/main/1_0006_27-Iker-Lecuona,-Body_DSC5518.png",
+          "main": "http://localhost:8089/riders/e/d/ed4b8922-1425-4b57-87f4-19865c1ad4ea/profile/main/1_0006_27-Iker-Lecuona,-Body_DSC5518.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/d/f/dff3a90b-5d6c-48a6-b9b9-dbc0bc8cf41b/bike/main/27-Iker-Lecuona.png",
+          "main": "http://localhost:8089/riders/d/f/dff3a90b-5d6c-48a6-b9b9-dbc0bc8cf41b/bike/main/27-Iker-Lecuona.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/8/3/8368dc9a-4740-40ef-a99a-d49438839b8b/helmet/main/27-Iker-Lecuona.jpg",
+          "main": "http://localhost:8089/riders/8/3/8368dc9a-4740-40ef-a99a-d49438839b8b/helmet/main/27-Iker-Lecuona.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/6/2/62485032-8b7d-45b0-a539-6df63fb26df7/number/27_Iker_Lecuona-.png",
-        "portrait": "https://photos.motogp.com/riders/6/f/6fc1e444-8207-433c-9f89-7ce1a305c3d7/portrait/27_Iker_Lecuona.jpg"
+        "number": "http://localhost:8089/riders/6/2/62485032-8b7d-45b0-a539-6df63fb26df7/number/27_Iker_Lecuona-.png",
+        "portrait": "http://localhost:8089/riders/6/f/6fc1e444-8207-433c-9f89-7ce1a305c3d7/portrait/27_Iker_Lecuona.jpg"
       }
     },
     {
@@ -115,7 +115,7 @@
         "legacy_id": 207,
         "color": "#ff1d1d",
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
         "published": true
       },
       "category": {
@@ -132,15 +132,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2019/riders/moto2/bike/original/rider_8947_1551966390.jpg",
+          "main": "http://localhost:8089/2019/riders/moto2/bike/original/rider_8947_1551966390.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2019/riders/moto2/helmet/original/rider_8947_1551784655.jpg",
+          "main": "http://localhost:8089/2019/riders/moto2/helmet/original/rider_8947_1551784655.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2019/dorsales/3/8947.png",
-        "portrait": "https://photos.motogp.com/2019/riders/motogp/grid/original/rider_8947_1573810573.jpg"
+        "number": "http://localhost:8089/2019/dorsales/3/8947.png",
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_8947_1573810573.jpg"
       }
     },
     {
@@ -158,7 +158,7 @@
         "legacy_id": 207,
         "color": "#ff1d1d",
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
         "published": true
       },
       "category": {
@@ -175,15 +175,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2019/riders/moto2/bike/original/rider_8947_1551966390.jpg",
+          "main": "http://localhost:8089/2019/riders/moto2/bike/original/rider_8947_1551966390.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2019/riders/moto2/helmet/original/rider_8947_1551784655.jpg",
+          "main": "http://localhost:8089/2019/riders/moto2/helmet/original/rider_8947_1551784655.jpg",
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2019/riders/motogp/grid/original/rider_8947_1573810573.jpg"
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_8947_1573810573.jpg"
       }
     },
     {
@@ -201,7 +201,7 @@
         "legacy_id": 207,
         "color": "#ff1d1d",
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
         "published": true
       },
       "category": {
@@ -218,15 +218,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2018/riders/moto2/bike/original/rider_8947_1521135583.jpg",
+          "main": "http://localhost:8089/2018/riders/moto2/bike/original/rider_8947_1521135583.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2018/riders/moto2/helmet/original/rider_8947_1521312670.jpg",
+          "main": "http://localhost:8089/2018/riders/moto2/helmet/original/rider_8947_1521312670.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2020/dorsales/others/27.png",
-        "portrait": "https://photos.motogp.com/2018/riders/moto2/grid/original/rider_8947_1521039377.jpg"
+        "number": "http://localhost:8089/2020/dorsales/others/27.png",
+        "portrait": "http://localhost:8089/2018/riders/moto2/grid/original/rider_8947_1521039377.jpg"
       }
     },
     {
@@ -261,15 +261,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2017/riders/moto2/bike/original/rider_8947_1490204585.jpg",
+          "main": "http://localhost:8089/2017/riders/moto2/bike/original/rider_8947_1490204585.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2017/riders/moto2/helmet/original/rider_8947_1490546532.jpg",
+          "main": "http://localhost:8089/2017/riders/moto2/helmet/original/rider_8947_1490546532.jpg",
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2017/riders/moto2/grid/original/rider_8947_1490540306.jpg"
+        "portrait": "http://localhost:8089/2017/riders/moto2/grid/original/rider_8947_1490540306.jpg"
       }
     },
     {
@@ -312,7 +312,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2016/riders/moto2/grid/original/rider_8947_1472833153.jpg"
+        "portrait": "http://localhost:8089/2016/riders/moto2/grid/original/rider_8947_1472833153.jpg"
       }
     }
   ],
@@ -320,7 +320,7 @@
     "text": "A 16-year-old Iker Lecuona debuted in the Moto2™ World Championship at the minimum age for the catgeory. Born in 2000, Lecuona raced in the FIM CEV Repsol International Championship in Moto2™ in 2015 and 2016, with a slew of impressive top five results. His debut in the Moto2™ World Championship saw the Spaniard race for the Garage Plus Interwetten team to replace Dominique Aegerter, and Lecuona remains with the team for 2017 on Kalex machinery. He stayed with the team for 2018 as they switched to KTM machinery, with Lecuona securing his first Grand Prix podium at the season finale in Valencia. Lecuona remained with the same team for 2019 and picked up a rostrum finish at the Thai GP, and even debuted in the premier class for the season finale in Valencia. 2020 saw him become a full-time Tech 3 rider and he impressed without sparkling in his rookie year, securing three Top 10 finishes. More will be expected of him in 2021, his sophomore year. ",
     "media": {
       "video": null,
-      "picture": "https://photos.motogp.com/riders/e/3/e3b40517-e1c5-4104-9834-c6188049d84c/biography/27_Iker_Lecuona_DSC1039.jpg"
+      "picture": "http://localhost:8089/riders/e/3/e3b40517-e1c5-4104-9834-c6188049d84c/biography/27_Iker_Lecuona_DSC1039.jpg"
     }
   },
   "legend": false,

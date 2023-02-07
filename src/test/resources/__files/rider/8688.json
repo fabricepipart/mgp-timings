@@ -1,0 +1,419 @@
+{
+  "id": "e622ec5b-5ccf-457c-a67f-ec028f0ddf6e",
+  "name": "Marco",
+  "surname": "Bezzecchi",
+  "nickname": null,
+  "country": {
+    "iso": "IT",
+    "name": "Italy"
+  },
+  "birth_city": "Rimini",
+  "birth_date": "1998-11-12",
+  "physical_attributes": {
+    "height": 174,
+    "weight": 61
+  },
+  "career": [
+    {
+      "season": 2023,
+      "number": 72,
+      "sponsored_team": "Mooney VR46 Racing Team",
+      "team": {
+        "id": "a62502b0-87f1-427f-aaa2-5f7c893c8387",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Mooney VR46 Racing Team",
+        "legacy_id": 43,
+        "color": "#e1fc52",
+        "text_color": "#323232",
+        "picture": "http://localhost:8089/teams/f/9/f939b79d-2007-4fd8-842b-7bfdd32f4ef1/MooneyVR46.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MB72",
+      "current": true,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/d/b/dbd00695-aa93-4ef6-bbe5-a36ed8b4459c/profile/main/72_Marco_Bezzecchi.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/d/b/dbd00695-aa93-4ef6-bbe5-a36ed8b4459c/bike/main/72_Marco_Bezzecchi_B.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/b/5/b54357b3-7530-4849-83dd-1b9317467d9f/helmet/main/72-Marco-Bezzecchi.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/6/3/6314a05d-2c15-4faa-874a-5f8175fbe38b/number/_0017_72_Marco_Bezzecchi_01.png",
+        "portrait": "http://localhost:8089/riders/d/b/dbd00695-aa93-4ef6-bbe5-a36ed8b4459c/portrait/72_Marco_Bezzecchi.jpg"
+      }
+    },
+    {
+      "season": 2022,
+      "number": 72,
+      "sponsored_team": "Mooney VR46 Racing Team",
+      "team": {
+        "id": "a62502b0-87f1-427f-aaa2-5f7c893c8387",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Mooney VR46 Racing Team",
+        "legacy_id": 43,
+        "color": "#e1fc52",
+        "text_color": "#323232",
+        "picture": "http://localhost:8089/teams/f/9/f939b79d-2007-4fd8-842b-7bfdd32f4ef1/MooneyVR46.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MB72",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/d/b/dbd00695-aa93-4ef6-bbe5-a36ed8b4459c/profile/main/72_Marco_Bezzecchi.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/d/b/dbd00695-aa93-4ef6-bbe5-a36ed8b4459c/bike/main/72_Marco_Bezzecchi_B.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/b/5/b54357b3-7530-4849-83dd-1b9317467d9f/helmet/main/72-Marco-Bezzecchi.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/riders/d/b/dbd00695-aa93-4ef6-bbe5-a36ed8b4459c/portrait/72_Marco_Bezzecchi.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 72,
+      "sponsored_team": "SKY Racing Team VR46",
+      "team": {
+        "id": "f7018a62-3aee-41f1-b196-6b7e1b7387da",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "SKY Racing Team VR46",
+        "legacy_id": 101,
+        "color": "#008ac5",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/2/0/20a547d5-23fe-4c17-8125-fa0a6a47891d/Sky-Racing-Team-VR46.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": "MB72",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/4/6/469e19a3-dbdc-4d63-bd86-2e9e28779211/profile/main/_0001_72-Marco-Bezzecchi,-Rider_A7R0103.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/0/f/0faef0d0-f3bb-4a7e-b944-f55e5c671382/bike/main/_0003_72-Marco-Bezzecchi,-Bike_LG86269.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/4/6/469e19a3-dbdc-4d63-bd86-2e9e28779211/helmet/main/_0001_72-Marco-Bezzecchi.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/e/2/e2949ac5-762a-4704-b8e2-9fbb06e77e96/number/_0017_72_Marco_Bezzecchi.png",
+        "portrait": "http://localhost:8089/riders/4/6/469e19a3-dbdc-4d63-bd86-2e9e28779211/portrait/_0001_72-Marco-Bezzecchi.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 72,
+      "sponsored_team": "SKY Racing Team VR46",
+      "team": {
+        "id": "f7018a62-3aee-41f1-b196-6b7e1b7387da",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "SKY Racing Team VR46",
+        "legacy_id": 101,
+        "color": "#008ac5",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/2/0/20a547d5-23fe-4c17-8125-fa0a6a47891d/Sky-Racing-Team-VR46.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": "MB72",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/5/2/52810b68-a095-4cf9-97ad-5fe717f0d06f/profile/main/72-Marco-Bezzecchi-ITA---DSC_0787.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2020/riders/moto2/bike/original/rider_8688_1583840803.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2020/riders/moto2/helmet/original/rider_8688_1584104056.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/72.png",
+        "portrait": "http://localhost:8089/2020/riders/moto2/grid/original/rider_8688_1583402644.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 72,
+      "sponsored_team": "Red Bull KTM Tech 3",
+      "team": {
+        "id": "e7de07e2-4309-4a30-8f70-67ead4d6794e",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Tech3 KTM Factory Racing",
+        "legacy_id": 11,
+        "color": "#b52d27",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2019/riders/moto2/bike/original/rider_8688_1551780696.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2019/riders/moto2/helmet/original/rider_8688_1551784607.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/72.png",
+        "portrait": "http://localhost:8089/2019/riders/moto2/grid/original/rider_8688_1551890371.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 0,
+      "sponsored_team": "Red Bull KTM Tech 3",
+      "team": {
+        "id": "e7de07e2-4309-4a30-8f70-67ead4d6794e",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Tech3 KTM Factory Racing",
+        "legacy_id": 11,
+        "color": "#b52d27",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2018/riders/moto3/bike/original/rider_8688_1521132766.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2018/riders/moto3/helmet/original/rider_8688_1521312771.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2018/riders/moto3/grid/original/rider_8688_1521196889.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 12,
+      "sponsored_team": "CIP",
+      "team": {
+        "id": "fa44e40f-acab-410b-9394-e723502692e3",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "CIP",
+        "legacy_id": 110,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_110_1584101124.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2017/riders/moto3/bike/original/rider_8688_1490353756.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2017/riders/moto3/helmet/original/rider_8688_1490546615.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/moto3/grid/original/rider_8688_1490886753.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 53,
+      "sponsored_team": "Mahindra Racing",
+      "team": {
+        "id": "946f68b5-9ee9-4872-92a8-1d20d3b53412",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Mahindra Racing",
+        "legacy_id": 106,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_106_1584101117.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/8688"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 53,
+      "sponsored_team": "MAHINDRA-ASPAR JUNIOR TEAM",
+      "team": {
+        "id": "1f1c36fb-26b8-4738-b533-0827618f4007",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "MAHINDRA-ASPAR JUNIOR TEAM",
+        "legacy_id": 228,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/8688"
+      }
+    }
+  ],
+  "biography": {
+    "text": "Bursting onto the Italian scene as runner-up in the CIV Moto3™ title in 2014, Italian Marco Bezzechi then went one better in his second year in the series as he took the title with an incredible seven wins. After two appearances in Moto3™ on the world stage with San Carlo Team Italia in 2015, Bezzechi also did two further races in 2016 with Mahindra Racing, as well as showing good promise in the FIM CEV Repsol and winning in both his appearances back in the CIV in Italy. For 2017, Bezzechi moved up to Moto3™ full time to partner compatriot and former CIV rival Manuel Pagliani at CIP. Fighting for Rookie of the Year, the Italian just missed out but took a first podium finish, and moved to Redox PruestelGP for 2018. Nine podiums in 2018, including three victories, saw Bezzecchi mount a lightweight class title assault against eventual Champion Jorge Martin. \n\nDespite missing out on the title, a hugely impressive Moto3™ campaign means Bezzecchi secured a Moto2™ seat with Red Bull KTM Tech3 in the Moto2™ class for 2019. A pair of Top 10s in Assen and Thailand were his best results with the French team before switching to SKY Racing Team VR46's Kalex heading into 2020. There, he earned seven podium finishes, including two victories in Styria and Valencia. His consistency allowed him to keep fighting for the title, but two falls in the last 5 races relegated him to fourth place. In 2021, the Italian made seven visits to the podium, including victory at the Red Bull Ring, to secure third in the Championship and earn himself a promotion to MotoGP™ with the Mooney VR46 squad. The curly-haired rider was instantly impressive, comfortably clinching the Rookie of the Year title. His standout moment came at the Dutch TT, where he bagged a career-first MotoGP™ podium.",
+    "media": {
+      "video": null,
+      "picture": "http://localhost:8089/riders/4/0/4006d453-e4ef-4ab2-a9b6-8c43169f2884/biography/72_Marco_Bezzecchi.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 8688,
+  "merchandise_url": "http://localhost:8089/en/marco-bezzecchi/a-4611762720+z-89282-835039463?_s=bm-fi-motogp-prtsite-Marco-Bezzecchi-Store-300522-JM",
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}
