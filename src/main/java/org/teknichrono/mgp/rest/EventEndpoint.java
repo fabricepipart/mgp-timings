@@ -31,7 +31,16 @@ public class EventEndpoint {
   @Path("/{year}")
   public List<Event> eventsOfYear(@PathParam("year") int year) {
     Season season = seasonEndpoint.listAll().stream().filter(s -> s.year.intValue() == year).findFirst().get();
-    return resultsService.getEventsOfSeason(season.id);
+    return resultsService.getEventsOfSeason(season.id, false);
+  }
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
+  @Path("/test/{year}")
+  public List<Event> testsOfYear(@PathParam("year") int year) {
+    Season season = seasonEndpoint.tests().stream().filter(s -> s.year.intValue() == year).findFirst().get();
+    return resultsService.getEventsOfSeason(season.id, true);
   }
 
   @GET
@@ -42,6 +51,14 @@ public class EventEndpoint {
     return eventsOfYear(year).stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
   }
 
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
+  @Path("/test/{year}/{eventShortName}")
+  public Event testOfYear(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
+    return testsOfYear(year).stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
+  }
+
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
@@ -49,7 +66,17 @@ public class EventEndpoint {
   @Path("/{year}/names")
   public List<String> eventsNamesOfYear(@PathParam("year") int year) {
     Season season = seasonEndpoint.listAll().stream().filter(s -> s.year.intValue() == year).findFirst().get();
-    return resultsService.getEventsOfSeason(season.id).stream().map(e -> e.short_name).collect(Collectors.toList());
+    return resultsService.getEventsOfSeason(season.id, false).stream().map(e -> e.short_name).collect(Collectors.toList());
+  }
+
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
+  @Path("/test/{year}/names")
+  public List<String> testsNamesOfYear(@PathParam("year") int year) {
+    Season season = seasonEndpoint.tests().stream().filter(s -> s.year.intValue() == year).findFirst().get();
+    return resultsService.getEventsOfSeason(season.id, true).stream().map(e -> e.short_name).collect(Collectors.toList());
   }
 
 }

@@ -97,6 +97,18 @@ public class SessionEndpoint {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
+  @Path("/test/{year}/{eventShortName}/{category}")
+  public List<Session> getTestSessions(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
+    Event event = eventEndpoint.testsOfYear(year)
+        .stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
+    Category cat = categoryEndpoint.categoriesOfTest(year, eventShortName)
+        .stream().filter(c -> c.name.toLowerCase().contains(category.toLowerCase())).findFirst().get();
+    return resultsService.getSessions(event.id, cat.id);
+  }
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
   @Path("/{year}/{eventShortName}/{category}/riders")
   public List<Entry> getEntries(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
     Event event = eventEndpoint.eventOfYear(year, eventShortName);
@@ -131,6 +143,15 @@ public class SessionEndpoint {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
+  @Path("/test/{year}/{eventShortName}/{category}/{session}")
+  public Session getTestSessionByName(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
+    List<Session> sessions = getTestSessions(year, eventShortName, category);
+    return sessions.stream().filter(s -> s.getSessionName(s).equalsIgnoreCase(sessionShortName)).findFirst().get();
+  }
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
   @Path("/{year}/{eventShortName}/{category}/{session}/topspeed")
   public List<MaxSpeed> sessionTopSpeeds(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     Session session = getSessionByName(year, eventShortName, category, sessionShortName);
@@ -153,6 +174,15 @@ public class SessionEndpoint {
   @Path("/{year}/{eventShortName}/{category}/{session}/results")
   public SessionClassification getClassifications(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     Session sessionMatch = getSessionByName(year, eventShortName, category, sessionShortName);
+    return resultsService.getClassification(sessionMatch.id);
+  }
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
+  @Path("/test/{year}/{eventShortName}/{category}/{session}/results")
+  public SessionClassification getTestClassifications(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
+    Session sessionMatch = getTestSessionByName(year, eventShortName, category, sessionShortName);
     return resultsService.getClassification(sessionMatch.id);
   }
 
