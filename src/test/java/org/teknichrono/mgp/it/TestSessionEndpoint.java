@@ -92,7 +92,7 @@ public class TestSessionEndpoint {
     assertThat(classification.classification.get(0).rider.full_name).containsIgnoringCase("Franco");
     assertThat(classification.classification.get(0).total_laps).isEqualTo(17);
     assertThat(classification.file).isNotNull();
-    assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("bestLap")).findFirst().get().rider.full_name).containsIgnoringCase("Marquez");
+    assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("bestLap")).findFirst().get().rider.full_name).containsIgnoringCase("Lorenzo");
   }
 
 
@@ -229,12 +229,12 @@ public class TestSessionEndpoint {
     assertThat(details.get(0).constructor).containsIgnoringCase("Yamaha");
     assertThat(details.get(0).totalLaps).isEqualTo(17);
     assertThat(details.get(0).gapToFirst).isEqualTo(0f);
-    assertThat(details.get(0).bestLapTime).isEqualTo("1'54.921");
-    assertThat(details.get(0).bestLapNumber).isEqualTo(16);
-    assertThat(details.get(0).topSpeed).isEqualTo(342.8f);
+    assertThat(details.get(0).bestLapTime).isEqualTo("1'54.676");
+    assertThat(details.get(0).bestLapNumber).isEqualTo(14);
+    assertThat(details.get(0).topSpeed).isEqualTo(343.9f);
 
     assertThat(details.get(1).constructor).isEqualTo("Aprilia");
-    assertThat(details.get(1).gapToPrevious).isEqualTo(0.125f);
+    assertThat(details.get(1).gapToPrevious).isEqualTo(0.165f);
     assertThat(details.get(1).nation).isEqualTo("SPA");
 
     assertTrue(details.stream().allMatch(d -> d.position > 0));
@@ -301,7 +301,7 @@ public class TestSessionEndpoint {
     assertThat(details.size()).isEqualTo(313);
     assertThat(details.get(0).number).isEqualTo(21);
     assertThat(details.get(0).rider).containsIgnoringCase("Morbidelli");
-    assertThat(details.get(0).nation).isEqualTo("ITA");
+    assertThat(details.get(0).nation).isEqualTo("IT");
     assertThat(details.get(0).team).containsIgnoringCase("Yamaha");
     assertThat(details.get(0).motorcycle).containsIgnoringCase("Yamaha");
     assertThat(details.get(0).lapNumber).isEqualTo(1);
@@ -316,7 +316,7 @@ public class TestSessionEndpoint {
 
     assertTrue(details.stream().allMatch(l -> l.number > 0));
     assertTrue(details.stream().allMatch(l -> l.rider != null));
-    assertTrue(details.stream().allMatch(l -> l.nation.length() == 3));
+    assertTrue(details.stream().allMatch(l -> l.nation.length() == 2));
     assertTrue(details.stream().allMatch(l -> l.team != null));
     assertTrue(details.stream().allMatch(l -> l.motorcycle != null));
     assertTrue(details.stream().allMatch(l -> l.lapNumber > 0));
@@ -377,7 +377,7 @@ public class TestSessionEndpoint {
     assertThat(details.size()).isEqualTo(439);
     assertThat(details.get(0).number).isEqualTo(12);
     assertThat(details.get(0).rider).containsIgnoringCase("Maverick");
-    assertThat(details.get(0).nation).isEqualTo("SPA");
+    assertThat(details.get(0).nation).isEqualTo("ES");
     assertThat(details.get(0).team).containsIgnoringCase("Yamaha");
     assertThat(details.get(0).motorcycle).containsIgnoringCase("Yamaha");
     assertThat(details.get(0).lapNumber).isEqualTo(1);
@@ -393,7 +393,7 @@ public class TestSessionEndpoint {
 
     assertTrue(details.stream().allMatch(l -> l.number > 0));
     assertTrue(details.stream().allMatch(l -> l.rider != null));
-    assertTrue(details.stream().allMatch(l -> l.nation.length() == 3));
+    assertTrue(details.stream().allMatch(l -> l.nation.length() == 2));
     assertTrue(details.stream().allMatch(l -> l.team != null));
     assertTrue(details.stream().allMatch(l -> l.motorcycle != null));
     assertTrue(details.stream().allMatch(l -> l.lapNumber > 0));

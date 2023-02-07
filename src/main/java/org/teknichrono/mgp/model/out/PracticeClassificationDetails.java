@@ -2,7 +2,8 @@ package org.teknichrono.mgp.model.out;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
-import org.teknichrono.mgp.model.result.Classification;
+import org.teknichrono.mgp.model.result.RiderClassification;
+import org.teknichrono.mgp.model.rider.RiderDetails;
 import org.teknichrono.mgp.model.rider.RiderSeason;
 
 import java.util.List;
@@ -57,21 +58,23 @@ public class PracticeClassificationDetails implements ClassificationDetails {
   @CsvBindByPosition(position = 11)
   public Float topSpeed;
 
-  public static PracticeClassificationDetails from(Classification c, List<SessionRider> ridersDetails) {
+  public static PracticeClassificationDetails from(RiderClassification c, List<RiderDetails> ridersDetails, int year) {
     PracticeClassificationDetails toReturn = new PracticeClassificationDetails();
-    toReturn.fill(c, ridersDetails);
+    toReturn.fill(c, ridersDetails, year);
     return toReturn;
   }
 
-  public void fill(Classification c, List<SessionRider> ridersDetails) {
+  public void fill(RiderClassification c, List<RiderDetails> ridersDetails, int year) {
     position = c.position;
     riderName = c.rider.full_name;
-    for (SessionRider details : ridersDetails) {
+    for (RiderDetails details : ridersDetails) {
       if (c.rider.full_name.equalsIgnoreCase(details.fullName())) {
-        RiderSeason season = details.season;
+        RiderSeason season = details.getSeasonOfYear(c.team.name, year);
         riderNumber = season.number;
         team = season.sponsored_team;
-        constructor = season.team.constructor.name;
+        if (season.team != null && season.team.constructor != null) {
+          constructor = season.team.constructor.name;
+        }
       }
     }
     gapToFirst = c.gap.first;

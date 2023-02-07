@@ -74,8 +74,12 @@ public class LapAnalysis {
   }
 
   public LapAnalysis(LapAnalysis old) {
-    frontTyreLapNumber = old.frontTyreLapNumber + 1;
-    backTyreLapNumber = old.backTyreLapNumber + 1;
+    if (old.frontTyreLapNumber != null) {
+      frontTyreLapNumber = old.frontTyreLapNumber + 1;
+    }
+    if (old.backTyreLapNumber != null) {
+      backTyreLapNumber = old.backTyreLapNumber + 1;
+    }
     frontTyre = old.frontTyre;
     backTyre = old.backTyre;
 
