@@ -28,7 +28,7 @@ public interface ResultsService {
 
   @GET
   @Path("/season/{season}/events")
-  List<Event> getEventsOfSeason(@PathParam("season") String season);
+  List<Event> getEventsOfSeason(@PathParam("season") String season, @QueryParam("test") boolean test);
 
   @GET
   @Path("/season/db8dc197-c7b2-4c1b-b3a4-7dc723c087ed/events")
