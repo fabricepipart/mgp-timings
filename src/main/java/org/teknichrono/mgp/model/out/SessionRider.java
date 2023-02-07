@@ -5,7 +5,6 @@ import org.teknichrono.mgp.model.rider.RiderAttributes;
 import org.teknichrono.mgp.model.rider.RiderBiography;
 import org.teknichrono.mgp.model.rider.RiderCountry;
 import org.teknichrono.mgp.model.rider.RiderDetails;
-import org.teknichrono.mgp.model.rider.RiderSeason;
 
 public class SessionRider {
 
@@ -23,7 +22,6 @@ public class SessionRider {
   public String birth_city;
   public String birth_date;
   public RiderAttributes physical_attributes;
-  public RiderSeason season;
 
   public RiderBiography biography;
   public Boolean legend;
@@ -32,7 +30,7 @@ public class SessionRider {
   public Boolean published;
 
 
-  public void fill(Entry e, RiderDetails rider, int year) {
+  public void fill(Entry e, RiderDetails rider) {
     this.wildcard = e.wildcard;
     this.replacement = e.replacement;
     this.replaced = e.replaced;
@@ -46,15 +44,10 @@ public class SessionRider {
     this.birth_city = rider.birth_city;
     this.birth_date = rider.birth_date;
     this.physical_attributes = rider.physical_attributes;
-    this.season = rider.getSeasonOfYear(e.constructor.name, year);
     this.biography = rider.biography;
     this.legend = rider.legend;
     this.legacy_id = rider.legacy_id;
     this.merchandise_url = rider.merchandise_url;
     this.published = rider.published;
-  }
-
-  public String fullName() {
-    return name + " " + surname;
   }
 }
