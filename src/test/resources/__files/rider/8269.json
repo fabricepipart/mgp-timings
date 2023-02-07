@@ -1,0 +1,376 @@
+{
+  "id": "eec1f7dc-b115-44f6-82aa-73130e5c92cf",
+  "name": "Raul",
+  "surname": "Fernandez",
+  "nickname": null,
+  "country": {
+    "iso": "ES",
+    "name": "Spain"
+  },
+  "birth_city": "Madrid",
+  "birth_date": "2000-10-23",
+  "physical_attributes": {
+    "height": 177,
+    "weight": 63
+  },
+  "career": [
+    {
+      "season": 2023,
+      "number": 25,
+      "sponsored_team": "RNF MotoGP™ Team",
+      "team": {
+        "id": "c5b8c645-8fc5-467e-99d7-5b18e07e5834",
+        "constructor": {
+          "id": "21fbe597-b587-42e1-b571-a06af5cc2487",
+          "name": "Aprilia",
+          "legacy_id": 7
+        },
+        "name": "RNF MotoGP™ Team",
+        "legacy_id": 46,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "RF25",
+      "current": true,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/1/8/18caae2c-1b6c-40f1-a02b-6f8170bed0e3/profile/main/25RaulFernandez.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/2/7/27134770-0aa2-4c12-9137-922d0ab13d05/bike/main/_0006_25-Raul-Fernandez_Bike45.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/2/7/27134770-0aa2-4c12-9137-922d0ab13d05/helmet/main/25-Raul-Fernandez-Helmet-MotoGPDSC07060.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/2/7/27134770-0aa2-4c12-9137-922d0ab13d05/number/25_Raul_Fernandez.png",
+        "portrait": "http://localhost:8089/riders/f/8/f8d46893-4859-4945-976b-7aeba320df14/portrait/25_Raul_Fernandez.jpg"
+      }
+    },
+    {
+      "season": 2022,
+      "number": 25,
+      "sponsored_team": "Tech3 KTM Factory Racing",
+      "team": {
+        "id": "e7de07e2-4309-4a30-8f70-67ead4d6794e",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Tech3 KTM Factory Racing",
+        "legacy_id": 11,
+        "color": "#b52d27",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "RF25",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/c/5/c56022bd-18a1-4356-b185-5d81cc4c081c/profile/main/25-Raul-Fernandez-Rider_DS_5024.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/c/5/c56022bd-18a1-4356-b185-5d81cc4c081c/bike/main/_0006_25-Raul-Fernandez_Bike45.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/6/e/6efb2b38-662a-4397-b473-e15b1a848d30/helmet/main/25-Raul-Fernandez-Helmet-MotoGPDSC07060.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/7/1/71ee2475-50e6-4d53-b008-61fa839a96ab/number/25_Raul_Fernandez.png",
+        "portrait": "http://localhost:8089/riders/c/5/c56022bd-18a1-4356-b185-5d81cc4c081c/portrait/25-Raul-Fernandez_DS_5015.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 25,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "3c73638c-cffb-4e42-a6ca-b6506ab6bf5c",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 211,
+        "color": "#e05a17",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": "RF25",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/7/e/7e161e35-ce78-4eb4-ad43-73134bb80394/profile/main/_0016_25-Raul-Fernandez,-Rider_A7R9231.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/2/4/2422619a-5495-4651-9b41-6d24eb430e0a/bike/main/_0001_25-Raul-Fernandez,-Bike_LG85644.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/7/e/7e161e35-ce78-4eb4-ad43-73134bb80394/helmet/main/_0016_25-Raul-Fernandez.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/1/1/11878855-cd7e-490f-8ef3-72b2ae9ffad1/number/_0026_25_Raul_Fernandez.png",
+        "portrait": "http://localhost:8089/riders/7/e/7e161e35-ce78-4eb4-ad43-73134bb80394/portrait/_0016_25-Raul-Fernandez.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 25,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "9340a4a6-b2d4-4b72-be92-86718936c547",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 113,
+        "color": "#e05a17",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/4/f/4f217917-e694-45d2-8ea6-71ad0dd48603/KTMAjo.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": "RF25",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/0/b/0b4d4147-2435-4e42-bbc5-8bcd64251066/profile/main/25-Raul-Fernandez,-Rider---DSC_0284.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2020/riders/moto3/bike/original/rider_8269_1583849907.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2020/riders/moto3/helmet/original/rider_8269_1584100036.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/25.png",
+        "portrait": "http://localhost:8089/2020/riders/moto3/grid/original/rider_8269_1583409629.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 25,
+      "sponsored_team": "Valresa Angel Nieto Team",
+      "team": {
+        "id": "7027a17e-ed86-4fe7-b899-c252a03982a3",
+        "constructor": {
+          "id": "fe62d196-ff34-409a-aa32-4aae146e2e3c",
+          "name": "Speed Up",
+          "legacy_id": 431
+        },
+        "name": "Valresa Angel Nieto Team",
+        "legacy_id": 107,
+        "color": "#2e307a",
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_107_1583857096.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2019/riders/moto3/bike/original/rider_8269_1551780715.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2019/riders/moto3/helmet/original/rider_8269_1551784629.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/25.png",
+        "portrait": "http://localhost:8089/2019/riders/moto3/grid/original/rider_8269_1551889703.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 25,
+      "sponsored_team": "Angel Nieto Team",
+      "team": {
+        "id": "8d46f1f5-bcf9-412f-87af-73e11fe1d5be",
+        "constructor": {
+          "id": "fe62d196-ff34-409a-aa32-4aae146e2e3c",
+          "name": "Speed Up",
+          "legacy_id": 431
+        },
+        "name": "Angel Nieto Team",
+        "legacy_id": 107,
+        "color": "#2e307a",
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_107_1583857096.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/25.png",
+        "portrait": "http://localhost:8089/2018/riders/moto3/grid/original/rider_8269_1542297574.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 31,
+      "sponsored_team": "Mahindra MRW Aspar Team",
+      "team": {
+        "id": "02cf5928-4812-4551-87c4-a8125c59ca73",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Red Bull MotoGP Rookies Cup",
+        "legacy_id": 225,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/moto3/grid/original/rider_8269_1493979262.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 31,
+      "sponsored_team": "Red Bull MotoGP Rookies Cup",
+      "team": {
+        "id": "02cf5928-4812-4551-87c4-a8125c59ca73",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Red Bull MotoGP Rookies Cup",
+        "legacy_id": 225,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/8269"
+      }
+    }
+  ],
+  "biography": {
+    "text": "From Madrid, Raul Fernandez began racing when he was 11 and went from the Cuna de Campeones to PreMoto3, then moved into the FIM CEV Repsol and raced in the Red Bull MotoGP Rookies Cup. By 2016 he was third overall in the Rookies with two wins and six podiums, took a win in the Moto3™ Junior World Championship and made his Grand Prix debut with a P11 finish. 2017 was a more difficult year in the FIM CEV Repsol despite Fernandez taking pole position in Portugal, but in 2018 the Spaniard bounced back in style to accrue three wins and six podiums on the way to winning the FIM CEV Repsol Moto3™ Junior World Championship. He also made four more Grand Prix appearances as a mixture of wildcards and replacement rides; Catalunya, Germany, Aragon and Valencia saw him take two top tens and score points in three of the four Grands Prix he contested. \n\nIn 2019, Fernandez moved into the Moto3™ World Championship full time in the same Angel Nieto Team structure with whom he won the CEV title, and proved a quick learner as he was a regular Top 10 finisher. 2020 proved to be his breakout year, with stunning Qualifying times meaning he was a regular sight on pole position. A first podium in Aragon was followed up by a maiden victory in the European GP, while he earned another podium and victory in the season-ending Valencia and Portimao GPs respectively. \n\nFernandez well and truly declared himself as the hottest prospect in MotoGP™ in 2021 as he enjoyed the most successful rookie campaign in Moto2™ history. An incredible eight victories, bettering Marc Marquez's previous record for rookie wins, saw him play his part in a stunning title duel against teammate Remy Gardner. However, a crash with three rounds to go in Misano all but ended his charge, eventually having to settle for runner-up. Fernandez made  his MotoGP™ debut in 2022 with Tech3 KTM Factory Racing. A not-so rider friendly KTM RC16 made life tough for the talented Spaniard, finishing inside the points six times. He'll be hoping for much better when he jumps on an Aprilia RS-GP in 2023 with the RNF Team.",
+    "media": {
+      "video": null,
+      "picture": "http://localhost:8089/riders/f/7/f7075e70-cccb-490e-9345-a9ddd387ebfc/biography/25_Raul_Fernandez.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 8269,
+  "merchandise_url": null,
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

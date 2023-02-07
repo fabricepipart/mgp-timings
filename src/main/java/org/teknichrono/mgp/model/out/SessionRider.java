@@ -46,7 +46,7 @@ public class SessionRider {
     this.birth_city = rider.birth_city;
     this.birth_date = rider.birth_date;
     this.physical_attributes = rider.physical_attributes;
-    this.season = rider.getSeasonOfYear(e.constructor.name, year);
+    this.season = rider.getSeasonOfYear(e.team.name, year);
     this.biography = rider.biography;
     this.legend = rider.legend;
     this.legacy_id = rider.legacy_id;

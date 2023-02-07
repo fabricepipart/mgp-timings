@@ -40,4 +40,17 @@ public class TestCategoryEndpoint {
   }
 
 
+  @Test
+  public void listsAllCategoriesOfTest() {
+    given()
+        .when().get("/category/test/2022/JE1")
+        .then()
+        .statusCode(200)
+        .body("$.size()", is(1),
+            "[0].id", is("e8c110ad-64aa-4e8e-8a86-f2f152f6a942"),
+            "[0].name", containsStringIgnoringCase("motogp")
+        );
+  }
+
+
 }
