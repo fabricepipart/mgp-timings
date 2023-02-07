@@ -7,7 +7,7 @@ import org.teknichrono.mgp.model.rider.RiderCountry;
 import org.teknichrono.mgp.model.rider.RiderDetails;
 import org.teknichrono.mgp.model.rider.RiderSeason;
 
-public class SessionRider {
+public class Rider {
 
   public Boolean wildcard;
   public Integer replacement;
