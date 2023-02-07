@@ -1,1 +1,548 @@
-{"id":"50b4fb1f-1785-4a9a-a65c-97d0de9daa22","name":"Miguel","surname":"Oliveira","nickname":null,"country":{"iso":"PT","name":"Portugal"},"birth_city":"Pragal","birth_date":"1995-01-04","physical_attributes":{"height":170,"weight":64},"career":[{"season":2022,"number":88,"sponsored_team":"Red Bull KTM Factory Racing","team":{"id":"0b6cc118-a286-4343-9020-fb53c6f77c1a","constructor":{"id":"5ecd8db7-d87b-4b3e-87b6-1f72ee457ede","name":"KTM","legacy_id":298},"name":"Red Bull KTM Factory Racing","legacy_id":23,"color":"#e05a17","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"MO88","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/6/6/66cbfb87-c8f0-4955-b5a3-a048967ef499/profile/main/88_Miguel_Oliveira.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/6/6/66cbfb87-c8f0-4955-b5a3-a048967ef499/bike/main/88_Miguel_Olveira.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/6/6/66cbfb87-c8f0-4955-b5a3-a048967ef499/helmet/main/88-Miguel-Oliveira.jpg","secondary":null},"number":"https://photos.motogp.com/riders/d/7/d7ab634b-d150-46ee-9b05-23805debb88e/number/88-Miguel-Oliveira.png","portrait":"https://photos.motogp.com/riders/6/6/66cbfb87-c8f0-4955-b5a3-a048967ef499/portrait/88_Miguel_Oliveira.jpg"}},{"season":2021,"number":88,"sponsored_team":"Red Bull KTM Factory Racing","team":{"id":"0b6cc118-a286-4343-9020-fb53c6f77c1a","constructor":{"id":"5ecd8db7-d87b-4b3e-87b6-1f72ee457ede","name":"KTM","legacy_id":298},"name":"Red Bull KTM Factory Racing","legacy_id":23,"color":"#e05a17","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"MO88","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/d/8/d87742aa-5dd6-492f-b416-229afde8fb59/profile/main/_0000_88-Miguel-Oliveira,-Rider_A7R1789.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/8/6/86da9235-32fe-40ce-9202-d42f590d74cb/bike/main/_0001_88-Miguel-Oliveira,-Bike_LG87502.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/8/6/86da9235-32fe-40ce-9202-d42f590d74cb/helmet/main/_0001_88-Miguel-Oliveira,-Helmet_LG62084.jpg","secondary":null},"number":"https://photos.motogp.com/riders/d/7/d7ab634b-d150-46ee-9b05-23805debb88e/number/88-Miguel-Oliveira.png","portrait":"https://photos.motogp.com/riders/2/b/2b6eb98d-b002-4337-92d3-83024f66fb21/portrait/_0000_88-Miguel-Oliveira,Rider_A7R1784.jpg"}},{"season":2020,"number":88,"sponsored_team":"Red Bull KTM Tech 3","team":{"id":"e7de07e2-4309-4a30-8f70-67ead4d6794e","constructor":{"id":"5ecd8db7-d87b-4b3e-87b6-1f72ee457ede","name":"KTM","legacy_id":298},"name":"Tech3 KTM Factory Racing","legacy_id":11,"color":"#b7340b","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"MO88","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/2/1/21bb0fa5-2852-4db4-940b-8ec06366803f/profile/main/1_0020_88-Miguel-Oliveira,-Body_DSC5498.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/c/0/c0726a95-9b2c-4ec7-b81e-e92af379382d/bike/main/88-Miguel-Oliveira.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/f/9/f9062d93-0246-4bb9-a9c4-5d1eb71f7400/helmet/main/88-Miguel-Oliveira.jpg","secondary":null},"number":"https://photos.motogp.com/2019/dorsales/3/7199.png","portrait":"https://photos.motogp.com/riders/b/5/b5286f33-8634-4763-b034-ffba6db76327/portrait/88_Miguel_Oliveira.jpg"}},{"season":2019,"number":88,"sponsored_team":"Red Bull KTM Tech 3","team":{"id":"e7de07e2-4309-4a30-8f70-67ead4d6794e","constructor":{"id":"5ecd8db7-d87b-4b3e-87b6-1f72ee457ede","name":"KTM","legacy_id":298},"name":"Tech3 KTM Factory Racing","legacy_id":11,"color":"#b7340b","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2019/riders/motogp/bike/original/rider_7199_1552058465.jpg","secondary":null},"helmet":{"main":null,"secondary":null},"number":"https://photos.motogp.com/2019/dorsales/3/7199.png","portrait":"https://photos.motogp.com/2019/riders/motogp/grid/original/rider_7199_1554806227.jpg"}},{"season":2018,"number":0,"sponsored_team":"Red Bull KTM Tech 3","team":{"id":"e7de07e2-4309-4a30-8f70-67ead4d6794e","constructor":{"id":"5ecd8db7-d87b-4b3e-87b6-1f72ee457ede","name":"KTM","legacy_id":298},"name":"Tech3 KTM Factory Racing","legacy_id":11,"color":"#b7340b","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png","published":true},"category":{"id":"ea854a67-73a4-4a28-ac77-d67b3b2a530a","name":"Moto2","legacy_id":2},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2018/riders/moto2/bike/original/rider_7199_1521135621.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2018/riders/moto2/helmet/original/rider_7199_1521312789.jpg","secondary":null},"number":null,"portrait":"https://photos.motogp.com/2018/riders/moto2/grid/original/rider_7199_1521039284.jpg"}},{"season":2017,"number":44,"sponsored_team":"Red Bull KTM Ajo","team":{"id":"3c73638c-cffb-4e42-a6ca-b6506ab6bf5c","constructor":{"id":"791160c2-6d2f-47ad-8d87-29e4f729073a","name":"Kalex","legacy_id":447},"name":"Red Bull KTM Ajo","legacy_id":113,"color":"#e13f00","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png","published":true},"category":{"id":"ea854a67-73a4-4a28-ac77-d67b3b2a530a","name":"Moto2","legacy_id":2},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2017/riders/moto2/bike/original/rider_7199_1490204485.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2017/riders/moto2/helmet/original/rider_7199_1490546632.jpg","secondary":null},"number":null,"portrait":"https://photos.motogp.com/2017/riders/moto2/grid/original/rider_7199_1490198443.jpg"}},{"season":2016,"number":44,"sponsored_team":"Leopard Racing","team":{"id":"a713a7ba-16ec-4c15-b4a3-7211b43f9a89","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Leopard Racing","legacy_id":105,"color":"#00bdcc","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/b/4/b4bb6973-5a92-4054-b2b5-5b766279245c/LeopardRacing.png","published":true},"category":{"id":"ea854a67-73a4-4a28-ac77-d67b3b2a530a","name":"Moto2","legacy_id":2},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2016/riders/moto2/bike/original/rider_7199_1458824295.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2016/riders/moto2/helmet/original/rider_7199_1458821554.jpg","secondary":null},"number":null,"portrait":"https://photos.motogp.com/2016/riders/moto2/grid/original/rider_7199_1458821436.jpg"}},{"season":2015,"number":44,"sponsored_team":"Red Bull KTM Ajo","team":{"id":"3c73638c-cffb-4e42-a6ca-b6506ab6bf5c","constructor":{"id":"791160c2-6d2f-47ad-8d87-29e4f729073a","name":"Kalex","legacy_id":447},"name":"Red Bull KTM Ajo","legacy_id":113,"color":"#e13f00","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png","published":true},"category":{"id":"1ab203aa-e292-4842-8bed-971911357af1","name":"Moto3","legacy_id":1},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7199"}},{"season":2014,"number":44,"sponsored_team":"Mahindra Racing","team":{"id":"946f68b5-9ee9-4872-92a8-1d20d3b53412","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Mahindra Racing","legacy_id":106,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto3/original/team_bike_106_1584101117.jpg","published":true},"category":{"id":"1ab203aa-e292-4842-8bed-971911357af1","name":"Moto3","legacy_id":1},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7199"}},{"season":2013,"number":44,"sponsored_team":"Mahindra Racing","team":{"id":"946f68b5-9ee9-4872-92a8-1d20d3b53412","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Mahindra Racing","legacy_id":106,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto3/original/team_bike_106_1584101117.jpg","published":true},"category":{"id":"1ab203aa-e292-4842-8bed-971911357af1","name":"Moto3","legacy_id":1},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7199"}},{"season":2012,"number":44,"sponsored_team":"Estrella Galicia 0,0","team":{"id":"ae848aa2-b716-49d5-8b95-218651605120","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Estrella Galicia 0,0","legacy_id":106,"color":"#027bce","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/4/f/4f858066-fdbe-47b4-9fb0-5e65910ea0fd/team_106_moto3_2020.png","published":true},"category":{"id":"1ab203aa-e292-4842-8bed-971911357af1","name":"Moto3","legacy_id":1},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7199"}},{"season":2011,"number":0,"sponsored_team":null,"team":{"id":"ae848aa2-b716-49d5-8b95-218651605120","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Estrella Galicia 0,0","legacy_id":106,"color":"#027bce","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/4/f/4f858066-fdbe-47b4-9fb0-5e65910ea0fd/team_106_moto3_2020.png","published":true},"category":{"id":"578be24b-3cd6-498f-9ed8-f0817be88467","name":"125cc","legacy_id":10},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7199"}}],"biography":{"text":"Miguel Oliveira’s first big successes came in 2005 and 2006 when he won the Portuguese MiniGP championship. In 2009 he was third in the FIM CEV Repsol, and in 2010 battled Maverick Viñales to the final race of the season for the title - eventually finishing runner-up by just two points prior to his World Championship debut in 2011. Oliveira raced full time in 2012 with the Estrella Galicia 0,0 team and took two podiums, before in 2013 he joined Mahindra Racing and made headlines by grabbing the Indian manufacturer’s first ever podium in Malaysia. In 2014 remained on the Mahindra, taking another podium at Assen, before being recruited by Red Bull KTM Ajo for 2015. The Moto3™ season got off to a difficult start for the Portuguese rider but he won in both Mugello and Assen, before breaking his wrist in Germany. All hope looked lost as Danny Kent left the British GP with a 110 point lead over the KTM rider, but an incredible comeback saw Oliveira take four wins and two seconds in the final six races and challenge down to the final round, coming runner up. For 2016 he and Kent joined forces in the Moto2™ World Championship with Leopard Racing, and after recovering from injury for the end of the year, the Portuguese rider returned to the Ajo motorsport camp for 2017 onboard the new KTM chassis in Moto2™, with Red Bull KTM Ajo. Taking their first win, challenging at the front and coming third overall, Oliveira’s season was a stunner – and he remained a threat at the front in 2018. Eventually taking the runner up spot in the title fight, it was nevertheless an impressive season and the Portuguese rider then made his MotoGP™ debut with Red Bull KTM Tech 3. Regular point-scoring finishes saw Oliveira impress in his maiden premier class season, P8 in Austria was his best result. A huge Phillip Island crash and surgery on an injury sustained at Silverstone saw Oliveira have to sit out the final three races and preseason testing at the end of 2019. Staying with Red Bull KTM Tech 3 for 2020, Oliveira became the second KTM rider to claim victory in the premier class, following a stunning last lap in the Styrian GP, Oliveira stole ahead on the final corner to claim the win. The MotoGP™  circus returned to his home country for the Portuguese GP, and Oliveira ensured it was a dream weekend as he clinched victory in the season finale. 2021 saw him partner Brad Binder in the factory colours, but an underperforming KTM and injury saw Oliveira have a rollercoaster season. Three podiums, including victory in Barcelona, were the highlights. Heading into 2022, Oliveira will be hoping plenty more podiums will be achieved as he and KTM go hunting for the title. ","media":{"video":null,"picture":"https://photos.motogp.com/riders/d/a/dabde826-0aa5-4e4a-9a1b-043d6c11b400/biography/88_Miguel_Oliveira_DSC7923.jpg"}},"legend":false,"legacy_id":7199,"merchandise_url":"https://store.motogp.com/en/miguel-oliveira-88-merchandise?utm_source=motogp.com&utm_medium=Link&utm_content=MO88&utm_campaign=Store&o=motogp-riders-stats","published":true,"injured":false,"banned":false,"wildcard":false}
+{
+  "id": "50b4fb1f-1785-4a9a-a65c-97d0de9daa22",
+  "name": "Miguel",
+  "surname": "Oliveira",
+  "nickname": null,
+  "country": {
+    "iso": "PT",
+    "name": "Portugal"
+  },
+  "birth_city": "Pragal",
+  "birth_date": "1995-01-04",
+  "physical_attributes": {
+    "height": 170,
+    "weight": 64
+  },
+  "career": [
+    {
+      "season": 2022,
+      "number": 88,
+      "sponsored_team": "Red Bull KTM Factory Racing",
+      "team": {
+        "id": "0b6cc118-a286-4343-9020-fb53c6f77c1a",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Red Bull KTM Factory Racing",
+        "legacy_id": 23,
+        "color": "#e05a17",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MO88",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/6/6/66cbfb87-c8f0-4955-b5a3-a048967ef499/profile/main/88_Miguel_Oliveira.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/6/6/66cbfb87-c8f0-4955-b5a3-a048967ef499/bike/main/88_Miguel_Olveira.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/6/6/66cbfb87-c8f0-4955-b5a3-a048967ef499/helmet/main/88-Miguel-Oliveira.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/d/7/d7ab634b-d150-46ee-9b05-23805debb88e/number/88-Miguel-Oliveira.png",
+        "portrait": "http://localhost:8089/riders/6/6/66cbfb87-c8f0-4955-b5a3-a048967ef499/portrait/88_Miguel_Oliveira.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 88,
+      "sponsored_team": "Red Bull KTM Factory Racing",
+      "team": {
+        "id": "0b6cc118-a286-4343-9020-fb53c6f77c1a",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Red Bull KTM Factory Racing",
+        "legacy_id": 23,
+        "color": "#e05a17",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MO88",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/d/8/d87742aa-5dd6-492f-b416-229afde8fb59/profile/main/_0000_88-Miguel-Oliveira,-Rider_A7R1789.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/8/6/86da9235-32fe-40ce-9202-d42f590d74cb/bike/main/_0001_88-Miguel-Oliveira,-Bike_LG87502.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/8/6/86da9235-32fe-40ce-9202-d42f590d74cb/helmet/main/_0001_88-Miguel-Oliveira,-Helmet_LG62084.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/d/7/d7ab634b-d150-46ee-9b05-23805debb88e/number/88-Miguel-Oliveira.png",
+        "portrait": "http://localhost:8089/riders/2/b/2b6eb98d-b002-4337-92d3-83024f66fb21/portrait/_0000_88-Miguel-Oliveira,Rider_A7R1784.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 88,
+      "sponsored_team": "Red Bull KTM Tech 3",
+      "team": {
+        "id": "e7de07e2-4309-4a30-8f70-67ead4d6794e",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Tech3 KTM Factory Racing",
+        "legacy_id": 11,
+        "color": "#b7340b",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "MO88",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/2/1/21bb0fa5-2852-4db4-940b-8ec06366803f/profile/main/1_0020_88-Miguel-Oliveira,-Body_DSC5498.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/c/0/c0726a95-9b2c-4ec7-b81e-e92af379382d/bike/main/88-Miguel-Oliveira.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/f/9/f9062d93-0246-4bb9-a9c4-5d1eb71f7400/helmet/main/88-Miguel-Oliveira.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2019/dorsales/3/7199.png",
+        "portrait": "http://localhost:8089/riders/b/5/b5286f33-8634-4763-b034-ffba6db76327/portrait/88_Miguel_Oliveira.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 88,
+      "sponsored_team": "Red Bull KTM Tech 3",
+      "team": {
+        "id": "e7de07e2-4309-4a30-8f70-67ead4d6794e",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Tech3 KTM Factory Racing",
+        "legacy_id": 11,
+        "color": "#b7340b",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2019/riders/motogp/bike/original/rider_7199_1552058465.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2019/dorsales/3/7199.png",
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_7199_1554806227.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 0,
+      "sponsored_team": "Red Bull KTM Tech 3",
+      "team": {
+        "id": "e7de07e2-4309-4a30-8f70-67ead4d6794e",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Tech3 KTM Factory Racing",
+        "legacy_id": 11,
+        "color": "#b7340b",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2018/riders/moto2/bike/original/rider_7199_1521135621.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2018/riders/moto2/helmet/original/rider_7199_1521312789.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2018/riders/moto2/grid/original/rider_7199_1521039284.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 44,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "3c73638c-cffb-4e42-a6ca-b6506ab6bf5c",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 113,
+        "color": "#e13f00",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2017/riders/moto2/bike/original/rider_7199_1490204485.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2017/riders/moto2/helmet/original/rider_7199_1490546632.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/moto2/grid/original/rider_7199_1490198443.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 44,
+      "sponsored_team": "Leopard Racing",
+      "team": {
+        "id": "a713a7ba-16ec-4c15-b4a3-7211b43f9a89",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Leopard Racing",
+        "legacy_id": 105,
+        "color": "#00bdcc",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/b/4/b4bb6973-5a92-4054-b2b5-5b766279245c/LeopardRacing.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2016/riders/moto2/bike/original/rider_7199_1458824295.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2016/riders/moto2/helmet/original/rider_7199_1458821554.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2016/riders/moto2/grid/original/rider_7199_1458821436.jpg"
+      }
+    },
+    {
+      "season": 2015,
+      "number": 44,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "3c73638c-cffb-4e42-a6ca-b6506ab6bf5c",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 113,
+        "color": "#e13f00",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7199"
+      }
+    },
+    {
+      "season": 2014,
+      "number": 44,
+      "sponsored_team": "Mahindra Racing",
+      "team": {
+        "id": "946f68b5-9ee9-4872-92a8-1d20d3b53412",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Mahindra Racing",
+        "legacy_id": 106,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_106_1584101117.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7199"
+      }
+    },
+    {
+      "season": 2013,
+      "number": 44,
+      "sponsored_team": "Mahindra Racing",
+      "team": {
+        "id": "946f68b5-9ee9-4872-92a8-1d20d3b53412",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Mahindra Racing",
+        "legacy_id": 106,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_106_1584101117.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7199"
+      }
+    },
+    {
+      "season": 2012,
+      "number": 44,
+      "sponsored_team": "Estrella Galicia 0,0",
+      "team": {
+        "id": "ae848aa2-b716-49d5-8b95-218651605120",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Estrella Galicia 0,0",
+        "legacy_id": 106,
+        "color": "#027bce",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/4/f/4f858066-fdbe-47b4-9fb0-5e65910ea0fd/team_106_moto3_2020.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7199"
+      }
+    },
+    {
+      "season": 2011,
+      "number": 0,
+      "sponsored_team": null,
+      "team": {
+        "id": "ae848aa2-b716-49d5-8b95-218651605120",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Estrella Galicia 0,0",
+        "legacy_id": 106,
+        "color": "#027bce",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/4/f/4f858066-fdbe-47b4-9fb0-5e65910ea0fd/team_106_moto3_2020.png",
+        "published": true
+      },
+      "category": {
+        "id": "578be24b-3cd6-498f-9ed8-f0817be88467",
+        "name": "125cc",
+        "legacy_id": 10
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7199"
+      }
+    }
+  ],
+  "biography": {
+    "text": "Miguel Oliveira’s first big successes came in 2005 and 2006 when he won the Portuguese MiniGP championship. In 2009 he was third in the FIM CEV Repsol, and in 2010 battled Maverick Viñales to the final race of the season for the title - eventually finishing runner-up by just two points prior to his World Championship debut in 2011. Oliveira raced full time in 2012 with the Estrella Galicia 0,0 team and took two podiums, before in 2013 he joined Mahindra Racing and made headlines by grabbing the Indian manufacturer’s first ever podium in Malaysia. In 2014 remained on the Mahindra, taking another podium at Assen, before being recruited by Red Bull KTM Ajo for 2015. The Moto3™ season got off to a difficult start for the Portuguese rider but he won in both Mugello and Assen, before breaking his wrist in Germany. All hope looked lost as Danny Kent left the British GP with a 110 point lead over the KTM rider, but an incredible comeback saw Oliveira take four wins and two seconds in the final six races and challenge down to the final round, coming runner up. For 2016 he and Kent joined forces in the Moto2™ World Championship with Leopard Racing, and after recovering from injury for the end of the year, the Portuguese rider returned to the Ajo motorsport camp for 2017 onboard the new KTM chassis in Moto2™, with Red Bull KTM Ajo. Taking their first win, challenging at the front and coming third overall, Oliveira’s season was a stunner – and he remained a threat at the front in 2018. Eventually taking the runner up spot in the title fight, it was nevertheless an impressive season and the Portuguese rider then made his MotoGP™ debut with Red Bull KTM Tech 3. Regular point-scoring finishes saw Oliveira impress in his maiden premier class season, P8 in Austria was his best result. A huge Phillip Island crash and surgery on an injury sustained at Silverstone saw Oliveira have to sit out the final three races and preseason testing at the end of 2019. Staying with Red Bull KTM Tech 3 for 2020, Oliveira became the second KTM rider to claim victory in the premier class, following a stunning last lap in the Styrian GP, Oliveira stole ahead on the final corner to claim the win. The MotoGP™  circus returned to his home country for the Portuguese GP, and Oliveira ensured it was a dream weekend as he clinched victory in the season finale. 2021 saw him partner Brad Binder in the factory colours, but an underperforming KTM and injury saw Oliveira have a rollercoaster season. Three podiums, including victory in Barcelona, were the highlights. Heading into 2022, Oliveira will be hoping plenty more podiums will be achieved as he and KTM go hunting for the title. ",
+    "media": {
+      "video": null,
+      "picture": "http://localhost:8089/riders/d/a/dabde826-0aa5-4e4a-9a1b-043d6c11b400/biography/88_Miguel_Oliveira_DSC7923.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 7199,
+  "merchandise_url": "http://localhost:8089/en/miguel-oliveira-88-merchandise?utm_source=localhost:8089&utm_medium=Link&utm_content=MO88&utm_campaign=Store&o=motogp-riders-stats",
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}
