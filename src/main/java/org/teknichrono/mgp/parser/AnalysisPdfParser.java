@@ -2,12 +2,11 @@ package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.model.out.LapAnalysis;
-import org.teknichrono.mgp.model.out.SessionRider;
+import org.teknichrono.mgp.model.result.RiderClassification;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 @ApplicationScoped
 public class AnalysisPdfParser {
@@ -19,14 +18,14 @@ public class AnalysisPdfParser {
   public static final int WIDTH_COLUMN_PDF = 263;
   public static final int HEIGHT_COLUMN_PDF = 692;
 
-  public List<LapAnalysis> parse(String url, List<SessionRider> ridersOfEvent) throws PdfParsingException {
+  public List<LapAnalysis> parse(String url, List<RiderClassification> riderClassifications) throws PdfParsingException {
     List<LapAnalysis> toReturn = new ArrayList<>();
 
     List<String> lines = PdfParserUtils.readPdfLinesTwoColumns(url, X_LEFT_COLUMN_PDF, X_RIGHT_COLUMN_PDF, T_COLUMNS_PDF, WIDTH_COLUMN_PDF, HEIGHT_COLUMN_PDF);
 
     LapAnalysis lapAnalysis = null;
     for (String line : lines) {
-      lapAnalysis = updateRiderIfNecessary(lapAnalysis, ridersOfEvent, line);
+      lapAnalysis = updateRiderIfNecessary(lapAnalysis, riderClassifications, line);
       updateFrontTyreIfNecessary(lapAnalysis, line);
       updateRearTyreIfNecessary(lapAnalysis, line);
       updateFrontTyreAgeIfNecessary(lapAnalysis, line);
@@ -84,21 +83,21 @@ public class AnalysisPdfParser {
     }
   }
 
-  private LapAnalysis updateRiderIfNecessary(LapAnalysis currentLapAnalysis, List<SessionRider> ridersOfEvent, String line) {
+  private LapAnalysis updateRiderIfNecessary(LapAnalysis currentLapAnalysis, List<RiderClassification> riderClassifications, String line) {
     LapAnalysis toReturn = currentLapAnalysis;
-    for (SessionRider rider : ridersOfEvent) {
-      Integer number = rider.season.number;
-      String name = rider.name + " " + rider.surname;
-      String motorcycle = rider.season.team.constructor.name;
+    for (RiderClassification classification : riderClassifications) {
+      Integer number = classification.rider.number;
+      String name = classification.rider.full_name;
+      String firstname = name.split(" ")[0];
+      String motorcycle = classification.constructor.name;
       if (line.contains(number.toString()) &&
-          line.toLowerCase().contains(name.toLowerCase()) &&
-          line.toLowerCase(Locale.ROOT).contains(motorcycle.toLowerCase())) {
+          line.toLowerCase().contains(firstname.toLowerCase())) {
         toReturn = new LapAnalysis();
         toReturn.number = number;
         toReturn.motorcycle = motorcycle;
         toReturn.rider = name;
-        toReturn.nation = PdfParserUtils.parseNation(line);
-        toReturn.team = rider.season.sponsored_team;
+        toReturn.nation = classification.rider.country.iso;
+        toReturn.team = classification.team.name;
       }
     }
     return toReturn;
