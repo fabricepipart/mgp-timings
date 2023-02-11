@@ -2,7 +2,7 @@ package org.teknichrono.mgp.rest;
 
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
-import org.teknichrono.mgp.client.ResultsService;
+import org.teknichrono.mgp.client.ResultsClient;
 import org.teknichrono.mgp.model.result.Category;
 import org.teknichrono.mgp.model.result.Event;
 
@@ -23,7 +23,7 @@ public class CategoryEndpoint {
 
   @Inject
   @RestClient
-  ResultsService resultsService;
+  ResultsClient resultsService;
 
   @Inject
   EventEndpoint eventEndpoint;
@@ -40,9 +40,28 @@ public class CategoryEndpoint {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
+  @Path("/test/{year}/{eventShortName}")
+  public List<Category> categoriesOfTest(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
+    Event event = eventEndpoint.testsOfYear(year).stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
+    return resultsService.getCategoriesOfEvent(event.id);
+  }
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
   @Path("/{year}/{eventShortName}/{category}")
   public Category categoryOfEvent(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
     return categoriesOfEvent(year, eventShortName).stream()
+        .filter(c -> c.name.toLowerCase().contains(category.toLowerCase()))
+        .findFirst().get();
+  }
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
+  @Path("/test/{year}/{eventShortName}/{category}")
+  public Category categoryOfTest(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
+    return categoriesOfTest(year, eventShortName).stream()
         .filter(c -> c.name.toLowerCase().contains(category.toLowerCase()))
         .findFirst().get();
   }

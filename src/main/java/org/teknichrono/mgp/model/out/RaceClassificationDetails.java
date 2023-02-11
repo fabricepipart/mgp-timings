@@ -2,7 +2,8 @@ package org.teknichrono.mgp.model.out;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
-import org.teknichrono.mgp.model.result.Classification;
+import org.teknichrono.mgp.model.result.RiderClassification;
+import org.teknichrono.mgp.model.rider.RiderDetails;
 import org.teknichrono.mgp.model.rider.RiderSeason;
 
 import java.util.List;
@@ -54,18 +55,18 @@ public class RaceClassificationDetails implements ClassificationDetails {
   public Float averageSpeed;
 
 
-  public static RaceClassificationDetails from(Classification c, List<SessionRider> ridersDetails) {
+  public static RaceClassificationDetails from(RiderClassification c, List<RiderDetails> ridersDetails, int year) {
     RaceClassificationDetails toReturn = new RaceClassificationDetails();
-    toReturn.fill(c, ridersDetails);
+    toReturn.fill(c, ridersDetails, year);
     return toReturn;
   }
 
-  public void fill(Classification c, List<SessionRider> ridersDetails) {
+  public void fill(RiderClassification c, List<RiderDetails> ridersDetails, int year) {
     position = c.position;
     riderName = c.rider.full_name;
-    for (SessionRider details : ridersDetails) {
+    for (RiderDetails details : ridersDetails) {
       if (c.rider.full_name.equalsIgnoreCase(details.fullName())) {
-        RiderSeason season = details.season;
+        RiderSeason season = details.getSeasonOfYear(c.team.name, year);
         riderNumber = season.number;
         team = season.sponsored_team;
         constructor = season.team.constructor.name;
