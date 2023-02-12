@@ -29,7 +29,7 @@
         "legacy_id": 10,
         "color": "#a1b7e5",
         "text_color": "#323232",
-        "picture": "https://photos.motogp.com/teams/6/5/6577f3de-817e-4dc6-bbe6-edddd661f1ad/GresiniRacing.png",
+        "picture": "http://localhost:8089/teams/6/5/6577f3de-817e-4dc6-bbe6-edddd661f1ad/GresiniRacing.png",
         "published": true
       },
       "category": {
@@ -42,19 +42,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/5/4/5452166d-95a7-4857-bf1b-7bf9f919fccf/profile/main/23-Enea-Bastiani-Rider_DS_5148.png",
+          "main": "http://localhost:8089/riders/5/4/5452166d-95a7-4857-bf1b-7bf9f919fccf/profile/main/23-Enea-Bastiani-Rider_DS_5148.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/5/4/5452166d-95a7-4857-bf1b-7bf9f919fccf/bike/main/_0007_23-Enea-Bastianini_Bike45.png",
+          "main": "http://localhost:8089/riders/5/4/5452166d-95a7-4857-bf1b-7bf9f919fccf/bike/main/_0007_23-Enea-Bastianini_Bike45.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/2/3/23c2f9a5-4c4f-42e7-9bfb-682cccc1859b/helmet/main/23-Enea-Bastianini.jpg",
+          "main": "http://localhost:8089/riders/2/3/23c2f9a5-4c4f-42e7-9bfb-682cccc1859b/helmet/main/23-Enea-Bastianini.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/e/e/ee1e90f4-020d-42bd-a4d0-3f94bdc605a3/number/23_Enea_Bastianini_.png",
-        "portrait": "https://photos.motogp.com/riders/5/4/5452166d-95a7-4857-bf1b-7bf9f919fccf/portrait/23-Enea-Bastianini.jpg"
+        "number": "http://localhost:8089/riders/e/e/ee1e90f4-020d-42bd-a4d0-3f94bdc605a3/number/23_Enea_Bastianini_.png",
+        "portrait": "http://localhost:8089/riders/5/4/5452166d-95a7-4857-bf1b-7bf9f919fccf/portrait/23-Enea-Bastianini.jpg"
       }
     },
     {
@@ -72,7 +72,7 @@
         "legacy_id": 115,
         "color": "#1e4374",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/9/2/927bbed8-8d40-4324-a531-ae7a894232c8/SKY-vr46-Esponsorama.png",
+        "picture": "http://localhost:8089/teams/9/2/927bbed8-8d40-4324-a531-ae7a894232c8/SKY-vr46-Esponsorama.png",
         "published": true
       },
       "category": {
@@ -85,19 +85,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/1/f/1f343065-c3df-49a4-9b49-b2a39a28ee94/profile/main/_0007_23-Enea-Bastianini,-Rider_A7R1080.png",
+          "main": "http://localhost:8089/riders/1/f/1f343065-c3df-49a4-9b49-b2a39a28ee94/profile/main/_0007_23-Enea-Bastianini,-Rider_A7R1080.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/1/f/1f343065-c3df-49a4-9b49-b2a39a28ee94/bike/main/_0007_23-Enea-Bastianini,-Bike_LG86852.png",
+          "main": "http://localhost:8089/riders/1/f/1f343065-c3df-49a4-9b49-b2a39a28ee94/bike/main/_0007_23-Enea-Bastianini,-Bike_LG86852.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/1/f/1f343065-c3df-49a4-9b49-b2a39a28ee94/helmet/main/_0009_23-Enea-Bastianini,-Helmet_LG60979.jpg",
+          "main": "http://localhost:8089/riders/1/f/1f343065-c3df-49a4-9b49-b2a39a28ee94/helmet/main/_0009_23-Enea-Bastianini,-Helmet_LG60979.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/e/e/ee1e90f4-020d-42bd-a4d0-3f94bdc605a3/number/23_Enea_Bastianini_.png",
-        "portrait": "https://photos.motogp.com/riders/a/2/a2c687f1-8d4a-49cd-86e8-17815bbaf23a/portrait/_0008_23-Enea-Bastianini,-Rider_A7R1074.jpg"
+        "number": "http://localhost:8089/riders/e/e/ee1e90f4-020d-42bd-a4d0-3f94bdc605a3/number/23_Enea_Bastianini_.png",
+        "portrait": "http://localhost:8089/riders/a/2/a2c687f1-8d4a-49cd-86e8-17815bbaf23a/portrait/_0008_23-Enea-Bastianini,-Rider_A7R1074.jpg"
       }
     },
     {
@@ -115,7 +115,7 @@
         "legacy_id": null,
         "color": "#ff8600",
         "text_color": null,
-        "picture": "https://photos.motogp.com/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
+        "picture": "http://localhost:8089/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
         "published": true
       },
       "category": {
@@ -128,19 +128,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/6/4/644201a4-5194-4d66-9bc7-c40e990a3160/profile/main/33-Enea-Bastianini,-Rider---DSC_0419.png",
+          "main": "http://localhost:8089/riders/6/4/644201a4-5194-4d66-9bc7-c40e990a3160/profile/main/33-Enea-Bastianini,-Rider---DSC_0419.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2020/riders/moto2/bike/original/rider_8295_1583840799.jpg",
+          "main": "http://localhost:8089/2020/riders/moto2/bike/original/rider_8295_1583840799.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2020/riders/moto2/helmet/original/rider_8295_1584104131.jpg",
+          "main": "http://localhost:8089/2020/riders/moto2/helmet/original/rider_8295_1584104131.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2020/dorsales/others/33.png",
-        "portrait": "https://photos.motogp.com/2020/riders/moto2/grid/original/rider_8295_1583402793.jpg"
+        "number": "http://localhost:8089/2020/dorsales/others/33.png",
+        "portrait": "http://localhost:8089/2020/riders/moto2/grid/original/rider_8295_1583402793.jpg"
       }
     },
     {
@@ -158,7 +158,7 @@
         "legacy_id": null,
         "color": "#ff8600",
         "text_color": null,
-        "picture": "https://photos.motogp.com/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
+        "picture": "http://localhost:8089/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
         "published": true
       },
       "category": {
@@ -175,15 +175,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2019/riders/moto2/bike/original/rider_8295_1551966359.jpg",
+          "main": "http://localhost:8089/2019/riders/moto2/bike/original/rider_8295_1551966359.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2019/riders/moto2/helmet/original/rider_8295_1551784648.jpg",
+          "main": "http://localhost:8089/2019/riders/moto2/helmet/original/rider_8295_1551784648.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2020/dorsales/others/33.png",
-        "portrait": "https://photos.motogp.com/2019/riders/moto2/grid/original/rider_8295_1551890094.jpg"
+        "number": "http://localhost:8089/2020/dorsales/others/33.png",
+        "portrait": "http://localhost:8089/2019/riders/moto2/grid/original/rider_8295_1551890094.jpg"
       }
     },
     {
@@ -201,7 +201,7 @@
         "legacy_id": null,
         "color": "#ff8600",
         "text_color": null,
-        "picture": "https://photos.motogp.com/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
+        "picture": "http://localhost:8089/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
         "published": true
       },
       "category": {
@@ -218,15 +218,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2018/riders/moto3/bike/original/rider_8295_1521135336.jpg",
+          "main": "http://localhost:8089/2018/riders/moto3/bike/original/rider_8295_1521135336.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2018/riders/moto3/helmet/original/rider_8295_1521312649.jpg",
+          "main": "http://localhost:8089/2018/riders/moto3/helmet/original/rider_8295_1521312649.jpg",
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2018/riders/moto3/grid/original/rider_8295_1521047835.jpg"
+        "portrait": "http://localhost:8089/2018/riders/moto3/grid/original/rider_8295_1521047835.jpg"
       }
     },
     {
@@ -244,7 +244,7 @@
         "legacy_id": 106,
         "color": "#027bce",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/4/f/4f858066-fdbe-47b4-9fb0-5e65910ea0fd/team_106_moto3_2020.png",
+        "picture": "http://localhost:8089/teams/4/f/4f858066-fdbe-47b4-9fb0-5e65910ea0fd/team_106_moto3_2020.png",
         "published": true
       },
       "category": {
@@ -261,7 +261,7 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2017/riders/moto3/bike/original/rider_8295_1490207399.jpg",
+          "main": "http://localhost:8089/2017/riders/moto3/bike/original/rider_8295_1490207399.jpg",
           "secondary": null
         },
         "helmet": {
@@ -269,7 +269,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2017/riders/moto3/grid/original/rider_8295_1490197780.jpg"
+        "portrait": "http://localhost:8089/2017/riders/moto3/grid/original/rider_8295_1490197780.jpg"
       }
     },
     {
@@ -287,7 +287,7 @@
         "legacy_id": 112,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_112_1584101123.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_112_1584101123.jpg",
         "published": true
       },
       "category": {
@@ -304,15 +304,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2016/riders/moto3/bike/original/rider_8295_1458824019.jpg",
+          "main": "http://localhost:8089/2016/riders/moto3/bike/original/rider_8295_1458824019.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2016/riders/moto3/helmet/original/rider_8295_1458821835.jpg",
+          "main": "http://localhost:8089/2016/riders/moto3/helmet/original/rider_8295_1458821835.jpg",
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2016/riders/moto3/grid/original/rider_8295_1458821662.jpg"
+        "portrait": "http://localhost:8089/2016/riders/moto3/grid/original/rider_8295_1458821662.jpg"
       }
     },
     {
@@ -330,7 +330,7 @@
         "legacy_id": 112,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_112_1584101123.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_112_1584101123.jpg",
         "published": true
       },
       "category": {
@@ -355,7 +355,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/8295"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/8295"
       }
     },
     {
@@ -373,7 +373,7 @@
         "legacy_id": 112,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_112_1584101123.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_112_1584101123.jpg",
         "published": true
       },
       "category": {
@@ -398,7 +398,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/8295"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/8295"
       }
     }
   ],
@@ -406,7 +406,7 @@
     "text": "Enea Bastianini was victorious in two races of the 2013 Red Bull MotoGP Rookies Cup and combined his participation in that with five rides in the Italian national Moto3™ championship. Bastianini turned 16 at the end of 2013 and arrived in the World Championship in 2014 to ride with the Junior Team GO&FUN Moto3™ of Fausto Gresini on a KTM. He impressed in his rookie season as he hit the podium three times, staying with the team for 2015, but on a Honda. In 2015 he challenged for the title in the early stages of the year, taking his first victory on the world stage at home in Misano as well as five additional podiums. He remained with the Gresini team and on Honda machinery, and was second in the Championship in 2016. For 2017, Bastianini changed to Estrella Galicia 0,0 and had a more difficult year, gaining traction in the latter stages and taking a pole and three podiums. For 2018 he replaced outgoing reigning Champion Joan Mir at Leopard Racing, finishing fourth in the Championship after six podium finishes, including one victory. 2020 saw Bastianini become a World Champion as he took the Moto2™ crown. A podium finish in Qatar helped him launch his title attack, but it really took flight after back to back victories in the Andalusian and Czech GPs before a victory and podium finish in Misano helped cement his place among the leading contenders. From there, Bastianini only once failed to break into the Top 6 places, including podiums in the Aragon double, and it was that consistency that saw him become a World Champion. 2021 brought a new challenge, and one he thrived in. Bastianini, despite being one of only three men to be on older machinery, was one of the breakout stars of the season, with a double podium in Misano just reward for his brilliant late-season form. The Beast will jump on Pecco Bagnaia's 2021 Ducati in 2022 and moves across to newly-powered Gresini Racing MotoGP team.",
     "media": {
       "video": null,
-      "picture": "https://photos.motogp.com/riders/5/4/54c5c44e-d28e-4e73-8ebe-3429ef89ad15/biography/23_Enea_Bastianini_DSC7711.jpg"
+      "picture": "http://localhost:8089/riders/5/4/54c5c44e-d28e-4e73-8ebe-3429ef89ad15/biography/23_Enea_Bastianini_DSC7711.jpg"
     }
   },
   "legend": false,

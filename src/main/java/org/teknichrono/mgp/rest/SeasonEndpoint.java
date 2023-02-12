@@ -1,7 +1,7 @@
 package org.teknichrono.mgp.rest;
 
 import org.eclipse.microprofile.rest.client.inject.RestClient;
-import org.teknichrono.mgp.client.ResultsService;
+import org.teknichrono.mgp.client.ResultsClient;
 import org.teknichrono.mgp.model.result.Season;
 import org.teknichrono.mgp.util.CsvConverter;
 
@@ -20,7 +20,7 @@ public class SeasonEndpoint {
 
   @Inject
   @RestClient
-  ResultsService resultsService;
+  ResultsClient resultsService;
 
   @Inject
   CsvConverter<Season> csvConverter;

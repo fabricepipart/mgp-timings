@@ -2,9 +2,9 @@ package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.model.out.PracticeClassificationDetails;
-import org.teknichrono.mgp.model.out.SessionRider;
-import org.teknichrono.mgp.model.result.Classification;
+import org.teknichrono.mgp.model.result.RiderClassification;
 import org.teknichrono.mgp.model.result.SessionClassification;
+import org.teknichrono.mgp.model.result.TestClassification;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
@@ -19,13 +19,22 @@ public class PracticeResultsPdfParser {
 
   private static final Logger LOGGER = Logger.getLogger(PracticeResultsPdfParser.class);
 
-  public List<PracticeClassificationDetails> parse(SessionClassification classifications, List<SessionRider> ridersOfEvent) throws PdfParsingException {
-    List<PracticeClassificationDetails> toReturn = new ArrayList<>();
-    for (Classification c : classifications.classification) {
-      PracticeClassificationDetails details = PracticeClassificationDetails.from(c, ridersOfEvent);
-      toReturn.add(details);
-    }
-    String[] lines = PdfParserUtils.readPdfLines(classifications.file);
+  public List<PracticeClassificationDetails> parse(TestClassification classifications) throws PdfParsingException {
+    List<PracticeClassificationDetails> toReturn = getPartialResults(classifications.classification);
+    fillFromPdf(toReturn, classifications.files.classification);
+    return toReturn;
+
+  }
+
+  public List<PracticeClassificationDetails> parse(SessionClassification classifications) throws PdfParsingException {
+    List<PracticeClassificationDetails> toReturn = getPartialResults(classifications.classification);
+    fillFromPdf(toReturn, classifications.file);
+
+    return toReturn;
+  }
+
+  private void fillFromPdf(List<PracticeClassificationDetails> toReturn, String url) throws PdfParsingException {
+    String[] lines = PdfParserUtils.readPdfLines(url);
 
     for (String line : lines) {
       for (PracticeClassificationDetails details : toReturn) {
@@ -51,7 +60,14 @@ public class PracticeResultsPdfParser {
         }
       }
     }
+  }
 
+  private List<PracticeClassificationDetails> getPartialResults(List<RiderClassification> classifications) {
+    List<PracticeClassificationDetails> toReturn = new ArrayList<>();
+    for (RiderClassification c : classifications) {
+      PracticeClassificationDetails details = PracticeClassificationDetails.from(c);
+      toReturn.add(details);
+    }
     return toReturn;
   }
 }
