@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
 @RegisterRestClient(configKey = "riders-api")
-public interface RidersService {
+public interface RidersClient {
 
   @GET
   @Path("/riders/{legacyId}")

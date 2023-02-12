@@ -1,8 +1,7 @@
 package org.teknichrono.mgp.rest;
 
-import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
-import org.teknichrono.mgp.client.RidersService;
+import org.teknichrono.mgp.business.RiderService;
 import org.teknichrono.mgp.model.rider.RiderDetails;
 
 import javax.inject.Inject;
@@ -19,8 +18,7 @@ public class RiderEndpoint {
   private static final Logger LOGGER = Logger.getLogger(SessionEndpoint.class);
 
   @Inject
-  @RestClient
-  RidersService riderService;
+  RiderService riderService;
 
 
   @GET
@@ -30,5 +28,4 @@ public class RiderEndpoint {
   public RiderDetails getRider(@PathParam("legacyId") Integer legacyId) {
     return riderService.getRider(legacyId);
   }
-
 }
