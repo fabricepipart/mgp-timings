@@ -1,0 +1,148 @@
+{
+  "id": "718be0ae-02cf-4999-8a0d-5aafd884e6a9",
+  "name": "Takuya",
+  "surname": "Tsuda",
+  "nickname": null,
+  "country": {
+    "iso": "JP",
+    "name": "Japan"
+  },
+  "birth_city": null,
+  "birth_date": "1984-04-27",
+  "physical_attributes": {
+    "height": 0,
+    "weight": 0
+  },
+  "career": [
+    {
+      "season": 2022,
+      "number": 85,
+      "sponsored_team": "Team SUZUKI Ecstar",
+      "team": null,
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "TT85",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/9/b/9b0ab14a-36f9-4677-bf10-9700a23da22c/profile/main/85_Takuya_Tsuda.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/riders/9/b/9b0ab14a-36f9-4677-bf10-9700a23da22c/portrait/85_Takuya_Tsuda.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 12,
+      "sponsored_team": "Team SUZUKI ECSTAR",
+      "team": {
+        "id": "baac93d0-3068-4c7a-8d3f-ca215b568f77",
+        "constructor": {
+          "id": "de2d5a0a-83e3-4114-b5c6-72d10d8a9619",
+          "name": "Suzuki",
+          "legacy_id": 2
+        },
+        "name": "Team SUZUKI ECSTAR",
+        "legacy_id": 37,
+        "color": "#4294c1",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/motogp/grid/original/rider_8823_1493979253.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 12,
+      "sponsored_team": "Suzuki Test Team",
+      "team": {
+        "id": "ab89b566-2238-4ea3-8455-e4879bb1cb66",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Suzuki Test Team",
+        "legacy_id": 218,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/motogp/grid/original/rider_8823_1493979253.jpg"
+      }
+    }
+  ],
+  "biography": {
+    "text": "Takuya Tsuda has been an active part of Suzuki's World Championship success in recent times. The Japanese rider joined the Japanese manufacturer in 2015, when the Hamamatsu-based manufacturer returned to the premier class. Since then, he has brought his wealth of experience to developing the GSX-RR, alongside fellow tester Sylvain Guintoli, honing the machine on which Joan Mir would go on to win the world title in 2020. Throughout his long professional career he has had the opportunity to take several podiums in prestigious competitions such as the Suzuka 8 Hours or the All Japan series, while remaining active in the All Japan ST1000 category. After filling in for the injured Alex Rins at the 2017 Spanish GP, he gets his second chance in MotoGP™ in 2022, at the age of 38, with a wildcard at his home GP in Motegi, allowing Suzuki to say goodbye to MotoGP™ in front of his home fans with a local rider.",
+    "media": {
+      "video": null,
+      "picture": null
+    }
+  },
+  "legend": false,
+  "legacy_id": 8823,
+  "merchandise_url": null,
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}
