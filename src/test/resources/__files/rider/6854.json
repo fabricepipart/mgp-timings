@@ -1,1 +1,849 @@
-{"id":"a2f51450-cb43-4d32-8eef-bda9ebb435ed","name":"Aleix","surname":"Espargaro","nickname":null,"country":{"iso":"ES","name":"Spain"},"birth_city":"Granollers","birth_date":"1989-07-30","physical_attributes":{"height":180,"weight":66},"career":[{"season":2022,"number":41,"sponsored_team":"Aprilia Racing","team":{"id":"11d18b37-baba-400a-80c2-f8ddf040f97e","constructor":{"id":"21fbe597-b587-42e1-b571-a06af5cc2487","name":"Aprilia","legacy_id":7},"name":"Aprilia Racing","legacy_id":21,"color":"#2db914","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/0/a/0a912f7c-da05-4942-9fd3-282d0a15f10b/Apriliaracing.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"AE41","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/1/3/131debbc-5003-4aa0-aec6-8d11d29f76b9/profile/main/41-Aleix-Espargaro-Rider_DS_5304.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/1/3/131debbc-5003-4aa0-aec6-8d11d29f76b9/bike/main/_0005_41-Aleix-Espargaro_Bike45.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/8/5/8541cc48-6bb2-46dd-8d9c-4b83ebda5bcb/helmet/main/_0003_41-Aleix-Espargaro,-Helmet_LG60769.png","secondary":null},"number":"https://photos.motogp.com/riders/1/7/17ee53ff-ddd2-4b11-a59d-5310d36e232e/number/41-Aleix-Espargaro.png","portrait":"https://photos.motogp.com/riders/1/3/131debbc-5003-4aa0-aec6-8d11d29f76b9/portrait/41-Aleix-Espargaro-Rider_DS_5300.jpg"}},{"season":2021,"number":41,"sponsored_team":"Aprilia Racing Team Gresini","team":{"id":"01736702-c133-4918-90f9-2ddba33af122","constructor":{"id":"21fbe597-b587-42e1-b571-a06af5cc2487","name":"Aprilia","legacy_id":7},"name":"Aprilia Racing Team Gresini","legacy_id":10,"color":"#9baee4","text_color":"#323232","picture":"https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"AE41","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/e/4/e4f020e5-51d6-407a-9211-34c1c6fec1ba/profile/main/_0006_41-Aleix-Espargaro_Rider_A7R0918.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/8/5/8541cc48-6bb2-46dd-8d9c-4b83ebda5bcb/bike/main/_0004_41-Aleix-Espargaro,-Bike_LG86752.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/8/5/8541cc48-6bb2-46dd-8d9c-4b83ebda5bcb/helmet/main/_0003_41-Aleix-Espargaro,-Helmet_LG60769.png","secondary":null},"number":"https://photos.motogp.com/riders/1/7/17ee53ff-ddd2-4b11-a59d-5310d36e232e/number/41-Aleix-Espargaro.png","portrait":"https://photos.motogp.com/riders/2/d/2d2f8b62-cb89-46fd-a334-1423a28c07f4/portrait/aa.jpg"}},{"season":2020,"number":41,"sponsored_team":"Aprilia Racing Team Gresini","team":{"id":"01736702-c133-4918-90f9-2ddba33af122","constructor":{"id":"21fbe597-b587-42e1-b571-a06af5cc2487","name":"Aprilia","legacy_id":7},"name":"Aprilia Racing Team Gresini","legacy_id":10,"color":"#9baee4","text_color":"#323232","picture":"https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"AE41","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/3/3/33840a68-98d9-4993-939f-b673fe9f9a28/profile/main/1_0012_41-Aleix-Espargaro-ESP,-Body_DSC5985.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/3/7/37ab0dc0-b1cd-440a-85f6-ded34b3871dc/bike/main/41-Aleix-Espargaro.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/a/4/a457a33c-eb5a-43d5-9ead-43554bf6ff64/helmet/main/41-Aleix-Espargaro.jpg","secondary":null},"number":"https://photos.motogp.com/2019/dorsales/3/6854.png","portrait":"https://photos.motogp.com/riders/e/a/ea47b5cc-5bfa-4ff8-b41e-4b67d91cfea6/portrait/41_Aleix_Espargaro.jpg"}},{"season":2019,"number":41,"sponsored_team":"Aprilia Racing Team Gresini","team":{"id":"01736702-c133-4918-90f9-2ddba33af122","constructor":{"id":"21fbe597-b587-42e1-b571-a06af5cc2487","name":"Aprilia","legacy_id":7},"name":"Aprilia Racing Team Gresini","legacy_id":10,"color":"#9baee4","text_color":"#323232","picture":"https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2019/riders/motogp/bike/original/rider_6854_1552058430.jpg","secondary":null},"helmet":{"main":null,"secondary":null},"number":"https://photos.motogp.com/2019/dorsales/3/6854.png","portrait":"https://photos.motogp.com/2019/riders/motogp/grid/original/rider_6854_1562312179.jpg"}},{"season":2018,"number":41,"sponsored_team":"Aprilia Racing Team Gresini","team":{"id":"01736702-c133-4918-90f9-2ddba33af122","constructor":{"id":"21fbe597-b587-42e1-b571-a06af5cc2487","name":"Aprilia","legacy_id":7},"name":"Aprilia Racing Team Gresini","legacy_id":10,"color":"#9baee4","text_color":"#323232","picture":"https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2018/riders/motogp/bike/original/rider_6854_1521313097.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2018/riders/motogp/helmet/original/rider_6854_1521312573.jpg","secondary":null},"number":"https://photos.motogp.com/2018/dorsales/3/6854.png","portrait":"https://photos.motogp.com/2018/riders/motogp/grid/original/rider_6854_1521213917.jpg"}},{"season":2017,"number":41,"sponsored_team":"Aprilia Racing Team Gresini","team":{"id":"01736702-c133-4918-90f9-2ddba33af122","constructor":{"id":"21fbe597-b587-42e1-b571-a06af5cc2487","name":"Aprilia","legacy_id":7},"name":"Aprilia Racing Team Gresini","legacy_id":10,"color":"#9baee4","text_color":"#323232","picture":"https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2017/riders/motogp/bike/original/rider_6854_1490378897.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2017/riders/motogp/helmet/original/rider_6854_1490543430.jpg","secondary":null},"number":null,"portrait":"https://photos.motogp.com/2017/riders/motogp/grid/original/rider_6854_1490884060.jpg"}},{"season":2016,"number":41,"sponsored_team":"Team SUZUKI ECSTAR","team":{"id":"baac93d0-3068-4c7a-8d3f-ca215b568f77","constructor":{"id":"de2d5a0a-83e3-4114-b5c6-72d10d8a9619","name":"Suzuki","legacy_id":2},"name":"Team SUZUKI ECSTAR","legacy_id":37,"color":"#4294c1","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2016/riders/motogp/bike/original/rider_6854_1458324171.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2016/riders/motogp/helmet/original/rider_6854_1458324106.jpg","secondary":null},"number":null,"portrait":"https://photos.motogp.com/2016/riders/motogp/grid/original/rider_6854_1479299292.jpg"}},{"season":2015,"number":41,"sponsored_team":"Team SUZUKI ECSTAR","team":{"id":"baac93d0-3068-4c7a-8d3f-ca215b568f77","constructor":{"id":"de2d5a0a-83e3-4114-b5c6-72d10d8a9619","name":"Suzuki","legacy_id":2},"name":"Team SUZUKI ECSTAR","legacy_id":37,"color":"#4294c1","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2014,"number":41,"sponsored_team":"NGM Forward Racing","team":{"id":"8bef58dd-3b18-4504-8323-5afd4a29c92a","constructor":{"id":"5fe6c749-0a3c-43e7-a079-555d0fc53689","name":"NTS","legacy_id":550},"name":"NGM Forward Racing","legacy_id":203,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto2/original/team_bike_203_1583857101.jpg","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2013,"number":41,"sponsored_team":"Power Electronics Aspar","team":{"id":"8a97d771-4e6a-4ac6-9afa-355fb459fa56","constructor":{"id":"38af1078-e2f1-4399-811c-1e98cf6f6150","name":"Ducati","legacy_id":110},"name":"Pramac Racing Team","legacy_id":32,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/motogp/original/team_bike_32_1574329095.jpg","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2012,"number":41,"sponsored_team":"Power Electronics Aspar","team":{"id":"8a97d771-4e6a-4ac6-9afa-355fb459fa56","constructor":{"id":"38af1078-e2f1-4399-811c-1e98cf6f6150","name":"Ducati","legacy_id":110},"name":"Pramac Racing Team","legacy_id":32,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/motogp/original/team_bike_32_1574329095.jpg","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2011,"number":40,"sponsored_team":"Pons HP 40","team":{"id":"8a97d771-4e6a-4ac6-9afa-355fb459fa56","constructor":{"id":"38af1078-e2f1-4399-811c-1e98cf6f6150","name":"Ducati","legacy_id":110},"name":"Pramac Racing Team","legacy_id":32,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/motogp/original/team_bike_32_1574329095.jpg","published":true},"category":{"id":"ea854a67-73a4-4a28-ac77-d67b3b2a530a","name":"Moto2","legacy_id":2},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2010,"number":41,"sponsored_team":"Pramac Racing Team","team":{"id":"8a97d771-4e6a-4ac6-9afa-355fb459fa56","constructor":{"id":"38af1078-e2f1-4399-811c-1e98cf6f6150","name":"Ducati","legacy_id":110},"name":"Pramac Racing Team","legacy_id":32,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/motogp/original/team_bike_32_1574329095.jpg","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2009,"number":0,"sponsored_team":null,"team":{"id":"005ef2f6-e9f3-4812-b7ce-0772de4bdd50","constructor":{"id":"5fe6c749-0a3c-43e7-a079-555d0fc53689","name":"NTS","legacy_id":550},"name":"Lotus Aprilia","legacy_id":203,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto2/original/team_bike_203_1583857101.jpg","published":true},"category":{"id":"f4c00279-2ae2-42fa-8bce-01c5eaedf392","name":"250cc","legacy_id":5},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2009,"number":0,"sponsored_team":null,"team":{"id":"005ef2f6-e9f3-4812-b7ce-0772de4bdd50","constructor":{"id":"5fe6c749-0a3c-43e7-a079-555d0fc53689","name":"NTS","legacy_id":550},"name":"Lotus Aprilia","legacy_id":203,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto2/original/team_bike_203_1583857101.jpg","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2008,"number":0,"sponsored_team":"Lotus Aprilia","team":{"id":"005ef2f6-e9f3-4812-b7ce-0772de4bdd50","constructor":{"id":"5fe6c749-0a3c-43e7-a079-555d0fc53689","name":"NTS","legacy_id":550},"name":"Lotus Aprilia","legacy_id":203,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto2/original/team_bike_203_1583857101.jpg","published":true},"category":{"id":"f4c00279-2ae2-42fa-8bce-01c5eaedf392","name":"250cc","legacy_id":5},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2007,"number":0,"sponsored_team":"Blusens Aprilia","team":{"id":"4d4d1063-076d-49a5-879d-f38109e9880b","constructor":{"id":"cdb641bf-2ec0-41cd-9959-e4322000fae9","name":"Energica","legacy_id":589},"name":"Blusens Aprilia","legacy_id":216,"color":null,"text_color":null,"picture":null,"published":true},"category":{"id":"f4c00279-2ae2-42fa-8bce-01c5eaedf392","name":"250cc","legacy_id":5},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2006,"number":0,"sponsored_team":"Wurth Honda BQR","team":{"id":"854c70a7-523f-4993-952f-2c7bb896ef1a","constructor":{"id":"cdb641bf-2ec0-41cd-9959-e4322000fae9","name":"Energica","legacy_id":589},"name":"Wurth Honda BQR","legacy_id":218,"color":null,"text_color":null,"picture":null,"published":true},"category":{"id":"f4c00279-2ae2-42fa-8bce-01c5eaedf392","name":"250cc","legacy_id":5},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}},{"season":2005,"number":41,"sponsored_team":"Seedorf RC3 - Tiempo Holidays","team":{"id":"854c70a7-523f-4993-952f-2c7bb896ef1a","constructor":{"id":"cdb641bf-2ec0-41cd-9959-e4322000fae9","name":"Energica","legacy_id":589},"name":"Wurth Honda BQR","legacy_id":218,"color":null,"text_color":null,"picture":null,"published":true},"category":{"id":"578be24b-3cd6-498f-9ed8-f0817be88467","name":"125cc","legacy_id":10},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/6854"}}],"biography":{"text":"Aleix Espargaro was the youngest ever rider to win the 125cc Spanish National Championship when he claimed the title in 2004, before moving onto the world stage the year after. After taking his first World Championship podium in Moto2™ in 2011, 2012 saw Espargaro graduate to MotoGP™ and claim the title of Champion in the CRT category – before repeating the feat in 2013. Top “Open” rider the year after, and on the podium at MotorLand Aragon, Espargaro then joined the factory Suzuki team in 2015, hauling more points and a pole position at the Catalan GP. In 2017, Espargaro moved to Aprilia Racing Team Gresini and took some top results for the Noale factory, including a best of sixth in both Qatar and Aragon. Progressively cutting the gap to the front, Espargaro remained with Aprilia in 2018 but it was off to a tough start before they made some big progress in the latter half of the year. Remaining with the team in 2019, Espargaro earned a best result of P7 on an unfavoured RS-GP, a result he couldn’t quite match during 2020, as despite being a consistent Top 10 challenger, he finished 17th overall in the Championship. He continued for a fifth season with Aprilia in 2021 and his hard work was rewarded with a much-improved RS-GP. He later became the Noale squad's history-maker by taking their debut MotoGP™ podium in Silverstone. Can Espargaro back that up with further rostrums throughout 2022?","media":{"video":null,"picture":"https://photos.motogp.com/riders/0/6/0684589f-8b85-4e43-92b6-41058e8c00cc/biography/41_Aleix_Espargaro_DSC7874.jpg"}},"legend":false,"legacy_id":6854,"merchandise_url":"","published":true,"injured":false,"banned":false,"wildcard":false}
+{
+  "id": "a2f51450-cb43-4d32-8eef-bda9ebb435ed",
+  "name": "Aleix",
+  "surname": "Espargaro",
+  "nickname": null,
+  "country": {
+    "iso": "ES",
+    "name": "Spain"
+  },
+  "birth_city": "Granollers",
+  "birth_date": "1989-07-30",
+  "physical_attributes": {
+    "height": 180,
+    "weight": 66
+  },
+  "career": [
+    {
+      "season": 2022,
+      "number": 41,
+      "sponsored_team": "Aprilia Racing",
+      "team": {
+        "id": "11d18b37-baba-400a-80c2-f8ddf040f97e",
+        "constructor": {
+          "id": "21fbe597-b587-42e1-b571-a06af5cc2487",
+          "name": "Aprilia",
+          "legacy_id": 7
+        },
+        "name": "Aprilia Racing",
+        "legacy_id": 21,
+        "color": "#2db914",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/0/a/0a912f7c-da05-4942-9fd3-282d0a15f10b/Apriliaracing.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "AE41",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/1/3/131debbc-5003-4aa0-aec6-8d11d29f76b9/profile/main/41-Aleix-Espargaro-Rider_DS_5304.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/1/3/131debbc-5003-4aa0-aec6-8d11d29f76b9/bike/main/_0005_41-Aleix-Espargaro_Bike45.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/8/5/8541cc48-6bb2-46dd-8d9c-4b83ebda5bcb/helmet/main/_0003_41-Aleix-Espargaro,-Helmet_LG60769.png",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/1/7/17ee53ff-ddd2-4b11-a59d-5310d36e232e/number/41-Aleix-Espargaro.png",
+        "portrait": "http://localhost:8089/riders/1/3/131debbc-5003-4aa0-aec6-8d11d29f76b9/portrait/41-Aleix-Espargaro-Rider_DS_5300.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 41,
+      "sponsored_team": "Aprilia Racing Team Gresini",
+      "team": {
+        "id": "01736702-c133-4918-90f9-2ddba33af122",
+        "constructor": {
+          "id": "21fbe597-b587-42e1-b571-a06af5cc2487",
+          "name": "Aprilia",
+          "legacy_id": 7
+        },
+        "name": "Aprilia Racing Team Gresini",
+        "legacy_id": 10,
+        "color": "#9baee4",
+        "text_color": "#323232",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "AE41",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/e/4/e4f020e5-51d6-407a-9211-34c1c6fec1ba/profile/main/_0006_41-Aleix-Espargaro_Rider_A7R0918.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/8/5/8541cc48-6bb2-46dd-8d9c-4b83ebda5bcb/bike/main/_0004_41-Aleix-Espargaro,-Bike_LG86752.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/8/5/8541cc48-6bb2-46dd-8d9c-4b83ebda5bcb/helmet/main/_0003_41-Aleix-Espargaro,-Helmet_LG60769.png",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/1/7/17ee53ff-ddd2-4b11-a59d-5310d36e232e/number/41-Aleix-Espargaro.png",
+        "portrait": "http://localhost:8089/riders/2/d/2d2f8b62-cb89-46fd-a334-1423a28c07f4/portrait/aa.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 41,
+      "sponsored_team": "Aprilia Racing Team Gresini",
+      "team": {
+        "id": "01736702-c133-4918-90f9-2ddba33af122",
+        "constructor": {
+          "id": "21fbe597-b587-42e1-b571-a06af5cc2487",
+          "name": "Aprilia",
+          "legacy_id": 7
+        },
+        "name": "Aprilia Racing Team Gresini",
+        "legacy_id": 10,
+        "color": "#9baee4",
+        "text_color": "#323232",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "AE41",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/3/3/33840a68-98d9-4993-939f-b673fe9f9a28/profile/main/1_0012_41-Aleix-Espargaro-ESP,-Body_DSC5985.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/3/7/37ab0dc0-b1cd-440a-85f6-ded34b3871dc/bike/main/41-Aleix-Espargaro.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/a/4/a457a33c-eb5a-43d5-9ead-43554bf6ff64/helmet/main/41-Aleix-Espargaro.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2019/dorsales/3/6854.png",
+        "portrait": "http://localhost:8089/riders/e/a/ea47b5cc-5bfa-4ff8-b41e-4b67d91cfea6/portrait/41_Aleix_Espargaro.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 41,
+      "sponsored_team": "Aprilia Racing Team Gresini",
+      "team": {
+        "id": "01736702-c133-4918-90f9-2ddba33af122",
+        "constructor": {
+          "id": "21fbe597-b587-42e1-b571-a06af5cc2487",
+          "name": "Aprilia",
+          "legacy_id": 7
+        },
+        "name": "Aprilia Racing Team Gresini",
+        "legacy_id": 10,
+        "color": "#9baee4",
+        "text_color": "#323232",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2019/riders/motogp/bike/original/rider_6854_1552058430.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2019/dorsales/3/6854.png",
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_6854_1562312179.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 41,
+      "sponsored_team": "Aprilia Racing Team Gresini",
+      "team": {
+        "id": "01736702-c133-4918-90f9-2ddba33af122",
+        "constructor": {
+          "id": "21fbe597-b587-42e1-b571-a06af5cc2487",
+          "name": "Aprilia",
+          "legacy_id": 7
+        },
+        "name": "Aprilia Racing Team Gresini",
+        "legacy_id": 10,
+        "color": "#9baee4",
+        "text_color": "#323232",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2018/riders/motogp/bike/original/rider_6854_1521313097.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2018/riders/motogp/helmet/original/rider_6854_1521312573.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2018/dorsales/3/6854.png",
+        "portrait": "http://localhost:8089/2018/riders/motogp/grid/original/rider_6854_1521213917.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 41,
+      "sponsored_team": "Aprilia Racing Team Gresini",
+      "team": {
+        "id": "01736702-c133-4918-90f9-2ddba33af122",
+        "constructor": {
+          "id": "21fbe597-b587-42e1-b571-a06af5cc2487",
+          "name": "Aprilia",
+          "legacy_id": 7
+        },
+        "name": "Aprilia Racing Team Gresini",
+        "legacy_id": 10,
+        "color": "#9baee4",
+        "text_color": "#323232",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2017/riders/motogp/bike/original/rider_6854_1490378897.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2017/riders/motogp/helmet/original/rider_6854_1490543430.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/motogp/grid/original/rider_6854_1490884060.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 41,
+      "sponsored_team": "Team SUZUKI ECSTAR",
+      "team": {
+        "id": "baac93d0-3068-4c7a-8d3f-ca215b568f77",
+        "constructor": {
+          "id": "de2d5a0a-83e3-4114-b5c6-72d10d8a9619",
+          "name": "Suzuki",
+          "legacy_id": 2
+        },
+        "name": "Team SUZUKI ECSTAR",
+        "legacy_id": 37,
+        "color": "#4294c1",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2016/riders/motogp/bike/original/rider_6854_1458324171.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2016/riders/motogp/helmet/original/rider_6854_1458324106.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2016/riders/motogp/grid/original/rider_6854_1479299292.jpg"
+      }
+    },
+    {
+      "season": 2015,
+      "number": 41,
+      "sponsored_team": "Team SUZUKI ECSTAR",
+      "team": {
+        "id": "baac93d0-3068-4c7a-8d3f-ca215b568f77",
+        "constructor": {
+          "id": "de2d5a0a-83e3-4114-b5c6-72d10d8a9619",
+          "name": "Suzuki",
+          "legacy_id": 2
+        },
+        "name": "Team SUZUKI ECSTAR",
+        "legacy_id": 37,
+        "color": "#4294c1",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2014,
+      "number": 41,
+      "sponsored_team": "NGM Forward Racing",
+      "team": {
+        "id": "8bef58dd-3b18-4504-8323-5afd4a29c92a",
+        "constructor": {
+          "id": "5fe6c749-0a3c-43e7-a079-555d0fc53689",
+          "name": "NTS",
+          "legacy_id": 550
+        },
+        "name": "NGM Forward Racing",
+        "legacy_id": 203,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_203_1583857101.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2013,
+      "number": 41,
+      "sponsored_team": "Power Electronics Aspar",
+      "team": {
+        "id": "8a97d771-4e6a-4ac6-9afa-355fb459fa56",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Pramac Racing Team",
+        "legacy_id": 32,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_32_1574329095.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2012,
+      "number": 41,
+      "sponsored_team": "Power Electronics Aspar",
+      "team": {
+        "id": "8a97d771-4e6a-4ac6-9afa-355fb459fa56",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Pramac Racing Team",
+        "legacy_id": 32,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_32_1574329095.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2011,
+      "number": 40,
+      "sponsored_team": "Pons HP 40",
+      "team": {
+        "id": "8a97d771-4e6a-4ac6-9afa-355fb459fa56",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Pramac Racing Team",
+        "legacy_id": 32,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_32_1574329095.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2010,
+      "number": 41,
+      "sponsored_team": "Pramac Racing Team",
+      "team": {
+        "id": "8a97d771-4e6a-4ac6-9afa-355fb459fa56",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Pramac Racing Team",
+        "legacy_id": 32,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_32_1574329095.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2009,
+      "number": 0,
+      "sponsored_team": null,
+      "team": {
+        "id": "005ef2f6-e9f3-4812-b7ce-0772de4bdd50",
+        "constructor": {
+          "id": "5fe6c749-0a3c-43e7-a079-555d0fc53689",
+          "name": "NTS",
+          "legacy_id": 550
+        },
+        "name": "Lotus Aprilia",
+        "legacy_id": 203,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_203_1583857101.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "f4c00279-2ae2-42fa-8bce-01c5eaedf392",
+        "name": "250cc",
+        "legacy_id": 5
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2009,
+      "number": 0,
+      "sponsored_team": null,
+      "team": {
+        "id": "005ef2f6-e9f3-4812-b7ce-0772de4bdd50",
+        "constructor": {
+          "id": "5fe6c749-0a3c-43e7-a079-555d0fc53689",
+          "name": "NTS",
+          "legacy_id": 550
+        },
+        "name": "Lotus Aprilia",
+        "legacy_id": 203,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_203_1583857101.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2008,
+      "number": 0,
+      "sponsored_team": "Lotus Aprilia",
+      "team": {
+        "id": "005ef2f6-e9f3-4812-b7ce-0772de4bdd50",
+        "constructor": {
+          "id": "5fe6c749-0a3c-43e7-a079-555d0fc53689",
+          "name": "NTS",
+          "legacy_id": 550
+        },
+        "name": "Lotus Aprilia",
+        "legacy_id": 203,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_203_1583857101.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "f4c00279-2ae2-42fa-8bce-01c5eaedf392",
+        "name": "250cc",
+        "legacy_id": 5
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2007,
+      "number": 0,
+      "sponsored_team": "Blusens Aprilia",
+      "team": {
+        "id": "4d4d1063-076d-49a5-879d-f38109e9880b",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Blusens Aprilia",
+        "legacy_id": 216,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "f4c00279-2ae2-42fa-8bce-01c5eaedf392",
+        "name": "250cc",
+        "legacy_id": 5
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2006,
+      "number": 0,
+      "sponsored_team": "Wurth Honda BQR",
+      "team": {
+        "id": "854c70a7-523f-4993-952f-2c7bb896ef1a",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Wurth Honda BQR",
+        "legacy_id": 218,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "f4c00279-2ae2-42fa-8bce-01c5eaedf392",
+        "name": "250cc",
+        "legacy_id": 5
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    },
+    {
+      "season": 2005,
+      "number": 41,
+      "sponsored_team": "Seedorf RC3 - Tiempo Holidays",
+      "team": {
+        "id": "854c70a7-523f-4993-952f-2c7bb896ef1a",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Wurth Honda BQR",
+        "legacy_id": 218,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "578be24b-3cd6-498f-9ed8-f0817be88467",
+        "name": "125cc",
+        "legacy_id": 10
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6854"
+      }
+    }
+  ],
+  "biography": {
+    "text": "Aleix Espargaro was the youngest ever rider to win the 125cc Spanish National Championship when he claimed the title in 2004, before moving onto the world stage the year after. After taking his first World Championship podium in Moto2™ in 2011, 2012 saw Espargaro graduate to MotoGP™ and claim the title of Champion in the CRT category – before repeating the feat in 2013. Top “Open” rider the year after, and on the podium at MotorLand Aragon, Espargaro then joined the factory Suzuki team in 2015, hauling more points and a pole position at the Catalan GP. In 2017, Espargaro moved to Aprilia Racing Team Gresini and took some top results for the Noale factory, including a best of sixth in both Qatar and Aragon. Progressively cutting the gap to the front, Espargaro remained with Aprilia in 2018 but it was off to a tough start before they made some big progress in the latter half of the year. Remaining with the team in 2019, Espargaro earned a best result of P7 on an unfavoured RS-GP, a result he couldn’t quite match during 2020, as despite being a consistent Top 10 challenger, he finished 17th overall in the Championship. He continued for a fifth season with Aprilia in 2021 and his hard work was rewarded with a much-improved RS-GP. He later became the Noale squad's history-maker by taking their debut MotoGP™ podium in Silverstone. Can Espargaro back that up with further rostrums throughout 2022?",
+    "media": {
+      "video": null,
+      "picture": "http://localhost:8089/riders/0/6/0684589f-8b85-4e43-92b6-41058e8c00cc/biography/41_Aleix_Espargaro_DSC7874.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 6854,
+  "merchandise_url": "",
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

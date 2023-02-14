@@ -1,0 +1,376 @@
+{
+  "id": "3c4a2a9d-7d61-4931-a0d5-5b4b0d4d7888",
+  "name": "Darryn",
+  "surname": "Binder",
+  "nickname": null,
+  "country": {
+    "iso": "ZA",
+    "name": "South Africa"
+  },
+  "birth_city": "Potchefstroom",
+  "birth_date": "1998-01-21",
+  "physical_attributes": {
+    "height": 175,
+    "weight": 63
+  },
+  "career": [
+    {
+      "season": 2023,
+      "number": 15,
+      "sponsored_team": "Liqui Moly Husqvarna Intact GP",
+      "team": {
+        "id": "1fbb67bf-225e-44d3-a432-4ce3a839b0d2",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Liqui Moly Husqvarna Intact GP",
+        "legacy_id": 206,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": "DB15",
+      "current": true,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/6/3/630ef4b4-69ed-406f-a004-fda5018562ac/profile/main/40_Darryn_Binder.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/6/3/630ef4b4-69ed-406f-a004-fda5018562ac/bike/main/40_Darryn_Binder_B.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/6/3/630ef4b4-69ed-406f-a004-fda5018562ac/helmet/main/40-Darryn-Binder.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/riders/6/3/630ef4b4-69ed-406f-a004-fda5018562ac/portrait/40_Darryn_Binder.jpg"
+      }
+    },
+    {
+      "season": 2022,
+      "number": 40,
+      "sponsored_team": "WithU Yamaha RNF MotoGP™ Team",
+      "team": {
+        "id": "c91950d9-f784-4a16-a8fa-591e7e028dcf",
+        "constructor": {
+          "id": "f2e835be-7fab-4782-a26b-de3d583d132c",
+          "name": "Yamaha",
+          "legacy_id": 3
+        },
+        "name": "WithU Yamaha RNF MotoGP™ Team",
+        "legacy_id": 46,
+        "color": "#6d6e71",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/b/2/b2036bcc-48c9-441d-9ad0-0405d83065fc/RNF.png",
+        "published": false
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "DB40",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/2/1/210323bd-6bac-44be-ba0f-fafb39e44440/profile/main/40_Darryn_Binder.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/2/1/210323bd-6bac-44be-ba0f-fafb39e44440/bike/main/40_Darryn_Binder_B.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/2/1/210323bd-6bac-44be-ba0f-fafb39e44440/helmet/main/40-Darryn-Binder.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/riders/2/1/210323bd-6bac-44be-ba0f-fafb39e44440/portrait/40_Darryn_Binder.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 40,
+      "sponsored_team": "Petronas Sprinta Racing",
+      "team": {
+        "id": "34059d28-3f75-4f53-980b-5a8f60df2f03",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Petronas Sprinta Racing",
+        "legacy_id": 102,
+        "color": "#009e99",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/0/304e1c4c-2f72-4424-8dcb-5922ee3530f6/m3_4455_honda.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": "DB40",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/0/c/0c6cb84f-6471-4023-a13d-25e760856f4a/profile/main/_0009_40-Darryn-Binder,-Rider_A7R0267.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/3/1/311ba9df-4685-4af6-bc47-39fefb393ce4/bike/main/40_Darryn_Binder_Bike_LG85621.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/0/c/0c6cb84f-6471-4023-a13d-25e760856f4a/helmet/main/_0021_40_Darryn_Binder_Helmet_LG60139.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/9/d/9da6ba75-1ff0-439b-bc06-b0de7d194752/number/_0015_40_Darryn_Binder.png",
+        "portrait": "http://localhost:8089/riders/0/c/0c6cb84f-6471-4023-a13d-25e760856f4a/portrait/_0025_40_Darryn_Binder_Rider_A7R0264.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 40,
+      "sponsored_team": "CIP Green Power",
+      "team": {
+        "id": "5f0a22a4-af1f-46ca-baf6-e688f6da8843",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "CIP Green Power",
+        "legacy_id": 110,
+        "color": "#4ed747",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/2/524d167d-7c41-4b05-9256-641c8abd7194/CIPGreenPower.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": "DB40",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/b/6/b6fc0217-6703-4278-894a-f2ea90c8528c/profile/main/40-Darryn-Binder-SAF,-Rider---DSC_0575.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2020/riders/moto3/bike/original/rider_8296_1583849947.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2020/riders/moto3/helmet/original/rider_8296_1584100026.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/40.png",
+        "portrait": "http://localhost:8089/2020/riders/moto3/grid/original/rider_8296_1583408902.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 40,
+      "sponsored_team": "CIP Green Power",
+      "team": {
+        "id": "5f0a22a4-af1f-46ca-baf6-e688f6da8843",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "CIP Green Power",
+        "legacy_id": 110,
+        "color": "#4ed747",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/2/524d167d-7c41-4b05-9256-641c8abd7194/CIPGreenPower.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2019/riders/moto3/bike/original/rider_8296_1551780718.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/40.png",
+        "portrait": "http://localhost:8089/2019/riders/moto3/grid/original/rider_8296_1551888867.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 40,
+      "sponsored_team": "CIP Green Power",
+      "team": {
+        "id": "5f0a22a4-af1f-46ca-baf6-e688f6da8843",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "CIP Green Power",
+        "legacy_id": 110,
+        "color": "#4ed747",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/2/524d167d-7c41-4b05-9256-641c8abd7194/CIPGreenPower.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2018/riders/moto3/bike/original/rider_8296_1521135329.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2018/riders/moto3/helmet/original/rider_8296_1521312636.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/40.png",
+        "portrait": "http://localhost:8089/2018/riders/moto3/grid/original/rider_8296_1521047820.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 40,
+      "sponsored_team": "Platinum Bay Real Estate",
+      "team": {
+        "id": "5f0a22a4-af1f-46ca-baf6-e688f6da8843",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "CIP Green Power",
+        "legacy_id": 110,
+        "color": "#4ed747",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/2/524d167d-7c41-4b05-9256-641c8abd7194/CIPGreenPower.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2017/riders/moto3/bike/original/rider_8296_1490207394.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2017/riders/moto3/helmet/original/rider_8296_1490546489.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/moto3/grid/original/rider_8296_1495118352.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 40,
+      "sponsored_team": "Platinum Bay Real Estate",
+      "team": {
+        "id": "5f0a22a4-af1f-46ca-baf6-e688f6da8843",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "CIP Green Power",
+        "legacy_id": 110,
+        "color": "#4ed747",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/2/524d167d-7c41-4b05-9256-641c8abd7194/CIPGreenPower.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2016/riders/moto3/bike/original/rider_8296_1458823947.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2016/riders/moto3/helmet/original/rider_8296_1458821890.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2016/riders/moto3/grid/original/rider_8296_1458821742.jpg"
+      }
+    }
+  ],
+  "biography": {
+    "text": "Another graduate of the Red Bull Rookies Cup and younger brother of South African 2016 Moto3™ World Champion Brad Binder, Darryn Binder faced his first full season in 2015. It was a difficult debut season, but with Platinum Bay Real Estate in 2016 the South African made real inroads, including a fourth place in Phillip Island. For 2017 Binder remained with the team, and made big progress despite an injury – taking top tens, points finishes and a best of fourth. In 2018, he moved to Red Bull KTM Ajo in a single rider team but had a tough season until the latter races - finally then taking his first podium. In 2019 he'll switch to CIP - Green Power. For the 2019 season he signed with CIP Green Power, adding his second podium in Argentina in a somewhat controversial year. For 2020 he was confident of being able to rub shoulders with the usual race leaders and did so, taking victory at the Catalan GP and a 2nd position at the Aragon GP. Binder started 2021 in fine form, with podiums at the Qatar and Doha Grands Prix. Despite being unable to take any further rostrums, fighting at the sharp end on a regular basis caught the eye of WithU Yamaha RNF management. So much so, the South African will be the second man in history to make the move from Moto3™ to MotoGP™. Binder managed to adapt to life in the premier class relatively quickly, scoring a top 10 finish in Round 2 in Indonseia, while there were further point scoring finishes in Catalunya and Australia. Despite a respectable debut season in MotoGP™, Binder couldn’t secure a seat for 2023 and has dropped down to Moto2™ with Liqui Moly Husqvarna Intact GP.",
+    "media": {
+      "video": null,
+      "picture": "http://localhost:8089/riders/9/7/9780ea46-f994-4da1-9b41-c614d9d15f72/biography/40_Darryn_Binder.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 8296,
+  "merchandise_url": null,
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

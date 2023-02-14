@@ -1,0 +1,462 @@
+{
+  "id": "4ec18d03-c7a1-4e35-b05f-e2b66c6130f8",
+  "name": "Remy",
+  "surname": "Gardner",
+  "nickname": null,
+  "country": {
+    "iso": "AU",
+    "name": "Australia"
+  },
+  "birth_city": "Sydney",
+  "birth_date": "1998-02-24",
+  "physical_attributes": {
+    "height": 178,
+    "weight": 72
+  },
+  "career": [
+    {
+      "season": 2022,
+      "number": 87,
+      "sponsored_team": "Tech3 KTM Factory Racing",
+      "team": {
+        "id": "e7de07e2-4309-4a30-8f70-67ead4d6794e",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Tech3 KTM Factory Racing",
+        "legacy_id": 11,
+        "color": "#b52d27",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/8/c/8cbb2dae-cd62-4850-901d-994227434a5c/Tech3KTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "RG87",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/0/2/0246d6f1-c7e6-4eb8-b412-f24178a4fe4a/profile/main/87-Ramy-Garder_Rider_DS_5119.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/0/2/0246d6f1-c7e6-4eb8-b412-f24178a4fe4a/bike/main/_0001_87-Remy-Gardner_Bike45.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/7/c/7c9e4278-ac4a-4364-a1dc-40f830bfd6d3/helmet/main/87RemyGardner_LG6_6346.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/riders/0/2/0246d6f1-c7e6-4eb8-b412-f24178a4fe4a/portrait/87-Ramy-Garder_Rider_DS_5115.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 87,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "3c73638c-cffb-4e42-a6ca-b6506ab6bf5c",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 211,
+        "color": "#e05a17",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": "RG87",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/e/7/e7fd5675-ce4c-474b-b182-51adb35dd898/profile/main/_0008_87-Remy-Gardner,-Rider_A7R9261.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/8/e/8e657999-6003-4d9f-8f8e-0d64b9416e00/bike/main/_0000_87-Remy-Gardner,-Bike_LG85676.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/e/7/e7fd5675-ce4c-474b-b182-51adb35dd898/helmet/main/_0008_87-Remy-Gardner.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/9/0/905e9df2-5a42-4dc3-9bd3-3808b330a250/number/_0014_87_Remy_Gardner.png",
+        "portrait": "http://localhost:8089/riders/e/7/e7fd5675-ce4c-474b-b182-51adb35dd898/portrait/_0008_87-Remy-Gardner.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 87,
+      "sponsored_team": "Onexox TKKR SAG Team",
+      "team": {
+        "id": "12b49bae-d41e-47bb-b0b1-595b45e3b9f2",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Pertamina Mandalika SAG Team",
+        "legacy_id": 201,
+        "color": "#006cb8",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/a/7/a74ded80-6ea2-42d9-a910-e37abfcfcf2b/02-Gabriel-Rodrigo-Bike-Moto2DSC03071.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": "RG87",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/a/8/a8235ffe-d977-4df7-8428-c81b181e37dc/profile/main/87-Remy-Gardner-AUT,-Rider---DSC_0661.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2020/riders/moto2/bike/original/rider_8513_1583840783.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2020/riders/moto2/helmet/original/rider_8513_1584104075.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/87.png",
+        "portrait": "http://localhost:8089/2020/riders/moto2/grid/original/rider_8513_1583402889.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 87,
+      "sponsored_team": "ONEXOX TKKR SAG Team",
+      "team": {
+        "id": "12b49bae-d41e-47bb-b0b1-595b45e3b9f2",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Pertamina Mandalika SAG Team",
+        "legacy_id": 201,
+        "color": "#006cb8",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/a/7/a74ded80-6ea2-42d9-a910-e37abfcfcf2b/02-Gabriel-Rodrigo-Bike-Moto2DSC03071.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2019/riders/moto2/bike/original/rider_8513_1551966386.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/87.png",
+        "portrait": "http://localhost:8089/2019/riders/moto2/grid/original/rider_8513_1551953147.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 87,
+      "sponsored_team": "SAG Team",
+      "team": {
+        "id": "042ff296-2544-4857-98e0-8b90b433287e",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "SAG Team",
+        "legacy_id": 224,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2018/riders/moto2/bike/original/rider_8513_1521135625.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2018/riders/moto2/helmet/original/rider_8513_1521312815.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/87.png",
+        "portrait": "http://localhost:8089/2018/riders/moto2/grid/original/rider_8513_1521039288.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 87,
+      "sponsored_team": "Tech 3 Racing",
+      "team": {
+        "id": "45c86791-b247-4944-8d44-bb4ec019e5df",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Tech 3 Racing",
+        "legacy_id": 221,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2017/riders/moto2/bike/original/rider_8513_1490204521.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2017/riders/moto2/helmet/original/rider_8513_1490546655.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/moto2/grid/original/rider_8513_1490198318.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 87,
+      "sponsored_team": "Tasca Racing Scuderia Moto2",
+      "team": {
+        "id": "15a6f04f-3816-431a-bdb6-101f7148214e",
+        "constructor": {
+          "id": "cdb641bf-2ec0-41cd-9959-e4322000fae9",
+          "name": "Energica",
+          "legacy_id": 589
+        },
+        "name": "Tasca Racing Scuderia Moto2",
+        "legacy_id": 219,
+        "color": null,
+        "text_color": null,
+        "picture": null,
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2016/riders/moto2/grid/original/rider_8513_1467032000.jpg"
+      }
+    },
+    {
+      "season": 2015,
+      "number": 2,
+      "sponsored_team": "CIP",
+      "team": {
+        "id": "fa44e40f-acab-410b-9394-e723502692e3",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "CIP",
+        "legacy_id": 110,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_110_1584101124.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/8513"
+      }
+    },
+    {
+      "season": 2014,
+      "number": 2,
+      "sponsored_team": "Calvo Team",
+      "team": {
+        "id": "fa44e40f-acab-410b-9394-e723502692e3",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "CIP",
+        "legacy_id": 110,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_110_1584101124.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/8513"
+      }
+    },
+    {
+      "season": 2014,
+      "number": 2,
+      "sponsored_team": "Team Laglisse Calvo",
+      "team": {
+        "id": "fa44e40f-acab-410b-9394-e723502692e3",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "CIP",
+        "legacy_id": 110,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_110_1584101124.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/8513"
+      }
+    }
+  ],
+  "biography": {
+    "text": "The eldest son of former 500cc World Champion Wayne Gardner, Remy got his first taste of short-circuit track action at the age of ten after being brought up in motocross and enduro. In 2010 he was invited by Honda Australia to represent them in the NS100F International Trophy and took part in the premier MRRDA Nippers Championship for riders under 13. The following year he left Australia to settle in Spain, where he competed in the Mediterranean Championship. From 2013 he rode in the FIM CEV Repsol with the Calvo/LaGlisse team. In 2015 Gardner joined the CIP Team with a Mahindra bike and moved to Moto2™ in 2016, ending the year with Tasca Racing. In 2017 the Australian moved to Tech 3 Racing in the intermediate class, with whom he remained with for 2018. Gardner's season was heavily hampered after a training accident left him with two broken legs, with a best finish of fifth coming in Valencia. A move to the SAG Team came in 2019, there was a podium and four Top 6 appearances, but he couldn’t find the consistency to challenge regularly. 2020 saw his fortunes improve with three podiums preceding a maiden race win in the Portimao finale. That victory was the perfect springboard into the Red Bull KTM Ajo team, and the Australian was able to unravel a stunning year. Five wins, six P2s and one P3 was enough to see Gardner fend off rookie sensation teammate Raul Fernandez to claim the intermediate class title. Now, a debut MotoGP™ campaign awaits - alongside Fernandez - in the Tech3 KTM Factory Racing ranks. ",
+    "media": {
+      "video": null,
+      "picture": "http://localhost:8089/riders/d/7/d70e317a-3559-4c1b-aea9-9257c94d96e9/biography/87_Remy_Gardner.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 8513,
+  "merchandise_url": null,
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

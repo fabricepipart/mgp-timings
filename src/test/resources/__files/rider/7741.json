@@ -29,7 +29,7 @@
         "legacy_id": 19,
         "color": "#183dc7",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "picture": "http://localhost:8089/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
         "published": true
       },
       "category": {
@@ -42,19 +42,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/3/b/3b9efa76-b5d1-4df5-93c1-bc213c492c93/profile/main/21_Franco_Morbidelli_MotoGP_Rider_DS_5702.png",
+          "main": "http://localhost:8089/riders/3/b/3b9efa76-b5d1-4df5-93c1-bc213c492c93/profile/main/21_Franco_Morbidelli_MotoGP_Rider_DS_5702.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/0/3/03ac78fa-bc59-4326-af4f-11312eb210f7/bike/main/_0002_21-Franco-Morbidelli-Bike-MotoGPDSC04251.png",
+          "main": "http://localhost:8089/riders/0/3/03ac78fa-bc59-4326-af4f-11312eb210f7/bike/main/_0002_21-Franco-Morbidelli-Bike-MotoGPDSC04251.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/3/b/3b9efa76-b5d1-4df5-93c1-bc213c492c93/helmet/main/21-Franco-Morbidelli.jpg",
+          "main": "http://localhost:8089/riders/3/b/3b9efa76-b5d1-4df5-93c1-bc213c492c93/helmet/main/21-Franco-Morbidelli.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/1/d/1da10d15-c270-4ef4-8276-3bfbfa029eb3/number/21-Franco-Morbidelli.png",
-        "portrait": "https://photos.motogp.com/riders/3/b/3b9efa76-b5d1-4df5-93c1-bc213c492c93/portrait/21-Franco-Morbidelli.jpg"
+        "number": "http://localhost:8089/riders/1/d/1da10d15-c270-4ef4-8276-3bfbfa029eb3/number/21-Franco-Morbidelli.png",
+        "portrait": "http://localhost:8089/riders/3/b/3b9efa76-b5d1-4df5-93c1-bc213c492c93/portrait/21-Franco-Morbidelli.jpg"
       }
     },
     {
@@ -72,7 +72,7 @@
         "legacy_id": 19,
         "color": "#183dc7",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "picture": "http://localhost:8089/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
         "published": true
       },
       "category": {
@@ -85,19 +85,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/profile/main/_0008_21-Franco-Morbidelli,-Rider_A7R1691.png",
+          "main": "http://localhost:8089/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/profile/main/_0008_21-Franco-Morbidelli,-Rider_A7R1691.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/bike/main/_0008_21-Franco-Morbidelli,-Bike_LG87440.png",
+          "main": "http://localhost:8089/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/bike/main/_0008_21-Franco-Morbidelli,-Bike_LG87440.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/helmet/main/_0010_21_Franco_Morbidelli,_Helmet_LG61759.jpg",
+          "main": "http://localhost:8089/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/helmet/main/_0010_21_Franco_Morbidelli,_Helmet_LG61759.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/1/d/1da10d15-c270-4ef4-8276-3bfbfa029eb3/number/21-Franco-Morbidelli.png",
-        "portrait": "https://photos.motogp.com/riders/6/0/60c56f6e-59be-49fd-9ed9-62021033657e/portrait/_0009_21-Franco-Morbidelli,-Rider_A7R1687.jpg"
+        "number": "http://localhost:8089/riders/1/d/1da10d15-c270-4ef4-8276-3bfbfa029eb3/number/21-Franco-Morbidelli.png",
+        "portrait": "http://localhost:8089/riders/6/0/60c56f6e-59be-49fd-9ed9-62021033657e/portrait/_0009_21-Franco-Morbidelli,-Rider_A7R1687.jpg"
       }
     },
     {
@@ -115,7 +115,7 @@
         "legacy_id": 19,
         "color": "#183dc7",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "picture": "http://localhost:8089/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
         "published": true
       },
       "category": {
@@ -128,19 +128,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/profile/main/_0008_21-Franco-Morbidelli,-Rider_A7R1691.png",
+          "main": "http://localhost:8089/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/profile/main/_0008_21-Franco-Morbidelli,-Rider_A7R1691.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/bike/main/_0008_21-Franco-Morbidelli,-Bike_LG87440.png",
+          "main": "http://localhost:8089/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/bike/main/_0008_21-Franco-Morbidelli,-Bike_LG87440.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/helmet/main/_0010_21_Franco_Morbidelli,_Helmet_LG61759.jpg",
+          "main": "http://localhost:8089/riders/e/6/e62d9096-68ee-4a3e-b1b1-733a1d91c988/helmet/main/_0010_21_Franco_Morbidelli,_Helmet_LG61759.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/1/d/1da10d15-c270-4ef4-8276-3bfbfa029eb3/number/21-Franco-Morbidelli.png",
-        "portrait": "https://photos.motogp.com/riders/6/0/60c56f6e-59be-49fd-9ed9-62021033657e/portrait/_0009_21-Franco-Morbidelli,-Rider_A7R1687.jpg"
+        "number": "http://localhost:8089/riders/1/d/1da10d15-c270-4ef4-8276-3bfbfa029eb3/number/21-Franco-Morbidelli.png",
+        "portrait": "http://localhost:8089/riders/6/0/60c56f6e-59be-49fd-9ed9-62021033657e/portrait/_0009_21-Franco-Morbidelli,-Rider_A7R1687.jpg"
       }
     },
     {
@@ -158,7 +158,7 @@
         "legacy_id": 46,
         "color": "#1e4374",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/7/0/7064589f-b982-4976-a29c-9c72737a40cb/Petronas-Yamaha_SRT.png",
+        "picture": "http://localhost:8089/teams/7/0/7064589f-b982-4976-a29c-9c72737a40cb/Petronas-Yamaha_SRT.png",
         "published": true
       },
       "category": {
@@ -171,19 +171,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/4/a/4af5b878-b9fe-4a5d-837b-d4517f382ee0/profile/main/1_0005_21-Franco-Morbidelli-ITA,-Body_DSC6833.png",
+          "main": "http://localhost:8089/riders/4/a/4af5b878-b9fe-4a5d-837b-d4517f382ee0/profile/main/1_0005_21-Franco-Morbidelli-ITA,-Body_DSC6833.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/9/7/97363921-b1f6-4d4d-a021-3678ffae869e/bike/main/21-Franco-Morbidelli.png",
+          "main": "http://localhost:8089/riders/9/7/97363921-b1f6-4d4d-a021-3678ffae869e/bike/main/21-Franco-Morbidelli.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/6/8/688710e9-4a7f-4640-a868-14d2b5f6ab2d/helmet/main/21-Franco-Morbidelli.jpg",
+          "main": "http://localhost:8089/riders/6/8/688710e9-4a7f-4640-a868-14d2b5f6ab2d/helmet/main/21-Franco-Morbidelli.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2019/dorsales/3/7741.png",
-        "portrait": "https://photos.motogp.com/riders/6/2/62a86d43-a090-48d6-bbe2-ecc78cbe7b63/portrait/21_Franco_Morbidelli.jpg"
+        "number": "http://localhost:8089/2019/dorsales/3/7741.png",
+        "portrait": "http://localhost:8089/riders/6/2/62a86d43-a090-48d6-bbe2-ecc78cbe7b63/portrait/21_Franco_Morbidelli.jpg"
       }
     },
     {
@@ -201,7 +201,7 @@
         "legacy_id": 46,
         "color": "#1e4374",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/7/0/7064589f-b982-4976-a29c-9c72737a40cb/Petronas-Yamaha_SRT.png",
+        "picture": "http://localhost:8089/teams/7/0/7064589f-b982-4976-a29c-9c72737a40cb/Petronas-Yamaha_SRT.png",
         "published": true
       },
       "category": {
@@ -218,15 +218,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2019/riders/motogp/bike/original/rider_7741_1552058366.jpg",
+          "main": "http://localhost:8089/2019/riders/motogp/bike/original/rider_7741_1552058366.jpg",
           "secondary": null
         },
         "helmet": {
           "main": null,
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2019/dorsales/3/7741.png",
-        "portrait": "https://photos.motogp.com/2019/riders/motogp/grid/original/rider_7741_1554806124.jpg"
+        "number": "http://localhost:8089/2019/dorsales/3/7741.png",
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_7741_1554806124.jpg"
       }
     },
     {
@@ -244,7 +244,7 @@
         "legacy_id": 46,
         "color": "#1e4374",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/7/0/7064589f-b982-4976-a29c-9c72737a40cb/Petronas-Yamaha_SRT.png",
+        "picture": "http://localhost:8089/teams/7/0/7064589f-b982-4976-a29c-9c72737a40cb/Petronas-Yamaha_SRT.png",
         "published": true
       },
       "category": {
@@ -261,15 +261,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2018/riders/motogp/bike/original/rider_7741_1521313140.jpg",
+          "main": "http://localhost:8089/2018/riders/motogp/bike/original/rider_7741_1521313140.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2018/riders/motogp/helmet/original/rider_7741_1521312662.jpg",
+          "main": "http://localhost:8089/2018/riders/motogp/helmet/original/rider_7741_1521312662.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2018/dorsales/3/7741.png",
-        "portrait": "https://photos.motogp.com/2018/riders/motogp/grid/original/rider_7741_1549618398.jpg"
+        "number": "http://localhost:8089/2018/dorsales/3/7741.png",
+        "portrait": "http://localhost:8089/2018/riders/motogp/grid/original/rider_7741_1549618398.jpg"
       }
     },
     {
@@ -287,7 +287,7 @@
         "legacy_id": 205,
         "color": "#702538",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/6/9/6977e13c-7011-48d5-950d-ff1d077b4e20/22-Sam-Lowes-Bike-Moto2DSC03544.png",
+        "picture": "http://localhost:8089/teams/6/9/6977e13c-7011-48d5-950d-ff1d077b4e20/22-Sam-Lowes-Bike-Moto2DSC03544.png",
         "published": true
       },
       "category": {
@@ -304,15 +304,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2017/riders/moto2/bike/original/rider_7741_1490204491.jpg",
+          "main": "http://localhost:8089/2017/riders/moto2/bike/original/rider_7741_1490204491.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2017/riders/moto2/helmet/original/rider_7741_1490546518.jpg",
+          "main": "http://localhost:8089/2017/riders/moto2/helmet/original/rider_7741_1490546518.jpg",
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2017/riders/moto2/grid/original/rider_7741_1490198451.jpg"
+        "portrait": "http://localhost:8089/2017/riders/moto2/grid/original/rider_7741_1490198451.jpg"
       }
     },
     {
@@ -330,7 +330,7 @@
         "legacy_id": null,
         "color": "#ff8600",
         "text_color": null,
-        "picture": "https://photos.motogp.com/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
+        "picture": "http://localhost:8089/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
         "published": true
       },
       "category": {
@@ -347,15 +347,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2016/riders/moto2/bike/original/rider_7741_1458824280.jpg",
+          "main": "http://localhost:8089/2016/riders/moto2/bike/original/rider_7741_1458824280.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2016/riders/moto2/helmet/original/rider_7741_1458821567.jpg",
+          "main": "http://localhost:8089/2016/riders/moto2/helmet/original/rider_7741_1458821567.jpg",
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2016/riders/moto2/grid/original/rider_7741_1458821455.jpg"
+        "portrait": "http://localhost:8089/2016/riders/moto2/grid/original/rider_7741_1458821455.jpg"
       }
     },
     {
@@ -373,7 +373,7 @@
         "legacy_id": null,
         "color": "#ff8600",
         "text_color": null,
-        "picture": "https://photos.motogp.com/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
+        "picture": "http://localhost:8089/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
         "published": true
       },
       "category": {
@@ -398,7 +398,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7741"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7741"
       }
     },
     {
@@ -416,7 +416,7 @@
         "legacy_id": null,
         "color": "#ff8600",
         "text_color": null,
-        "picture": "https://photos.motogp.com/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
+        "picture": "http://localhost:8089/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
         "published": true
       },
       "category": {
@@ -441,7 +441,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7741"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7741"
       }
     },
     {
@@ -459,7 +459,7 @@
         "legacy_id": null,
         "color": "#ff8600",
         "text_color": null,
-        "picture": "https://photos.motogp.com/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
+        "picture": "http://localhost:8089/teams/b/5/b5442dd5-0102-493a-909a-25d9dc015aae/team_bike_209_1583857097-.jpg",
         "published": true
       },
       "category": {
@@ -484,7 +484,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7741"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7741"
       }
     }
   ],
@@ -492,12 +492,12 @@
     "text": "Born in Rome and now living in the motorsport-rich Tavullia, Franco Morbidelli took the Superstock 600 title in 2013 alongside World Championship wildcard outings in Moto2™ at Misano, Motegi and Valencia. He went on to sign with Italtrans Racing Team for a full campaign in 2014 and continued with them in 2015, making his podium debut in Indianapolis. Unfortunately a broken leg sustained during a motocross training session saw him miss several races after Brno, with Morbidelli returning to finish the season but far from fully fit. For 2016 he signed with the highly successful Estrella Galicia 0,0 Marc VDS team and took an incredible run of podium finishes, ending the year just outside the top three in the title fight after an impressive campaign. For 2017, Morbidelli stayed with EG0,0 Marc VDS and came out swinging to take the first three wins of the year - in the lead in the standings during the entire season and taking the title at the Malaysian GP...from STK600 to World Champion in four years. He moved into the premier class within the same EG 0,0 Marc VDS team in 2018 and took the Rookie of the Year honours. 2019 saw Morbidelli join Petronas Yamaha SRT, picking up a solid seven top six finishes. It got even better for the Italian as a masterclass in Misano saw him take a maiden MotoGP™ win, and he added two more in the Teruel and Valencia GPs for a joint best three race wins in 2020, with two more podium finishes seeing him leap to second in the Championship standings. That form saw him among the leading contenders for title glory in 2021, but a knee injury hampered his season. Returning to action at Misano, Morbidelli partnered Fabio Quartararo at Monster Energy Yamaha MotoGP after gaining promotion from Petronas Yamaha SRT, and the Italian will be a factory Yamaha rider until at least the end of 2023. ",
     "media": {
       "video": null,
-      "picture": "https://photos.motogp.com/riders/d/5/d537c43b-1318-441b-9966-31be233975c6/biography/21_Franco_Morbidelli_DSC1655.jpg"
+      "picture": "http://localhost:8089/riders/d/5/d537c43b-1318-441b-9966-31be233975c6/biography/21_Franco_Morbidelli_DSC1655.jpg"
     }
   },
   "legend": false,
   "legacy_id": 7741,
-  "merchandise_url": "https://store.motogp.com/en/franco-morbidelli-21-merchandise?utm_source=motogp.com&utm_medium=Link&utm_content=FM21&utm_campaign=Store&o=motogp-riders-stats",
+  "merchandise_url": "http://localhost:8089/en/franco-morbidelli-21-merchandise?utm_source=localhost:8089&utm_medium=Link&utm_content=FM21&utm_campaign=Store&o=motogp-riders-stats",
   "published": true,
   "injured": false,
   "banned": false,
