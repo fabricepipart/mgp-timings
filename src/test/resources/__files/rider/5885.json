@@ -1,0 +1,935 @@
+{
+  "id": "fe9fa956-0cd0-4009-9484-25e7cb5bdf88",
+  "name": "Andrea",
+  "surname": "Dovizioso",
+  "nickname": null,
+  "country": {
+    "iso": "IT",
+    "name": "Italy"
+  },
+  "birth_city": "Forlimpopoli ",
+  "birth_date": "1986-03-23",
+  "physical_attributes": {
+    "height": 165,
+    "weight": 68
+  },
+  "career": [
+    {
+      "season": 2022,
+      "number": 4,
+      "sponsored_team": "WithU Yamaha RNF MotoGP™ Team",
+      "team": {
+        "id": "c91950d9-f784-4a16-a8fa-591e7e028dcf",
+        "constructor": {
+          "id": "f2e835be-7fab-4782-a26b-de3d583d132c",
+          "name": "Yamaha",
+          "legacy_id": 3
+        },
+        "name": "WithU Yamaha RNF MotoGP™ Team",
+        "legacy_id": 46,
+        "color": "#6d6e71",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/b/2/b2036bcc-48c9-441d-9ad0-0405d83065fc/RNF.png",
+        "published": false
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": false,
+      "short_nickname": "AD04",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/4/7/47a5a003-e692-4e97-a5e9-0ac4bcfc5ca6/profile/main/04_Andrea_Dovizioso_MotoGP_DS_6569.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/4/7/47a5a003-e692-4e97-a5e9-0ac4bcfc5ca6/bike/main/_0010_04-Andrea-Dovizioso-BikeDSC06482.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/4/7/47a5a003-e692-4e97-a5e9-0ac4bcfc5ca6/helmet/main/04-Andrea-Dovizioso.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/a/a/aaaffe16-4dad-45f6-a706-e0cdc6f0f3eb/number/04_Andrea_Dovizioso.png",
+        "portrait": "http://localhost:8089/riders/2/a/2a73aa8a-629b-4425-8a0a-36aee0fcc103/portrait/04-Andrea-Dovizioso.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 4,
+      "sponsored_team": "Petronas Yamaha SRT",
+      "team": {
+        "id": "21b54b4c-a6f2-40bb-b4b7-1d8f3b8a431c",
+        "constructor": {
+          "id": "f2e835be-7fab-4782-a26b-de3d583d132c",
+          "name": "Yamaha",
+          "legacy_id": 3
+        },
+        "name": "Petronas Yamaha SRT",
+        "legacy_id": 46,
+        "color": "#1e4374",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/7/0/7064589f-b982-4976-a29c-9c72737a40cb/Petronas-Yamaha_SRT.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "AD04",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/5/1/5126a93e-5e73-4096-bab6-7c5a3e2d601e/profile/main/04_Andrea-Dovizioso.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/4/a/4af9663a-e307-4e87-8c54-974e688b1797/number/04_Andrea_Dovizioso.png",
+        "portrait": "http://localhost:8089/riders/5/1/5126a93e-5e73-4096-bab6-7c5a3e2d601e/portrait/04-Andrea-Dovizioso.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 4,
+      "sponsored_team": "Ducati Team",
+      "team": {
+        "id": "892fff2f-7402-4fbd-99fb-5fd567d8a80c",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Ducati Lenovo Team",
+        "legacy_id": 15,
+        "color": "#cc0000",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/7/d/7da82702-139c-4a2c-8ee3-a1478cb43c37/ducatilenovo.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "AD04",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/f/3/f36b38b7-6159-4a4b-8062-299dbb038fc9/profile/main/1_0000_04-Andrea-Dovizioso-ITA,-Body_DSC7099.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/5/0/50df8983-d3e8-45d8-9957-b021ce2bfb70/bike/main/04-Andrea-Dovizioso.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/9/d/9d031a5e-95a1-498b-97f4-581514e152e4/helmet/main/04-Andrea-Dovizioso.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/d/7/d76f48c6-0aa6-4d19-bc04-fb9c11ee8a2b/number/04_Andrea_Dovizioso.png",
+        "portrait": "http://localhost:8089/riders/c/a/ca1510e2-8203-4f35-a524-11aa3ab339d6/portrait/04_Andrea_Dovizioso.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 4,
+      "sponsored_team": "Ducati Team",
+      "team": {
+        "id": "892fff2f-7402-4fbd-99fb-5fd567d8a80c",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Ducati Lenovo Team",
+        "legacy_id": 15,
+        "color": "#cc0000",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/7/d/7da82702-139c-4a2c-8ee3-a1478cb43c37/ducatilenovo.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2019/riders/motogp/bike/original/rider_5885_1568365169.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2019/dorsales/3/5885.png",
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_5885_1583942973.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 4,
+      "sponsored_team": "Mission Winnow Ducati",
+      "team": {
+        "id": "ed649579-e0e3-427d-bdfc-594936b4e106",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Mission Winnow Ducati",
+        "legacy_id": 15,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_15_1574329098.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2018/riders/motogp/bike/original/rider_5885_1521313112.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2018/riders/motogp/helmet/original/rider_5885_1521312588.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2018/dorsales/3/5885.png",
+        "portrait": "http://localhost:8089/2018/riders/motogp/grid/original/rider_5885_1521213940.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 4,
+      "sponsored_team": "Ducati Team",
+      "team": {
+        "id": "892fff2f-7402-4fbd-99fb-5fd567d8a80c",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Ducati Lenovo Team",
+        "legacy_id": 15,
+        "color": "#cc0000",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/7/d/7da82702-139c-4a2c-8ee3-a1478cb43c37/ducatilenovo.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2017/riders/motogp/bike/original/rider_5885_1490378425.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2017/riders/motogp/helmet/original/rider_5885_1490543444.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/motogp/grid/original/rider_5885_1490884074.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 4,
+      "sponsored_team": "Ducati Team",
+      "team": {
+        "id": "892fff2f-7402-4fbd-99fb-5fd567d8a80c",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Ducati Lenovo Team",
+        "legacy_id": 15,
+        "color": "#cc0000",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/7/d/7da82702-139c-4a2c-8ee3-a1478cb43c37/ducatilenovo.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2016/riders/motogp/bike/original/rider_5885_1458324145.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2016/riders/motogp/helmet/original/rider_5885_1458324084.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2016/riders/motogp/grid/original/rider_5885_1479299306.jpg"
+      }
+    },
+    {
+      "season": 2015,
+      "number": 4,
+      "sponsored_team": "Ducati Team",
+      "team": {
+        "id": "892fff2f-7402-4fbd-99fb-5fd567d8a80c",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Ducati Lenovo Team",
+        "legacy_id": 15,
+        "color": "#cc0000",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/7/d/7da82702-139c-4a2c-8ee3-a1478cb43c37/ducatilenovo.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2014,
+      "number": 4,
+      "sponsored_team": "Ducati Team",
+      "team": {
+        "id": "892fff2f-7402-4fbd-99fb-5fd567d8a80c",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Ducati Lenovo Team",
+        "legacy_id": 15,
+        "color": "#cc0000",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/7/d/7da82702-139c-4a2c-8ee3-a1478cb43c37/ducatilenovo.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2013,
+      "number": 4,
+      "sponsored_team": "Ducati Team",
+      "team": {
+        "id": "892fff2f-7402-4fbd-99fb-5fd567d8a80c",
+        "constructor": {
+          "id": "38af1078-e2f1-4399-811c-1e98cf6f6150",
+          "name": "Ducati",
+          "legacy_id": 110
+        },
+        "name": "Ducati Lenovo Team",
+        "legacy_id": 15,
+        "color": "#cc0000",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/7/d/7da82702-139c-4a2c-8ee3-a1478cb43c37/ducatilenovo.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2012,
+      "number": 4,
+      "sponsored_team": "Monster Yamaha Tech 3",
+      "team": {
+        "id": "d5e2d045-0ed2-4446-89fe-2fd8cf17b1cd",
+        "constructor": {
+          "id": "f2e835be-7fab-4782-a26b-de3d583d132c",
+          "name": "Yamaha",
+          "legacy_id": 3
+        },
+        "name": "Monster Yamaha Tech 3",
+        "legacy_id": 11,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_11_1574329097.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2011,
+      "number": 4,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ee8633",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2010,
+      "number": 4,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ee8633",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2009,
+      "number": 4,
+      "sponsored_team": "Repsol Honda Team",
+      "team": {
+        "id": "ce837bd3-bc07-40ef-83cf-6a8025bededf",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Repsol Honda Team",
+        "legacy_id": 14,
+        "color": "#ee8633",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2008,
+      "number": 4,
+      "sponsored_team": "JiR Team Scot MotoGP",
+      "team": {
+        "id": "d888cb93-db28-4133-a122-b1d851f6f8a2",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Kopron Team Scot",
+        "legacy_id": 207,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2007,
+      "number": 0,
+      "sponsored_team": "Kopron Team Scot",
+      "team": {
+        "id": "d888cb93-db28-4133-a122-b1d851f6f8a2",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Kopron Team Scot",
+        "legacy_id": 207,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "f4c00279-2ae2-42fa-8bce-01c5eaedf392",
+        "name": "250cc",
+        "legacy_id": 5
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2006,
+      "number": 0,
+      "sponsored_team": "Humangest Racing Team",
+      "team": {
+        "id": "e37603df-5ac6-40ca-9512-e74835eb5b2b",
+        "constructor": {
+          "id": "fe62d196-ff34-409a-aa32-4aae146e2e3c",
+          "name": "Speed Up",
+          "legacy_id": 431
+        },
+        "name": "Humangest Racing Team",
+        "legacy_id": 107,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_107_1583857096.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "f4c00279-2ae2-42fa-8bce-01c5eaedf392",
+        "name": "250cc",
+        "legacy_id": 5
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2005,
+      "number": 0,
+      "sponsored_team": "Team Scot",
+      "team": {
+        "id": "d888cb93-db28-4133-a122-b1d851f6f8a2",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Kopron Team Scot",
+        "legacy_id": 207,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "f4c00279-2ae2-42fa-8bce-01c5eaedf392",
+        "name": "250cc",
+        "legacy_id": 5
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2004,
+      "number": 34,
+      "sponsored_team": "Kopron Team Scot",
+      "team": {
+        "id": "d888cb93-db28-4133-a122-b1d851f6f8a2",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Kopron Team Scot",
+        "legacy_id": 207,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "578be24b-3cd6-498f-9ed8-f0817be88467",
+        "name": "125cc",
+        "legacy_id": 10
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2003,
+      "number": 34,
+      "sponsored_team": "Team Scot",
+      "team": {
+        "id": "d888cb93-db28-4133-a122-b1d851f6f8a2",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Kopron Team Scot",
+        "legacy_id": 207,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "578be24b-3cd6-498f-9ed8-f0817be88467",
+        "name": "125cc",
+        "legacy_id": 10
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    },
+    {
+      "season": 2002,
+      "number": 34,
+      "sponsored_team": "Scot Racing Team",
+      "team": {
+        "id": "d888cb93-db28-4133-a122-b1d851f6f8a2",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Kopron Team Scot",
+        "legacy_id": 207,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_207_1583857094.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "578be24b-3cd6-498f-9ed8-f0817be88467",
+        "name": "125cc",
+        "legacy_id": 10
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/5885"
+      }
+    }
+  ],
+  "biography": {
+    "text": "2004 125cc World Champion Andrea Dovizioso has been in MotoGP™ since an incredible rookie season in 2008, where he was the top Independent Team rider and fifth overall. His first victory came at Donington in 2009 when riding for Repsol Honda, before the Italian moved to the Ducati Team following a stint with Monster Yamaha Tech 3. A key part of Ducati’s journey back to the top, ‘DesmoDovi’ is one of the hardest to overtake on the brakes – and one of the cleanest competitors in battle. After long seasons of hard work saw the bike more and more competitive and a consistent frontrunner, 2017 saw the Italian challenge for the World Championship down to the wire in Valencia after a stunning six wins across the season. For 2018, he hit the ground running to win the season opener, endured some harder races and then came back swinging - ending the year runner up once again. 2019 began in similar fashion: a win in Qatar. However, a certain Marquez turned up the wick and proved too much for everyone, with Dovizioso claiming nine podiums - including two wins - on his way to P2 in the overall standings for a third year in a row. Many fancied Dovi for the title during 2020, particularly in the absence of the injured Marc Marquez, however, there was to be no dream send off from Ducati for the Italian, who could only earn one victory during the season, at the Austrian GP, soon after announcing he was to leave the Bologna Bullets. He ended the season 4th in the standings and announced his intention to take a sabbatical from the sport. It was short-lived though, as before the start of the 2021 campaign, Aprilia announced he would test their new RS-GP in Jerez over three days in April. After completing some tests with Aprilia, Dovizioso was called up to step in at Petronas Yamaha SRT for the final five races of 2021, with Dovizioso signing a one-year contract to ride a factory YZR-M1 next season. The experienced Italian spearheaded the WithU Yamaha RNF MotoGP Team's efforts in 2022, but unfortunately, he was unable to recapture his from of years gone by. With 24 World Championship victories, 103 podiums and 20 pole positions, the Dovi decided to call it a day in 2022, retiring at his home Grand Prix in Misano in front of a sea of well-wishers.",
+    "media": {
+      "video": null,
+      "picture": "http://localhost:8089/riders/d/8/d8839e66-5952-451a-a7fb-c4a47b097856/biography/04_Andrea_Dovizioso.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 5885,
+  "merchandise_url": "http://localhost:8089/en/andrea-dovizioso/a-2411765046+z-982483-1897790174?_s=bm-fi-motogp-prtsite-Andrea-Dovizioso-Store-300522-JM",
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

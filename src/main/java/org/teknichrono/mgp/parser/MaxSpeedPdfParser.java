@@ -2,8 +2,7 @@ package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.model.out.MaxSpeed;
-import org.teknichrono.mgp.model.out.SessionRider;
-import org.teknichrono.mgp.model.rider.RiderSeason;
+import org.teknichrono.mgp.model.result.RiderClassification;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ public class MaxSpeedPdfParser {
   private static final Logger LOGGER = Logger.getLogger(MaxSpeedPdfParser.class);
 
 
-  public List<MaxSpeed> parse(String url, List<SessionRider> ridersOfEvent, int year) throws PdfParsingException {
+  public List<MaxSpeed> parse(String url, List<RiderClassification> ridersOfEvent, int year) throws PdfParsingException {
     List<MaxSpeed> toReturn = new ArrayList<>();
     String[] lines = PdfParserUtils.readPdfLines(url);
     boolean start = false;
@@ -36,7 +35,7 @@ public class MaxSpeedPdfParser {
     return toReturn;
   }
 
-  MaxSpeed parseLine(String line, List<SessionRider> ridersOfEvent, int year) throws PdfParsingException {
+  MaxSpeed parseLine(String line, List<RiderClassification> ridersOfEvent, int year) throws PdfParsingException {
     MaxSpeed maxSpeed = new MaxSpeed();
     parseRider(line, maxSpeed, ridersOfEvent, year);
     maxSpeed.speed = PdfParserUtils.parseSpeed(line);
@@ -47,15 +46,13 @@ public class MaxSpeedPdfParser {
     return maxSpeed;
   }
 
-  private void parseRider(String line, MaxSpeed maxSpeed, List<SessionRider> ridersOfEvent, int year) {
-    for (SessionRider rider : ridersOfEvent) {
-      RiderSeason season = rider.season;
-      String riderNumber = season.number.toString();
-      if (line.startsWith(riderNumber)) {
-        maxSpeed.number = season.number;
-        maxSpeed.rider = rider.name + " " + rider.surname;
-        maxSpeed.team = season.sponsored_team;
-        maxSpeed.motorcycle = season.team.constructor.name;
+  private void parseRider(String line, MaxSpeed maxSpeed, List<RiderClassification> ridersOfEvent, int year) {
+    for (RiderClassification classification : ridersOfEvent) {
+      if (line.startsWith(classification.rider.number.toString())) {
+        maxSpeed.number = classification.rider.number;
+        maxSpeed.rider = classification.rider.full_name;
+        maxSpeed.team = classification.team.name;
+        maxSpeed.motorcycle = classification.constructor.name;
       }
     }
   }
