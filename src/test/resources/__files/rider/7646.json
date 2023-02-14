@@ -1,1 +1,505 @@
-{"id":"ade5ef32-01ea-487c-95ca-491544a668ed","name":"Brad","surname":"Binder","nickname":null,"country":{"iso":"ZA","name":"South Africa"},"birth_city":"Potchefstroom","birth_date":"1995-08-11","physical_attributes":{"height":170,"weight":63},"career":[{"season":2022,"number":33,"sponsored_team":"Red Bull KTM Factory Racing","team":{"id":"0b6cc118-a286-4343-9020-fb53c6f77c1a","constructor":{"id":"5ecd8db7-d87b-4b3e-87b6-1f72ee457ede","name":"KTM","legacy_id":298},"name":"Red Bull KTM Factory Racing","legacy_id":23,"color":"#e05a17","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"BB33","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/a/6/a66ef0d3-7064-4321-a85d-5ca0631565ef/profile/main/33_Brad_Binder.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/a/6/a66ef0d3-7064-4321-a85d-5ca0631565ef/bike/main/_0007_33-Brad-Binder-BikeDSC06427.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/a/6/a66ef0d3-7064-4321-a85d-5ca0631565ef/helmet/main/33-Brad-Binder.jpg","secondary":null},"number":"https://photos.motogp.com/riders/5/a/5a4f166a-37e4-477a-93f3-4b752b9cf683/number/33-Brad-Binder.png","portrait":"https://photos.motogp.com/riders/a/6/a66ef0d3-7064-4321-a85d-5ca0631565ef/portrait/33_Brad_Binder.jpg"}},{"season":2021,"number":33,"sponsored_team":"Red Bull KTM Factory Racing","team":{"id":"0b6cc118-a286-4343-9020-fb53c6f77c1a","constructor":{"id":"5ecd8db7-d87b-4b3e-87b6-1f72ee457ede","name":"KTM","legacy_id":298},"name":"Red Bull KTM Factory Racing","legacy_id":23,"color":"#e05a17","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"BB33","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/3/d/3d28c407-da11-4657-8574-84972b917973/profile/main/_0006_33-Brad-Binder,-Rider_A7R1742.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/3/d/3d28c407-da11-4657-8574-84972b917973/bike/main/_0000_33-Brad-Binder-,-Bike_LG87472.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/3/d/3d28c407-da11-4657-8574-84972b917973/helmet/main/_0007_33-Brad-Binder,-Helmet_LG62061.jpg","secondary":null},"number":"https://photos.motogp.com/riders/5/a/5a4f166a-37e4-477a-93f3-4b752b9cf683/number/33-Brad-Binder.png","portrait":"https://photos.motogp.com/riders/1/5/15b3a3a6-74d2-406f-a920-b50afc30a645/portrait/_0006_33_Brad_Binder,-Rider_A7R1738.jpg"}},{"season":2020,"number":33,"sponsored_team":"Red Bull KTM Factory Racing","team":{"id":"0b6cc118-a286-4343-9020-fb53c6f77c1a","constructor":{"id":"5ecd8db7-d87b-4b3e-87b6-1f72ee457ede","name":"KTM","legacy_id":298},"name":"Red Bull KTM Factory Racing","legacy_id":23,"color":"#e05a17","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png","published":true},"category":{"id":"737ab122-76e1-4081-bedb-334caaa18c70","name":"MotoGP","legacy_id":3},"in_grid":true,"short_nickname":"BB33","current":false,"pictures":{"profile":{"main":"https://photos.motogp.com/riders/7/2/72d71149-e0e3-4da5-a898-5ee07d985500/profile/main/1_0008_33-Brad-Binder,-Body_DSC5642.png","secondary":null},"bike":{"main":"https://photos.motogp.com/riders/9/e/9e2006a0-d03c-4839-87e9-2dd1fad9dc61/bike/main/33-Brad-Binder.png","secondary":null},"helmet":{"main":"https://photos.motogp.com/riders/1/0/10ce2a6e-4285-43a3-bea2-b804d00d1d4e/helmet/main/33-Brad-Binder.jpg","secondary":null},"number":"https://photos.motogp.com/riders/3/7/37d6dbf5-2f84-4c1f-828a-407719471968/number/33_Brad_Binder.png","portrait":"https://photos.motogp.com/riders/c/2/c2e1a835-df0e-4a46-97b1-d4751bb0b604/portrait/33_Brad_Binder.jpg"}},{"season":2019,"number":41,"sponsored_team":"Red Bull KTM Ajo","team":{"id":"3c73638c-cffb-4e42-a6ca-b6506ab6bf5c","constructor":{"id":"791160c2-6d2f-47ad-8d87-29e4f729073a","name":"Kalex","legacy_id":447},"name":"Red Bull KTM Ajo","legacy_id":113,"color":"#e13f00","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png","published":true},"category":{"id":"ea854a67-73a4-4a28-ac77-d67b3b2a530a","name":"Moto2","legacy_id":2},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2019/riders/moto2/bike/original/rider_7646_1551780692.jpg","secondary":null},"helmet":{"main":null,"secondary":null},"number":"https://photos.motogp.com/2020/dorsales/others/41.png","portrait":"https://photos.motogp.com/2019/riders/moto2/grid/original/rider_7646_1551890077.jpg"}},{"season":2018,"number":41,"sponsored_team":"Red Bull KTM Ajo","team":{"id":"3c73638c-cffb-4e42-a6ca-b6506ab6bf5c","constructor":{"id":"791160c2-6d2f-47ad-8d87-29e4f729073a","name":"Kalex","legacy_id":447},"name":"Red Bull KTM Ajo","legacy_id":113,"color":"#e13f00","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png","published":true},"category":{"id":"ea854a67-73a4-4a28-ac77-d67b3b2a530a","name":"Moto2","legacy_id":2},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2018/riders/moto2/bike/original/rider_7646_1521135566.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2018/riders/moto2/helmet/original/rider_7646_1521312613.jpg","secondary":null},"number":"https://photos.motogp.com/2020/dorsales/others/41.png","portrait":"https://photos.motogp.com/2018/riders/moto2/grid/original/rider_7646_1521039345.jpg"}},{"season":2017,"number":41,"sponsored_team":"Red Bull KTM Ajo","team":{"id":"3c73638c-cffb-4e42-a6ca-b6506ab6bf5c","constructor":{"id":"791160c2-6d2f-47ad-8d87-29e4f729073a","name":"Kalex","legacy_id":447},"name":"Red Bull KTM Ajo","legacy_id":113,"color":"#e13f00","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png","published":true},"category":{"id":"ea854a67-73a4-4a28-ac77-d67b3b2a530a","name":"Moto2","legacy_id":2},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2017/riders/moto2/bike/original/rider_7646_1490204531.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2017/riders/moto2/helmet/original/rider_7646_1490546480.jpg","secondary":null},"number":null,"portrait":"https://photos.motogp.com/2017/riders/moto2/grid/original/rider_7646_1490198334.jpg"}},{"season":2016,"number":41,"sponsored_team":"Red Bull KTM Ajo","team":{"id":"3c73638c-cffb-4e42-a6ca-b6506ab6bf5c","constructor":{"id":"791160c2-6d2f-47ad-8d87-29e4f729073a","name":"Kalex","legacy_id":447},"name":"Red Bull KTM Ajo","legacy_id":113,"color":"#e13f00","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png","published":true},"category":{"id":"1ab203aa-e292-4842-8bed-971911357af1","name":"Moto3","legacy_id":1},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":"https://photos.motogp.com/2016/riders/moto3/bike/original/rider_7646_1458823968.jpg","secondary":null},"helmet":{"main":"https://photos.motogp.com/2016/riders/moto3/helmet/original/rider_7646_1458821875.jpg","secondary":null},"number":null,"portrait":"https://photos.motogp.com/2016/riders/moto3/grid/original/rider_7646_1458821720.jpg"}},{"season":2015,"number":41,"sponsored_team":"Red Bull KTM Ajo","team":{"id":"3c73638c-cffb-4e42-a6ca-b6506ab6bf5c","constructor":{"id":"791160c2-6d2f-47ad-8d87-29e4f729073a","name":"Kalex","legacy_id":447},"name":"Red Bull KTM Ajo","legacy_id":113,"color":"#e13f00","text_color":"#ffffff","picture":"https://photos.motogp.com/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png","published":true},"category":{"id":"1ab203aa-e292-4842-8bed-971911357af1","name":"Moto3","legacy_id":1},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7646"}},{"season":2014,"number":41,"sponsored_team":"Ambrogio Racing","team":{"id":"71be6c5c-a632-4a4a-b2d2-b50be6afc353","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Ambrogio Racing","legacy_id":109,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto3/original/team_bike_109_1584101114.jpg","published":true},"category":{"id":"1ab203aa-e292-4842-8bed-971911357af1","name":"Moto3","legacy_id":1},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7646"}},{"season":2013,"number":41,"sponsored_team":"Ambrogio Racing","team":{"id":"71be6c5c-a632-4a4a-b2d2-b50be6afc353","constructor":{"id":"8e21365c-a465-476a-a66b-5fda45058c2e","name":"Honda","legacy_id":1},"name":"Ambrogio Racing","legacy_id":109,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto3/original/team_bike_109_1584101114.jpg","published":true},"category":{"id":"1ab203aa-e292-4842-8bed-971911357af1","name":"Moto3","legacy_id":1},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7646"}},{"season":2012,"number":41,"sponsored_team":"RW Racing GP","team":{"id":"58db3bae-b7c2-4ad5-9f4e-0280a4e9b1c8","constructor":{"id":"5fe6c749-0a3c-43e7-a079-555d0fc53689","name":"NTS","legacy_id":550},"name":"RW Racing GP","legacy_id":203,"color":null,"text_color":null,"picture":"https://photos.motogp.com/2020/teams/moto2/original/team_bike_203_1583857101.jpg","published":true},"category":{"id":"1ab203aa-e292-4842-8bed-971911357af1","name":"Moto3","legacy_id":1},"in_grid":true,"short_nickname":null,"current":false,"pictures":{"profile":{"main":null,"secondary":null},"bike":{"main":null,"secondary":null},"helmet":{"main":null,"secondary":null},"number":null,"portrait":"https://www.motogp.com/en/api/rider/photo/grid/old/7646"}}],"biography":{"text":"South African Brad Binder is a former Red Bull MotoGP Rookie and his star moment in the Cup came in Estoril in 2011 when he won the race from pole to flag by a margin of 15 seconds. That year he also rode his first 125 GP, before competing in the Moto3™ World Championship full-time for the first time in 2012. His first podiums came in 2014, before a move to the Red Bull KTM Ajo squad for 2015 saw him add four more podiums. For 2016 he and the Ajo team remained together and took the Moto3™ title in stunning style, winning it in the Aragon GP. Binder moved to Moto2™ with the Red Bull KTM Ajo team in 2017, racing the new KTM chassis in the intermediate class, but found the first half of his season marred by an arm injury. Forced to be patient as he fought back to full strength, once he was there the South African ended the season with three podiums in a row. In 2018, Binder stayed with Red Bull KTM Ajo and managed to secure his first three Moto2™ victories, finishing third in the Championship. A troubled KTM chassis meant one of the title favourites had to wait until Round 8 for a 2019 rostrum, but Binder’s latter half of the season form was sensational, missing the podium just three times in 12 races, winning five – including the last three. Binder eventually missed out on the Moto2™ title by just three points but he moved up to Red Bull KTM Factory Racing as one of the most exciting talents on the MotoGP™ grid in 2020. And he did not disappoint, taking victory at the Czech GP, becoming the first rookie since Marc Marquez to win a race. He didn’t quite scale those heights again for the rest of the season, but he did claim the Rookie of the Year award following a string of impressive performances, which saw him record four more Top 10 finishes and 11th in the Championship. Binder added MotoGP™ win number two to his resumé during 2021 and did so in breathtaking circumstances. The South African rolled the dice as the rain started to fall in Austria and fortune certainly favoured the brave as he clinched his only podium of the season. Consistency saw the number 33 end sixth in the standings, he'll be hoping to at least break into the top five in 2022.","media":{"video":null,"picture":"https://photos.motogp.com/riders/8/b/8ba618fb-f000-406a-a168-08b4d76a2ae5/biography/33_Brad_Binder_DSC0948.jpg"}},"legend":false,"legacy_id":7646,"merchandise_url":"https://store.motogp.com/en/brad-binder-33-merchandise-clothing?utm_source=motogp.com&utm_medium=Link&utm_content=BB33&utm_campaign=Store&o=motogp-riders-stats","published":true,"injured":false,"banned":false,"wildcard":false}
+{
+  "id": "ade5ef32-01ea-487c-95ca-491544a668ed",
+  "name": "Brad",
+  "surname": "Binder",
+  "nickname": null,
+  "country": {
+    "iso": "ZA",
+    "name": "South Africa"
+  },
+  "birth_city": "Potchefstroom",
+  "birth_date": "1995-08-11",
+  "physical_attributes": {
+    "height": 170,
+    "weight": 63
+  },
+  "career": [
+    {
+      "season": 2022,
+      "number": 33,
+      "sponsored_team": "Red Bull KTM Factory Racing",
+      "team": {
+        "id": "0b6cc118-a286-4343-9020-fb53c6f77c1a",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Red Bull KTM Factory Racing",
+        "legacy_id": 23,
+        "color": "#e05a17",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "BB33",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/a/6/a66ef0d3-7064-4321-a85d-5ca0631565ef/profile/main/33_Brad_Binder.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/a/6/a66ef0d3-7064-4321-a85d-5ca0631565ef/bike/main/_0007_33-Brad-Binder-BikeDSC06427.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/a/6/a66ef0d3-7064-4321-a85d-5ca0631565ef/helmet/main/33-Brad-Binder.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/5/a/5a4f166a-37e4-477a-93f3-4b752b9cf683/number/33-Brad-Binder.png",
+        "portrait": "http://localhost:8089/riders/a/6/a66ef0d3-7064-4321-a85d-5ca0631565ef/portrait/33_Brad_Binder.jpg"
+      }
+    },
+    {
+      "season": 2021,
+      "number": 33,
+      "sponsored_team": "Red Bull KTM Factory Racing",
+      "team": {
+        "id": "0b6cc118-a286-4343-9020-fb53c6f77c1a",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Red Bull KTM Factory Racing",
+        "legacy_id": 23,
+        "color": "#e05a17",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "BB33",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/3/d/3d28c407-da11-4657-8574-84972b917973/profile/main/_0006_33-Brad-Binder,-Rider_A7R1742.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/3/d/3d28c407-da11-4657-8574-84972b917973/bike/main/_0000_33-Brad-Binder-,-Bike_LG87472.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/3/d/3d28c407-da11-4657-8574-84972b917973/helmet/main/_0007_33-Brad-Binder,-Helmet_LG62061.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/5/a/5a4f166a-37e4-477a-93f3-4b752b9cf683/number/33-Brad-Binder.png",
+        "portrait": "http://localhost:8089/riders/1/5/15b3a3a6-74d2-406f-a920-b50afc30a645/portrait/_0006_33_Brad_Binder,-Rider_A7R1738.jpg"
+      }
+    },
+    {
+      "season": 2020,
+      "number": 33,
+      "sponsored_team": "Red Bull KTM Factory Racing",
+      "team": {
+        "id": "0b6cc118-a286-4343-9020-fb53c6f77c1a",
+        "constructor": {
+          "id": "5ecd8db7-d87b-4b3e-87b6-1f72ee457ede",
+          "name": "KTM",
+          "legacy_id": 298
+        },
+        "name": "Red Bull KTM Factory Racing",
+        "legacy_id": 23,
+        "color": "#e05a17",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/4/4/447bf79b-9960-40f0-996d-a2f5ac920650/RedBullKTM.png",
+        "published": true
+      },
+      "category": {
+        "id": "737ab122-76e1-4081-bedb-334caaa18c70",
+        "name": "MotoGP",
+        "legacy_id": 3
+      },
+      "in_grid": true,
+      "short_nickname": "BB33",
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": "http://localhost:8089/riders/7/2/72d71149-e0e3-4da5-a898-5ee07d985500/profile/main/1_0008_33-Brad-Binder,-Body_DSC5642.png",
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/riders/9/e/9e2006a0-d03c-4839-87e9-2dd1fad9dc61/bike/main/33-Brad-Binder.png",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/riders/1/0/10ce2a6e-4285-43a3-bea2-b804d00d1d4e/helmet/main/33-Brad-Binder.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/riders/3/7/37d6dbf5-2f84-4c1f-828a-407719471968/number/33_Brad_Binder.png",
+        "portrait": "http://localhost:8089/riders/c/2/c2e1a835-df0e-4a46-97b1-d4751bb0b604/portrait/33_Brad_Binder.jpg"
+      }
+    },
+    {
+      "season": 2019,
+      "number": 41,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "3c73638c-cffb-4e42-a6ca-b6506ab6bf5c",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 113,
+        "color": "#e13f00",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2019/riders/moto2/bike/original/rider_7646_1551780692.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/41.png",
+        "portrait": "http://localhost:8089/2019/riders/moto2/grid/original/rider_7646_1551890077.jpg"
+      }
+    },
+    {
+      "season": 2018,
+      "number": 41,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "3c73638c-cffb-4e42-a6ca-b6506ab6bf5c",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 113,
+        "color": "#e13f00",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2018/riders/moto2/bike/original/rider_7646_1521135566.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2018/riders/moto2/helmet/original/rider_7646_1521312613.jpg",
+          "secondary": null
+        },
+        "number": "http://localhost:8089/2020/dorsales/others/41.png",
+        "portrait": "http://localhost:8089/2018/riders/moto2/grid/original/rider_7646_1521039345.jpg"
+      }
+    },
+    {
+      "season": 2017,
+      "number": 41,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "3c73638c-cffb-4e42-a6ca-b6506ab6bf5c",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 113,
+        "color": "#e13f00",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png",
+        "published": true
+      },
+      "category": {
+        "id": "ea854a67-73a4-4a28-ac77-d67b3b2a530a",
+        "name": "Moto2",
+        "legacy_id": 2
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2017/riders/moto2/bike/original/rider_7646_1490204531.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2017/riders/moto2/helmet/original/rider_7646_1490546480.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2017/riders/moto2/grid/original/rider_7646_1490198334.jpg"
+      }
+    },
+    {
+      "season": 2016,
+      "number": 41,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "3c73638c-cffb-4e42-a6ca-b6506ab6bf5c",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 113,
+        "color": "#e13f00",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": "http://localhost:8089/2016/riders/moto3/bike/original/rider_7646_1458823968.jpg",
+          "secondary": null
+        },
+        "helmet": {
+          "main": "http://localhost:8089/2016/riders/moto3/helmet/original/rider_7646_1458821875.jpg",
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/2016/riders/moto3/grid/original/rider_7646_1458821720.jpg"
+      }
+    },
+    {
+      "season": 2015,
+      "number": 41,
+      "sponsored_team": "Red Bull KTM Ajo",
+      "team": {
+        "id": "3c73638c-cffb-4e42-a6ca-b6506ab6bf5c",
+        "constructor": {
+          "id": "791160c2-6d2f-47ad-8d87-29e4f729073a",
+          "name": "Kalex",
+          "legacy_id": 447
+        },
+        "name": "Red Bull KTM Ajo",
+        "legacy_id": 113,
+        "color": "#e13f00",
+        "text_color": "#ffffff",
+        "picture": "http://localhost:8089/teams/5/8/582449b6-5434-4af3-9423-e50a6bc4fe40/37-Augusto-Fernandez-Bike-Moto2DSC03002.png",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7646"
+      }
+    },
+    {
+      "season": 2014,
+      "number": 41,
+      "sponsored_team": "Ambrogio Racing",
+      "team": {
+        "id": "71be6c5c-a632-4a4a-b2d2-b50be6afc353",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Ambrogio Racing",
+        "legacy_id": 109,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_109_1584101114.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7646"
+      }
+    },
+    {
+      "season": 2013,
+      "number": 41,
+      "sponsored_team": "Ambrogio Racing",
+      "team": {
+        "id": "71be6c5c-a632-4a4a-b2d2-b50be6afc353",
+        "constructor": {
+          "id": "8e21365c-a465-476a-a66b-5fda45058c2e",
+          "name": "Honda",
+          "legacy_id": 1
+        },
+        "name": "Ambrogio Racing",
+        "legacy_id": 109,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_109_1584101114.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7646"
+      }
+    },
+    {
+      "season": 2012,
+      "number": 41,
+      "sponsored_team": "RW Racing GP",
+      "team": {
+        "id": "58db3bae-b7c2-4ad5-9f4e-0280a4e9b1c8",
+        "constructor": {
+          "id": "5fe6c749-0a3c-43e7-a079-555d0fc53689",
+          "name": "NTS",
+          "legacy_id": 550
+        },
+        "name": "RW Racing GP",
+        "legacy_id": 203,
+        "color": null,
+        "text_color": null,
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_203_1583857101.jpg",
+        "published": true
+      },
+      "category": {
+        "id": "1ab203aa-e292-4842-8bed-971911357af1",
+        "name": "Moto3",
+        "legacy_id": 1
+      },
+      "in_grid": true,
+      "short_nickname": null,
+      "current": false,
+      "pictures": {
+        "profile": {
+          "main": null,
+          "secondary": null
+        },
+        "bike": {
+          "main": null,
+          "secondary": null
+        },
+        "helmet": {
+          "main": null,
+          "secondary": null
+        },
+        "number": null,
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7646"
+      }
+    }
+  ],
+  "biography": {
+    "text": "South African Brad Binder is a former Red Bull MotoGP Rookie and his star moment in the Cup came in Estoril in 2011 when he won the race from pole to flag by a margin of 15 seconds. That year he also rode his first 125 GP, before competing in the Moto3™ World Championship full-time for the first time in 2012. His first podiums came in 2014, before a move to the Red Bull KTM Ajo squad for 2015 saw him add four more podiums. For 2016 he and the Ajo team remained together and took the Moto3™ title in stunning style, winning it in the Aragon GP. Binder moved to Moto2™ with the Red Bull KTM Ajo team in 2017, racing the new KTM chassis in the intermediate class, but found the first half of his season marred by an arm injury. Forced to be patient as he fought back to full strength, once he was there the South African ended the season with three podiums in a row. In 2018, Binder stayed with Red Bull KTM Ajo and managed to secure his first three Moto2™ victories, finishing third in the Championship. A troubled KTM chassis meant one of the title favourites had to wait until Round 8 for a 2019 rostrum, but Binder’s latter half of the season form was sensational, missing the podium just three times in 12 races, winning five – including the last three. Binder eventually missed out on the Moto2™ title by just three points but he moved up to Red Bull KTM Factory Racing as one of the most exciting talents on the MotoGP™ grid in 2020. And he did not disappoint, taking victory at the Czech GP, becoming the first rookie since Marc Marquez to win a race. He didn’t quite scale those heights again for the rest of the season, but he did claim the Rookie of the Year award following a string of impressive performances, which saw him record four more Top 10 finishes and 11th in the Championship. Binder added MotoGP™ win number two to his resumé during 2021 and did so in breathtaking circumstances. The South African rolled the dice as the rain started to fall in Austria and fortune certainly favoured the brave as he clinched his only podium of the season. Consistency saw the number 33 end sixth in the standings, he'll be hoping to at least break into the top five in 2022.",
+    "media": {
+      "video": null,
+      "picture": "http://localhost:8089/riders/8/b/8ba618fb-f000-406a-a168-08b4d76a2ae5/biography/33_Brad_Binder_DSC0948.jpg"
+    }
+  },
+  "legend": false,
+  "legacy_id": 7646,
+  "merchandise_url": "http://localhost:8089/en/brad-binder-33-merchandise-clothing?utm_source=localhost:8089&utm_medium=Link&utm_content=BB33&utm_campaign=Store&o=motogp-riders-stats",
+  "published": true,
+  "injured": false,
+  "banned": false,
+  "wildcard": false
+}

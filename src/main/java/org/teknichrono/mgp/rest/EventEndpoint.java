@@ -1,7 +1,7 @@
 package org.teknichrono.mgp.rest;
 
 import org.eclipse.microprofile.rest.client.inject.RestClient;
-import org.teknichrono.mgp.client.ResultsService;
+import org.teknichrono.mgp.client.ResultsClient;
 import org.teknichrono.mgp.model.result.Event;
 import org.teknichrono.mgp.model.result.Season;
 
@@ -20,7 +20,7 @@ public class EventEndpoint {
 
   @Inject
   @RestClient
-  ResultsService resultsService;
+  ResultsClient resultsService;
 
   @Inject
   SeasonEndpoint seasonEndpoint;
@@ -37,9 +37,26 @@ public class EventEndpoint {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
+  @Path("/test/{year}")
+  public List<Event> testsOfYear(@PathParam("year") int year) {
+    Season season = seasonEndpoint.tests().stream().filter(s -> s.year.intValue() == year).findFirst().get();
+    return resultsService.getTestEventsOfSeason(season.id, true);
+  }
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
   @Path("/{year}/{eventShortName}")
   public Event eventOfYear(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
     return eventsOfYear(year).stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
+  }
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
+  @Path("/test/{year}/{eventShortName}")
+  public Event testOfYear(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
+    return testsOfYear(year).stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
   }
 
 
@@ -50,6 +67,16 @@ public class EventEndpoint {
   public List<String> eventsNamesOfYear(@PathParam("year") int year) {
     Season season = seasonEndpoint.listAll().stream().filter(s -> s.year.intValue() == year).findFirst().get();
     return resultsService.getEventsOfSeason(season.id).stream().map(e -> e.short_name).collect(Collectors.toList());
+  }
+
+
+  @GET
+  @Produces(MediaType.APPLICATION_JSON)
+  @Transactional
+  @Path("/test/{year}/names")
+  public List<String> testsNamesOfYear(@PathParam("year") int year) {
+    Season season = seasonEndpoint.tests().stream().filter(s -> s.year.intValue() == year).findFirst().get();
+    return resultsService.getTestEventsOfSeason(season.id, true).stream().map(e -> e.short_name).collect(Collectors.toList());
   }
 
 }

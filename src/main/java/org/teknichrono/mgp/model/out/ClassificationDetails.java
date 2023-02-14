@@ -1,12 +1,10 @@
 package org.teknichrono.mgp.model.out;
 
-import org.teknichrono.mgp.model.result.Classification;
-
-import java.util.List;
+import org.teknichrono.mgp.model.result.RiderClassification;
 
 public interface ClassificationDetails {
 
-  void fill(Classification c, List<SessionRider> ridersDetails);
+  void fill(RiderClassification c);
 
 
 }

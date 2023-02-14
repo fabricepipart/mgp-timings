@@ -29,7 +29,7 @@
         "legacy_id": 21,
         "color": "#2db914",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/0/a/0a912f7c-da05-4942-9fd3-282d0a15f10b/Apriliaracing.png",
+        "picture": "http://localhost:8089/teams/0/a/0a912f7c-da05-4942-9fd3-282d0a15f10b/Apriliaracing.png",
         "published": true
       },
       "category": {
@@ -42,19 +42,19 @@
       "current": true,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/2/3/23a96a16-899d-4543-bfe1-833002a446f6/profile/main/12_Maverick_Vinales_MotoGP_Rider_DS_5246.png",
+          "main": "http://localhost:8089/riders/2/3/23a96a16-899d-4543-bfe1-833002a446f6/profile/main/12_Maverick_Vinales_MotoGP_Rider_DS_5246.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/2/3/23a96a16-899d-4543-bfe1-833002a446f6/bike/main/_0009_12-Maverick-Vinales_Bike45.png",
+          "main": "http://localhost:8089/riders/2/3/23a96a16-899d-4543-bfe1-833002a446f6/bike/main/_0009_12-Maverick-Vinales_Bike45.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/3/9/393e0718-15b1-403b-9749-8c091bc51be3/helmet/main/12MaverickVinales_HelmetLG6_6362.jpg",
+          "main": "http://localhost:8089/riders/3/9/393e0718-15b1-403b-9749-8c091bc51be3/helmet/main/12MaverickVinales_HelmetLG6_6362.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/4/0/4026c7e8-b9f7-49d4-ac25-a07541f2657e/number/12-Maverick-Vinales_.png",
-        "portrait": "https://photos.motogp.com/riders/2/3/23a96a16-899d-4543-bfe1-833002a446f6/portrait/12-Maverick-VinalesRider_DS_5239.jpg"
+        "number": "http://localhost:8089/riders/4/0/4026c7e8-b9f7-49d4-ac25-a07541f2657e/number/12-Maverick-Vinales_.png",
+        "portrait": "http://localhost:8089/riders/2/3/23a96a16-899d-4543-bfe1-833002a446f6/portrait/12-Maverick-VinalesRider_DS_5239.jpg"
       }
     },
     {
@@ -72,7 +72,7 @@
         "legacy_id": 10,
         "color": "#9baee4",
         "text_color": "#323232",
-        "picture": "https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
         "published": true
       },
       "category": {
@@ -85,7 +85,7 @@
       "current": true,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/c/f/cf00bee4-d957-42d7-9c5a-bdf384d49b01/profile/main/12-Maverick-Vinales.png",
+          "main": "http://localhost:8089/riders/c/f/cf00bee4-d957-42d7-9c5a-bdf384d49b01/profile/main/12-Maverick-Vinales.png",
           "secondary": null
         },
         "bike": {
@@ -96,8 +96,8 @@
           "main": null,
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/4/0/4026c7e8-b9f7-49d4-ac25-a07541f2657e/number/12-Maverick-Vinales_.png",
-        "portrait": "https://photos.motogp.com/riders/c/f/cf00bee4-d957-42d7-9c5a-bdf384d49b01/portrait/12-Maverick-Vinales.jpg"
+        "number": "http://localhost:8089/riders/4/0/4026c7e8-b9f7-49d4-ac25-a07541f2657e/number/12-Maverick-Vinales_.png",
+        "portrait": "http://localhost:8089/riders/c/f/cf00bee4-d957-42d7-9c5a-bdf384d49b01/portrait/12-Maverick-Vinales.jpg"
       }
     },
     {
@@ -115,7 +115,7 @@
         "legacy_id": 19,
         "color": "#183dc7",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "picture": "http://localhost:8089/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
         "published": true
       },
       "category": {
@@ -128,19 +128,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/8/1/816b12f2-f8cf-45bf-98cc-ad8079a0c998/profile/main/_0010_12-Maverick-Vinales,-Rider_A7R1590.png",
+          "main": "http://localhost:8089/riders/8/1/816b12f2-f8cf-45bf-98cc-ad8079a0c998/profile/main/_0010_12-Maverick-Vinales,-Rider_A7R1590.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/8/1/816b12f2-f8cf-45bf-98cc-ad8079a0c998/bike/main/_0010_12-Maverick-Vinales,-Bike_LG87361.png",
+          "main": "http://localhost:8089/riders/8/1/816b12f2-f8cf-45bf-98cc-ad8079a0c998/bike/main/_0010_12-Maverick-Vinales,-Bike_LG87361.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/8/1/816b12f2-f8cf-45bf-98cc-ad8079a0c998/helmet/main/_0000_12_Maverick_Vinales,_Helmet_LG61662.jpg",
+          "main": "http://localhost:8089/riders/8/1/816b12f2-f8cf-45bf-98cc-ad8079a0c998/helmet/main/_0000_12_Maverick_Vinales,_Helmet_LG61662.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/5/5/559396a2-ca31-444c-9e11-b97df5a1921b/number/12-Maverick-Vinales.png",
-        "portrait": "https://photos.motogp.com/riders/b/4/b413b4a7-2db6-4309-a3ea-7a09291ad39e/portrait/_0010_12-Maverick-Vinales,-Rider_A7R1584.jpg"
+        "number": "http://localhost:8089/riders/5/5/559396a2-ca31-444c-9e11-b97df5a1921b/number/12-Maverick-Vinales.png",
+        "portrait": "http://localhost:8089/riders/b/4/b413b4a7-2db6-4309-a3ea-7a09291ad39e/portrait/_0010_12-Maverick-Vinales,-Rider_A7R1584.jpg"
       }
     },
     {
@@ -158,7 +158,7 @@
         "legacy_id": 19,
         "color": "#183dc7",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "picture": "http://localhost:8089/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
         "published": true
       },
       "category": {
@@ -171,19 +171,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/a/d/ad566937-bad4-42ca-a601-0a233aabd199/profile/main/1_0003_12-Maverick-Vinales-ESP,-Body_DSC7063.png",
+          "main": "http://localhost:8089/riders/a/d/ad566937-bad4-42ca-a601-0a233aabd199/profile/main/1_0003_12-Maverick-Vinales-ESP,-Body_DSC7063.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/d/f/dfa0d417-7e23-4899-807b-b4e8273f536e/bike/main/12-Maverick-Vinales.png",
+          "main": "http://localhost:8089/riders/d/f/dfa0d417-7e23-4899-807b-b4e8273f536e/bike/main/12-Maverick-Vinales.png",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/riders/f/e/fe32366d-1e0a-40bc-a696-2947df54dfb7/helmet/main/12-Maverick-Vinales.jpg",
+          "main": "http://localhost:8089/riders/f/e/fe32366d-1e0a-40bc-a696-2947df54dfb7/helmet/main/12-Maverick-Vinales.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2019/dorsales/3/7409.png",
-        "portrait": "https://photos.motogp.com/riders/4/9/49234c3d-a839-4bf1-aea5-7cc9691cc82a/portrait/-_0003_12-Maverick-Vinales-ESP,-Body_DSC7058.jpg"
+        "number": "http://localhost:8089/2019/dorsales/3/7409.png",
+        "portrait": "http://localhost:8089/riders/4/9/49234c3d-a839-4bf1-aea5-7cc9691cc82a/portrait/-_0003_12-Maverick-Vinales-ESP,-Body_DSC7058.jpg"
       }
     },
     {
@@ -201,7 +201,7 @@
         "legacy_id": 19,
         "color": "#183dc7",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "picture": "http://localhost:8089/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
         "published": true
       },
       "category": {
@@ -218,15 +218,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2019/riders/motogp/bike/original/rider_7409_1552058371.jpg",
+          "main": "http://localhost:8089/2019/riders/motogp/bike/original/rider_7409_1552058371.jpg",
           "secondary": null
         },
         "helmet": {
           "main": null,
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2019/dorsales/3/7409.png",
-        "portrait": "https://photos.motogp.com/2019/riders/motogp/grid/original/rider_7409_1554806128.jpg"
+        "number": "http://localhost:8089/2019/dorsales/3/7409.png",
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_7409_1554806128.jpg"
       }
     },
     {
@@ -244,7 +244,7 @@
         "legacy_id": 19,
         "color": "#183dc7",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
+        "picture": "http://localhost:8089/teams/9/1/91699bb4-f33d-40de-b995-4f5e120ff74d/Yamaha.png",
         "published": true
       },
       "category": {
@@ -261,15 +261,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2018/riders/motogp/bike/original/rider_7409_1521313173.jpg",
+          "main": "http://localhost:8089/2018/riders/motogp/bike/original/rider_7409_1521313173.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2018/riders/motogp/helmet/original/rider_7409_1521312785.jpg",
+          "main": "http://localhost:8089/2018/riders/motogp/helmet/original/rider_7409_1521312785.jpg",
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2018/dorsales/3/7409.png",
-        "portrait": "https://photos.motogp.com/2018/riders/motogp/grid/original/rider_7409_1521213854.jpg"
+        "number": "http://localhost:8089/2018/dorsales/3/7409.png",
+        "portrait": "http://localhost:8089/2018/riders/motogp/grid/original/rider_7409_1521213854.jpg"
       }
     },
     {
@@ -287,7 +287,7 @@
         "legacy_id": 19,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/motogp/original/team_bike_19_1574329098.jpg",
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_19_1574329098.jpg",
         "published": true
       },
       "category": {
@@ -304,15 +304,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2017/riders/motogp/bike/original/rider_7409_1490542034.jpg",
+          "main": "http://localhost:8089/2017/riders/motogp/bike/original/rider_7409_1490542034.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2017/riders/motogp/helmet/original/rider_7409_1490543513.jpg",
+          "main": "http://localhost:8089/2017/riders/motogp/helmet/original/rider_7409_1490543513.jpg",
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2017/riders/motogp/grid/original/rider_7409_1490883976.jpg"
+        "portrait": "http://localhost:8089/2017/riders/motogp/grid/original/rider_7409_1490883976.jpg"
       }
     },
     {
@@ -330,7 +330,7 @@
         "legacy_id": 37,
         "color": "#4294c1",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png",
+        "picture": "http://localhost:8089/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png",
         "published": true
       },
       "category": {
@@ -347,15 +347,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2016/riders/motogp/bike/original/rider_7409_1458324129.jpg",
+          "main": "http://localhost:8089/2016/riders/motogp/bike/original/rider_7409_1458324129.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2016/riders/motogp/helmet/original/rider_7409_1458324070.jpg",
+          "main": "http://localhost:8089/2016/riders/motogp/helmet/original/rider_7409_1458324070.jpg",
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2016/riders/motogp/grid/original/rider_7409_1479303985.jpg"
+        "portrait": "http://localhost:8089/2016/riders/motogp/grid/original/rider_7409_1479303985.jpg"
       }
     },
     {
@@ -373,7 +373,7 @@
         "legacy_id": 37,
         "color": "#4294c1",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png",
+        "picture": "http://localhost:8089/teams/6/a/6ae0f119-6c7c-4171-9062-b431459e7c18/Suzuki.png",
         "published": true
       },
       "category": {
@@ -398,7 +398,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7409"
       }
     },
     {
@@ -416,7 +416,7 @@
         "legacy_id": 213,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_213_1583857100.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_213_1583857100.jpg",
         "published": true
       },
       "category": {
@@ -441,7 +441,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7409"
       }
     },
     {
@@ -459,7 +459,7 @@
         "legacy_id": 107,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto2/original/team_bike_107_1583857096.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto2/original/team_bike_107_1583857096.jpg",
         "published": true
       },
       "category": {
@@ -484,7 +484,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7409"
       }
     },
     {
@@ -527,7 +527,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7409"
       }
     },
     {
@@ -545,7 +545,7 @@
         "legacy_id": 111,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_111_1584628514.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_111_1584628514.jpg",
         "published": true
       },
       "category": {
@@ -570,7 +570,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/7409"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/7409"
       }
     }
   ],
@@ -578,12 +578,12 @@
     "text": "2013 Moto3™ World Champion Maverick Viñales took the lightweight title in the CEV in 2010, as well as the European 125 Championship the following year, and debuted in the 125 World Championship in 2011. He won four races in his rookie year – third in the Championship and Rookie of the Year – and then took that title in 2013. As a Moto2™ rookie in 2014, Viñales was again Rookie of the Year and won four races – moving up to MotoGP™ the year after with Team Suzuki Ecstar. Another Rookie of the Year trophy followed, before the Spaniard then took Suzuki’s first race win since 2007 – and his maiden MotoGP™ win – at the British GP in 2016. For 2017, Viñales moved to Movistar Yamaha MotoGP to partner none other than Italian legend Valentino Rossi. After dominating pre-season testing, the Yamaha rider won the first two races of the year and the French GP, but the Movistar Yamaha team’s struggles with low grip then saw a more difficult latter half of the season. Viñales came third overall, and the struggles continued into 2018. It was the Spaniard who brought Yamaha's longest losing streak to an end, however, as he won in Australia. 2019 started slowly for Viñales, picking up just the solitary podium in the first seven races. However, victory at Assen then put the wheels in motion for a fantastic latter half of the season. Five podiums, including a win in Malaysia, saw Viñales claim P3 in the Championship. 2020 brought hopes of a title attack for Viñales, and he was in contention from the very beginning thanks to successive second places in the Jerez double, while victory at the Emilia Romagna GP bolstered his hopes. However, inconsistent form and an inability to follow up on promising Qualifying sessions saw the Spaniard slip out of the title race and finish 6th in the Championship. 2021, his fifth year at Yamaha, started in remarkable fashion with victory at the opening round. But the relationship deteriorated from there in unprecedented circumstances. 24 hours on from a podium in Assen, it was announced he'd leave Yamaha at the end of the season, one year earlier than planned, but he didn't even make it to Valencia. After over-revving his engine in Austria, Yamaha sacked the Spaniard with immediate effect. Rumours began to grow that he'd sign for Aprilia and, before long, that deal was announced and he was testing the RS-GP in Misano. The Noale factory handed him the final five rounds of the year to adapt to the new machine and prepare for a hugely important 2022 campaign alongside Aleix Espargaro.",
     "media": {
       "video": null,
-      "picture": "https://photos.motogp.com/riders/e/8/e877cab5-d604-4bf3-95ee-482682968a8a/biography/12-maverick-vinales-esp---lg5_3231.gallery_full_top_fullscreen.jpg"
+      "picture": "http://localhost:8089/riders/e/8/e877cab5-d604-4bf3-95ee-482682968a8a/biography/12-maverick-vinales-esp---lg5_3231.gallery_full_top_fullscreen.jpg"
     }
   },
   "legend": false,
   "legacy_id": 7409,
-  "merchandise_url": "https://store.motogp.com/en/maverick-vinales-12-clothing-merchandise?utm_source=motogp.com&utm_medium=Link&utm_content=MV25&utm_campaign=Store&o=motogp-riders-stats",
+  "merchandise_url": "http://localhost:8089/en/maverick-vinales-12-clothing-merchandise?utm_source=localhost:8089&utm_medium=Link&utm_content=MV25&utm_campaign=Store&o=motogp-riders-stats",
   "published": true,
   "injured": false,
   "banned": false,
