@@ -1,0 +1,360 @@
+[
+  {
+    "id": "aacf14f8-fd7f-42d3-be6e-54add0eab84f",
+    "name": "JEREZ MOTOGP\u2122 OFFICIAL TEST",
+    "sponsored_name": "Jerez MotoGP\u2122 Official Test",
+    "date_start": "2021-11-18",
+    "date_end": "2021-11-19",
+    "country": {
+      "iso": "ES",
+      "name": "Spain",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 676
+      }
+    ],
+    "circuit": {
+      "id": "763812ea-9435-4c1c-b61b-a0c14ccdfbe4",
+      "name": "Circuito de Jerez - \u00c1ngel Nieto",
+      "legacy_id": 4,
+      "place": "Jerez de la Frontera",
+      "nation": "SPA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "JE1",
+    "world_standing_files": null
+  },
+  {
+    "id": "3e7c342a-e406-470f-956f-d685be970bf4",
+    "name": "SEPANG MOTOGP\u2122 OFFICIAL TEST",
+    "sponsored_name": "Sepang MotoGP\u2122 Official Test",
+    "date_start": "2022-02-05",
+    "date_end": "2022-02-06",
+    "country": {
+      "iso": "MY",
+      "name": "Malaysia",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 677
+      }
+    ],
+    "circuit": {
+      "id": "f5a7f3f8-0097-4810-a2da-eee749aedc77",
+      "name": "Sepang International Circuit",
+      "legacy_id": 75,
+      "place": "Sepang",
+      "nation": "MAL"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "MY1",
+    "world_standing_files": null
+  },
+  {
+    "id": "7fd4f011-06ec-495a-8b54-74afa5031ae0",
+    "name": "MANDALIKA MOTOGP\u2122 OFFICIAL TEST ",
+    "sponsored_name": "Mandalika MotoGP\u2122 Official Test ",
+    "date_start": "2022-02-11",
+    "date_end": "2022-02-13",
+    "country": {
+      "iso": "ID",
+      "name": "Indonesia",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 678
+      }
+    ],
+    "circuit": {
+      "id": "a1ec6331-c571-418c-92d7-768cf0c83872",
+      "name": "Pertamina Mandalika Circuit",
+      "legacy_id": 111,
+      "place": "Lombok",
+      "nation": "INA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "IN1",
+    "world_standing_files": null
+  },
+  {
+    "id": "d5de21be-ecba-48bd-8d70-7f352142f3a2",
+    "name": "PORTIMAO MOTO2\u2122 \u0026 MOTO3\u2122 OFFICIAL TEST",
+    "sponsored_name": "Portimao Moto2\u2122 \u0026 Moto3\u2122 Official Test",
+    "date_start": "2022-02-19",
+    "date_end": "2022-02-21",
+    "country": {
+      "iso": "PT",
+      "name": "Portugal",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 1,
+        "eventId": 679
+      },
+      {
+        "categoryId": 2,
+        "eventId": 680
+      }
+    ],
+    "circuit": {
+      "id": "912a9d7f-2864-4311-bebb-19851e9c2620",
+      "name": "Aut\u00f3dromo Internacional do Algarve",
+      "legacy_id": 109,
+      "place": "Portimao",
+      "nation": "POR"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "PT1",
+    "world_standing_files": null
+  },
+  {
+    "id": "378be17c-1065-487f-87d9-8fbe738b3c33",
+    "name": "Jerez MotoGP\u2122 Official Test II",
+    "sponsored_name": "Jerez MotoGP\u2122 Official Test II",
+    "date_start": "2022-05-02",
+    "date_end": "2022-05-02",
+    "country": {
+      "iso": "ES",
+      "name": "Spain",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 681
+      },
+      {
+        "categoryId": 3,
+        "eventId": 681
+      }
+    ],
+    "circuit": {
+      "id": "763812ea-9435-4c1c-b61b-a0c14ccdfbe4",
+      "name": "Circuito de Jerez - \u00c1ngel Nieto",
+      "legacy_id": 4,
+      "place": "Jerez de la Frontera",
+      "nation": "SPA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "JE4",
+    "world_standing_files": null
+  },
+  {
+    "id": "9afab834-8b4f-4cf0-ab0e-0ff811069adc",
+    "name": "CATALUNYA MOTOGP\u2122 OFFICIAL TEST",
+    "sponsored_name": "Catalunya MotoGP\u2122 Official Test",
+    "date_start": "2022-06-06",
+    "date_end": "2022-06-06",
+    "country": {
+      "iso": "ES",
+      "name": "Spain",
+      "region_iso": "CT"
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 682
+      }
+    ],
+    "circuit": {
+      "id": "2218098d-ab2d-498b-a633-1a4a39119e9e",
+      "name": "Circuit de Barcelona-Catalunya",
+      "legacy_id": 13,
+      "place": "Barcelona",
+      "nation": "SPA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "CT1",
+    "world_standing_files": null
+  },
+  {
+    "id": "2284c891-9f88-4a18-b6aa-cad2456f1734",
+    "name": "MISANO MOTOGP\u2122 OFFICIAL TEST ",
+    "sponsored_name": "Misano MotoGP\u2122 Official Test ",
+    "date_start": "2022-09-06",
+    "date_end": "2022-09-07",
+    "country": {
+      "iso": "IT",
+      "name": "Italy",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 683
+      }
+    ],
+    "circuit": {
+      "id": "e0d07d48-0b62-40fa-9d36-411b15af406f",
+      "name": "Misano World Circuit Marco Simoncelli",
+      "legacy_id": 38,
+      "place": "Misano Adriatico",
+      "nation": "ITA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "MI1",
+    "world_standing_files": null
+  }
+]

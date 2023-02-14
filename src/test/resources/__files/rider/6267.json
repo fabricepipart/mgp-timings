@@ -29,7 +29,7 @@
         "legacy_id": 14,
         "color": "#ff9912",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
         "published": true
       },
       "category": {
@@ -42,19 +42,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/a/0/a03c6be6-a7b8-4492-ab4e-b1642d34c8df/profile/main/_0001_06_Stefan_Bradl_Rider_DSC6284.png",
+          "main": "http://localhost:8089/riders/a/0/a03c6be6-a7b8-4492-ab4e-b1642d34c8df/profile/main/_0001_06_Stefan_Bradl_Rider_DSC6284.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/d/0/d0ce0337-83b2-4240-bf8b-a844a5a08d3c/bike/main/_0000_06-Stefan-Bradl,-Bike_LG86879.png",
+          "main": "http://localhost:8089/riders/d/0/d0ce0337-83b2-4240-bf8b-a844a5a08d3c/bike/main/_0000_06-Stefan-Bradl,-Bike_LG86879.png",
           "secondary": null
         },
         "helmet": {
           "main": null,
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/7/f/7fd2cbf0-b64d-4936-8756-b0a11c7dfbea/number/ddd.png",
-        "portrait": "https://photos.motogp.com/riders/c/c/cc1f4bb9-ce93-4261-8b15-4fbb808f6bd4/portrait/_0001_06_Stefan_Bradl_Rider_DSC6278.jpg"
+        "number": "http://localhost:8089/riders/7/f/7fd2cbf0-b64d-4936-8756-b0a11c7dfbea/number/ddd.png",
+        "portrait": "http://localhost:8089/riders/c/c/cc1f4bb9-ce93-4261-8b15-4fbb808f6bd4/portrait/_0001_06_Stefan_Bradl_Rider_DSC6278.jpg"
       }
     },
     {
@@ -72,7 +72,7 @@
         "legacy_id": 14,
         "color": "#ff9912",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
         "published": true
       },
       "category": {
@@ -85,19 +85,19 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/a/0/a03c6be6-a7b8-4492-ab4e-b1642d34c8df/profile/main/_0001_06_Stefan_Bradl_Rider_DSC6284.png",
+          "main": "http://localhost:8089/riders/a/0/a03c6be6-a7b8-4492-ab4e-b1642d34c8df/profile/main/_0001_06_Stefan_Bradl_Rider_DSC6284.png",
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/riders/d/0/d0ce0337-83b2-4240-bf8b-a844a5a08d3c/bike/main/_0000_06-Stefan-Bradl,-Bike_LG86879.png",
+          "main": "http://localhost:8089/riders/d/0/d0ce0337-83b2-4240-bf8b-a844a5a08d3c/bike/main/_0000_06-Stefan-Bradl,-Bike_LG86879.png",
           "secondary": null
         },
         "helmet": {
           "main": null,
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/7/f/7fd2cbf0-b64d-4936-8756-b0a11c7dfbea/number/ddd.png",
-        "portrait": "https://photos.motogp.com/riders/c/c/cc1f4bb9-ce93-4261-8b15-4fbb808f6bd4/portrait/_0001_06_Stefan_Bradl_Rider_DSC6278.jpg"
+        "number": "http://localhost:8089/riders/7/f/7fd2cbf0-b64d-4936-8756-b0a11c7dfbea/number/ddd.png",
+        "portrait": "http://localhost:8089/riders/c/c/cc1f4bb9-ce93-4261-8b15-4fbb808f6bd4/portrait/_0001_06_Stefan_Bradl_Rider_DSC6278.jpg"
       }
     },
     {
@@ -115,7 +115,7 @@
         "legacy_id": 14,
         "color": "#ff9912",
         "text_color": "#ffffff",
-        "picture": "https://photos.motogp.com/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
+        "picture": "http://localhost:8089/teams/3/9/3937b141-c9a0-4f1e-856d-ee132ba6dab1/RepsolHonda.png",
         "published": true
       },
       "category": {
@@ -128,7 +128,7 @@
       "current": false,
       "pictures": {
         "profile": {
-          "main": "https://photos.motogp.com/riders/9/4/94ebf85a-4b58-4642-a010-dee9708ba263/profile/main/Bradl-06.png",
+          "main": "http://localhost:8089/riders/9/4/94ebf85a-4b58-4642-a010-dee9708ba263/profile/main/Bradl-06.png",
           "secondary": null
         },
         "bike": {
@@ -139,8 +139,8 @@
           "main": null,
           "secondary": null
         },
-        "number": "https://photos.motogp.com/riders/7/f/7fd2cbf0-b64d-4936-8756-b0a11c7dfbea/number/ddd.png",
-        "portrait": "https://photos.motogp.com/riders/9/4/94ebf85a-4b58-4642-a010-dee9708ba263/portrait/_0001_06_Stefan_Bradl_GER_DSC9105.jpg"
+        "number": "http://localhost:8089/riders/7/f/7fd2cbf0-b64d-4936-8756-b0a11c7dfbea/number/ddd.png",
+        "portrait": "http://localhost:8089/riders/9/4/94ebf85a-4b58-4642-a010-dee9708ba263/portrait/_0001_06_Stefan_Bradl_GER_DSC9105.jpg"
       }
     },
     {
@@ -158,7 +158,7 @@
         "legacy_id": 10,
         "color": "#9baee4",
         "text_color": "#323232",
-        "picture": "https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
         "published": true
       },
       "category": {
@@ -182,8 +182,8 @@
           "main": null,
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2019/dorsales/3/6267.png",
-        "portrait": "https://photos.motogp.com/2019/riders/motogp/grid/original/rider_6267_1562250014.jpg"
+        "number": "http://localhost:8089/2019/dorsales/3/6267.png",
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_6267_1562250014.jpg"
       }
     },
     {
@@ -201,7 +201,7 @@
         "legacy_id": 10,
         "color": "#9baee4",
         "text_color": "#323232",
-        "picture": "https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
         "published": true
       },
       "category": {
@@ -225,8 +225,8 @@
           "main": null,
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2019/dorsales/3/6267.png",
-        "portrait": "https://photos.motogp.com/2019/riders/motogp/grid/original/rider_6267_1562250014.jpg"
+        "number": "http://localhost:8089/2019/dorsales/3/6267.png",
+        "portrait": "http://localhost:8089/2019/riders/motogp/grid/original/rider_6267_1562250014.jpg"
       }
     },
     {
@@ -244,7 +244,7 @@
         "legacy_id": 10,
         "color": "#9baee4",
         "text_color": "#323232",
-        "picture": "https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
         "published": true
       },
       "category": {
@@ -268,8 +268,8 @@
           "main": null,
           "secondary": null
         },
-        "number": "https://photos.motogp.com/2018/dorsales/3/6267.png",
-        "portrait": "https://photos.motogp.com/2018/riders/motogp/grid/original/rider_6267_1541296271.jpg"
+        "number": "http://localhost:8089/2018/dorsales/3/6267.png",
+        "portrait": "http://localhost:8089/2018/riders/motogp/grid/original/rider_6267_1541296271.jpg"
       }
     },
     {
@@ -287,7 +287,7 @@
         "legacy_id": 10,
         "color": "#9baee4",
         "text_color": "#323232",
-        "picture": "https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
         "published": true
       },
       "category": {
@@ -304,15 +304,15 @@
           "secondary": null
         },
         "bike": {
-          "main": "https://photos.motogp.com/2016/riders/motogp/bike/original/rider_6267_1458324177.jpg",
+          "main": "http://localhost:8089/2016/riders/motogp/bike/original/rider_6267_1458324177.jpg",
           "secondary": null
         },
         "helmet": {
-          "main": "https://photos.motogp.com/2016/riders/motogp/helmet/original/rider_6267_1458324112.jpg",
+          "main": "http://localhost:8089/2016/riders/motogp/helmet/original/rider_6267_1458324112.jpg",
           "secondary": null
         },
         "number": null,
-        "portrait": "https://photos.motogp.com/2016/riders/motogp/grid/original/rider_6267_1464880335.jpg"
+        "portrait": "http://localhost:8089/2016/riders/motogp/grid/original/rider_6267_1464880335.jpg"
       }
     },
     {
@@ -330,7 +330,7 @@
         "legacy_id": 10,
         "color": "#9baee4",
         "text_color": "#323232",
-        "picture": "https://photos.motogp.com/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
+        "picture": "http://localhost:8089/teams/a/7/a7b1c4d6-3da3-482d-8de5-5d8299cec022/Aprilia-Racing-Team.png",
         "published": true
       },
       "category": {
@@ -355,7 +355,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -373,7 +373,7 @@
         "legacy_id": 17,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/motogp/original/team_bike_17_1574329096.jpg",
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_17_1574329096.jpg",
         "published": true
       },
       "category": {
@@ -398,7 +398,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -416,7 +416,7 @@
         "legacy_id": 17,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/motogp/original/team_bike_17_1574329096.jpg",
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_17_1574329096.jpg",
         "published": true
       },
       "category": {
@@ -441,7 +441,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -459,7 +459,7 @@
         "legacy_id": 17,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/motogp/original/team_bike_17_1574329096.jpg",
+        "picture": "http://localhost:8089/2020/teams/motogp/original/team_bike_17_1574329096.jpg",
         "published": true
       },
       "category": {
@@ -484,7 +484,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -527,7 +527,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -570,7 +570,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -613,7 +613,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -631,7 +631,7 @@
         "legacy_id": 108,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_108_1584101112.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_108_1584101112.jpg",
         "published": true
       },
       "category": {
@@ -656,7 +656,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -674,7 +674,7 @@
         "legacy_id": 105,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
         "published": true
       },
       "category": {
@@ -699,7 +699,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -717,7 +717,7 @@
         "legacy_id": 105,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
         "published": true
       },
       "category": {
@@ -742,7 +742,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -760,7 +760,7 @@
         "legacy_id": 105,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
         "published": true
       },
       "category": {
@@ -785,7 +785,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -803,7 +803,7 @@
         "legacy_id": 105,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
         "published": true
       },
       "category": {
@@ -828,7 +828,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -846,7 +846,7 @@
         "legacy_id": 105,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
         "published": true
       },
       "category": {
@@ -871,7 +871,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -889,7 +889,7 @@
         "legacy_id": 105,
         "color": null,
         "text_color": null,
-        "picture": "https://photos.motogp.com/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
+        "picture": "http://localhost:8089/2020/teams/moto3/original/team_bike_105_1584101122.jpg",
         "published": true
       },
       "category": {
@@ -914,7 +914,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     },
     {
@@ -957,7 +957,7 @@
           "secondary": null
         },
         "number": null,
-        "portrait": "https://www.motogp.com/en/api/rider/photo/grid/old/6267"
+        "portrait": "http://localhost:8089/en/api/rider/photo/grid/old/6267"
       }
     }
   ],
@@ -965,7 +965,7 @@
     "text": "Son of former 250 rider Helmut Bradl, Stefan started out in the World Championship in 2006 in the 125 class, his breakthrough season coming in 2008 when he won two races and placed fourth overall. In 2010 he stepped into the new Moto2™ category, ending the year ninth in the standings with an impressive victory at Estoril. Bradl was confirmed as the 2011 Moto2™ World Champion at the final round of the season in Valencia, beating Marc Marquez to the title. He joined the LCR Team aboard a Honda in 2012 for his first venture in the MotoGP™ class, which saw him win the Rookie of the Year title after some strong performances. The next year, Bradl finished on the podium from a career-first pole position at Laguna Seca, but his season ended early after he broke an ankle in Malaysia. In 2014 he did not return to the podium and in 2015 he enjoyed a new challenge with Forward Racing on the Forward Yamaha. Bradl experienced a difficult start to the season, only managing to finish in the points twice in the first nine races, with a best-placed finish of eighth at the Catalan GP. After nine races, Bradl was released from his contract at Forward Racing and took on a new challenge by joining the Factory Aprilia Racing Team Gresini for the second half of the season. Bradl would stay with Aprilia in 2016 as they brought in an all new prototype machine, but a P7 in Argentina was his best result as the German finished his final full-time MotoGP™ racing season in 16th. After a brief stint in World SBK, Bradl returned to MotoGP™ as a replacement rider for Franco Morbidelli at his home Grand Prix at the Sachsenring. Two more wildcard appearances followed at Czech and San Marino GPs for the HRC Honda team before he once again provided injury cover, this time for Cal Crutchlow in the closing two races of the season. 2019 saw him take up the test rider role with Honda, making four appearances throughout the course of the year. In 2020 he had to step up a level as he replaced the injured reigning Champion Marc Marquez after the Jerez round, with the German ending the season 19th overall. Bradl continued his injury cover during the opening rounds of 2021 in Qatar, before eventually handing back the reigns to Marquez. He didn’t have to wait long for another premier class appearance though, as he was handed a wildcard appearance at Jerez.  Bradl finished the year once again covering for Marquez in Portimao and remains as HRC's Test Rider for 2022.",
     "media": {
       "video": null,
-      "picture": "https://photos.motogp.com/riders/3/6/36c0c742-af02-443c-80db-d13ec31f4e2b/biography/06_Stefan_Bradl_DSC8102.jpg"
+      "picture": "http://localhost:8089/riders/3/6/36c0c742-af02-443c-80db-d13ec31f4e2b/biography/06_Stefan_Bradl_DSC8102.jpg"
     }
   },
   "legend": false,

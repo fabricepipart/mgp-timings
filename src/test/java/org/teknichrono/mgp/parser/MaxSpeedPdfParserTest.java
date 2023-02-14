@@ -3,10 +3,10 @@ package org.teknichrono.mgp.parser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.teknichrono.mgp.model.out.MaxSpeed;
-import org.teknichrono.mgp.model.out.SessionRider;
-import org.teknichrono.mgp.model.rider.RiderConstructor;
-import org.teknichrono.mgp.model.rider.RiderSeason;
-import org.teknichrono.mgp.model.rider.RiderTeam;
+import org.teknichrono.mgp.model.result.Constructor;
+import org.teknichrono.mgp.model.result.Rider;
+import org.teknichrono.mgp.model.result.RiderClassification;
+import org.teknichrono.mgp.model.result.Team;
 
 import java.util.ArrayList;
 
@@ -25,25 +25,21 @@ class MaxSpeedPdfParserTest {
   @Test
   public void canReadLine() throws PdfParsingException {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
-    ArrayList<SessionRider> riderDetails = getRiderDetails();
+    ArrayList<RiderClassification> riderDetails = getRiderDetails();
     MaxSpeed maxSpeed = parser.parseLine("33 Brad BINDER RSA Red Bull KTM Factory Racing KTM 347.2", riderDetails, 2022);
     Assertions.assertTrue(!maxSpeed.testIfIncomplete());
   }
 
-  private ArrayList<SessionRider> getRiderDetails() {
-    ArrayList<SessionRider> riderDetails = new ArrayList<>();
-    SessionRider brad = new SessionRider();
-    brad.surname = "Binder";
-    brad.name = "Brad";
-    RiderSeason season = new RiderSeason();
-    season.sponsored_team = "Red Bull KTM Factory Racing";
-    season.season = 2022;
-    season.number = 33;
-    RiderConstructor ducati = new RiderConstructor();
-    ducati.name = "Ducati";
-    season.team = new RiderTeam();
-    season.team.constructor = ducati;
-    brad.season = season;
+  private ArrayList<RiderClassification> getRiderDetails() {
+    ArrayList<RiderClassification> riderDetails = new ArrayList<>();
+    RiderClassification brad = new RiderClassification();
+    brad.rider = new Rider();
+    brad.rider.full_name = "Brad Binder";
+    brad.team = new Team();
+    brad.team.name = "Red Bull KTM Factory Racing";
+    brad.rider.number = 33;
+    brad.constructor = new Constructor();
+    brad.constructor.name = "Ducati";
     riderDetails.add(brad);
     return riderDetails;
   }
@@ -52,7 +48,7 @@ class MaxSpeedPdfParserTest {
   @Test
   public void cantReadLine() {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
-    ArrayList<SessionRider> riderDetails = getRiderDetails();
+    ArrayList<RiderClassification> riderDetails = getRiderDetails();
     Assertions.assertThrows(PdfParsingException.class, () -> {
       parser.parseLine("33 Brad BINDER RSA Red Bull KTM Factory Racing KTM 347.2 somethingelse", new ArrayList<>(), 2022);
     });
