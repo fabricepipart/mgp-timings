@@ -257,6 +257,21 @@ public class SessionEndpoint {
   }
 
   @GET
+  @Path("/test/{year}/{eventShortName}/{category}/{session}/results/details/csv")
+  @Produces("text/csv")
+  @Transactional
+  public Response getTestClassificationsPdfDetailsToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
+    try {
+      List<PracticeClassificationDetails> details = (List<PracticeClassificationDetails>) getTestClassificationsPdfDetails(year, eventShortName, category, sessionShortName);
+      String csvResults = practiceCsvConverter.convertToCsv(details, PracticeClassificationDetails.class);
+      String filename = String.format("test-classification-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
+      return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=" + filename).build();
+    } catch (IOException e) {
+      return Response.serverError().build();
+    }
+  }
+
+  @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
   @Path("/{year}/{eventShortName}/{category}/{session}/analysis")
@@ -304,6 +319,22 @@ public class SessionEndpoint {
       List<LapAnalysis> lapAnalysis = getAnalysis(year, eventShortName, category, sessionShortName);
       String csvResults = lapAnalysisCsvConverter.convertToCsv(lapAnalysis, LapAnalysis.class);
       String filename = String.format("analysis-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
+      return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=" + filename).build();
+    } catch (IOException e) {
+      return Response.serverError().build();
+    }
+  }
+
+
+  @GET
+  @Path("/test/{year}/{eventShortName}/{category}/{session}/analysis/csv")
+  @Produces("text/csv")
+  @Transactional
+  public Response getTestAnalysisToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
+    try {
+      List<LapAnalysis> lapAnalysis = getTestAnalysis(year, eventShortName, category, sessionShortName);
+      String csvResults = lapAnalysisCsvConverter.convertToCsv(lapAnalysis, LapAnalysis.class);
+      String filename = String.format("test-analysis-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
       return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=" + filename).build();
     } catch (IOException e) {
       return Response.serverError().build();
