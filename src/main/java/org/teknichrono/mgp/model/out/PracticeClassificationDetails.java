@@ -62,14 +62,20 @@ public class PracticeClassificationDetails implements ClassificationDetails {
 
   public void fill(RiderClassification c) {
     position = c.position;
-    riderName = c.rider.full_name;
-    riderNumber = c.rider.number;
-    team = c.team.name;
+    if (c.rider != null) {
+      riderName = c.rider.full_name;
+      riderNumber = c.rider.number;
+    }
+    if (c.team != null) {
+      team = c.team.name;
+    }
     if (c.constructor != null) {
       constructor = c.constructor.name;
     }
-    gapToFirst = c.gap.first;
-    gapToPrevious = c.gap.prev;
+    if (c.gap != null) {
+      gapToFirst = c.gap.first;
+      gapToPrevious = c.gap.prev;
+    }
     totalLaps = c.total_laps;
   }
 }
