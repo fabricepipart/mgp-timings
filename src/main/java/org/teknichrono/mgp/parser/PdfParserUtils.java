@@ -44,7 +44,7 @@ public class PdfParserUtils {
 
 
   public static String parseTime(String line) {
-    Pattern p = Pattern.compile("\\s[0-9]+'[0-9]{2}\\.[0-9]{3}");
+    Pattern p = Pattern.compile("\\s[0-9]*:?[0-9]+'[0-9]{2}\\.[0-9]{3}");
     Matcher m = p.matcher(line);
     while (m.find()) {
       return m.group().trim();
