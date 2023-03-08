@@ -618,12 +618,13 @@ public class TestSessionEndpoint {
 
     List<String> lines = content.lines().collect(Collectors.toList());
 
-    assertThat(lines.size()).isEqualTo(1386);
+    assertThat(lines.size()).isEqualTo(1392);
     assertThat(lines.get(0)).containsAnyOf("NUMBER", "RIDER", "NATION", "TEAM", "MOTORCYCLE", "LAP_NUMBER", "TIME", "MAX_SPEED", "FRONT_TYRE", "BACK_TYRE", "FRONT_TYRE_LAP_NUMBER", "BACK_TYRE_LAP_NUMBER", "CANCELLED", "PIT", "UNFINISHED");
     assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 14);
     assertThat(lines).noneMatch(s -> s.contains("null"));
     assertThat(lines).anyMatch(s -> s.contains("Ducati Lenovo Team"));
     assertThat(lines).anyMatch(s -> s.contains("ZA"));
+    assertThat(lines).anyMatch(s -> s.contains("1:"));
   }
 
   @Test
