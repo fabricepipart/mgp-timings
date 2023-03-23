@@ -17,7 +17,7 @@
         <fabric8.openshift.enableAutomaticTrigger>true</fabric8.openshift.enableAutomaticTrigger>
 
         <jacoco.version>0.8.8</jacoco.version>
-        <surefire-plugin.version>2.22.2</surefire-plugin.version>
+        <surefire-plugin.version>3.0.0</surefire-plugin.version>
         <quarkus.version>2.16.5.Final</quarkus.version>
         <mapstruct.version>1.5.3.Final</mapstruct.version>
         <lombok.version>1.18.26</lombok.version>
