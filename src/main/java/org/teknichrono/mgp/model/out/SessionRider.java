@@ -1,10 +1,10 @@
 package org.teknichrono.mgp.model.out;
 
-import org.teknichrono.mgp.model.result.Entry;
-import org.teknichrono.mgp.model.rider.RiderAttributes;
-import org.teknichrono.mgp.model.rider.RiderBiography;
-import org.teknichrono.mgp.model.rider.RiderCountry;
-import org.teknichrono.mgp.model.rider.RiderDetails;
+import org.teknichrono.mgp.api.model.result.Entry;
+import org.teknichrono.mgp.api.model.rider.RiderAttributes;
+import org.teknichrono.mgp.api.model.rider.RiderBiography;
+import org.teknichrono.mgp.api.model.rider.RiderCountry;
+import org.teknichrono.mgp.api.model.rider.RiderDetails;
 
 public class SessionRider {
 

@@ -2,8 +2,9 @@ package org.teknichrono.mgp.model.out;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
+import org.teknichrono.mgp.util.CSVConvertible;
 
-public class LapAnalysis {
+public class LapAnalysis implements CSVConvertible<LapAnalysis> {
 
   public static final String UNFINISHED_LAP = "unfinished";
 
@@ -91,4 +92,8 @@ public class LapAnalysis {
     motorcycle = old.motorcycle;
   }
 
+  @Override
+  public LapAnalysis toCsv() {
+    return this;
+  }
 }

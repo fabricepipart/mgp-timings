@@ -2,7 +2,7 @@ package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.model.out.MaxSpeed;
-import org.teknichrono.mgp.model.result.RiderClassification;
+import org.teknichrono.mgp.api.model.result.RiderClassification;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;

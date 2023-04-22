@@ -1,11 +1,19 @@
 package org.teknichrono.mgp.business;
 
 import org.eclipse.microprofile.rest.client.inject.RestClient;
-import org.teknichrono.mgp.client.RidersClient;
-import org.teknichrono.mgp.model.rider.RiderDetails;
+import org.teknichrono.mgp.api.client.ResultsClient;
+import org.teknichrono.mgp.api.client.RidersClient;
+import org.teknichrono.mgp.api.model.result.Category;
+import org.teknichrono.mgp.api.model.result.Entry;
+import org.teknichrono.mgp.api.model.result.Event;
+import org.teknichrono.mgp.api.model.rider.RiderDetails;
+import org.teknichrono.mgp.model.out.SessionRider;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 @ApplicationScoped
 public class RiderService {
@@ -14,9 +22,44 @@ public class RiderService {
   @RestClient
   RidersClient riderClient;
 
+  @Inject
+  @RestClient
+  ResultsClient resultsClient;
+
+  @Inject
+  EventService eventService;
+
+  @Inject
+  CategoryService categoryService;
 
   public RiderDetails getRider(Integer legacyId) {
     return riderClient.getRider(legacyId);
+  }
+  
+  public Optional<List<Entry>> getEntries(int year, String eventShortName, String category) {
+    Optional<Event> event = eventService.getEventOrTestOfYear(year, eventShortName);
+    if (event.isEmpty()) {
+      return Optional.empty();
+    }
+    Optional<Category> cat = categoryService.categoryOfEvent(year, eventShortName, category);
+    if (cat.isEmpty()) {
+      return Optional.empty();
+    }
+    return Optional.of(resultsClient.getEntries(event.get().id, cat.get().id).entry);
+  }
+
+  public Optional<List<SessionRider>> getRidersOfSession(int year, String eventShortName, String category) {
+    Optional<List<Entry>> entries = getEntries(year, eventShortName, category);
+    if (entries.isEmpty()) {
+      return Optional.empty();
+    }
+    List<SessionRider> riders = new ArrayList<>();
+    for (Entry e : entries.get()) {
+      SessionRider rider = new SessionRider();
+      rider.fill(e, getRider(e.rider.legacy_id));
+      riders.add(rider);
+    }
+    return Optional.of(riders);
   }
 
 }

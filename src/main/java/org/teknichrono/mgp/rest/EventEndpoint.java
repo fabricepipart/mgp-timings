@@ -1,82 +1,47 @@
 package org.teknichrono.mgp.rest;
 
-import org.eclipse.microprofile.rest.client.inject.RestClient;
-import org.teknichrono.mgp.client.ResultsClient;
-import org.teknichrono.mgp.model.result.Event;
-import org.teknichrono.mgp.model.result.Season;
+import org.teknichrono.mgp.api.model.result.Category;
+import org.teknichrono.mgp.api.model.result.Event;
+import org.teknichrono.mgp.business.CategoryService;
+import org.teknichrono.mgp.business.EventService;
+import org.teknichrono.mgp.model.output.Choice;
+import org.teknichrono.mgp.model.output.EventOutput;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.GET;
+import javax.ws.rs.NotFoundException;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
-@Path("/event")
+@Path("")
 public class EventEndpoint {
 
   @Inject
-  @RestClient
-  ResultsClient resultsService;
+  EventService eventService;
 
   @Inject
-  SeasonEndpoint seasonEndpoint;
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/{year}")
-  public List<Event> eventsOfYear(@PathParam("year") int year) {
-    Season season = seasonEndpoint.listAll().stream().filter(s -> s.year.intValue() == year).findFirst().get();
-    return resultsService.getEventsOfSeason(season.id);
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/test/{year}")
-  public List<Event> testsOfYear(@PathParam("year") int year) {
-    Season season = seasonEndpoint.tests().stream().filter(s -> s.year.intValue() == year).findFirst().get();
-    return resultsService.getTestEventsOfSeason(season.id, true);
-  }
+  CategoryService categoryService;
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
   @Path("/{year}/{eventShortName}")
-  public Event eventOfYear(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
-    return eventsOfYear(year).stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/test/{year}/{eventShortName}")
-  public Event testOfYear(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
-    return testsOfYear(year).stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
-  }
-
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/{year}/names")
-  public List<String> eventsNamesOfYear(@PathParam("year") int year) {
-    Season season = seasonEndpoint.listAll().stream().filter(s -> s.year.intValue() == year).findFirst().get();
-    return resultsService.getEventsOfSeason(season.id).stream().map(e -> e.short_name).collect(Collectors.toList());
-  }
-
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/test/{year}/names")
-  public List<String> testsNamesOfYear(@PathParam("year") int year) {
-    Season season = seasonEndpoint.tests().stream().filter(s -> s.year.intValue() == year).findFirst().get();
-    return resultsService.getTestEventsOfSeason(season.id, true).stream().map(e -> e.short_name).collect(Collectors.toList());
+  public EventOutput getEventCategories(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
+    Optional<Event> event = eventService.getEventOrTestOfYear(year, eventShortName);
+    if (event.isEmpty()) {
+      throw new NotFoundException();
+    }
+    EventOutput toReturn = EventOutput.from(event.get());
+    List<Category> categories = categoryService.categoriesOfEvent(event.get());
+    List<Choice> categoriesNames = categories.stream().map(c -> Choice.from(c.name.replaceAll("[^A-Za-z0-9]", "").toUpperCase(), c.name)).collect(Collectors.toList());
+    toReturn.categories.addAll(categoriesNames);
+    return toReturn;
   }
 
 }

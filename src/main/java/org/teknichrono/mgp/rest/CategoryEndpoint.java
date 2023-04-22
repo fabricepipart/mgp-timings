@@ -1,68 +1,47 @@
 package org.teknichrono.mgp.rest;
 
-import org.eclipse.microprofile.rest.client.inject.RestClient;
-import org.jboss.logging.Logger;
-import org.teknichrono.mgp.client.ResultsClient;
-import org.teknichrono.mgp.model.result.Category;
-import org.teknichrono.mgp.model.result.Event;
+import org.teknichrono.mgp.api.model.result.Category;
+import org.teknichrono.mgp.api.model.result.Session;
+import org.teknichrono.mgp.business.CategoryService;
+import org.teknichrono.mgp.business.SessionService;
+import org.teknichrono.mgp.model.output.CategoryOutput;
+import org.teknichrono.mgp.model.output.Choice;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.GET;
+import javax.ws.rs.NotFoundException;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
-@Path("/category")
+@Path("")
 public class CategoryEndpoint {
 
-
-  private static final Logger LOGGER = Logger.getLogger(CategoryEndpoint.class);
+  @Inject
+  SessionService sessionService;
 
   @Inject
-  @RestClient
-  ResultsClient resultsService;
-
-  @Inject
-  EventEndpoint eventEndpoint;
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/{year}/{eventShortName}")
-  public List<Category> categoriesOfEvent(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
-    Event event = eventEndpoint.eventsOfYear(year).stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
-    return resultsService.getCategoriesOfEvent(event.id);
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/test/{year}/{eventShortName}")
-  public List<Category> categoriesOfTest(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
-    Event event = eventEndpoint.testsOfYear(year).stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
-    return resultsService.getCategoriesOfEvent(event.id);
-  }
+  CategoryService categoryService;
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
   @Path("/{year}/{eventShortName}/{category}")
-  public Category categoryOfEvent(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
-    return categoriesOfEvent(year, eventShortName).stream()
-        .filter(c -> c.name.toLowerCase().contains(category.toLowerCase()))
-        .findFirst().get();
+  public CategoryOutput getEventCategorySessions(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String categoryName) {
+    Optional<Category> category = categoryService.categoryOfEvent(year, eventShortName, categoryName);
+    if (category.isEmpty()) {
+      throw new NotFoundException();
+    }
+    CategoryOutput toReturn = CategoryOutput.from(category.get());
+    List<Session> sessions = sessionService.getSessions(year, eventShortName, categoryName);
+    List<Choice> sessionsNames = sessions.stream().map(s -> Choice.from(s.getSessionName(), null)).collect(Collectors.toList());
+    toReturn.sessions.addAll(sessionsNames);
+    return toReturn;
   }
 
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/test/{year}/{eventShortName}/{category}")
-  public Category categoryOfTest(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
-    return categoriesOfTest(year, eventShortName).stream()
-        .filter(c -> c.name.toLowerCase().contains(category.toLowerCase()))
-        .findFirst().get();
-  }
 }

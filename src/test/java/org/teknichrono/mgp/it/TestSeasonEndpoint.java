@@ -1,15 +1,11 @@
 package org.teknichrono.mgp.it;
 
 import io.quarkus.test.common.QuarkusTestResource;
-import io.quarkus.test.junit.QuarkusMock;
 import io.quarkus.test.junit.QuarkusTest;
 import org.jboss.logging.Logger;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-import org.teknichrono.mgp.util.CsvConverter;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,7 +25,7 @@ class TestSeasonEndpoint {
   @Test
   public void listsAllSeasons() {
     given()
-        .when().get("/season")
+        .when().get(" /api/internal/season")
         .then()
         .statusCode(200)
         .body("$.size()", is(74),
@@ -44,7 +40,7 @@ class TestSeasonEndpoint {
   @Test
   public void listsAllSeasonsAsCsv() {
     String content = given()
-        .when().get("/season/csv")
+        .when().get(" /api/internal/season/csv")
         .then()
         .statusCode(200)
         .header("Content-Type", containsString("text/csv")).extract().asString();
@@ -60,20 +56,9 @@ class TestSeasonEndpoint {
   }
 
   @Test
-  public void getSessionClassificationAsCsvFails() throws IOException {
-    CsvConverter mock = Mockito.mock(CsvConverter.class);
-    Mockito.when(mock.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
-    QuarkusMock.installMockForType(mock, CsvConverter.class);
-    given()
-        .when().get("/season/csv")
-        .then()
-        .statusCode(500);
-  }
-
-  @Test
   public void listsAllTests() {
     given()
-        .when().get("/season/test")
+        .when().get(" /api/internal/season/test")
         .then()
         .statusCode(200)
         .body("$.size()", is(8),
@@ -87,7 +72,7 @@ class TestSeasonEndpoint {
   @Test
   public void getCurrentSeason() {
     given()
-        .when().get("/season/current")
+        .when().get(" /api/internal/season/current")
         .then()
         .statusCode(200)
         .body("current", is(Boolean.TRUE),
@@ -98,7 +83,7 @@ class TestSeasonEndpoint {
   @Test
   public void getCurrentTest() {
     given()
-        .when().get("/season/current/test")
+        .when().get(" /api/internal/season/current/test")
         .then()
         .statusCode(200)
         .body("current", is(Boolean.TRUE),

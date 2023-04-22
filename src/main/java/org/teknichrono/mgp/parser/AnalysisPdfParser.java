@@ -1,8 +1,8 @@
 package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
+import org.teknichrono.mgp.api.model.result.RiderClassification;
 import org.teknichrono.mgp.model.out.LapAnalysis;
-import org.teknichrono.mgp.model.result.RiderClassification;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
@@ -37,12 +37,12 @@ public class AnalysisPdfParser {
         lapAnalysis.cancelled = line.contains("*");
         lapAnalysis.maxSpeed = PdfParserUtils.parseSpeed(line);
         lapAnalysis.time = PdfParserUtils.parseTime(line);
-        if (lapAnalysis.time != null) {
+        if (lapAnalysis.time != null || lapAnalysis.pit || lapAnalysis.maxSpeed != null) {
           toReturn.add(lapAnalysis);
           lapAnalysis = new LapAnalysis(lapAnalysis);
         }
       } else if (line.toLowerCase().contains(LapAnalysis.UNFINISHED_LAP.toLowerCase())) {
-        lapAnalysis.lapNumber = lapAnalysis.lapNumber + 1;
+        lapAnalysis.lapNumber = lapAnalysis.lapNumber != null ? lapAnalysis.lapNumber + 1 : 1;
         lapAnalysis.unfinished = true;
         lapAnalysis.cancelled = false;
         lapAnalysis.pit = false;
