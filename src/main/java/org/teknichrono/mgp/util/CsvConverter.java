@@ -10,25 +10,30 @@ import javax.enterprise.context.RequestScoped;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RequestScoped
-public class CsvConverter<T> {
+public class CsvConverter<T extends CSVConvertible<Y>, Y> {
 
   private static final Logger LOGGER = Logger.getLogger(CsvConverter.class);
 
   private StringWriter writer = new StringWriter();
 
-  public String convertToCsv(List<T> results, Class<T> beanClass) throws IOException {
+  public String convertToCsv(List<T> results, Class<Y> outputClass) throws IOException {
     String csvResult;
-    StatefulBeanToCsv<T> beanToCsv = getBeanToCsv(beanClass);
-    csvResult = getCsvString(results, beanToCsv);
+    StatefulBeanToCsv<Y> beanToCsv = getBeanToCsv(outputClass);
+    List<Y> outputList = null;
+    if (results != null) {
+      outputList = results.stream().map(r -> r.toCsv()).collect(Collectors.toList());
+    }
+    csvResult = getCsvString(outputList, beanToCsv);
     return csvResult;
   }
 
-  private String getCsvString(List results, StatefulBeanToCsv<T> beanToCsv) throws IOException {
+  private String getCsvString(List<Y> outputList, StatefulBeanToCsv beanToCsv) throws IOException {
     String csvResult;
     try {
-      beanToCsv.write(results);
+      beanToCsv.write(outputList);
       csvResult = this.writer.toString();
       this.writer.close();
     } catch (CsvRequiredFieldEmptyException | CsvDataTypeMismatchException e) {
@@ -38,10 +43,10 @@ public class CsvConverter<T> {
     return csvResult;
   }
 
-  StatefulBeanToCsv<T> getBeanToCsv(Class<T> beanClass) {
-    CustomMappingStrategy<T> mappingStrategy = new CustomMappingStrategy<T>();
+  StatefulBeanToCsv<Y> getBeanToCsv(Class<Y> beanClass) {
+    CustomMappingStrategy mappingStrategy = new CustomMappingStrategy();
     mappingStrategy.setType(beanClass);
-    return new StatefulBeanToCsvBuilder<T>(this.writer).withMappingStrategy(mappingStrategy).build();
+    return new StatefulBeanToCsvBuilder(this.writer).withMappingStrategy(mappingStrategy).build();
   }
 
 }
