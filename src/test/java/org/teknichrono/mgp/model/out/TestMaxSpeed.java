@@ -2,6 +2,7 @@ package org.teknichrono.mgp.model.out;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.teknichrono.mgp.api.model.MaxSpeed;
 
 class TestMaxSpeed {
 
