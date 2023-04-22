@@ -1,0 +1,513 @@
+[
+  {
+    "id": "253060b6-3562-446e-b259-f6ee49cc6714",
+    "type": "FP",
+    "number": 1,
+    "condition": {
+      "track": "Dry",
+      "air": "15º",
+      "humidity": "76%",
+      "ground": "18º",
+      "weather": "Clear"
+    },
+    "date": "2021-05-28T09:00:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP1/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP1/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP1/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP1/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP1/Session.pdf",
+        "menu_position": 2
+      },
+      "world_standing": {
+        "url": "",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP1/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP1/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Autodromo Internazionale del Mugello"
+  },
+  {
+    "id": "38c2c726-4047-4700-b871-c3e992e73572",
+    "type": "FP",
+    "number": 2,
+    "condition": {
+      "track": "Dry",
+      "air": "25º",
+      "humidity": "43%",
+      "ground": "43º",
+      "weather": "Clear"
+    },
+    "date": "2021-05-28T13:15:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP2/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP2/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP2/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP2/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP2/Session.pdf",
+        "menu_position": 2
+      },
+      "world_standing": {
+        "url": "",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP2/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP2/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP2/CombinedPracticeTimes.pdf",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Autodromo Internazionale del Mugello"
+  },
+  {
+    "id": "c92c5f7a-cfd7-45f9-a89b-c325e0bc7a91",
+    "type": "FP",
+    "number": 3,
+    "condition": {
+      "track": "Dry",
+      "air": "18º",
+      "humidity": "70%",
+      "ground": "20º",
+      "weather": "Clear"
+    },
+    "date": "2021-05-29T09:00:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP3/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP3/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP3/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP3/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP3/Session.pdf",
+        "menu_position": 2
+      },
+      "world_standing": {
+        "url": "",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP3/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP3/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/FP3/CombinedPracticeTimes.pdf",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Autodromo Internazionale del Mugello"
+  },
+  {
+    "id": "6cf01e04-2773-4ce4-85b0-64d0b22d38fa",
+    "type": "Q",
+    "number": 1,
+    "condition": {
+      "track": "Dry",
+      "air": "24º",
+      "humidity": "46%",
+      "ground": "39º",
+      "weather": "Partly-Cloudy"
+    },
+    "date": "2021-05-29T12:35:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q1/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q1/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q1/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q1/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q1/Session.pdf",
+        "menu_position": 2
+      },
+      "world_standing": {
+        "url": "",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q1/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q1/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Autodromo Internazionale del Mugello"
+  },
+  {
+    "id": "4e1043c0-de4b-4e87-abc8-27c898f3e7c4",
+    "type": "Q",
+    "number": 2,
+    "condition": {
+      "track": "Dry",
+      "air": "24º",
+      "humidity": "41%",
+      "ground": "42º",
+      "weather": "Partly-Cloudy"
+    },
+    "date": "2021-05-29T13:00:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q2/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q2/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q2/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q2/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q2/Grid.pdf",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q2/Session.pdf",
+        "menu_position": 2
+      },
+      "world_standing": {
+        "url": "",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q2/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q2/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/Q2/QualifyingResults.pdf",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Autodromo Internazionale del Mugello"
+  },
+  {
+    "id": "291822de-ba35-446b-8104-83cfd2a24762",
+    "type": "WUP",
+    "number": null,
+    "condition": {
+      "track": "Dry",
+      "air": "20º",
+      "humidity": "46%",
+      "ground": "19º",
+      "weather": "Cloudy"
+    },
+    "date": "2021-05-30T08:40:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/WUP/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/WUP/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/WUP/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/WUP/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/WUP/Grid.pdf",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/WUP/Session.pdf",
+        "menu_position": 2
+      },
+      "world_standing": {
+        "url": "",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/WUP/BestPartialTime.pdf",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/WUP/MaximumSpeed.pdf",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Autodromo Internazionale del Mugello"
+  },
+  {
+    "id": "3836e4a8-46b0-4d2d-9695-9b4ccaf0b8bc",
+    "type": "RAC",
+    "number": null,
+    "condition": {
+      "track": "Dry",
+      "air": "20º",
+      "humidity": "41%",
+      "ground": "33º",
+      "weather": "Clear"
+    },
+    "date": "2021-05-30T11:00:00+00:00",
+    "status": "Official",
+    "session_files": {
+      "classification": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/RAC/Classification.pdf",
+        "menu_position": 1
+      },
+      "analysis": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/RAC/Analysis.pdf",
+        "menu_position": 2
+      },
+      "average_speed": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/RAC/AverageSpeed.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_sequence": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/RAC/FastLapSequence.pdf",
+        "menu_position": 2
+      },
+      "lap_chart": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/RAC/LapChart.pdf",
+        "menu_position": 2
+      },
+      "analysis_by_lap": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/RAC/analysisbylap.pdf",
+        "menu_position": 2
+      },
+      "fast_lap_rider": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/RAC/FastLapRider.pdf",
+        "menu_position": 2
+      },
+      "grid": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/RAC/Grid.pdf",
+        "menu_position": 2
+      },
+      "session": {
+        "url": "http://localhost:8089/files/results/2021/ITA/Moto3/RAC/Session.pdf",
+        "menu_position": 2
+      },
+      "world_standing": {
+        "url": "",
+        "menu_position": 2
+      },
+      "best_partial_time": {
+        "url": "",
+        "menu_position": 2
+      },
+      "maximum_speed": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_practice": {
+        "url": "",
+        "menu_position": 2
+      },
+      "combined_classification": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "circuit": "Autodromo Internazionale del Mugello"
+  }
+]
