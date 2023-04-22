@@ -1,0 +1,300 @@
+[
+  {
+    "id": "f6674145-61dd-46b9-9792-5a50ccd75006",
+    "name": "QATAR MOTOGP\u2122 SHAKEDOWN TEST",
+    "sponsored_name": "Qatar MotoGP\u2122 Shakedown Test",
+    "date_start": "2021-03-05",
+    "date_end": "2021-03-05",
+    "country": {
+      "iso": "QA",
+      "name": "Qatar",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 673
+      }
+    ],
+    "circuit": {
+      "id": "e9a71399-cea9-400a-b2ef-48bfdcdf6526",
+      "name": "Lusail International Circuit",
+      "legacy_id": 93,
+      "place": "Doha",
+      "nation": "QAT"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "SHA"
+  },
+  {
+    "id": "3f5bce2c-ce08-4808-b1e4-c039cb4eb636",
+    "name": "QATAR MOTOGP\u2122 OFFICIAL TEST",
+    "sponsored_name": "Qatar MotoGP\u2122 Official Test",
+    "date_start": "2021-03-06",
+    "date_end": "2021-03-12",
+    "country": {
+      "iso": "QA",
+      "name": "Qatar",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 667
+      }
+    ],
+    "circuit": {
+      "id": "e9a71399-cea9-400a-b2ef-48bfdcdf6526",
+      "name": "Lusail International Circuit",
+      "legacy_id": 93,
+      "place": "Doha",
+      "nation": "QAT"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "QA1"
+  },
+  {
+    "id": "d7116e02-afa6-4422-acb4-c93d30a96afb",
+    "name": "QATAR MOTO2\u2122 \u0026 MOTO3\u2122 OFFICIAL TEST",
+    "sponsored_name": "Qatar Moto2\u2122 \u0026 Moto3\u2122 Official Test",
+    "date_start": "2021-03-19",
+    "date_end": "2021-03-21",
+    "country": {
+      "iso": "QA",
+      "name": "Qatar",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 2,
+        "eventId": 668
+      },
+      {
+        "categoryId": 1,
+        "eventId": 669
+      }
+    ],
+    "circuit": {
+      "id": "e9a71399-cea9-400a-b2ef-48bfdcdf6526",
+      "name": "Lusail International Circuit",
+      "legacy_id": 93,
+      "place": "Doha",
+      "nation": "QAT"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "QA2"
+  },
+  {
+    "id": "477c4afd-bff9-491e-af5a-c8e2b79b355c",
+    "name": "JEREZ MOTOGP\u2122 OFFICIAL TEST",
+    "sponsored_name": "Jerez MotoGP\u2122 Official Test",
+    "date_start": "2021-05-03",
+    "date_end": "2021-05-03",
+    "country": {
+      "iso": "ES",
+      "name": "Spain",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 671
+      }
+    ],
+    "circuit": {
+      "id": "763812ea-9435-4c1c-b61b-a0c14ccdfbe4",
+      "name": "Circuito de Jerez - \u00c1ngel Nieto",
+      "legacy_id": 4,
+      "place": "Jerez de la Frontera",
+      "nation": "SPA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "ES1"
+  },
+  {
+    "id": "b0d8e084-4887-4e87-bd54-03b5bc992a69",
+    "name": "CATALUNYA MOTOGP\u2122 OFFICIAL TEST",
+    "sponsored_name": "Catalunya MotoGP\u2122 Official Test",
+    "date_start": "2021-06-07",
+    "date_end": "2021-06-07",
+    "country": {
+      "iso": "ES",
+      "name": "Spain",
+      "region_iso": "CT"
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 672
+      }
+    ],
+    "circuit": {
+      "id": "2218098d-ab2d-498b-a633-1a4a39119e9e",
+      "name": "Circuit de Barcelona-Catalunya",
+      "legacy_id": 13,
+      "place": "Barcelona",
+      "nation": "SPA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "CT1"
+  },
+  {
+    "id": "0ebc8158-8a5c-4140-a0b8-f52896be0e98",
+    "name": "MISANO MOTOGP\u2122 OFFICIAL TEST ",
+    "sponsored_name": "Misano MotoGP\u2122 Official Test ",
+    "date_start": "2021-09-21",
+    "date_end": "2021-09-22",
+    "country": {
+      "iso": "IT",
+      "name": "Italy",
+      "region_iso": ""
+    },
+    "legacy_id": [
+      {
+        "categoryId": 3,
+        "eventId": 670
+      }
+    ],
+    "circuit": {
+      "id": "e0d07d48-0b62-40fa-9d36-411b15af406f",
+      "name": "Misano World Circuit Marco Simoncelli",
+      "legacy_id": 38,
+      "place": "Misano Adriatico",
+      "nation": "ITA"
+    },
+    "event_files": {
+      "circuit_information": {
+        "url": "",
+        "menu_position": 1
+      },
+      "podiums": {
+        "url": "",
+        "menu_position": 2
+      },
+      "pole_positions": {
+        "url": "",
+        "menu_position": 2
+      },
+      "nations_statistics": {
+        "url": "",
+        "menu_position": 2
+      },
+      "riders_all_time": {
+        "url": "",
+        "menu_position": 2
+      }
+    },
+    "test": true,
+    "short_name": "MI1"
+  }
+]
