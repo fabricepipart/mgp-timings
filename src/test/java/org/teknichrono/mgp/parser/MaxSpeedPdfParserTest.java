@@ -3,10 +3,10 @@ package org.teknichrono.mgp.parser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.teknichrono.mgp.model.out.MaxSpeed;
-import org.teknichrono.mgp.model.result.Constructor;
-import org.teknichrono.mgp.model.result.Rider;
-import org.teknichrono.mgp.model.result.RiderClassification;
-import org.teknichrono.mgp.model.result.Team;
+import org.teknichrono.mgp.api.model.result.Constructor;
+import org.teknichrono.mgp.api.model.result.Rider;
+import org.teknichrono.mgp.api.model.result.RiderClassification;
+import org.teknichrono.mgp.api.model.result.Team;
 
 import java.util.ArrayList;
 
