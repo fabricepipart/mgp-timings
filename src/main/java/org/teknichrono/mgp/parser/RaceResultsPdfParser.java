@@ -1,9 +1,10 @@
 package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
-import org.teknichrono.mgp.model.out.RaceClassificationDetails;
-import org.teknichrono.mgp.model.result.RiderClassification;
-import org.teknichrono.mgp.model.result.SessionClassification;
+import org.teknichrono.mgp.api.model.result.Classification;
+import org.teknichrono.mgp.api.model.result.RiderClassification;
+import org.teknichrono.mgp.model.output.CountryOutput;
+import org.teknichrono.mgp.model.output.SessionClassificationOutput;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
@@ -14,36 +15,37 @@ public class RaceResultsPdfParser {
 
   private static final Logger LOGGER = Logger.getLogger(RaceResultsPdfParser.class);
 
-  public List<RaceClassificationDetails> parse(SessionClassification classifications) throws PdfParsingException {
-    List<RaceClassificationDetails> toReturn = new ArrayList<>();
-    List<RaceClassificationDetails> partialResults = getPartialResults(classifications.classification);
-    fillFromPdf(toReturn, partialResults, classifications.file);
-    return toReturn;
+  public List<SessionClassificationOutput> parse(Classification classifications) throws PdfParsingException {
+    List<SessionClassificationOutput> partialResults = getPartialResults(classifications.classification);
+    return fillFromPdf(partialResults, classifications.file);
   }
 
-  private List<RaceClassificationDetails> getPartialResults(List<RiderClassification> classifications) {
-    List<RaceClassificationDetails> partialResults = new ArrayList<>();
+  private List<SessionClassificationOutput> getPartialResults(List<RiderClassification> classifications) {
+    List<SessionClassificationOutput> partialResults = new ArrayList<>();
     for (RiderClassification c : classifications) {
-      RaceClassificationDetails details = RaceClassificationDetails.from(c);
+      SessionClassificationOutput details = SessionClassificationOutput.from(c);
       partialResults.add(details);
     }
     return partialResults;
   }
 
-  private void fillFromPdf(List<RaceClassificationDetails> toReturn, List<RaceClassificationDetails> partialResults, String url) throws PdfParsingException {
+  private List<SessionClassificationOutput> fillFromPdf(List<SessionClassificationOutput> partialResults, String url) throws PdfParsingException {
+    List<SessionClassificationOutput> toReturn = new ArrayList<>();
     String[] lines = PdfParserUtils.readPdfLines(url);
     for (String line : lines) {
-      for (RaceClassificationDetails details : partialResults) {
+      for (SessionClassificationOutput details : partialResults) {
         String lowerCaseLine = line.toLowerCase();
         if (PdfParserUtils.startsWithNumber(line) &&
-            lowerCaseLine.contains(details.riderNumber.toString()) &&
-            lowerCaseLine.contains(details.riderName.toLowerCase())) {
-          details.nation = PdfParserUtils.parseNation(line);
+            details.rider != null && details.rider.number != null &&
+            lowerCaseLine.contains(details.rider.number.toString()) &&
+            lowerCaseLine.contains(details.rider.full_name.toLowerCase())) {
+          details.rider.country = CountryOutput.from(PdfParserUtils.parseNation(line));
           details.averageSpeed = PdfParserUtils.parseSpeed(line);
           details.totalTime = PdfParserUtils.parseTime(line);
           toReturn.add(details);
         }
       }
     }
+    return toReturn;
   }
 }

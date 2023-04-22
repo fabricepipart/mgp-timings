@@ -5,7 +5,7 @@ import io.quarkus.test.junit.QuarkusTest;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.teknichrono.mgp.model.result.Category;
+import org.teknichrono.mgp.api.model.result.Category;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.containsStringIgnoringCase;
@@ -20,7 +20,7 @@ public class TestCategoryEndpoint {
   @Test
   public void listsAllCategoriesOfEvent() {
     given()
-        .when().get("/category/2021/QAT")
+        .when().get("/api/internal/category/2021/QAT")
         .then()
         .statusCode(200)
         .body("$.size()", is(3),
@@ -32,7 +32,7 @@ public class TestCategoryEndpoint {
   @Test
   public void containsThreeCategories() {
     given()
-        .when().get("/category/2021/ITA")
+        .when().get("/api/internal/category/2021/ITA")
         .then()
         .body("$.size()", is(3),
             "[0].name", containsStringIgnoringCase("motogp"),
@@ -45,7 +45,7 @@ public class TestCategoryEndpoint {
   @Test
   public void listsAllCategoriesOfTest() {
     given()
-        .when().get("/category/test/2022/JE1")
+        .when().get("/api/internal/category/test/2022/JE1")
         .then()
         .statusCode(200)
         .body("$.size()", is(1),
@@ -58,7 +58,7 @@ public class TestCategoryEndpoint {
   @Test
   public void listsDetailsOfCategoryOfEvent() {
     Category cat = given()
-        .when().get("/category/2021/ITA/MOTO3")
+        .when().get("/api/internal/category/2021/ITA/MOTO3")
         .then()
         .statusCode(200).extract().as(Category.class);
     Assertions.assertThat(cat.id).isNotNull();
@@ -69,7 +69,7 @@ public class TestCategoryEndpoint {
   @Test
   public void listsDetailsOfCategoryOfTest() {
     Category cat = given()
-        .when().get("/category/test/2022/JE1/GP")
+        .when().get("/api/internal/category/test/2022/JE1/GP")
         .then()
         .statusCode(200).extract().as(Category.class);
     Assertions.assertThat(cat.id).isNotNull();

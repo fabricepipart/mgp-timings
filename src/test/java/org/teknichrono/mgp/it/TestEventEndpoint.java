@@ -5,7 +5,7 @@ import io.quarkus.test.junit.QuarkusTest;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.teknichrono.mgp.model.result.Event;
+import org.teknichrono.mgp.api.model.result.Event;
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ public class TestEventEndpoint {
   @Test
   public void listsAllEvents() {
     given()
-        .when().get("/event/2021")
+        .when().get(" /api/internal/event/2021")
         .then()
         .statusCode(200)
         .body("$.size()", is(18),
@@ -37,7 +37,7 @@ public class TestEventEndpoint {
   @Test
   public void listsAllEventsNames() {
     List<String> list = given()
-        .when().get("/event/2021/names")
+        .when().get(" /api/internal/event/2021/names")
         .then()
         .statusCode(200).extract().as(List.class);
     assertThat(list.size()).isEqualTo(18);
@@ -48,7 +48,7 @@ public class TestEventEndpoint {
   @Test
   public void listsAllTests() {
     given()
-        .when().get("/event/test/2022")
+        .when().get(" /api/internal/event/test/2022")
         .then()
         .statusCode(200)
         .body("$.size()", is(7),
@@ -63,7 +63,7 @@ public class TestEventEndpoint {
   @Test
   public void listsAllTestsNames() {
     List<String> list = given()
-        .when().get("/event/test/2022/names")
+        .when().get(" /api/internal/event/test/2022/names")
         .then()
         .statusCode(200).extract().as(List.class);
     assertThat(list.size()).isEqualTo(7);
@@ -73,7 +73,7 @@ public class TestEventEndpoint {
   @Test
   public void getOneParticularEvent() {
     Event event = given()
-        .when().get("/event/2021/QAT")
+        .when().get(" /api/internal/event/2021/QAT")
         .then()
         .statusCode(200).extract().as(Event.class);
     Assertions.assertThat(event).isNotNull();
@@ -88,7 +88,7 @@ public class TestEventEndpoint {
   @Test
   public void getOneParticularTest() {
     Event event = given()
-        .when().get("/event/test/2022/JE1")
+        .when().get(" /api/internal/event/test/2022/JE1")
         .then()
         .statusCode(200).extract().as(Event.class);
     Assertions.assertThat(event).isNotNull();

@@ -1,19 +1,21 @@
 package org.teknichrono.mgp.it;
 
 import io.quarkus.test.common.QuarkusTestResource;
-import io.quarkus.test.junit.QuarkusMock;
 import io.quarkus.test.junit.QuarkusTest;
+import io.quarkus.test.junit.mockito.InjectSpy;
 import io.restassured.common.mapper.TypeRef;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.teknichrono.mgp.api.model.result.Classification;
+import org.teknichrono.mgp.api.model.result.RiderClassification;
+import org.teknichrono.mgp.model.csv.RiderClassificationCSV;
+import org.teknichrono.mgp.model.csv.SessionClassificationCSV;
 import org.teknichrono.mgp.model.out.LapAnalysis;
-import org.teknichrono.mgp.model.out.PracticeClassificationDetails;
-import org.teknichrono.mgp.model.out.RaceClassificationDetails;
 import org.teknichrono.mgp.model.out.SessionRider;
-import org.teknichrono.mgp.model.result.SessionClassification;
-import org.teknichrono.mgp.model.result.TestClassification;
+import org.teknichrono.mgp.model.output.SessionClassificationOutput;
 import org.teknichrono.mgp.util.CsvConverter;
+import org.teknichrono.mgp.util.CsvConverterFactory;
 
 import java.io.IOException;
 import java.util.List;
@@ -33,11 +35,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @QuarkusTestResource(WireMockExtensions.class)
 public class TestSessionEndpoint {
 
+  @InjectSpy
+  CsvConverterFactory csvFactory;
 
   @Test
   public void listsAllSessionsOfCategoryOfEvent() {
     given()
-        .when().get("/session/2021/QAT/motogp")
+        .when().get("/api/internal/session/2021/QAT/motogp")
         .then()
         .statusCode(200)
         .body("$.size()", is(8),
@@ -50,7 +54,7 @@ public class TestSessionEndpoint {
   @Test
   public void listsAllSessionsOfCategoryOfTest() {
     given()
-        .when().get("/session/test/2022/JE1/GP")
+        .when().get("/api/internal/session/test/2022/JE1/GP")
         .then()
         .statusCode(200)
         .body("$.size()", is(2),
@@ -63,7 +67,7 @@ public class TestSessionEndpoint {
   @Test
   public void listRidersOfCategoryOfEvent() {
     List<SessionRider> riders = given()
-        .when().get("/session/2021/QAT/GP/ridersdetails")
+        .when().get("/api/internal/session/2021/QAT/GP/ridersdetails")
         .then()
         .statusCode(200).extract().as(new TypeRef<List<SessionRider>>() {
         });
@@ -81,7 +85,7 @@ public class TestSessionEndpoint {
   @Test
   public void parsesMaxSpeedPdf() {
     List<Map> speeds = given()
-        .when().get("/session/2021/QAT/motogp/FP1/topspeed")
+        .when().get("/api/internal/session/2021/QAT/motogp/FP1/topspeed")
         .then()
         .statusCode(200).extract().as(List.class);
 
@@ -102,7 +106,7 @@ public class TestSessionEndpoint {
   @Test
   public void throwsErrorIfCantParsePdf() {
     given()
-        .when().get("/session/2021/QAT/motogp/FP2/topspeed")
+        .when().get("/api/internal/session/2021/QAT/motogp/FP2/topspeed")
         .then()
         .statusCode(500);
   }
@@ -110,17 +114,17 @@ public class TestSessionEndpoint {
   @Test
   public void throwsErrorIfNoPdfForTopSpeed() {
     given()
-        .when().get("/session/2021/QAT/motogp/FP3/topspeed")
+        .when().get("/api/internal/session/2021/QAT/motogp/FP3/topspeed")
         .then()
         .statusCode(404);
   }
 
   @Test
   public void getSessionClassification() {
-    SessionClassification classification = given()
-        .when().get("/session/2021/QAT/motogp/fp3/results")
+    Classification classification = given()
+        .when().get("/api/internal/session/2021/QAT/motogp/fp3/results")
         .then()
-        .statusCode(200).extract().as(SessionClassification.class);
+        .statusCode(200).extract().as(Classification.class);
     assertThat(classification.classification.size()).isEqualTo(22);
     assertThat(classification.classification.get(0).rider.full_name).containsIgnoringCase("Franco");
     assertThat(classification.classification.get(0).total_laps).isEqualTo(17);
@@ -130,10 +134,10 @@ public class TestSessionEndpoint {
 
   @Test
   public void getTestSessionClassification() {
-    TestClassification classification = given()
-        .when().get("/session/test/2022/JE1/GP/FP2/results")
+    Classification classification = given()
+        .when().get("/api/internal/session/test/2022/JE1/GP/FP2/results")
         .then()
-        .statusCode(200).extract().as(TestClassification.class);
+        .statusCode(200).extract().as(Classification.class);
     assertThat(classification.classification.size()).isEqualTo(29);
     assertThat(classification.classification.get(0).rider.full_name).containsIgnoringCase("Francesco");
     assertThat(classification.classification.get(0).total_laps).isEqualTo(42);
@@ -143,10 +147,10 @@ public class TestSessionEndpoint {
 
   @Test
   public void getRaceClassification() {
-    SessionClassification classification = given()
-        .when().get("/session/2021/QAT/motogp/rac/results")
+    Classification classification = given()
+        .when().get("/api/internal/session/2021/QAT/motogp/rac/results")
         .then()
-        .statusCode(200).extract().as(SessionClassification.class);
+        .statusCode(200).extract().as(Classification.class);
     assertThat(classification.classification.size()).isEqualTo(22);
     assertThat(classification.classification.get(0).position).isEqualTo(1);
     assertThat(classification.classification.get(0).total_laps).isEqualTo(22);
@@ -158,7 +162,7 @@ public class TestSessionEndpoint {
   @Test
   public void getSessionClassificationAsCsv() {
     String content = given()
-        .when().get("/session/2021/QAT/motogp/fp3/results/csv")
+        .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/csv")
         .then()
         .statusCode(200)
         .header("Content-Type", containsString("text/csv")).extract().asString();
@@ -175,11 +179,11 @@ public class TestSessionEndpoint {
 
   @Test
   public void getSessionClassificationAsCsvFails() throws IOException {
-    CsvConverter mock = Mockito.mock(CsvConverter.class);
-    Mockito.when(mock.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
-    QuarkusMock.installMockForType(mock, CsvConverter.class);
+    CsvConverter<RiderClassification, RiderClassificationCSV> classificationCsvConverter = Mockito.mock(CsvConverter.class);
+    Mockito.when(csvFactory.getRiderCsvConverter()).thenReturn(classificationCsvConverter);
+    Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
     given()
-        .when().get("/session/2021/QAT/motogp/fp3/results/csv")
+        .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/csv")
         .then()
         .statusCode(500);
   }
@@ -187,27 +191,27 @@ public class TestSessionEndpoint {
 
   @Test
   public void getRaceClassificationDetails() {
-    List<RaceClassificationDetails> details = given()
-        .when().get("/session/2021/QAT/motogp/rac/results/details")
+    List<SessionClassificationOutput> details = given()
+        .when().get("/api/internal/session/2021/QAT/motogp/rac/results/details")
         .then()
-        .statusCode(200).extract().as(new TypeRef<List<RaceClassificationDetails>>() {
+        .statusCode(200).extract().as(new TypeRef<List<SessionClassificationOutput>>() {
         });
 
     assertThat(details.size()).isEqualTo(22);
     assertThat(details.get(0).averageSpeed).isEqualTo(167.1f);
     assertThat(details.get(0).position).isEqualTo(1);
     assertThat(details.get(0).points).isEqualTo(25);
-    assertThat(details.get(0).nation).isEqualTo("SPA");
+    assertThat(details.get(0).rider.country.iso).isEqualTo("SPA");
     assertThat(details.get(0).totalLaps).isEqualTo(22);
     assertThat(details.get(0).totalTime).isEqualTo("42'28.663");
 
     assertThat(details.get(1).constructor).containsIgnoringCase("Ducati");
-    assertThat(details.get(1).riderName).containsIgnoringCase("Zarco");
+    assertThat(details.get(1).rider.full_name).containsIgnoringCase("Zarco");
 
     Float currentGapToFirst = 0f;
     Integer currentPosition = 0;
     Integer currentPoints = 0;
-    for (RaceClassificationDetails d : details) {
+    for (SessionClassificationOutput d : details) {
       assertThat(d.gapToFirst == null || d.gapToFirst.floatValue() >= currentGapToFirst);
       if (currentGapToFirst == null) {
         assertThat(d.gapToFirst).isNull();
@@ -223,9 +227,9 @@ public class TestSessionEndpoint {
     }
 
     assertTrue(details.stream().anyMatch(d -> d.position > 0));
-    assertTrue(details.stream().anyMatch(d -> d.riderNumber > 0));
-    assertTrue(details.stream().anyMatch(d -> d.riderName != null));
-    assertTrue(details.stream().anyMatch(d -> d.nation.length() == 3));
+    assertTrue(details.stream().anyMatch(d -> d.rider.number > 0));
+    assertTrue(details.stream().anyMatch(d -> d.rider.full_name != null));
+    assertTrue(details.stream().anyMatch(d -> d.rider.country.iso.length() == 3));
     assertTrue(details.stream().anyMatch(d -> d.team != null));
     assertTrue(details.stream().anyMatch(d -> d.constructor != null));
     assertTrue(details.stream().anyMatch(d -> d.totalLaps > 0));
@@ -236,7 +240,7 @@ public class TestSessionEndpoint {
   @Test
   public void getRaceClassificationDetailsAsCsv() {
     String content = given()
-        .when().get("/session/2021/QAT/motogp/rac/results/details/csv")
+        .when().get("/api/internal/session/2021/QAT/motogp/rac/results/details/csv")
         .then()
         .statusCode(200)
         .header("Content-Type", containsString("text/csv")).extract().asString();
@@ -245,31 +249,31 @@ public class TestSessionEndpoint {
 
     assertThat(lines.size()).isEqualTo(23);
     assertThat(lines.get(0)).containsAnyOf("POSITION", "POINTS", "NUMBER", "NAME", "NATION", "TEAM", "CONSTRUCTOR", "TOTAL_TIME", "TOTAL_LAPS", "GAP_TO_FIRST", "AVERAGE_SPEED");
-    assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 10);
+    assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 14);
   }
 
 
   @Test
   public void getPracticeClassificationDetailsError() {
     given()
-        .when().get("/session/2021/QAT/motogp/fp4/results/details")
+        .when().get("/api/internal/session/2021/QAT/motogp/fp4/results/details")
         .then()
         .statusCode(500);
   }
 
   @Test
   public void getPracticeClassificationDetails() {
-    List<PracticeClassificationDetails> details = given()
-        .when().get("/session/2021/QAT/motogp/fp3/results/details")
+    List<SessionClassificationOutput> details = given()
+        .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/details")
         .then()
-        .statusCode(200).extract().as(new TypeRef<List<PracticeClassificationDetails>>() {
+        .statusCode(200).extract().as(new TypeRef<List<SessionClassificationOutput>>() {
         });
 
     assertThat(details.size()).isEqualTo(22);
     assertThat(details.get(0).position).isEqualTo(1);
-    assertThat(details.get(0).riderNumber).isEqualTo(21);
-    assertThat(details.get(0).riderName).containsIgnoringCase("MORBIDELLI");
-    assertThat(details.get(0).nation).isEqualTo("ITA");
+    assertThat(details.get(0).rider.number).isEqualTo(21);
+    assertThat(details.get(0).rider.full_name).containsIgnoringCase("MORBIDELLI");
+    assertThat(details.get(0).rider.country.iso).isEqualTo("ITA");
     assertThat(details.get(0).team).containsIgnoringCase("Yamaha");
     assertThat(details.get(0).constructor).containsIgnoringCase("Yamaha");
     assertThat(details.get(0).totalLaps).isEqualTo(17);
@@ -280,12 +284,12 @@ public class TestSessionEndpoint {
 
     assertThat(details.get(1).constructor).isEqualTo("Aprilia");
     assertThat(details.get(1).gapToPrevious).isEqualTo(0.165f);
-    assertThat(details.get(1).nation).isEqualTo("SPA");
+    assertThat(details.get(1).rider.country.iso).isEqualTo("SPA");
 
     assertTrue(details.stream().allMatch(d -> d.position > 0));
-    assertTrue(details.stream().allMatch(d -> d.riderNumber > 0));
-    assertTrue(details.stream().allMatch(d -> d.riderName != null));
-    assertTrue(details.stream().allMatch(d -> d.nation.length() == 3));
+    assertTrue(details.stream().allMatch(d -> d.rider.number > 0));
+    assertTrue(details.stream().allMatch(d -> d.rider.full_name != null));
+    assertTrue(details.stream().allMatch(d -> d.rider.country.iso.length() == 3));
     assertTrue(details.stream().allMatch(d -> d.team != null));
     assertTrue(details.stream().allMatch(d -> d.constructor != null));
     assertTrue(details.stream().allMatch(d -> d.totalLaps > 0));
@@ -294,7 +298,7 @@ public class TestSessionEndpoint {
     assertTrue(details.stream().allMatch(d -> d.bestLapTime != null));
 
     float current = 0f;
-    for (PracticeClassificationDetails d : details) {
+    for (SessionClassificationOutput d : details) {
       assertThat(d.gapToFirst).isGreaterThanOrEqualTo(current);
       current = d.gapToFirst;
     }
@@ -302,18 +306,18 @@ public class TestSessionEndpoint {
 
   @Test
   public void getTestClassificationDetails() {
-    List<PracticeClassificationDetails> details = given()
-        .when().get("/session/test/2022/JE1/GP/FP2/results/details")
+    List<SessionClassificationOutput> details = given()
+        .when().get("/api/internal/session/test/2022/JE1/GP/FP2/results/details")
         .then()
-        .statusCode(200).extract().as(new TypeRef<List<PracticeClassificationDetails>>() {
+        .statusCode(200).extract().as(new TypeRef<List<SessionClassificationOutput>>() {
         });
 
 
     assertThat(details.size()).isEqualTo(29);
     assertThat(details.get(0).position).isEqualTo(1);
-    assertThat(details.get(0).riderNumber).isEqualTo(63);
-    assertThat(details.get(0).riderName).containsIgnoringCase("BAGNAIA");
-    assertThat(details.get(0).nation).isEqualTo("ITA");
+    assertThat(details.get(0).rider.number).isEqualTo(63);
+    assertThat(details.get(0).rider.full_name).containsIgnoringCase("BAGNAIA");
+    assertThat(details.get(0).rider.country.iso).isEqualTo("ITA");
     assertThat(details.get(0).team).containsIgnoringCase("Ducati");
     assertThat(details.get(0).constructor).containsIgnoringCase("Ducati");
     assertThat(details.get(0).totalLaps).isEqualTo(42);
@@ -324,12 +328,12 @@ public class TestSessionEndpoint {
 
     assertThat(details.get(1).constructor).isEqualTo("Yamaha");
     assertThat(details.get(1).gapToPrevious).isEqualTo(0.452f);
-    assertThat(details.get(1).nation).isEqualTo("FRA");
+    assertThat(details.get(1).rider.country.iso).isEqualTo("FRA");
 
     assertTrue(details.stream().allMatch(d -> d.position != null ? d.position > 0 : true));
-    assertTrue(details.stream().allMatch(d -> d.riderNumber > 0));
-    assertTrue(details.stream().allMatch(d -> d.riderName != null));
-    assertTrue(details.stream().allMatch(d -> d.nation.length() == 3));
+    assertTrue(details.stream().allMatch(d -> d.rider.number > 0));
+    assertTrue(details.stream().allMatch(d -> d.rider.full_name != null));
+    assertTrue(details.stream().allMatch(d -> d.rider.country.iso.length() == 3));
     assertTrue(details.stream().allMatch(d -> d.team != null));
     assertTrue(details.stream().allMatch(d -> d.constructor != null));
     assertTrue(details.stream().allMatch(d -> d.totalLaps == null || d.totalLaps > 0));
@@ -337,7 +341,7 @@ public class TestSessionEndpoint {
     assertTrue(details.stream().allMatch(d -> d.topSpeed == null || d.topSpeed > 0));
 
     float current = 0f;
-    for (PracticeClassificationDetails d : details) {
+    for (SessionClassificationOutput d : details) {
       if (d.position != null) {
         assertThat(d.gapToFirst).isGreaterThanOrEqualTo(current);
         current = d.gapToFirst;
@@ -352,7 +356,7 @@ public class TestSessionEndpoint {
   @Test
   public void getTestClassificationDetailsError() {
     given()
-        .when().get("/session/test/2022/MY1/GP/FP1/results/details")
+        .when().get("/api/internal/session/test/2022/MY1/GP/FP1/results/details")
         .then()
         .statusCode(500);
   }
@@ -360,7 +364,7 @@ public class TestSessionEndpoint {
   @Test
   public void getPracticeClassificationDetailsAsCsv() {
     String content = given()
-        .when().get("/session/2021/QAT/motogp/fp3/results/details/csv")
+        .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/details/csv")
         .then()
         .statusCode(200)
         .header("Content-Type", containsString("text/csv")).extract().asString();
@@ -369,14 +373,13 @@ public class TestSessionEndpoint {
 
     assertThat(lines.size()).isEqualTo(23);
     assertThat(lines.get(0)).containsAnyOf("POSITION", "POINTS", "NUMBER", "NAME", "NATION", "TEAM", "CONSTRUCTOR", "TOTAL_TIME", "TOTAL_LAPS", "GAP_TO_FIRST", "AVERAGE_SPEED");
-    assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 11);
-    assertThat(lines).noneMatch(s -> s.contains("null") || s.contains("\"\""));
+    assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 14);
   }
 
   @Test
   public void getTestPracticeClassificationDetailsAsCsv() {
     String content = given()
-        .when().get("/session/test/2022/JE1/motogp/fp2/results/details/csv")
+        .when().get("/api/internal/session/test/2022/JE1/motogp/fp2/results/details/csv")
         .then()
         .statusCode(200)
         .header("Content-Type", containsString("text/csv")).extract().asString();
@@ -385,7 +388,7 @@ public class TestSessionEndpoint {
 
     assertThat(lines.size()).isEqualTo(30);
     assertThat(lines.get(0)).containsAnyOf("POSITION", "POINTS", "NUMBER", "NAME", "NATION", "TEAM", "CONSTRUCTOR", "TOTAL_TIME", "TOTAL_LAPS", "GAP_TO_FIRST", "AVERAGE_SPEED");
-    assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 11);
+    assertThat(lines).allMatch(s -> s.chars().filter(c -> c == ',').count() == 14);
     assertThat(lines).anyMatch(s -> s.contains("Mika Kallio"));
     assertThat(lines).anyMatch(s -> s.contains("FIN"));
   }
@@ -393,29 +396,29 @@ public class TestSessionEndpoint {
   @Test
   public void throwsErrorIfCantParsePdfWhenRaceClassificationDetails() {
     given()
-        .when().get("/session/2021/QAT/motogp/FP2/topspeed")
+        .when().get("/api/internal/session/2021/QAT/motogp/FP2/topspeed")
         .then()
         .statusCode(500);
   }
 
   @Test
   public void getPracticeClassificationDetailsAsCsvFails() throws IOException {
-    CsvConverter mock = Mockito.mock(CsvConverter.class);
-    Mockito.when(mock.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
-    QuarkusMock.installMockForType(mock, CsvConverter.class);
+    CsvConverter<SessionClassificationOutput, SessionClassificationCSV> classificationCsvConverter = Mockito.mock(CsvConverter.class);
+    Mockito.when(csvFactory.getClassificationCsvConverter()).thenReturn(classificationCsvConverter);
+    Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
     given()
-        .when().get("/session/2021/QAT/motogp/fp3/results/details/csv")
+        .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/details/csv")
         .then()
         .statusCode(500);
   }
 
   @Test
   public void getTestPracticeClassificationDetailsAsCsvFails() throws IOException {
-    CsvConverter mock = Mockito.mock(CsvConverter.class);
-    Mockito.when(mock.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
-    QuarkusMock.installMockForType(mock, CsvConverter.class);
+    CsvConverter<SessionClassificationOutput, SessionClassificationCSV> classificationCsvConverter = Mockito.mock(CsvConverter.class);
+    Mockito.when(csvFactory.getClassificationCsvConverter()).thenReturn(classificationCsvConverter);
+    Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
     given()
-        .when().get("/session/test/2022/JE1/motogp/fp2/results/details/csv")
+        .when().get("/api/internal/session/test/2022/JE1/motogp/fp2/results/details/csv")
         .then()
         .statusCode(500);
   }
@@ -423,7 +426,7 @@ public class TestSessionEndpoint {
   @Test
   public void getTestAnalysis() {
     List<LapAnalysis> details = given()
-        .when().get("/session/test/2022/JE1/motogp/FP2/analysis")
+        .when().get("/api/internal/session/test/2022/JE1/motogp/FP2/analysis")
         .then()
         .statusCode(200).extract().as(new TypeRef<List<LapAnalysis>>() {
         });
@@ -447,7 +450,7 @@ public class TestSessionEndpoint {
   @Test
   public void throwsErrorIfCantParseTestAnalysisPdf() {
     given()
-        .when().get("/session/test/2022/JE1/motogp/fp1/analysis")
+        .when().get("/api/internal/session/test/2022/JE1/motogp/fp1/analysis")
         .then()
         .statusCode(500);
   }
@@ -455,7 +458,7 @@ public class TestSessionEndpoint {
   @Test
   public void throws404IfCantFindTestAnalysis() {
     given()
-        .when().get("/session/test/2022/MY1/motogp/fp1/analysis")
+        .when().get("/api/internal/session/test/2022/MY1/motogp/fp1/analysis")
         .then()
         .statusCode(404);
   }
@@ -463,7 +466,7 @@ public class TestSessionEndpoint {
   @Test
   public void getPracticeAnalysis() {
     List<LapAnalysis> details = given()
-        .when().get("/session/2021/QAT/motogp/fp3/analysis")
+        .when().get("/api/internal/session/2021/QAT/motogp/fp3/analysis")
         .then()
         .statusCode(200).extract().as(new TypeRef<List<LapAnalysis>>() {
         });
@@ -522,7 +525,7 @@ public class TestSessionEndpoint {
   @Test
   public void throwsErrorIfCantParseAnalysisPdf() {
     given()
-        .when().get("/session/2021/QAT/motogp/fp2/analysis")
+        .when().get("/api/internal/session/2021/QAT/motogp/fp2/analysis")
         .then()
         .statusCode(500);
   }
@@ -530,7 +533,7 @@ public class TestSessionEndpoint {
   @Test
   public void throwsErrorIfNoAnalysisPdf() {
     given()
-        .when().get("/session/2021/QAT/motogp/fp4/analysis")
+        .when().get("/api/internal/session/2021/QAT/motogp/fp4/analysis")
         .then()
         .statusCode(404);
   }
@@ -538,7 +541,7 @@ public class TestSessionEndpoint {
   @Test
   public void getRaceAnalysis() {
     List<LapAnalysis> details = given()
-        .when().get("/session/2021/QAT/motogp/RAC/analysis")
+        .when().get("/api/internal/session/2021/QAT/motogp/RAC/analysis")
         .then()
         .statusCode(200).extract().as(new TypeRef<List<LapAnalysis>>() {
         });
@@ -594,7 +597,7 @@ public class TestSessionEndpoint {
   @Test
   public void getPracticeAnalysisAsCsv() {
     String content = given()
-        .when().get("/session/2021/QAT/motogp/RAC/analysis/csv")
+        .when().get("/api/internal/session/2021/QAT/motogp/RAC/analysis/csv")
         .then()
         .statusCode(200)
         .header("Content-Type", containsString("text/csv")).extract().asString();
@@ -611,7 +614,7 @@ public class TestSessionEndpoint {
   @Test
   public void getTestPracticeAnalysisAsCsv() {
     String content = given()
-        .when().get("/session/test/2022/JE1/motogp/FP2/analysis/csv")
+        .when().get("/api/internal/session/test/2022/JE1/motogp/FP2/analysis/csv")
         .then()
         .statusCode(200)
         .header("Content-Type", containsString("text/csv")).extract().asString();
@@ -629,22 +632,22 @@ public class TestSessionEndpoint {
 
   @Test
   public void getPracticeAnalysisAsCsvFails() throws IOException {
-    CsvConverter mock = Mockito.mock(CsvConverter.class);
-    Mockito.when(mock.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
-    QuarkusMock.installMockForType(mock, CsvConverter.class);
+    CsvConverter<LapAnalysis, LapAnalysis> lapAnalysisCsvConverter = Mockito.mock(CsvConverter.class);
+    Mockito.when(csvFactory.getLapAnalysisCsvConverter()).thenReturn(lapAnalysisCsvConverter);
+    Mockito.when(lapAnalysisCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
     given()
-        .when().get("/session/2021/QAT/motogp/RAC/analysis/csv")
+        .when().get("/api/internal/session/2021/QAT/motogp/RAC/analysis/csv")
         .then()
         .statusCode(500);
   }
 
   @Test
   public void getTestPracticeAnalysisAsCsvFails() throws IOException {
-    CsvConverter mock = Mockito.mock(CsvConverter.class);
-    Mockito.when(mock.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
-    QuarkusMock.installMockForType(mock, CsvConverter.class);
+    CsvConverter<LapAnalysis, LapAnalysis> lapAnalysisCsvConverter = Mockito.mock(CsvConverter.class);
+    Mockito.when(csvFactory.getLapAnalysisCsvConverter()).thenReturn(lapAnalysisCsvConverter);
+    Mockito.when(lapAnalysisCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
     given()
-        .when().get("/session/test/2022/JE1/motogp/FP2/analysis/csv")
+        .when().get("/api/internal/session/test/2022/JE1/motogp/FP2/analysis/csv")
         .then()
         .statusCode(500);
   }
