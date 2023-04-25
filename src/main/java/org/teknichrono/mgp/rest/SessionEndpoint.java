@@ -1,28 +1,14 @@
 package org.teknichrono.mgp.rest;
 
-import org.eclipse.microprofile.rest.client.inject.RestClient;
-import org.jboss.logging.Logger;
-import org.teknichrono.mgp.business.RiderService;
-import org.teknichrono.mgp.client.ResultsClient;
-import org.teknichrono.mgp.model.out.ClassificationDetails;
+import org.teknichrono.mgp.api.model.result.Classification;
+import org.teknichrono.mgp.api.model.result.Session;
+import org.teknichrono.mgp.business.SessionService;
 import org.teknichrono.mgp.model.out.LapAnalysis;
-import org.teknichrono.mgp.model.out.MaxSpeed;
-import org.teknichrono.mgp.model.out.PracticeClassificationDetails;
-import org.teknichrono.mgp.model.out.RaceClassificationDetails;
-import org.teknichrono.mgp.model.out.SessionRider;
-import org.teknichrono.mgp.model.result.Category;
-import org.teknichrono.mgp.model.result.Entry;
-import org.teknichrono.mgp.model.result.Event;
-import org.teknichrono.mgp.model.result.RiderClassification;
-import org.teknichrono.mgp.model.result.Session;
-import org.teknichrono.mgp.model.result.SessionClassification;
-import org.teknichrono.mgp.model.result.TestClassification;
-import org.teknichrono.mgp.parser.AnalysisPdfParser;
-import org.teknichrono.mgp.parser.MaxSpeedPdfParser;
+import org.teknichrono.mgp.model.output.CategoryOutput;
+import org.teknichrono.mgp.model.output.SessionAnalysisOutput;
+import org.teknichrono.mgp.model.output.SessionClassificationOutput;
+import org.teknichrono.mgp.model.output.SessionResultOutput;
 import org.teknichrono.mgp.parser.PdfParsingException;
-import org.teknichrono.mgp.parser.PracticeResultsPdfParser;
-import org.teknichrono.mgp.parser.RaceResultsPdfParser;
-import org.teknichrono.mgp.util.CsvConverter;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -33,311 +19,84 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
-import static org.teknichrono.mgp.model.result.SessionFileType.analysis;
-import static org.teknichrono.mgp.model.result.SessionFileType.maximum_speed;
-
-@Path("/session")
+@Path("")
 public class SessionEndpoint {
 
-  private static final Logger LOGGER = Logger.getLogger(SessionEndpoint.class);
 
   @Inject
-  @RestClient
-  ResultsClient resultsService;
-
-  @Inject
-  RiderService riderService;
-
-  @Inject
-  EventEndpoint eventEndpoint;
-
-  @Inject
-  CategoryEndpoint categoryEndpoint;
-
-  @Inject
-  MaxSpeedPdfParser maxSpeedPdfParser;
-
-  @Inject
-  PracticeResultsPdfParser practiceResultsPdfParser;
-
-  @Inject
-  RaceResultsPdfParser raceResultsPdfParser;
-
-  @Inject
-  AnalysisPdfParser analysisPdfParser;
-
-  @Inject
-  CsvConverter<RiderClassification> csvConverter;
-
-  @Inject
-  CsvConverter<RaceClassificationDetails> raceCsvConverter;
-
-  @Inject
-  CsvConverter<PracticeClassificationDetails> practiceCsvConverter;
-
-  @Inject
-  CsvConverter<LapAnalysis> lapAnalysisCsvConverter;
+  SessionService sessionService;
 
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  @Path("/{year}/{eventShortName}/{category}")
-  public List<Session> getSessions(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
-    Event event = eventEndpoint.eventsOfYear(year)
-        .stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
-    Category cat = categoryEndpoint.categoriesOfEvent(year, eventShortName)
-        .stream().filter(c -> c.name.toLowerCase().contains(category.toLowerCase())).findFirst().get();
-    return resultsService.getSessions(event.id, cat.id);
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/test/{year}/{eventShortName}/{category}")
-  public List<Session> getTestSessions(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
-    Event event = eventEndpoint.testsOfYear(year)
-        .stream().filter(e -> eventShortName.equalsIgnoreCase(e.short_name)).findFirst().get();
-    Category cat = categoryEndpoint.categoriesOfTest(year, eventShortName)
-        .stream().filter(c -> c.name.toLowerCase().contains(category.toLowerCase())).findFirst().get();
-    return resultsService.getSessions(event.id, cat.id);
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/{year}/{eventShortName}/{category}/riders")
-  public List<Entry> getEntries(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
-    Event event = eventEndpoint.eventOfYear(year, eventShortName);
-    Category cat = categoryEndpoint.categoryOfEvent(year, eventShortName, category);
-    return resultsService.getEntries(event.id, cat.id).entry;
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/{year}/{eventShortName}/{category}/ridersdetails")
-  public List<SessionRider> getRidersOfSession(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
-    List<Entry> entries = getEntries(year, eventShortName, category);
-    List<SessionRider> riders = new ArrayList<>();
-    for (Entry e : entries) {
-      SessionRider rider = new SessionRider();
-      rider.fill(e, riderService.getRider(e.rider.legacy_id));
-      riders.add(rider);
-    }
-    return riders;
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/{year}/{eventShortName}/{category}/{session}")
-  public Session getSessionByName(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    List<Session> sessions = getSessions(year, eventShortName, category);
-    return sessions.stream().filter(s -> s.getSessionName(s).equalsIgnoreCase(sessionShortName)).findFirst().get();
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/test/{year}/{eventShortName}/{category}/{session}")
-  public Session getTestSessionByName(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    List<Session> sessions = getTestSessions(year, eventShortName, category);
-    return sessions.stream().filter(s -> s.getSessionName(s).equalsIgnoreCase(sessionShortName)).findFirst().get();
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/{year}/{eventShortName}/{category}/{session}/topspeed")
-  public List<MaxSpeed> sessionTopSpeeds(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    SessionClassification classifications = getClassifications(year, eventShortName, category, sessionShortName);
-    Session session = getSessionByName(year, eventShortName, category, sessionShortName);
-    if (session.session_files.keySet().contains(maximum_speed) && session.session_files.get(maximum_speed).url != null) {
-      String url = session.session_files.get(maximum_speed).url;
-      try {
-        return maxSpeedPdfParser.parse(url, classifications.classification, year);
-      } catch (PdfParsingException e) {
-        LOGGER.error("Error when parsing the PDF " + url, e);
-        throw new InternalServerErrorException("Could not parse the PDF " + url, e);
-      }
-    }
-    throw new NotFoundException();
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/{year}/{eventShortName}/{category}/{session}/results")
-  public SessionClassification getClassifications(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    Session sessionMatch = getSessionByName(year, eventShortName, category, sessionShortName);
-    return resultsService.getClassification(sessionMatch.id);
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/test/{year}/{eventShortName}/{category}/{session}/results")
-  public TestClassification getTestClassifications(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    Session sessionMatch = getTestSessionByName(year, eventShortName, category, sessionShortName);
-    return resultsService.getTestClassification(sessionMatch.id);
-  }
-
-
-  @GET
-  @Path("/{year}/{eventShortName}/{category}/{session}/results/csv")
-  @Produces("text/csv")
-  @Transactional
-  public Response listAllToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
+  @Path("/{year}/{eventShortName}/{category}/{shortSessionName}")
+  public SessionResultOutput getSessionResult(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String categoryName, @PathParam("shortSessionName") String shortSessionName) {
+    Session session = getSession(year, eventShortName, categoryName, shortSessionName);
     try {
-      String csvResults = csvConverter.convertToCsv(this.getClassifications(year, eventShortName, category, sessionShortName).classification, RiderClassification.class);
-      String filename = String.format("sessions-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
-      return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=" + filename).build();
-    } catch (IOException e) {
-      return Response.serverError().build();
-    }
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/{year}/{eventShortName}/{category}/{session}/results/details")
-  public List<? extends ClassificationDetails> getClassificationsPdfDetails(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    SessionClassification classifications = getClassifications(year, eventShortName, category, sessionShortName);
-    try {
-      if (sessionShortName.equalsIgnoreCase(Session.RACE_TYPE)) {
-        return raceResultsPdfParser.parse(classifications);
-      } else {
-        return practiceResultsPdfParser.parse(classifications);
+      Optional<Classification> resultsOptional = sessionService.getResults(year, eventShortName, categoryName, shortSessionName);
+      if (resultsOptional.isEmpty()) {
+        throw new NotFoundException(String.format("Could not find results of session %s of category %s of %s in %d", shortSessionName, categoryName, eventShortName, year));
       }
+      Classification results = resultsOptional.get();
+      List<SessionClassificationOutput> resultDetails = sessionService.getResultDetails(year, eventShortName, categoryName, shortSessionName);
+      return SessionResultOutput.from(session, results, resultDetails);
     } catch (PdfParsingException e) {
-      LOGGER.error("Error when parsing the PDF " + classifications.file, e);
-      throw new InternalServerErrorException("Could not parse the PDF " + classifications.file, e);
+      String message = String.format("Error when parsing the details PDF for session %s / %s of event %s of %d", shortSessionName, categoryName, eventShortName, year);
+      throw new InternalServerErrorException(message, e);
     }
   }
+
+  private Session getSession(int year, String eventShortName, String categoryName, String shortSessionName) {
+    Optional<Session> sessionOptional = sessionService.getSessionByName(year, eventShortName, categoryName, shortSessionName);
+    if (sessionOptional.isEmpty()) {
+      throw new NotFoundException(String.format("Could not find session %s of category %s of %s in %d", shortSessionName, categoryName, eventShortName, year));
+    }
+    return sessionOptional.get();
+  }
+
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  @Path("/test/{year}/{eventShortName}/{category}/{session}/results/details")
-  public List<? extends ClassificationDetails> getTestClassificationsPdfDetails(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    TestClassification classifications = getTestClassifications(year, eventShortName, category, sessionShortName);
+  @Path("/{year}/{eventShortName}/{category}/{shortSessionName}/" + SessionResultOutput.ANALYSIS)
+  public SessionAnalysisOutput getSessionAnalysis(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String categoryName, @PathParam("shortSessionName") String shortSessionName) {
+    Session session = getSession(year, eventShortName, categoryName, shortSessionName);
     try {
-      return practiceResultsPdfParser.parse(classifications);
+      Optional<List<LapAnalysis>> analysis = sessionService.getAnalysis(year, eventShortName, categoryName, shortSessionName);
+      if (analysis.isEmpty()) {
+        throw new NotFoundException(String.format("Could not find analysis of session %s of category %s of %s in %d", shortSessionName, categoryName, eventShortName, year));
+      }
+      return SessionAnalysisOutput.from(session, analysis.get());
+
     } catch (PdfParsingException e) {
-      LOGGER.error("Error when parsing the PDF " + classifications.files.classification, e);
-      throw new InternalServerErrorException("Could not parse the PDF " + classifications.files.classification, e);
+      String message = String.format("Error when parsing the analysis PDF for session %s / %s of event %s of %d", shortSessionName, categoryName, eventShortName, year);
+      throw new InternalServerErrorException(message, e);
     }
   }
 
-  @GET
-  @Path("/{year}/{eventShortName}/{category}/{session}/results/details/csv")
-  @Produces("text/csv")
-  @Transactional
-  public Response getClassificationsPdfDetailsToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    try {
-      String csvResults;
-      if (sessionShortName.equalsIgnoreCase(Session.RACE_TYPE)) {
-        List<RaceClassificationDetails> details = (List<RaceClassificationDetails>) getClassificationsPdfDetails(year, eventShortName, category, sessionShortName);
-        csvResults = raceCsvConverter.convertToCsv(details, RaceClassificationDetails.class);
-      } else {
-        List<PracticeClassificationDetails> details = (List<PracticeClassificationDetails>) getClassificationsPdfDetails(year, eventShortName, category, sessionShortName);
-        csvResults = practiceCsvConverter.convertToCsv(details, PracticeClassificationDetails.class);
-      }
-      String filename = String.format("classification-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
-      return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=" + filename).build();
-    } catch (IOException e) {
-      return Response.serverError().build();
-    }
-  }
-
-  @GET
-  @Path("/test/{year}/{eventShortName}/{category}/{session}/results/details/csv")
-  @Produces("text/csv")
-  @Transactional
-  public Response getTestClassificationsPdfDetailsToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    try {
-      List<PracticeClassificationDetails> details = (List<PracticeClassificationDetails>) getTestClassificationsPdfDetails(year, eventShortName, category, sessionShortName);
-      String csvResults = practiceCsvConverter.convertToCsv(details, PracticeClassificationDetails.class);
-      String filename = String.format("test-classification-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
-      return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=" + filename).build();
-    } catch (IOException e) {
-      return Response.serverError().build();
-    }
-  }
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  @Path("/{year}/{eventShortName}/{category}/{session}/analysis")
-  public List<LapAnalysis> getAnalysis(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    Session session = getSessionByName(year, eventShortName, category, sessionShortName);
-    SessionClassification classifications = getClassifications(year, eventShortName, category, sessionShortName);
-    if (session.session_files.keySet().contains(analysis) && session.session_files.get(analysis).url != null) {
-      String url = session.session_files.get(analysis).url;
-      try {
-        return analysisPdfParser.parse(url, classifications.classification);
-      } catch (PdfParsingException e) {
-        LOGGER.error("Error when parsing the PDF " + url, e);
-        throw new InternalServerErrorException("Could not parse the PDF " + url, e);
-      }
-    }
-    throw new NotFoundException();
+  @Path("/{year}/{eventShortName}/{category}/{shortSessionName}/" + SessionResultOutput.RIDERS)
+  public CategoryOutput getSessionRiders(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String categoryName, @PathParam("shortSessionName") String shortSessionName) {
+
+    return null;
+
   }
+
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  @Path("/test/{year}/{eventShortName}/{category}/{session}/analysis")
-  public List<LapAnalysis> getTestAnalysis(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    Session session = getTestSessionByName(year, eventShortName, category, sessionShortName);
-    TestClassification classifications = getTestClassifications(year, eventShortName, category, sessionShortName);
-    if (session.session_files.keySet().contains(analysis) && session.session_files.get(analysis).url != null) {
-      String url = session.session_files.get(analysis).url;
-      try {
-        return analysisPdfParser.parse(url, classifications.classification);
-      } catch (PdfParsingException e) {
-        LOGGER.error("Error when parsing the PDF " + url, e);
-        throw new InternalServerErrorException("Could not parse the PDF " + url, e);
-      }
-    }
-    throw new NotFoundException();
-  }
+  @Path("/{year}/{eventShortName}/{category}/{shortSessionName}/" + SessionResultOutput.TOPSPEED)
+  public CategoryOutput getSessionTopSpeeds(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String categoryName, @PathParam("shortSessionName") String shortSessionName) {
 
+    return null;
 
-  @GET
-  @Path("/{year}/{eventShortName}/{category}/{session}/analysis/csv")
-  @Produces("text/csv")
-  @Transactional
-  public Response getAnalysisToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    try {
-      List<LapAnalysis> lapAnalysis = getAnalysis(year, eventShortName, category, sessionShortName);
-      String csvResults = lapAnalysisCsvConverter.convertToCsv(lapAnalysis, LapAnalysis.class);
-      String filename = String.format("analysis-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
-      return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=" + filename).build();
-    } catch (IOException e) {
-      return Response.serverError().build();
-    }
-  }
-
-
-  @GET
-  @Path("/test/{year}/{eventShortName}/{category}/{session}/analysis/csv")
-  @Produces("text/csv")
-  @Transactional
-  public Response getTestAnalysisToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    try {
-      List<LapAnalysis> lapAnalysis = getTestAnalysis(year, eventShortName, category, sessionShortName);
-      String csvResults = lapAnalysisCsvConverter.convertToCsv(lapAnalysis, LapAnalysis.class);
-      String filename = String.format("test-analysis-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
-      return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=" + filename).build();
-    } catch (IOException e) {
-      return Response.serverError().build();
-    }
   }
 }

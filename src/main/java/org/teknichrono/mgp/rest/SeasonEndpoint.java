@@ -1,74 +1,42 @@
 package org.teknichrono.mgp.rest;
 
-import org.eclipse.microprofile.rest.client.inject.RestClient;
-import org.teknichrono.mgp.client.ResultsClient;
-import org.teknichrono.mgp.model.result.Season;
-import org.teknichrono.mgp.util.CsvConverter;
+import org.teknichrono.mgp.api.model.result.Season;
+import org.teknichrono.mgp.business.EventService;
+import org.teknichrono.mgp.business.SeasonService;
+import org.teknichrono.mgp.model.output.Choice;
+import org.teknichrono.mgp.model.output.SeasonOutput;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
-@Path("/season")
+@Path("")
 public class SeasonEndpoint {
 
   @Inject
-  @RestClient
-  ResultsClient resultsService;
+  SeasonService seasonService;
 
   @Inject
-  CsvConverter<Season> csvConverter;
+  EventService eventService;
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  public List<Season> listAll() {
-    return resultsService.getSeasons();
-  }
-
-
-  @GET
-  @Path("/csv")
-  @Produces("text/csv")
-  @Transactional
-  public Response listAllToCsv() {
-    try {
-      String csvResults = csvConverter.convertToCsv(resultsService.getSeasons(), Season.class);
-      return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=seasons.csv").build();
-    } catch (IOException e) {
-      return Response.serverError().build();
-    }
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/test")
-  public List<Season> tests() {
-    return resultsService.getTestSeasons(true);
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/current")
-  public Season current() {
-    return resultsService.getSeasons().stream().filter(s -> s.current).findAny().get();
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/current/test")
-  public Season currentTest() {
-    return resultsService.getTestSeasons(true).stream().filter(s -> s.current).findAny().get();
+  @Path("/{year}")
+  public SeasonOutput getYearEvents(@PathParam("year") int year) {
+    Season season = seasonService.getSeason(year);
+    SeasonOutput toReturn = SeasonOutput.from(season);
+    List<Choice> racesNames = eventService.getEventsOfYear(year).stream().map(e -> Choice.from(e.short_name, e.sponsored_name)).collect(Collectors.toList());
+    toReturn.races.addAll(racesNames);
+    List<Choice> testsNames = eventService.getTestsOfYear(year).stream().map(e -> Choice.from(e.short_name, e.sponsored_name)).collect(Collectors.toList());
+    toReturn.tests.addAll(testsNames);
+    return toReturn;
   }
 
 }
-
