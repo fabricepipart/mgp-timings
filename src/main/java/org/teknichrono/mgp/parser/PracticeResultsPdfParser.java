@@ -1,10 +1,10 @@
 package org.teknichrono.mgp.parser;
 
 import org.jboss.logging.Logger;
-import org.teknichrono.mgp.model.out.PracticeClassificationDetails;
-import org.teknichrono.mgp.model.result.RiderClassification;
-import org.teknichrono.mgp.model.result.SessionClassification;
-import org.teknichrono.mgp.model.result.TestClassification;
+import org.teknichrono.mgp.api.model.result.Classification;
+import org.teknichrono.mgp.api.model.result.RiderClassification;
+import org.teknichrono.mgp.model.output.CountryOutput;
+import org.teknichrono.mgp.model.output.SessionClassificationOutput;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
@@ -19,31 +19,28 @@ public class PracticeResultsPdfParser {
 
   private static final Logger LOGGER = Logger.getLogger(PracticeResultsPdfParser.class);
 
-  public List<PracticeClassificationDetails> parse(TestClassification classifications) throws PdfParsingException {
-    List<PracticeClassificationDetails> toReturn = getPartialResults(classifications.classification);
-    fillFromPdf(toReturn, classifications.files.classification);
-    return toReturn;
-
-  }
-
-  public List<PracticeClassificationDetails> parse(SessionClassification classifications) throws PdfParsingException {
-    List<PracticeClassificationDetails> toReturn = getPartialResults(classifications.classification);
-    fillFromPdf(toReturn, classifications.file);
-
+  public List<SessionClassificationOutput> parse(Classification classifications) throws PdfParsingException {
+    List<SessionClassificationOutput> toReturn = getPartialResults(classifications.classification);
+    if (classifications.files != null) {
+      fillFromPdf(toReturn, classifications.files.classification);
+    }
+    if (classifications.file != null) {
+      fillFromPdf(toReturn, classifications.file);
+    }
     return toReturn;
   }
 
-  private void fillFromPdf(List<PracticeClassificationDetails> toReturn, String url) throws PdfParsingException {
+  private void fillFromPdf(List<SessionClassificationOutput> toReturn, String url) throws PdfParsingException {
     String[] lines = PdfParserUtils.readPdfLines(url);
 
     for (String line : lines) {
-      for (PracticeClassificationDetails details : toReturn) {
+      for (SessionClassificationOutput details : toReturn) {
         String lowerCaseLine = line.toLowerCase();
         if (PdfParserUtils.startsWithNumber(line) &&
-            details.riderNumber != null &&
-            lowerCaseLine.contains(details.riderNumber.toString()) &&
-            lowerCaseLine.contains(details.riderName.toLowerCase())) {
-          details.nation = PdfParserUtils.parseNation(line);
+            details.rider != null && details.rider.number != null &&
+            lowerCaseLine.contains(details.rider.number.toString()) &&
+            lowerCaseLine.contains(details.rider.full_name.toLowerCase())) {
+          details.rider.country = CountryOutput.from(PdfParserUtils.parseNation(line));
           details.topSpeed = PdfParserUtils.parseSpeed(line);
           details.bestLapTime = PdfParserUtils.parseTime(line);
 
@@ -63,10 +60,10 @@ public class PracticeResultsPdfParser {
     }
   }
 
-  private List<PracticeClassificationDetails> getPartialResults(List<RiderClassification> classifications) {
-    List<PracticeClassificationDetails> toReturn = new ArrayList<>();
+  private List<SessionClassificationOutput> getPartialResults(List<RiderClassification> classifications) {
+    List<SessionClassificationOutput> toReturn = new ArrayList<>();
     for (RiderClassification c : classifications) {
-      PracticeClassificationDetails details = PracticeClassificationDetails.from(c);
+      SessionClassificationOutput details = SessionClassificationOutput.from(c);
       toReturn.add(details);
     }
     return toReturn;
