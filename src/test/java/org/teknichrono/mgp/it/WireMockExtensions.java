@@ -63,6 +63,10 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
             .withBodyFile("entry.json")));
+    stubFor(get(urlEqualTo("/event/20bb257f-b1ba-4289-9030-c4eb528c6155/category/549640b8-fd9c-4245-acfd-60e4bc38b25c/entry"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("empty.json")));
     stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/FP1/MaximumSpeed.pdf"))
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/pdf")
@@ -188,6 +192,14 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
             .withBodyFile("events.json")));
+    stubFor(get(urlEqualTo("/season/db8dc197-c7b2-4c1b-b3a4-7dc723c087ed/events?test=true"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("events-tests-2021.json")));
+    stubFor(get(urlEqualTo("/season/db8dc197-c7b2-4c1b-b3a4-6dc534c014ef/events"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("events-2022.json")));
     stubFor(get(urlEqualTo("/season/db8dc197-c7b2-4c1b-b3a4-6dc534c014ef/events?test=true"))
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
