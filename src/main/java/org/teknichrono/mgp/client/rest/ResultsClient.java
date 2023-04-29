@@ -8,10 +8,10 @@ import org.teknichrono.mgp.client.model.result.Event;
 import org.teknichrono.mgp.client.model.result.Season;
 import org.teknichrono.mgp.client.model.result.Session;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.QueryParam;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.QueryParam;
 import java.util.List;
 
 @RegisterRestClient(configKey = "results-api")

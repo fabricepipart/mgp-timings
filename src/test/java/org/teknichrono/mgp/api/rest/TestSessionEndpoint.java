@@ -9,7 +9,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.teknichrono.mgp.business.service.SessionService;
 
-import javax.ws.rs.NotFoundException;
+import jakarta.ws.rs.NotFoundException;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;

@@ -6,13 +6,11 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import org.jboss.logging.Logger;
 
-import javax.enterprise.context.RequestScoped;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@RequestScoped
 public class CsvConverter<T extends CSVConvertible<Y>, Y> {
 
   private static final Logger LOGGER = Logger.getLogger(CsvConverter.class);

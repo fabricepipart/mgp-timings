@@ -4,7 +4,7 @@ import org.jboss.logging.Logger;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
 import org.teknichrono.mgp.api.model.LapAnalysis;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.List;
 

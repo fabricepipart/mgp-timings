@@ -3,9 +3,9 @@ package org.teknichrono.mgp.api.rest;
 import org.teknichrono.mgp.business.service.SessionService;
 import org.teknichrono.mgp.client.model.result.Session;
 
-import javax.inject.Inject;
-import javax.ws.rs.NotFoundException;
-import javax.ws.rs.Path;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.NotFoundException;
+import jakarta.ws.rs.Path;
 import java.util.Optional;
 
 @Path("")
