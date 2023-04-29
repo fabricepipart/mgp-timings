@@ -34,9 +34,9 @@ import static org.teknichrono.mgp.csv.rest.CSVHeaders.ATTACHMENT_FILENAME;
 import static org.teknichrono.mgp.csv.rest.CSVHeaders.CONTENT_DISPOSITION_HEADER;
 
 @Path("/internal/session")
-public class SessionEndpoint {
+public class InternalSessionEndpoint {
 
-  private static final Logger LOGGER = Logger.getLogger(SessionEndpoint.class);
+  private static final Logger LOGGER = Logger.getLogger(InternalSessionEndpoint.class);
 
   @Inject
   RiderService riderService;

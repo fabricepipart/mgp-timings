@@ -1,7 +1,9 @@
 package org.teknichrono.mgp.api.rest;
 
+import org.jboss.logging.Logger;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
 import org.teknichrono.mgp.api.model.SessionResultOutput;
+import org.teknichrono.mgp.api.rest.internal.InternalSessionEndpoint;
 import org.teknichrono.mgp.business.parser.PdfParsingException;
 import org.teknichrono.mgp.client.model.result.Classification;
 import org.teknichrono.mgp.client.model.result.Session;
@@ -20,6 +22,8 @@ import java.util.Optional;
 @Path("")
 public class SessionResultsEndpoint extends SessionEndpoint {
 
+  private static final Logger LOGGER = Logger.getLogger(InternalSessionEndpoint.class);
+
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
@@ -36,6 +40,7 @@ public class SessionResultsEndpoint extends SessionEndpoint {
       return SessionResultOutput.from(session, results, resultDetails);
     } catch (PdfParsingException e) {
       String message = String.format("Error when parsing the details PDF for session %s / %s of event %s of %d", shortSessionName, categoryName, eventShortName, year);
+      LOGGER.error(message, e);
       throw new InternalServerErrorException(message, e);
     }
   }

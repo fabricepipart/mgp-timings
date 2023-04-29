@@ -23,6 +23,19 @@ The Swagger UI is available even on production for now [here](https://mgp-timing
 
 ### Main services
 
+
+| Service                                                                                                       | URL | Description                                                                                                            |
+|---------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------|
+| [List all races and tests of a given year](https://mgp-timings.teknichrono.fr/api/2023)                       | */api/{year}*| Get all the 3 letters acronyms for each event of the year. Referenced as `eventShortName` below                        |
+| [List info and sessions of an event](https://mgp-timings.teknichrono.fr/api/2023/POR)                         | */api/{year}/{eventShortName}/* | All info about an event (conditions, sessions, PDF files available...) and all categories that took part in that event |
+| [List info about an event](https://mgp-timings.teknichrono.fr/api/2023/POR/GP)                                | */api/{year}/{eventShortName}/{category}* | All sessions for that category and event. Category is either `MOTO3`, `MOTO2`, `GP`                                    |
+| [List all riders of a given event and category](https://mgp-timings.teknichrono.fr/api/2023/POR/MOTO3/riders) | */api/{year}/{eventShortName}/{category}/riders* | All riders that participated to that event in that category. With all details.                                         |
+| [Session results summary](https://mgp-timings.teknichrono.fr/api/2023/POR/GP/FP3)                             | */api/{year}/{eventShortName}/{category}/{session}/* | Results of that sessions                                                                                               |
+| [Lap by lap analysis of a session](https://mgp-timings.teknichrono.fr/api/2023/POR/GP/RAC/analysis)           | */api/{year}/{eventShortName}/{category}/{session}/analysis* | All the laps done by each rider, tyres used, max speed ... (from PDF)                                                  |
+| [Top speeds of the session](https://mgp-timings.teknichrono.fr/api/2023/POR/GP/Q2/topspeed)                   | */api/{year}/{eventShortName}/{category}/{session}/topspeed* | Summary of top speeds (from PDF)                                                                                       |
+
+### Deprecated services
+
 | Service | URL | Description |
 |---------|-----|-------------|
 | [List all races of a given year](https://mgp-timings.teknichrono.fr/event/2022/names) | */event/{year}/names*| Get all the 3 letters acronyms for each event of the year. Referenced as `eventShortName` below |
@@ -47,7 +60,7 @@ Please report the problem by filling an issue: https://github.com/fabricepipart/
 ### Requirements
 
 * Java 11
-* Maven 3.6
+* Maven 3.9
 
 ### How to build locally
 
@@ -69,7 +82,7 @@ The CI is done thanks to GitHub actions and runs the following:
     * Repository is tagged for each version
     * All changes are gathered in a ChangeLog and GH releases are used
     * Builds of the `main` branch are directly loaded on the Production environment
-
+* Sonar analysis
 
 ---
 

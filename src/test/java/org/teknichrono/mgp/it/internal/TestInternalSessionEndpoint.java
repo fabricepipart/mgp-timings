@@ -36,7 +36,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @Tag("integration")
 @QuarkusTest
 @QuarkusTestResource(WireMockExtensions.class)
-public class TestSessionEndpoint {
+public class TestInternalSessionEndpoint {
 
   @InjectSpy
   CsvConverterFactory csvFactory;

@@ -12,7 +12,7 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/internal/rider")
-public class RiderEndpoint {
+public class InternalRiderEndpoint {
 
   @Inject
   RiderService riderService;
