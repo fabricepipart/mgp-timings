@@ -15,9 +15,9 @@ import org.teknichrono.mgp.client.model.result.Event;
 import org.teknichrono.mgp.client.model.result.Session;
 import org.teknichrono.mgp.client.rest.ResultsClient;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
-import javax.ws.rs.NotFoundException;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.NotFoundException;
 import java.util.List;
 import java.util.Optional;
 

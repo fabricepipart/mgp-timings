@@ -4,8 +4,8 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.teknichrono.mgp.client.model.result.Season;
 import org.teknichrono.mgp.client.rest.ResultsClient;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import java.util.List;
 
 @ApplicationScoped

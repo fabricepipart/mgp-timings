@@ -6,7 +6,7 @@ import org.teknichrono.mgp.client.model.result.RiderClassification;
 import org.teknichrono.mgp.api.model.CountryOutput;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.List;
 
