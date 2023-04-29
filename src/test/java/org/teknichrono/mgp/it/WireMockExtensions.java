@@ -59,10 +59,18 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
             .withBodyFile("sessions.json")));
+    stubFor(get(urlEqualTo("/event/0d106a9a-95c9-4e13-9084-90c78c149f4a/category/954f7e65-2ef2-4423-b949-4961cc603e45/sessions"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("sessions-ita-2021-m3.json")));
     stubFor(get(urlEqualTo("/event/20bb257f-b1ba-4289-9030-c4eb528c6155/category/e8c110ad-64aa-4e8e-8a86-f2f152f6a942/entry"))
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
             .withBodyFile("entry.json")));
+    stubFor(get(urlEqualTo("/event/20bb257f-b1ba-4289-9030-c4eb528c6155/category/549640b8-fd9c-4245-acfd-60e4bc38b25c/entry"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("empty.json")));
     stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/FP1/MaximumSpeed.pdf"))
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/pdf")
@@ -130,6 +138,10 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
             .withBodyFile("classifications-qat-21-fp1-gp.json")));
+    stubFor(get(urlEqualTo("/session/253060b6-3562-446e-b259-f6ee49cc6714/classifications"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("empty.json")));
     stubFor(get(urlEqualTo("/files/results/2021/QAT/MotoGP/RAC/Classification.pdf"))
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/pdf")
@@ -188,6 +200,14 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
             .withBodyFile("events.json")));
+    stubFor(get(urlEqualTo("/season/db8dc197-c7b2-4c1b-b3a4-7dc723c087ed/events?test=true"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("events-tests-2021.json")));
+    stubFor(get(urlEqualTo("/season/db8dc197-c7b2-4c1b-b3a4-6dc534c014ef/events"))
+        .willReturn(aResponse()
+            .withHeader("Content-Type", "application/json")
+            .withBodyFile("events-2022.json")));
     stubFor(get(urlEqualTo("/season/db8dc197-c7b2-4c1b-b3a4-6dc534c014ef/events?test=true"))
         .willReturn(aResponse()
             .withHeader("Content-Type", "application/json")
