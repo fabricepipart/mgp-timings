@@ -29,44 +29,44 @@ public class SessionFilesOutput {
       if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
         output.analysisByLap = session_files.get(SessionFileType.analysis_by_lap).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.fastLapRider = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.fast_lap_rider)) {
+        output.fastLapRider = session_files.get(SessionFileType.fast_lap_rider).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.combinedClassification = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.combined_classification)) {
+        output.combinedClassification = session_files.get(SessionFileType.combined_classification).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.session = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.session)) {
+        output.session = session_files.get(SessionFileType.session).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.bestPartialTime = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.best_partial_time)) {
+        output.bestPartialTime = session_files.get(SessionFileType.best_partial_time).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.combinedPractice = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.combined_practice)) {
+        output.combinedPractice = session_files.get(SessionFileType.combined_practice).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.classification = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.classification)) {
+        output.classification = session_files.get(SessionFileType.classification).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.analysis = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.analysis)) {
+        output.analysis = session_files.get(SessionFileType.analysis).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.maximumSpeed = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.maximum_speed)) {
+        output.maximumSpeed = session_files.get(SessionFileType.maximum_speed).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.lapChart = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.lap_chart)) {
+        output.lapChart = session_files.get(SessionFileType.lap_chart).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.grid = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.grid)) {
+        output.grid = session_files.get(SessionFileType.grid).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.fastLapSequence = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.fast_lap_sequence)) {
+        output.fastLapSequence = session_files.get(SessionFileType.fast_lap_sequence).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.averageSpeed = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.average_speed)) {
+        output.averageSpeed = session_files.get(SessionFileType.average_speed).url;
       }
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.worldStanding = session_files.get(SessionFileType.analysis_by_lap).url;
+      if (session_files.containsKey(SessionFileType.world_standing)) {
+        output.worldStanding = session_files.get(SessionFileType.world_standing).url;
       }
     }
     return output;
