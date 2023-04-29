@@ -7,7 +7,7 @@ import org.teknichrono.mgp.csv.model.SessionClassificationCSV;
 import org.teknichrono.mgp.api.model.LapAnalysis;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class CsvConverterFactory {
