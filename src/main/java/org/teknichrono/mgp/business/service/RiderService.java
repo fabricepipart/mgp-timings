@@ -10,8 +10,8 @@ import org.teknichrono.mgp.client.model.rider.RiderDetails;
 import org.teknichrono.mgp.client.rest.ResultsClient;
 import org.teknichrono.mgp.client.rest.RidersClient;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
