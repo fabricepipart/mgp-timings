@@ -3,6 +3,7 @@ package org.teknichrono.mgp.api.rest;
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
 import org.teknichrono.mgp.api.model.SessionResultOutput;
+import org.teknichrono.mgp.api.rest.internal.InternalSessionEndpoint;
 import org.teknichrono.mgp.business.parser.PdfParsingException;
 import org.teknichrono.mgp.client.model.result.Classification;
 import org.teknichrono.mgp.client.model.result.Session;
@@ -21,7 +22,7 @@ import java.util.Optional;
 @Path("")
 public class SessionResultsEndpoint extends SessionEndpoint {
 
-  private static final Logger LOGGER = Logger.getLogger(org.teknichrono.mgp.api.rest.internal.SessionEndpoint.class);
+  private static final Logger LOGGER = Logger.getLogger(InternalSessionEndpoint.class);
 
   @GET
   @Produces(MediaType.APPLICATION_JSON)

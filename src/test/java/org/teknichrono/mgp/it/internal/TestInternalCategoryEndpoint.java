@@ -15,7 +15,7 @@ import static org.hamcrest.CoreMatchers.is;
 @Tag("integration")
 @QuarkusTest
 @QuarkusTestResource(WireMockExtensions.class)
-public class TestCategoryEndpoint {
+public class TestInternalCategoryEndpoint {
 
 
   @Test

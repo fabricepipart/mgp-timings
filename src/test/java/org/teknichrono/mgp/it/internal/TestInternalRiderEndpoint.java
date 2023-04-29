@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.*;
 @Tag("integration")
 @QuarkusTest
 @QuarkusTestResource(WireMockExtensions.class)
-class TestRiderEndpoint {
+class TestInternalRiderEndpoint {
 
 
   @Test

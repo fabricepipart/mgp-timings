@@ -23,7 +23,7 @@ import static org.hamcrest.CoreMatchers.is;
 @Tag("integration")
 @QuarkusTest
 @QuarkusTestResource(WireMockExtensions.class)
-class TestSeasonEndpoint {
+class TestInternalSeasonEndpoint {
 
   @InjectSpy
   CsvConverterFactory csvFactory;

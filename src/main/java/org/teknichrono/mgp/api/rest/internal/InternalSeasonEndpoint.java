@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Path("/internal/season")
-public class SeasonEndpoint {
+public class InternalSeasonEndpoint {
 
   @Inject
   SeasonService seasonService;
@@ -29,7 +29,7 @@ public class SeasonEndpoint {
   public List<Season> listAll() {
     return seasonService.getSeasons();
   }
-  
+
   @GET
   @Path("/csv")
   @Produces("text/csv")

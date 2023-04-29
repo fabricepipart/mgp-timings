@@ -1,7 +1,7 @@
 package org.teknichrono.mgp.api.rest.internal;
 
-import org.teknichrono.mgp.client.model.result.Category;
 import org.teknichrono.mgp.business.service.CategoryService;
+import org.teknichrono.mgp.client.model.result.Category;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Path("/internal/category")
-public class CategoryEndpoint {
+public class InternalCategoryEndpoint {
 
   @Inject
   CategoryService categoryService;

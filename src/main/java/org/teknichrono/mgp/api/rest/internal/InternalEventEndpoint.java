@@ -1,7 +1,7 @@
 package org.teknichrono.mgp.api.rest.internal;
 
-import org.teknichrono.mgp.client.model.result.Event;
 import org.teknichrono.mgp.business.service.EventService;
+import org.teknichrono.mgp.client.model.result.Event;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
@@ -16,7 +16,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Path("/internal/event")
-public class EventEndpoint {
+public class InternalEventEndpoint {
 
   @Inject
   EventService eventService;
