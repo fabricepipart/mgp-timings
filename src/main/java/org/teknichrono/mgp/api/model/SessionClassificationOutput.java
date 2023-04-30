@@ -17,7 +17,7 @@ public class SessionClassificationOutput implements CSVConvertible<SessionClassi
   public Float topSpeed;
   public Float averageSpeed;
   public Float gapToFirst;
-  private int lapsToFirst;
+  public int lapsToFirst;
   public Float gapToPrevious;
   public Integer points;
   public String totalTime;

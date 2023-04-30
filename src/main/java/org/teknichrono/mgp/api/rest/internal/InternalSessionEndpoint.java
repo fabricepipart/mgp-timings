@@ -1,5 +1,15 @@
 package org.teknichrono.mgp.api.rest.internal;
 
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.InternalServerErrorException;
+import jakarta.ws.rs.NotFoundException;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.api.model.LapAnalysis;
 import org.teknichrono.mgp.api.model.MaxSpeed;
@@ -16,22 +26,12 @@ import org.teknichrono.mgp.csv.model.RiderClassificationCSV;
 import org.teknichrono.mgp.csv.model.SessionClassificationCSV;
 import org.teknichrono.mgp.csv.util.CsvConverterFactory;
 
-import jakarta.inject.Inject;
-import jakarta.transaction.Transactional;
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.InternalServerErrorException;
-import jakarta.ws.rs.NotFoundException;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.PathParam;
-import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.core.MediaType;
-import jakarta.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
-import static org.teknichrono.mgp.csv.rest.CSVHeaders.ATTACHMENT_FILENAME;
-import static org.teknichrono.mgp.csv.rest.CSVHeaders.CONTENT_DISPOSITION_HEADER;
+import static org.teknichrono.mgp.csv.util.CsvConverter.ATTACHMENT_FILENAME;
+import static org.teknichrono.mgp.csv.util.CsvConverter.CONTENT_DISPOSITION_HEADER;
 
 @Path("/internal/session")
 public class InternalSessionEndpoint {
@@ -58,7 +58,7 @@ public class InternalSessionEndpoint {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  @Deprecated
+  @Deprecated(forRemoval = true)
   @Path("/test/{year}/{eventShortName}/{category}")
   public List<Session> getTestSessions(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category) {
     return getSessions(year, eventShortName, category);
@@ -79,7 +79,7 @@ public class InternalSessionEndpoint {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  @Deprecated
+  @Deprecated(forRemoval = true)
   @Path("/test/{year}/{eventShortName}/{category}/{session}")
   public Session getTestSessionByName(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     return getSessionByName(year, eventShortName, category, sessionShortName);
@@ -140,7 +140,7 @@ public class InternalSessionEndpoint {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  @Deprecated
+  @Deprecated(forRemoval = true)
   @Path("/test/{year}/{eventShortName}/{category}/{session}/results")
   public Classification getTestClassifications(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     return getClassifications(year, eventShortName, category, sessionShortName);
@@ -235,7 +235,7 @@ public class InternalSessionEndpoint {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  @Deprecated
+  @Deprecated(forRemoval = true)
   @Path("/test/{year}/{eventShortName}/{category}/{session}/analysis")
   public List<LapAnalysis> getTestAnalysis(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     return getAnalysis(year, eventShortName, category, sessionShortName);
