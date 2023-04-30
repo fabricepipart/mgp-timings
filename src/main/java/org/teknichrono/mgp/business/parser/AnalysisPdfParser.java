@@ -1,17 +1,15 @@
 package org.teknichrono.mgp.business.parser;
 
-import org.jboss.logging.Logger;
-import org.teknichrono.mgp.client.model.result.RiderClassification;
-import org.teknichrono.mgp.api.model.LapAnalysis;
-
 import jakarta.enterprise.context.ApplicationScoped;
+import org.teknichrono.mgp.api.model.LapAnalysis;
+import org.teknichrono.mgp.client.model.result.RiderClassification;
+
 import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
 public class AnalysisPdfParser {
 
-  private static final Logger LOGGER = Logger.getLogger(RaceResultsPdfParser.class);
   public static final int X_LEFT_COLUMN_PDF = 53;
   public static final int X_RIGHT_COLUMN_PDF = 314;
   public static final int T_COLUMNS_PDF = 40;
@@ -20,39 +18,49 @@ public class AnalysisPdfParser {
 
   public List<LapAnalysis> parse(String url, List<RiderClassification> riderClassifications) throws PdfParsingException {
     List<LapAnalysis> toReturn = new ArrayList<>();
-
-    List<String> lines = PdfParserUtils.readPdfLinesTwoColumns(url, X_LEFT_COLUMN_PDF, X_RIGHT_COLUMN_PDF, T_COLUMNS_PDF, WIDTH_COLUMN_PDF, HEIGHT_COLUMN_PDF);
-
-    LapAnalysis lapAnalysis = null;
-    for (String line : lines) {
-      lapAnalysis = updateRiderIfNecessary(lapAnalysis, riderClassifications, line);
-      updateFrontTyreIfNecessary(lapAnalysis, line);
-      updateRearTyreIfNecessary(lapAnalysis, line);
-      updateFrontTyreAgeIfNecessary(lapAnalysis, line);
-      updateRearTyreAgeIfNecessary(lapAnalysis, line);
-      if (PdfParserUtils.startsWithNumber(line)) {
-        lapAnalysis.lapNumber = Integer.parseInt(line.split(" ")[0]);
-        lapAnalysis.pit = line.contains(" P ");
-        lapAnalysis.unfinished = line.contains(LapAnalysis.UNFINISHED_LAP);
-        lapAnalysis.cancelled = line.contains("*");
-        lapAnalysis.maxSpeed = PdfParserUtils.parseSpeed(line);
-        lapAnalysis.time = PdfParserUtils.parseTime(line);
-        if (lapAnalysis.time != null || lapAnalysis.pit || lapAnalysis.maxSpeed != null) {
-          toReturn.add(lapAnalysis);
-          lapAnalysis = new LapAnalysis(lapAnalysis);
-        }
-      } else if (line.toLowerCase().contains(LapAnalysis.UNFINISHED_LAP.toLowerCase())) {
-        lapAnalysis.lapNumber = lapAnalysis.lapNumber != null ? lapAnalysis.lapNumber + 1 : 1;
-        lapAnalysis.unfinished = true;
-        lapAnalysis.cancelled = false;
-        lapAnalysis.pit = false;
-        lapAnalysis.maxSpeed = PdfParserUtils.parseSpeed(line);
-        toReturn.add(lapAnalysis);
-        lapAnalysis = new LapAnalysis(lapAnalysis);
+    if (url != null) {
+      List<String> lines = PdfParserUtils.readPdfLinesTwoColumns(url, X_LEFT_COLUMN_PDF, X_RIGHT_COLUMN_PDF, T_COLUMNS_PDF, WIDTH_COLUMN_PDF, HEIGHT_COLUMN_PDF);
+      LapAnalysis lapAnalysis = null;
+      for (String line : lines) {
+        lapAnalysis = updateRiderIfNecessary(lapAnalysis, riderClassifications, line);
+        updateFrontTyreIfNecessary(lapAnalysis, line);
+        updateRearTyreIfNecessary(lapAnalysis, line);
+        updateFrontTyreAgeIfNecessary(lapAnalysis, line);
+        updateRearTyreAgeIfNecessary(lapAnalysis, line);
+        lapAnalysis = updateLapInfoIfNecessary(toReturn, lapAnalysis, line);
       }
     }
 
     return toReturn;
+  }
+
+  private LapAnalysis updateLapInfoIfNecessary(List<LapAnalysis> toReturn, LapAnalysis lapAnalysis, String line) {
+    if (PdfParserUtils.startsWithNumber(line)) {
+      lapAnalysis.lapNumber = Integer.parseInt(line.split(" ")[0]);
+      lapAnalysis.pit = line.contains(" P ");
+      lapAnalysis.unfinished = line.contains(LapAnalysis.UNFINISHED_LAP);
+      lapAnalysis.cancelled = line.contains("*");
+      lapAnalysis.maxSpeed = PdfParserUtils.parseSpeed(line);
+      lapAnalysis.time = PdfParserUtils.parseTime(line);
+      lapAnalysis = resetLapAnalysisIfNecessary(toReturn, lapAnalysis);
+    } else if (line.toLowerCase().contains(LapAnalysis.UNFINISHED_LAP.toLowerCase())) {
+      lapAnalysis.lapNumber = lapAnalysis.lapNumber != null ? lapAnalysis.lapNumber + 1 : 1;
+      lapAnalysis.unfinished = true;
+      lapAnalysis.cancelled = false;
+      lapAnalysis.pit = false;
+      lapAnalysis.maxSpeed = PdfParserUtils.parseSpeed(line);
+      toReturn.add(lapAnalysis);
+      lapAnalysis = new LapAnalysis(lapAnalysis);
+    }
+    return lapAnalysis;
+  }
+
+  private LapAnalysis resetLapAnalysisIfNecessary(List<LapAnalysis> toReturn, LapAnalysis lapAnalysis) {
+    if (lapAnalysis.time != null || lapAnalysis.pit || lapAnalysis.maxSpeed != null) {
+      toReturn.add(lapAnalysis);
+      lapAnalysis = new LapAnalysis(lapAnalysis);
+    }
+    return lapAnalysis;
   }
 
   private void updateFrontTyreAgeIfNecessary(LapAnalysis lap, String line) {
