@@ -1,10 +1,10 @@
 package org.teknichrono.mgp.business.parser;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.api.model.MaxSpeed;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
 
-import jakarta.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,24 +15,28 @@ public class MaxSpeedPdfParser {
 
   public List<MaxSpeed> parse(String url, List<RiderClassification> ridersOfEvent, int year) throws PdfParsingException {
     List<MaxSpeed> toReturn = new ArrayList<>();
-    String[] lines = PdfParserUtils.readPdfLines(url);
-    boolean start = false;
-    boolean end = false;
-    for (String line : lines) {
-      if (start && !Character.isDigit(line.charAt(0))) {
-        end = true;
+    if (url != null) {
+      String[] lines = PdfParserUtils.readPdfLines(url);
+      boolean start = false;
+      boolean endReached = false;
+      for (String line : lines) {
+        endReached = endReached || (start && !Character.isDigit(line.charAt(0)));
+        if (start && !endReached) {
+          toReturn.add(parseLine(line, ridersOfEvent, year));
+        }
+        if (line.startsWith("Rider")) {
+          start = true;
+        }
       }
-      if (start && !end) {
-        toReturn.add(parseLine(line, ridersOfEvent, year));
-      }
-      if (line.startsWith("Rider")) {
-        start = true;
-      }
-    }
-    if (!start || !end) {
-      throw new PdfParsingException("Could not find the expected lines format in the PDF at " + url);
+      assertDocumentCorrectlyParsed(url, start, endReached);
     }
     return toReturn;
+  }
+
+  private void assertDocumentCorrectlyParsed(String url, boolean start, boolean endReached) throws PdfParsingException {
+    if (!start || !endReached) {
+      throw new PdfParsingException("Could not find the expected lines format in the PDF at " + url);
+    }
   }
 
   MaxSpeed parseLine(String line, List<RiderClassification> ridersOfEvent, int year) throws PdfParsingException {
