@@ -1,19 +1,16 @@
 package org.teknichrono.mgp.business.parser;
 
-import org.jboss.logging.Logger;
-import org.teknichrono.mgp.client.model.result.Classification;
-import org.teknichrono.mgp.client.model.result.RiderClassification;
+import jakarta.enterprise.context.ApplicationScoped;
 import org.teknichrono.mgp.api.model.CountryOutput;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
+import org.teknichrono.mgp.client.model.result.Classification;
+import org.teknichrono.mgp.client.model.result.RiderClassification;
 
-import jakarta.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
 public class RaceResultsPdfParser {
-
-  private static final Logger LOGGER = Logger.getLogger(RaceResultsPdfParser.class);
 
   public List<SessionClassificationOutput> parse(Classification classifications) throws PdfParsingException {
     List<SessionClassificationOutput> partialResults = getPartialResults(classifications.classification);

@@ -11,12 +11,12 @@ public class RecordOutput {
   public Integer year;
 
   public static RecordOutput from(Record r) {
-    RecordOutput record = new RecordOutput();
-    record.type = r.type;
-    record.rider = RiderOutput.from(r.rider);
-    record.bestLap = r.bestLap.time;
-    record.speed = r.speed;
-    record.year = r.year;
-    return record;
+    RecordOutput recordOutput = new RecordOutput();
+    recordOutput.type = r.type;
+    recordOutput.rider = RiderOutput.from(r.rider);
+    recordOutput.bestLap = r.bestLap.time;
+    recordOutput.speed = r.speed;
+    recordOutput.year = r.year;
+    return recordOutput;
   }
 }
