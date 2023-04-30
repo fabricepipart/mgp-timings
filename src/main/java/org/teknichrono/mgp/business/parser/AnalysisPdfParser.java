@@ -1,17 +1,15 @@
 package org.teknichrono.mgp.business.parser;
 
-import org.jboss.logging.Logger;
-import org.teknichrono.mgp.client.model.result.RiderClassification;
-import org.teknichrono.mgp.api.model.LapAnalysis;
-
 import jakarta.enterprise.context.ApplicationScoped;
+import org.teknichrono.mgp.api.model.LapAnalysis;
+import org.teknichrono.mgp.client.model.result.RiderClassification;
+
 import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
 public class AnalysisPdfParser {
 
-  private static final Logger LOGGER = Logger.getLogger(RaceResultsPdfParser.class);
   public static final int X_LEFT_COLUMN_PDF = 53;
   public static final int X_RIGHT_COLUMN_PDF = 314;
   public static final int T_COLUMNS_PDF = 40;
@@ -20,16 +18,24 @@ public class AnalysisPdfParser {
 
   public List<LapAnalysis> parse(String url, List<RiderClassification> riderClassifications) throws PdfParsingException {
     List<LapAnalysis> toReturn = new ArrayList<>();
+    if (url != null) {
+      List<String> lines = PdfParserUtils.readPdfLinesTwoColumns(url, X_LEFT_COLUMN_PDF, X_RIGHT_COLUMN_PDF, T_COLUMNS_PDF, WIDTH_COLUMN_PDF, HEIGHT_COLUMN_PDF);
+      LapAnalysis lapAnalysis = null;
+      for (String line : lines) {
+        lapAnalysis = updateRiderIfNecessary(lapAnalysis, riderClassifications, line);
+        updateFrontTyreIfNecessary(lapAnalysis, line);
+        updateRearTyreIfNecessary(lapAnalysis, line);
+        updateFrontTyreAgeIfNecessary(lapAnalysis, line);
+        updateRearTyreAgeIfNecessary(lapAnalysis, line);
+        lapAnalysis = updateLapInfoIfNecessary(toReturn, lapAnalysis, line);
+      }
+    }
 
-    List<String> lines = PdfParserUtils.readPdfLinesTwoColumns(url, X_LEFT_COLUMN_PDF, X_RIGHT_COLUMN_PDF, T_COLUMNS_PDF, WIDTH_COLUMN_PDF, HEIGHT_COLUMN_PDF);
+    return toReturn;
+  }
 
-    LapAnalysis lapAnalysis = null;
-    for (String line : lines) {
-      lapAnalysis = updateRiderIfNecessary(lapAnalysis, riderClassifications, line);
-      updateFrontTyreIfNecessary(lapAnalysis, line);
-      updateRearTyreIfNecessary(lapAnalysis, line);
-      updateFrontTyreAgeIfNecessary(lapAnalysis, line);
-      updateRearTyreAgeIfNecessary(lapAnalysis, line);
+  private LapAnalysis updateLapInfoIfNecessary(List<LapAnalysis> toReturn, LapAnalysis lapAnalysis, String line) {
+    if (lapAnalysis != null) {
       if (PdfParserUtils.startsWithNumber(line)) {
         lapAnalysis.lapNumber = Integer.parseInt(line.split(" ")[0]);
         lapAnalysis.pit = line.contains(" P ");
@@ -37,10 +43,7 @@ public class AnalysisPdfParser {
         lapAnalysis.cancelled = line.contains("*");
         lapAnalysis.maxSpeed = PdfParserUtils.parseSpeed(line);
         lapAnalysis.time = PdfParserUtils.parseTime(line);
-        if (lapAnalysis.time != null || lapAnalysis.pit || lapAnalysis.maxSpeed != null) {
-          toReturn.add(lapAnalysis);
-          lapAnalysis = new LapAnalysis(lapAnalysis);
-        }
+        lapAnalysis = resetLapAnalysisIfNecessary(toReturn, lapAnalysis);
       } else if (line.toLowerCase().contains(LapAnalysis.UNFINISHED_LAP.toLowerCase())) {
         lapAnalysis.lapNumber = lapAnalysis.lapNumber != null ? lapAnalysis.lapNumber + 1 : 1;
         lapAnalysis.unfinished = true;
@@ -51,34 +54,41 @@ public class AnalysisPdfParser {
         lapAnalysis = new LapAnalysis(lapAnalysis);
       }
     }
+    return lapAnalysis;
+  }
 
-    return toReturn;
+  private LapAnalysis resetLapAnalysisIfNecessary(List<LapAnalysis> toReturn, LapAnalysis lapAnalysis) {
+    if (lapAnalysis.time != null || lapAnalysis.pit || lapAnalysis.maxSpeed != null) {
+      toReturn.add(lapAnalysis);
+      lapAnalysis = new LapAnalysis(lapAnalysis);
+    }
+    return lapAnalysis;
   }
 
   private void updateFrontTyreAgeIfNecessary(LapAnalysis lap, String line) {
     int age = PdfParserUtils.parseFrontTyreAge(line);
-    if (age >= 0) {
+    if (lap != null && age >= 0) {
       lap.frontTyreLapNumber = age;
     }
   }
 
   private void updateRearTyreAgeIfNecessary(LapAnalysis lap, String line) {
     int age = PdfParserUtils.parseRearTyreAge(line);
-    if (age >= 0) {
+    if (lap != null && age >= 0) {
       lap.backTyreLapNumber = age;
     }
   }
 
   private void updateRearTyreIfNecessary(LapAnalysis lap, String line) {
     String s = PdfParserUtils.parseRearTyre(line);
-    if (s != null) {
+    if (lap != null && s != null) {
       lap.backTyre = s;
     }
   }
 
   private void updateFrontTyreIfNecessary(LapAnalysis lap, String line) {
     String s = PdfParserUtils.parseFrontTyre(line);
-    if (s != null) {
+    if (lap != null && s != null) {
       lap.frontTyre = s;
     }
   }

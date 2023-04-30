@@ -26,49 +26,31 @@ public class SessionFilesOutput {
   public static SessionFilesOutput from(Map<SessionFileType, PdfFile> session_files) {
     SessionFilesOutput output = new SessionFilesOutput();
     if (session_files != null) {
-      if (session_files.containsKey(SessionFileType.analysis_by_lap)) {
-        output.analysisByLap = session_files.get(SessionFileType.analysis_by_lap).url;
-      }
-      if (session_files.containsKey(SessionFileType.fast_lap_rider)) {
-        output.fastLapRider = session_files.get(SessionFileType.fast_lap_rider).url;
-      }
-      if (session_files.containsKey(SessionFileType.combined_classification)) {
-        output.combinedClassification = session_files.get(SessionFileType.combined_classification).url;
-      }
-      if (session_files.containsKey(SessionFileType.session)) {
-        output.session = session_files.get(SessionFileType.session).url;
-      }
-      if (session_files.containsKey(SessionFileType.best_partial_time)) {
-        output.bestPartialTime = session_files.get(SessionFileType.best_partial_time).url;
-      }
-      if (session_files.containsKey(SessionFileType.combined_practice)) {
-        output.combinedPractice = session_files.get(SessionFileType.combined_practice).url;
-      }
-      if (session_files.containsKey(SessionFileType.classification)) {
-        output.classification = session_files.get(SessionFileType.classification).url;
-      }
-      if (session_files.containsKey(SessionFileType.analysis)) {
-        output.analysis = session_files.get(SessionFileType.analysis).url;
-      }
-      if (session_files.containsKey(SessionFileType.maximum_speed)) {
-        output.maximumSpeed = session_files.get(SessionFileType.maximum_speed).url;
-      }
-      if (session_files.containsKey(SessionFileType.lap_chart)) {
-        output.lapChart = session_files.get(SessionFileType.lap_chart).url;
-      }
-      if (session_files.containsKey(SessionFileType.grid)) {
-        output.grid = session_files.get(SessionFileType.grid).url;
-      }
-      if (session_files.containsKey(SessionFileType.fast_lap_sequence)) {
-        output.fastLapSequence = session_files.get(SessionFileType.fast_lap_sequence).url;
-      }
-      if (session_files.containsKey(SessionFileType.average_speed)) {
-        output.averageSpeed = session_files.get(SessionFileType.average_speed).url;
-      }
-      if (session_files.containsKey(SessionFileType.world_standing)) {
-        output.worldStanding = session_files.get(SessionFileType.world_standing).url;
-      }
+      output.analysisByLap = getUrl(session_files, SessionFileType.ANALYSIS_BY_LAP);
+      output.fastLapRider = getUrl(session_files, SessionFileType.FAST_LAP_RIDER);
+      output.combinedClassification = getUrl(session_files, SessionFileType.COMBINED_CLASSIFICATION);
+      output.session = getUrl(session_files, SessionFileType.SESSION);
+      output.bestPartialTime = getUrl(session_files, SessionFileType.BEST_PARTIAL_TIME);
+      output.combinedPractice = getUrl(session_files, SessionFileType.COMBINED_PRACTICE);
+      output.classification = getUrl(session_files, SessionFileType.CLASSIFICATION);
+      output.analysis = getUrl(session_files, SessionFileType.ANALYSIS);
+      output.maximumSpeed = getUrl(session_files, SessionFileType.MAXIMUM_SPEED);
+      output.lapChart = getUrl(session_files, SessionFileType.LAP_CHART);
+      output.grid = getUrl(session_files, SessionFileType.GRID);
+      output.fastLapSequence = getUrl(session_files, SessionFileType.FAST_LAP_SEQUENCE);
+      output.averageSpeed = getUrl(session_files, SessionFileType.AVERAGE_SPEED);
+      output.worldStanding = getUrl(session_files, SessionFileType.WORLD_STANDING);
     }
     return output;
+  }
+
+  private static String getUrl(Map<SessionFileType, PdfFile> sessionFiles, SessionFileType analysisByLap) {
+    if (sessionFiles.containsKey(analysisByLap)) {
+      String value = sessionFiles.get(analysisByLap).url;
+      if (!"".equalsIgnoreCase(value)) {
+        return value;
+      }
+    }
+    return null;
   }
 }
