@@ -1,43 +1,44 @@
 package org.teknichrono.mgp.business.parser;
 
-import org.jboss.logging.Logger;
+import jakarta.enterprise.context.ApplicationScoped;
 import org.teknichrono.mgp.api.model.MaxSpeed;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
 
-import jakarta.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
 public class MaxSpeedPdfParser {
-  private static final Logger LOGGER = Logger.getLogger(MaxSpeedPdfParser.class);
 
-
-  public List<MaxSpeed> parse(String url, List<RiderClassification> ridersOfEvent, int year) throws PdfParsingException {
+  public List<MaxSpeed> parse(String url, List<RiderClassification> ridersOfEvent) throws PdfParsingException {
     List<MaxSpeed> toReturn = new ArrayList<>();
-    String[] lines = PdfParserUtils.readPdfLines(url);
-    boolean start = false;
-    boolean end = false;
-    for (String line : lines) {
-      if (start && !Character.isDigit(line.charAt(0))) {
-        end = true;
+    if (url != null) {
+      String[] lines = PdfParserUtils.readPdfLines(url);
+      boolean start = false;
+      boolean endReached = false;
+      for (String line : lines) {
+        endReached = endReached || (start && !Character.isDigit(line.charAt(0)));
+        if (start && !endReached) {
+          toReturn.add(parseLine(line, ridersOfEvent));
+        }
+        if (line.startsWith("Rider")) {
+          start = true;
+        }
       }
-      if (start && !end) {
-        toReturn.add(parseLine(line, ridersOfEvent, year));
-      }
-      if (line.startsWith("Rider")) {
-        start = true;
-      }
-    }
-    if (!start || !end) {
-      throw new PdfParsingException("Could not find the expected lines format in the PDF at " + url);
+      assertDocumentCorrectlyParsed(url, start, endReached);
     }
     return toReturn;
   }
 
-  MaxSpeed parseLine(String line, List<RiderClassification> ridersOfEvent, int year) throws PdfParsingException {
+  private void assertDocumentCorrectlyParsed(String url, boolean start, boolean endReached) throws PdfParsingException {
+    if (!start || !endReached) {
+      throw new PdfParsingException("Could not find the expected lines format in the PDF at " + url);
+    }
+  }
+
+  MaxSpeed parseLine(String line, List<RiderClassification> ridersOfEvent) throws PdfParsingException {
     MaxSpeed maxSpeed = new MaxSpeed();
-    parseRider(line, maxSpeed, ridersOfEvent, year);
+    parseRider(line, maxSpeed, ridersOfEvent);
     maxSpeed.speed = PdfParserUtils.parseSpeed(line);
     maxSpeed.nation = PdfParserUtils.parseNation(line);
     if (maxSpeed.testIfIncomplete()) {
@@ -46,7 +47,7 @@ public class MaxSpeedPdfParser {
     return maxSpeed;
   }
 
-  private void parseRider(String line, MaxSpeed maxSpeed, List<RiderClassification> ridersOfEvent, int year) {
+  private void parseRider(String line, MaxSpeed maxSpeed, List<RiderClassification> ridersOfEvent) {
     for (RiderClassification classification : ridersOfEvent) {
       if (line.startsWith(classification.rider.number.toString())) {
         maxSpeed.number = classification.rider.number;
