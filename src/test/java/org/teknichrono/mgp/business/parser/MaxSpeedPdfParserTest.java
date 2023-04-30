@@ -17,7 +17,7 @@ class MaxSpeedPdfParserTest {
   public void cantReadPdf() {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
     Assertions.assertThrows(PdfParsingException.class, () -> {
-      parser.parse("file://nowayitexists", new ArrayList<>(), 2022);
+      parser.parse("file://nowayitexists", new ArrayList<>());
     });
   }
 
@@ -26,7 +26,7 @@ class MaxSpeedPdfParserTest {
   public void canReadLine() throws PdfParsingException {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
     ArrayList<RiderClassification> riderDetails = getRiderDetails();
-    MaxSpeed maxSpeed = parser.parseLine("33 Brad BINDER RSA Red Bull KTM Factory Racing KTM 347.2", riderDetails, 2022);
+    MaxSpeed maxSpeed = parser.parseLine("33 Brad BINDER RSA Red Bull KTM Factory Racing KTM 347.2", riderDetails);
     Assertions.assertTrue(!maxSpeed.testIfIncomplete());
   }
 
@@ -50,7 +50,7 @@ class MaxSpeedPdfParserTest {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
     ArrayList<RiderClassification> riderDetails = getRiderDetails();
     Assertions.assertThrows(PdfParsingException.class, () -> {
-      parser.parseLine("33 Brad BINDER RSA Red Bull KTM Factory Racing KTM 347.2 somethingelse", new ArrayList<>(), 2022);
+      parser.parseLine("33 Brad BINDER RSA Red Bull KTM Factory Racing KTM 347.2 somethingelse", new ArrayList<>());
     });
   }
 

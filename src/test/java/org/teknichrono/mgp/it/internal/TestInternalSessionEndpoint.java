@@ -69,6 +69,12 @@ public class TestInternalSessionEndpoint {
 
   @Test
   public void getSession() {
+    String sessionString = given()
+        .when().get("/api/internal/session/2021/QAT/motogp/fp3")
+        .then()
+        .statusCode(200).extract().asString();
+
+
     Session session = given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp3")
         .then()

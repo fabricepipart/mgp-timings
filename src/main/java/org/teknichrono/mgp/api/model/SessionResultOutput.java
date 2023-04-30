@@ -27,8 +27,8 @@ public class SessionResultOutput extends SessionOutput {
 
   private void fillFromClassification(Classification c) {
     if (c.records != null && !c.records.isEmpty()) {
-      for (Record record : c.records) {
-        records.add(RecordOutput.from(record));
+      for (Record r : c.records) {
+        records.add(RecordOutput.from(r));
       }
     }
   }
