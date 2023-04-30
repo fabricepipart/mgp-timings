@@ -1,5 +1,8 @@
 package org.teknichrono.mgp.business.service;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.NotFoundException;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.teknichrono.mgp.api.model.LapAnalysis;
 import org.teknichrono.mgp.api.model.MaxSpeed;
@@ -15,14 +18,11 @@ import org.teknichrono.mgp.client.model.result.Event;
 import org.teknichrono.mgp.client.model.result.Session;
 import org.teknichrono.mgp.client.rest.ResultsClient;
 
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
-import jakarta.ws.rs.NotFoundException;
 import java.util.List;
 import java.util.Optional;
 
-import static org.teknichrono.mgp.client.model.result.SessionFileType.analysis;
-import static org.teknichrono.mgp.client.model.result.SessionFileType.maximum_speed;
+import static org.teknichrono.mgp.client.model.result.SessionFileType.ANALYSIS;
+import static org.teknichrono.mgp.client.model.result.SessionFileType.MAXIMUM_SPEED;
 
 @ApplicationScoped
 public class SessionService {
@@ -102,8 +102,8 @@ public class SessionService {
     }
     Session session = sessionOptional.get();
     Classification classifications = classificationsOptional.get();
-    if (session.session_files.keySet().contains(analysis) && session.session_files.get(analysis).url != null) {
-      String url = session.session_files.get(analysis).url;
+    if (session.session_files.keySet().contains(ANALYSIS) && session.session_files.get(ANALYSIS).url != null) {
+      String url = session.session_files.get(ANALYSIS).url;
       return Optional.of(analysisPdfParser.parse(url, classifications.classification));
 
     }
@@ -118,8 +118,8 @@ public class SessionService {
     }
     Session session = sessionOptional.get();
     Classification classifications = classificationsOptional.get();
-    if (session.session_files.keySet().contains(maximum_speed) && session.session_files.get(maximum_speed).url != null) {
-      String url = session.session_files.get(maximum_speed).url;
+    if (session.session_files.keySet().contains(MAXIMUM_SPEED) && session.session_files.get(MAXIMUM_SPEED).url != null) {
+      String url = session.session_files.get(MAXIMUM_SPEED).url;
       return Optional.of(maxSpeedPdfParser.parse(url, classifications.classification, year));
 
     }
