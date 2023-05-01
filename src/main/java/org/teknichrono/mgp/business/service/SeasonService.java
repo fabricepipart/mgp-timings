@@ -1,12 +1,13 @@
 package org.teknichrono.mgp.business.service;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.teknichrono.mgp.client.model.result.Season;
 import org.teknichrono.mgp.client.rest.ResultsClient;
 
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
 import java.util.List;
+import java.util.Optional;
 
 @ApplicationScoped
 public class SeasonService {
@@ -19,19 +20,19 @@ public class SeasonService {
     return resultsClient.getSeasons();
   }
 
-  public Season getSeason(int year) {
-    return resultsClient.getSeasons().stream().filter(s -> s.year == year).findFirst().get();
+  public Optional<Season> getSeason(int year) {
+    return resultsClient.getSeasons().stream().filter(s -> s.year == year).findFirst();
   }
 
   public List<Season> getTestSeasons() {
     return resultsClient.getTestSeasons(true);
   }
 
-  public Season getCurrentSeason() {
-    return resultsClient.getSeasons().stream().filter(s -> s.current).findAny().get();
+  public Optional<Season> getCurrentSeason() {
+    return resultsClient.getSeasons().stream().filter(s -> s.current).findAny();
   }
 
-  public Season getCurrentTestSeason() {
-    return resultsClient.getTestSeasons(true).stream().filter(s -> s.current).findAny().get();
+  public Optional<Season> getCurrentTestSeason() {
+    return resultsClient.getTestSeasons(true).stream().filter(s -> s.current).findAny();
   }
 }
