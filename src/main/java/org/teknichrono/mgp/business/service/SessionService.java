@@ -54,8 +54,12 @@ public class SessionService {
     if (event.isEmpty()) {
       return null;
     }
-    Category cat = categoryService.categoriesOfEvent(year, eventShortName)
-        .stream().filter(c -> c.name.toLowerCase().contains(category.toLowerCase())).findFirst().get();
+    Optional<Category> catOptional = categoryService.categoriesOfEvent(year, eventShortName)
+        .stream().filter(c -> c.name.toLowerCase().contains(category.toLowerCase())).findFirst();
+    if (catOptional.isEmpty()) {
+      return null;
+    }
+    Category cat = catOptional.get();
     List<Session> sessions = resultsClient.getSessions(event.get().id, cat.id);
     sessions.forEach(s -> s.test = event.get().test);
     return sessions;

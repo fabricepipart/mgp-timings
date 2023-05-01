@@ -82,6 +82,14 @@ public class TestSessionResultsEndpoint {
   }
 
   @Test
+  public void getSessionClassificationFailsBecauseOfCategory() {
+    given()
+        .when().get("/api/2021/QAT/MOTO9/fp3")
+        .then()
+        .statusCode(404);
+  }
+
+  @Test
   public void getTestClassificationDetailsError() {
     given()
         .when().get("/api/2022/MY1/GP/FP1")
