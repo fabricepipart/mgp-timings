@@ -2,7 +2,7 @@ package org.teknichrono.mgp.client.model.result;
 
 import java.util.List;
 
-public class Classification {
+public class SessionResults {
 
   public String file;
   public ClassificationFiles files;

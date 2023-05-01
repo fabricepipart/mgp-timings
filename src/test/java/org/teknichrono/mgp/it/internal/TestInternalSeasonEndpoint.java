@@ -29,7 +29,7 @@ class TestInternalSeasonEndpoint {
   CsvConverterFactory csvFactory;
 
   @Test
-  public void listsAllSeasons() {
+  void listsAllSeasons() {
     given()
         .when().get(" /api/internal/season")
         .then()
@@ -44,7 +44,7 @@ class TestInternalSeasonEndpoint {
   }
 
   @Test
-  public void listsAllSeasonsAsCsv() {
+  void listsAllSeasonsAsCsv() {
     String content = given()
         .when().get(" /api/internal/season/csv")
         .then()
@@ -63,7 +63,7 @@ class TestInternalSeasonEndpoint {
 
 
   @Test
-  public void listsAllSeasonsAsCsvFails() throws IOException {
+  void listsAllSeasonsAsCsvFails() throws IOException {
     CsvConverter<Season, Season> seasonCsvConverter = Mockito.mock(CsvConverter.class);
     Mockito.when(csvFactory.getSeasonCsvConverter()).thenReturn(seasonCsvConverter);
     Mockito.when(seasonCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
@@ -74,7 +74,7 @@ class TestInternalSeasonEndpoint {
   }
 
   @Test
-  public void listsAllTests() {
+  void listsAllTests() {
     given()
         .when().get(" /api/internal/season/test")
         .then()
@@ -88,7 +88,7 @@ class TestInternalSeasonEndpoint {
   }
 
   @Test
-  public void getCurrentSeason() {
+  void getCurrentSeason() {
     given()
         .when().get(" /api/internal/season/current")
         .then()
@@ -99,7 +99,7 @@ class TestInternalSeasonEndpoint {
   }
 
   @Test
-  public void getCurrentTest() {
+  void getCurrentTest() {
     given()
         .when().get(" /api/internal/season/current/test")
         .then()

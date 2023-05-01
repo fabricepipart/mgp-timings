@@ -19,7 +19,7 @@ public class TestSessionResultsEndpoint {
 
 
   @Test
-  public void getSessionClassification() {
+  void getSessionClassification() {
     SessionResultOutput classification = given()
         .when().get("/api/2021/QAT/motogp/fp3")
         .then()
@@ -66,7 +66,7 @@ public class TestSessionResultsEndpoint {
   }
 
   @Test
-  public void getSessionClassificationFailsBecauseOfSession() {
+  void getSessionClassificationFailsBecauseOfSession() {
     given()
         .when().get("/api/2021/QAT/motogp/fp9")
         .then()
@@ -74,7 +74,7 @@ public class TestSessionResultsEndpoint {
   }
 
   @Test
-  public void getSessionClassificationFailsBecauseOfEvent() {
+  void getSessionClassificationFailsBecauseOfEvent() {
     given()
         .when().get("/api/2021/NOP/motogp/fp3")
         .then()
@@ -82,7 +82,15 @@ public class TestSessionResultsEndpoint {
   }
 
   @Test
-  public void getTestClassificationDetailsError() {
+  void getSessionClassificationFailsBecauseOfCategory() {
+    given()
+        .when().get("/api/2021/QAT/MOTO9/fp3")
+        .then()
+        .statusCode(404);
+  }
+
+  @Test
+  void getTestClassificationDetailsError() {
     given()
         .when().get("/api/2022/MY1/GP/FP1")
         .then()
@@ -90,7 +98,7 @@ public class TestSessionResultsEndpoint {
   }
 
   @Test
-  public void getTestSessionClassification() {
+  void getTestSessionClassification() {
     SessionResultOutput classification = given()
         .when().get("/api/2022/JE1/GP/FP2")
         .then()
@@ -141,7 +149,7 @@ public class TestSessionResultsEndpoint {
 
 
   @Test
-  public void getRaceClassification() {
+  void getRaceClassification() {
     SessionResultOutput classification = given()
         .when().get("/api/2021/QAT/motogp/rac")
         .then()

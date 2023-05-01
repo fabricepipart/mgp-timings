@@ -30,7 +30,7 @@ public class CsvConverter<T extends CSVConvertible<Y>, Y> {
     return csvResult;
   }
 
-  private String getCsvString(List<Y> outputList, StatefulBeanToCsv beanToCsv) throws IOException {
+  private String getCsvString(List<Y> outputList, StatefulBeanToCsv<Y> beanToCsv) throws IOException {
     String csvResult;
     try {
       beanToCsv.write(outputList);
@@ -44,7 +44,7 @@ public class CsvConverter<T extends CSVConvertible<Y>, Y> {
   }
 
   StatefulBeanToCsv<Y> getBeanToCsv(Class<Y> beanClass) {
-    CustomMappingStrategy mappingStrategy = new CustomMappingStrategy();
+    CustomMappingStrategy<Y> mappingStrategy = new CustomMappingStrategy();
     mappingStrategy.setType(beanClass);
     return new StatefulBeanToCsvBuilder(this.writer).withMappingStrategy(mappingStrategy).build();
   }

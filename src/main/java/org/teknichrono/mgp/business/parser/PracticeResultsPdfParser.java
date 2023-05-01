@@ -4,8 +4,8 @@ import jakarta.enterprise.context.ApplicationScoped;
 import org.jboss.logging.Logger;
 import org.teknichrono.mgp.api.model.CountryOutput;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
-import org.teknichrono.mgp.client.model.result.Classification;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
+import org.teknichrono.mgp.client.model.result.SessionResults;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +19,7 @@ public class PracticeResultsPdfParser {
 
   private static final Logger LOGGER = Logger.getLogger(PracticeResultsPdfParser.class);
 
-  public List<SessionClassificationOutput> parse(Classification classifications) throws PdfParsingException {
+  public List<SessionClassificationOutput> parse(SessionResults classifications) throws PdfParsingException {
     List<SessionClassificationOutput> toReturn = getPartialResults(classifications.classification);
     if (classifications.files != null) {
       fillFromPdf(toReturn, classifications.files.classification);
