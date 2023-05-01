@@ -16,7 +16,7 @@ import static io.restassured.RestAssured.given;
 public class TestEventEndpoint {
 
   @Test
-  public void getOneParticularEvent() {
+  void getOneParticularEvent() {
     EventOutput event = given()
         .when().get(" /api/2021/QAT")
         .then()
@@ -31,7 +31,7 @@ public class TestEventEndpoint {
   }
 
   @Test
-  public void getOneParticularTest() {
+  void getOneParticularTest() {
     EventOutput event = given()
         .when().get(" /api/2022/JE1")
         .then()
@@ -45,7 +45,7 @@ public class TestEventEndpoint {
   }
 
   @Test
-  public void failToFindEvent() {
+  void failToFindEvent() {
     given()
         .when().get(" /api/2021/NOP")
         .then()
@@ -53,7 +53,7 @@ public class TestEventEndpoint {
   }
 
   @Test
-  public void failToFindEventBecauseOfYear() {
+  void failToFindEventBecauseOfYear() {
     given()
         .when().get(" /api/2299/NOP")
         .then()

@@ -18,10 +18,10 @@ import org.teknichrono.mgp.api.model.SessionRider;
 import org.teknichrono.mgp.business.parser.PdfParsingException;
 import org.teknichrono.mgp.business.service.RiderService;
 import org.teknichrono.mgp.business.service.SessionService;
-import org.teknichrono.mgp.client.model.result.Classification;
 import org.teknichrono.mgp.client.model.result.Entry;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
 import org.teknichrono.mgp.client.model.result.Session;
+import org.teknichrono.mgp.client.model.result.SessionResults;
 import org.teknichrono.mgp.csv.model.RiderClassificationCSV;
 import org.teknichrono.mgp.csv.model.SessionClassificationCSV;
 import org.teknichrono.mgp.csv.util.CsvConverterFactory;
@@ -129,8 +129,8 @@ public class InternalSessionEndpoint {
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
   @Path("/{year}/{eventShortName}/{category}/{session}/results")
-  public Classification getClassifications(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
-    Optional<Classification> results = sessionService.getResults(year, eventShortName, category, sessionShortName);
+  public SessionResults getClassifications(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
+    Optional<SessionResults> results = sessionService.getResults(year, eventShortName, category, sessionShortName);
     if (results.isEmpty()) {
       throw new NotFoundException(String.format("Could not find the results for session %s / %s of event %s of %d", sessionShortName, category, eventShortName, year));
     }
@@ -142,7 +142,7 @@ public class InternalSessionEndpoint {
   @Transactional
   @Deprecated(forRemoval = true)
   @Path("/test/{year}/{eventShortName}/{category}/{session}/results")
-  public Classification getTestClassifications(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
+  public SessionResults getTestClassifications(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     return getClassifications(year, eventShortName, category, sessionShortName);
   }
 

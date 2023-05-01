@@ -17,7 +17,7 @@ public class TestCategoryRidersEndpoint {
 
 
   @Test
-  public void listRidersOfCategoryOfEvent() {
+  void listRidersOfCategoryOfEvent() {
     CategoryRidersOutput riders = given()
         .when().get("/api/2021/QAT/GP/riders")
         .then()
@@ -35,7 +35,7 @@ public class TestCategoryRidersEndpoint {
   }
 
   @Test
-  public void errorIfCategoryDoesNotExist() {
+  void errorIfCategoryDoesNotExist() {
     given()
         .when().get("/api/2021/QAT/MOTO9/riders")
         .then()
@@ -43,7 +43,7 @@ public class TestCategoryRidersEndpoint {
   }
 
   @Test
-  public void errorIfCantFindRidersOfCategory() {
+  void errorIfCantFindRidersOfCategory() {
     given()
         .when().get("/api/2021/QAT/MOTO2/riders")
         .then()
@@ -52,7 +52,7 @@ public class TestCategoryRidersEndpoint {
 
 
   @Test
-  public void errorIfCantFindYear() {
+  void errorIfCantFindYear() {
     given()
         .when().get("/api/12021/QAT/GP/riders")
         .then()

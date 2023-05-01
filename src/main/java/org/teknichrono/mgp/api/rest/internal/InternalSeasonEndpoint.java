@@ -1,18 +1,20 @@
 package org.teknichrono.mgp.api.rest.internal;
 
-import org.teknichrono.mgp.business.service.SeasonService;
-import org.teknichrono.mgp.client.model.result.Season;
-import org.teknichrono.mgp.csv.util.CsvConverterFactory;
-
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.GET;
+import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.teknichrono.mgp.business.service.SeasonService;
+import org.teknichrono.mgp.client.model.result.Season;
+import org.teknichrono.mgp.csv.util.CsvConverterFactory;
+
 import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 
 @Path("/internal/season")
 public class InternalSeasonEndpoint {
@@ -56,7 +58,11 @@ public class InternalSeasonEndpoint {
   @Transactional
   @Path("/current")
   public Season current() {
-    return seasonService.getCurrentSeason();
+    Optional<Season> seasonOptional = seasonService.getCurrentSeason();
+    if (seasonOptional.isEmpty()) {
+      throw new NotFoundException("Could not find the current season");
+    }
+    return seasonOptional.get();
   }
 
   @GET
@@ -64,7 +70,11 @@ public class InternalSeasonEndpoint {
   @Transactional
   @Path("/current/test")
   public Season currentTest() {
-    return seasonService.getCurrentTestSeason();
+    Optional<Season> seasonOptional = seasonService.getCurrentTestSeason();
+    if (seasonOptional.isEmpty()) {
+      throw new NotFoundException("Could not find the current test season");
+    }
+    return seasonOptional.get();
   }
 
 }

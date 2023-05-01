@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.*;
 public class TestSessionTopSpeedsEndpoint {
 
   @Test
-  public void parsesMaxSpeedPdf() {
+  void parsesMaxSpeedPdf() {
     SessionTopSpeedsOutput speeds = given()
         .when().get("/api/2021/QAT/motogp/FP1/topspeed")
         .then()
@@ -37,7 +37,7 @@ public class TestSessionTopSpeedsEndpoint {
   }
 
   @Test
-  public void getSessionTopSpeedsFailsBecauseOfSession() {
+  void getSessionTopSpeedsFailsBecauseOfSession() {
     given()
         .when().get("/api/2021/QAT/motogp/fp9/topspeed")
         .then()
@@ -45,7 +45,7 @@ public class TestSessionTopSpeedsEndpoint {
   }
 
   @Test
-  public void getSessionTopSpeedsFailsBecauseOfEvent() {
+  void getSessionTopSpeedsFailsBecauseOfEvent() {
     given()
         .when().get("/api/2021/NOP/motogp/fp3/topspeed")
         .then()
@@ -53,7 +53,7 @@ public class TestSessionTopSpeedsEndpoint {
   }
 
   @Test
-  public void throwsErrorIfCantParsePdf() {
+  void throwsErrorIfCantParsePdf() {
     given()
         .when().get("/api/2021/QAT/motogp/FP2/topspeed")
         .then()
@@ -61,7 +61,7 @@ public class TestSessionTopSpeedsEndpoint {
   }
 
   @Test
-  public void throwsErrorIfNoPdfForTopSpeed() {
+  void throwsErrorIfNoPdfForTopSpeed() {
     given()
         .when().get("/api/2021/QAT/motogp/FP3/topspeed")
         .then()

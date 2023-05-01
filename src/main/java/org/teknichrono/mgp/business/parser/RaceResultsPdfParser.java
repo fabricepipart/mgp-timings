@@ -3,8 +3,8 @@ package org.teknichrono.mgp.business.parser;
 import jakarta.enterprise.context.ApplicationScoped;
 import org.teknichrono.mgp.api.model.CountryOutput;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
-import org.teknichrono.mgp.client.model.result.Classification;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
+import org.teknichrono.mgp.client.model.result.SessionResults;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 @ApplicationScoped
 public class RaceResultsPdfParser {
 
-  public List<SessionClassificationOutput> parse(Classification classifications) throws PdfParsingException {
+  public List<SessionClassificationOutput> parse(SessionResults classifications) throws PdfParsingException {
     List<SessionClassificationOutput> partialResults = getPartialResults(classifications.classification);
     return fillFromPdf(partialResults, classifications.file);
   }

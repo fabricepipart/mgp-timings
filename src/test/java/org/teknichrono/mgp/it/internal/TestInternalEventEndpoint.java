@@ -21,7 +21,7 @@ public class TestInternalEventEndpoint {
 
 
   @Test
-  public void listsAllEvents() {
+  void listsAllEvents() {
     given()
         .when().get(" /api/internal/event/2021")
         .then()
@@ -36,7 +36,7 @@ public class TestInternalEventEndpoint {
   }
 
   @Test
-  public void listsAllEventsNames() {
+  void listsAllEventsNames() {
     List<String> list = given()
         .when().get(" /api/internal/event/2021/names")
         .then()
@@ -47,7 +47,7 @@ public class TestInternalEventEndpoint {
 
 
   @Test
-  public void listsAllTests() {
+  void listsAllTests() {
     given()
         .when().get(" /api/internal/event/test/2022")
         .then()
@@ -62,7 +62,7 @@ public class TestInternalEventEndpoint {
   }
 
   @Test
-  public void listsAllTestsNames() {
+  void listsAllTestsNames() {
     List<String> list = given()
         .when().get(" /api/internal/event/test/2022/names")
         .then()
@@ -72,7 +72,7 @@ public class TestInternalEventEndpoint {
   }
 
   @Test
-  public void getOneParticularEvent() {
+  void getOneParticularEvent() {
     Event event = given()
         .when().get(" /api/internal/event/2021/QAT")
         .then()
@@ -87,7 +87,7 @@ public class TestInternalEventEndpoint {
   }
 
   @Test
-  public void getOneParticularTest() {
+  void getOneParticularTest() {
     Event event = given()
         .when().get(" /api/internal/event/test/2022/JE1")
         .then()
@@ -101,7 +101,7 @@ public class TestInternalEventEndpoint {
   }
 
   @Test
-  public void getMissingEvent() {
+  void getMissingEvent() {
     given()
         .when().get(" /api/internal/event/2021/NOP")
         .then()
@@ -110,7 +110,7 @@ public class TestInternalEventEndpoint {
   }
 
   @Test
-  public void getMissingTest() {
+  void getMissingTest() {
     given()
         .when().get(" /api/internal/event/test/2022/NOP")
         .then()

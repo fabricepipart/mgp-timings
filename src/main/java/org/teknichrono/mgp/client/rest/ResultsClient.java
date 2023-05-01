@@ -1,17 +1,17 @@
 package org.teknichrono.mgp.client.rest;
 
-import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
-import org.teknichrono.mgp.client.model.result.Category;
-import org.teknichrono.mgp.client.model.result.Classification;
-import org.teknichrono.mgp.client.model.result.EntryList;
-import org.teknichrono.mgp.client.model.result.Event;
-import org.teknichrono.mgp.client.model.result.Season;
-import org.teknichrono.mgp.client.model.result.Session;
-
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.QueryParam;
+import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
+import org.teknichrono.mgp.client.model.result.Category;
+import org.teknichrono.mgp.client.model.result.EntryList;
+import org.teknichrono.mgp.client.model.result.Event;
+import org.teknichrono.mgp.client.model.result.Season;
+import org.teknichrono.mgp.client.model.result.Session;
+import org.teknichrono.mgp.client.model.result.SessionResults;
+
 import java.util.List;
 
 @RegisterRestClient(configKey = "results-api")
@@ -55,11 +55,11 @@ public interface ResultsClient {
 
   @GET
   @Path("/session/{session}/classifications")
-  Classification getClassification(@PathParam("session") String session);
+  SessionResults getClassification(@PathParam("session") String session);
 
   @GET
   @Path("/session/{session}/test-classifications")
-  Classification getTestClassification(@PathParam("session") String session);
+  SessionResults getTestClassification(@PathParam("session") String session);
 
 
 // $seasons_url = "http://localhost:8089/api/results-front/be/results-api/seasons?test=1";
