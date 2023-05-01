@@ -1,13 +1,5 @@
 package org.teknichrono.mgp.api.rest;
 
-import org.jboss.logging.Logger;
-import org.teknichrono.mgp.api.model.SessionClassificationOutput;
-import org.teknichrono.mgp.api.model.SessionResultOutput;
-import org.teknichrono.mgp.api.rest.internal.InternalSessionEndpoint;
-import org.teknichrono.mgp.business.parser.PdfParsingException;
-import org.teknichrono.mgp.client.model.result.Classification;
-import org.teknichrono.mgp.client.model.result.Session;
-
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.InternalServerErrorException;
@@ -16,6 +8,14 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
+import org.jboss.logging.Logger;
+import org.teknichrono.mgp.api.model.SessionClassificationOutput;
+import org.teknichrono.mgp.api.model.SessionResultOutput;
+import org.teknichrono.mgp.api.rest.internal.InternalSessionEndpoint;
+import org.teknichrono.mgp.business.parser.PdfParsingException;
+import org.teknichrono.mgp.client.model.result.Session;
+import org.teknichrono.mgp.client.model.result.SessionResults;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -30,12 +30,12 @@ public class SessionResultsEndpoint extends SessionEndpoint {
   @Path("/{year}/{eventShortName}/{category}/{shortSessionName}")
   public SessionResultOutput getSessionResult(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String categoryName, @PathParam("shortSessionName") String shortSessionName) {
     try {
-      Optional<Classification> resultsOptional = sessionService.getResults(year, eventShortName, categoryName, shortSessionName);
+      Optional<SessionResults> resultsOptional = sessionService.getResults(year, eventShortName, categoryName, shortSessionName);
       if (resultsOptional.isEmpty()) {
         throw new NotFoundException(String.format("Could not find results of session %s of category %s of %s in %d", shortSessionName, categoryName, eventShortName, year));
       }
       Session session = getSession(year, eventShortName, categoryName, shortSessionName);
-      Classification results = resultsOptional.get();
+      SessionResults results = resultsOptional.get();
       List<SessionClassificationOutput> resultDetails = sessionService.getResultDetails(year, eventShortName, categoryName, shortSessionName);
       return SessionResultOutput.from(session, results, resultDetails);
     } catch (PdfParsingException e) {

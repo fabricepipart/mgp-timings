@@ -17,7 +17,7 @@ public class TestCategoryEndpoint {
 
 
   @Test
-  public void listsAllSessionsOfCategoryOfEvent() {
+  void listsAllSessionsOfCategoryOfEvent() {
     CategoryOutput categoryOutput = given()
         .when().get("/api/2021/QAT/motogp")
         .then()
@@ -30,7 +30,7 @@ public class TestCategoryEndpoint {
   }
 
   @Test
-  public void errorIfCategoryDoesNotExist() {
+  void errorIfCategoryDoesNotExist() {
     given()
         .when().get("/api/2021/QAT/MOTO9")
         .then()
@@ -38,7 +38,7 @@ public class TestCategoryEndpoint {
   }
 
   @Test
-  public void errorIfYearDoesNotExist() {
+  void errorIfYearDoesNotExist() {
     given()
         .when().get("/api/12021/QAT/MOTOGP")
         .then()
@@ -46,7 +46,7 @@ public class TestCategoryEndpoint {
   }
 
   @Test
-  public void listsAllSessionsOfCategoryOfTest() {
+  void listsAllSessionsOfCategoryOfTest() {
     CategoryOutput categoryOutput = given()
         .when().get("/api/2022/JE1/GP")
         .then()

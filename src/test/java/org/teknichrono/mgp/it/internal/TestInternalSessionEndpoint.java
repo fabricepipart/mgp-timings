@@ -10,10 +10,10 @@ import org.mockito.Mockito;
 import org.teknichrono.mgp.api.model.LapAnalysis;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
 import org.teknichrono.mgp.api.model.SessionRider;
-import org.teknichrono.mgp.client.model.result.Classification;
 import org.teknichrono.mgp.client.model.result.Entry;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
 import org.teknichrono.mgp.client.model.result.Session;
+import org.teknichrono.mgp.client.model.result.SessionResults;
 import org.teknichrono.mgp.csv.model.RiderClassificationCSV;
 import org.teknichrono.mgp.csv.model.SessionClassificationCSV;
 import org.teknichrono.mgp.csv.util.CsvConverter;
@@ -42,7 +42,7 @@ public class TestInternalSessionEndpoint {
   CsvConverterFactory csvFactory;
 
   @Test
-  public void listsAllSessionsOfCategoryOfEvent() {
+  void listsAllSessionsOfCategoryOfEvent() {
     given()
         .when().get("/api/internal/session/2021/QAT/motogp")
         .then()
@@ -55,7 +55,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void listsAllSessionsOfCategoryOfTest() {
+  void listsAllSessionsOfCategoryOfTest() {
     given()
         .when().get("/api/internal/session/test/2022/JE1/GP")
         .then()
@@ -68,7 +68,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getSession() {
+  void getSession() {
     String sessionString = given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp3")
         .then()
@@ -91,7 +91,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getSessionFails() {
+  void getSessionFails() {
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/FP9")
         .then()
@@ -99,7 +99,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getTestSession() {
+  void getTestSession() {
     Session session = given()
         .when().get("/api/internal/session/test/2022/JE1/GP/FP2")
         .then()
@@ -117,7 +117,7 @@ public class TestInternalSessionEndpoint {
 
 
   @Test
-  public void listRidersFails() {
+  void listRidersFails() {
     given()
         .when().get("/api/internal/session/2021/NOP/GP/riders")
         .then()
@@ -126,7 +126,7 @@ public class TestInternalSessionEndpoint {
 
 
   @Test
-  public void listRidersOfCategoryOfEvent() {
+  void listRidersOfCategoryOfEvent() {
     List<Entry> riders = given()
         .when().get("/api/internal/session/2021/QAT/GP/riders")
         .then()
@@ -140,7 +140,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void listRidersDetailsOfCategoryOfEvent() {
+  void listRidersDetailsOfCategoryOfEvent() {
     List<SessionRider> riders = given()
         .when().get("/api/internal/session/2021/QAT/GP/ridersdetails")
         .then()
@@ -159,7 +159,7 @@ public class TestInternalSessionEndpoint {
 
 
   @Test
-  public void listRidersDetailsFails() {
+  void listRidersDetailsFails() {
     given()
         .when().get("/api/internal/session/2021/NOP/GP/ridersdetails")
         .then()
@@ -167,7 +167,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void parsesMaxSpeedPdf() {
+  void parsesMaxSpeedPdf() {
     List<Map> speeds = given()
         .when().get("/api/internal/session/2021/QAT/motogp/FP1/topspeed")
         .then()
@@ -188,7 +188,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void throwsErrorIfCantParsePdf() {
+  void throwsErrorIfCantParsePdf() {
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/FP2/topspeed")
         .then()
@@ -196,7 +196,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void throwsErrorIfNoPdfForTopSpeed() {
+  void throwsErrorIfNoPdfForTopSpeed() {
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/FP3/topspeed")
         .then()
@@ -204,20 +204,20 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getSessionClassification() {
-    Classification classification = given()
+  void getSessionClassification() {
+    SessionResults sessionResults = given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp3/results")
         .then()
-        .statusCode(200).extract().as(Classification.class);
-    assertThat(classification.classification.size()).isEqualTo(22);
-    assertThat(classification.classification.get(0).rider.full_name).containsIgnoringCase("Franco");
-    assertThat(classification.classification.get(0).total_laps).isEqualTo(17);
-    assertThat(classification.file).isNotNull();
-    assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("bestLap")).findFirst().get().rider.full_name).containsIgnoringCase("Lorenzo");
+        .statusCode(200).extract().as(SessionResults.class);
+    assertThat(sessionResults.classification.size()).isEqualTo(22);
+    assertThat(sessionResults.classification.get(0).rider.full_name).containsIgnoringCase("Franco");
+    assertThat(sessionResults.classification.get(0).total_laps).isEqualTo(17);
+    assertThat(sessionResults.file).isNotNull();
+    assertThat(sessionResults.records.stream().filter(r -> r.type.equalsIgnoreCase("bestLap")).findFirst().get().rider.full_name).containsIgnoringCase("Lorenzo");
   }
 
   @Test
-  public void getSessionClassificationFails() {
+  void getSessionClassificationFails() {
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp9/results")
         .then()
@@ -225,34 +225,34 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getTestSessionClassification() {
-    Classification classification = given()
+  void getTestSessionClassification() {
+    SessionResults sessionResults = given()
         .when().get("/api/internal/session/test/2022/JE1/GP/FP2/results")
         .then()
-        .statusCode(200).extract().as(Classification.class);
-    assertThat(classification.classification.size()).isEqualTo(29);
-    assertThat(classification.classification.get(0).rider.full_name).containsIgnoringCase("Francesco");
-    assertThat(classification.classification.get(0).total_laps).isEqualTo(42);
-    assertThat(classification.files).isNotNull();
+        .statusCode(200).extract().as(SessionResults.class);
+    assertThat(sessionResults.classification.size()).isEqualTo(29);
+    assertThat(sessionResults.classification.get(0).rider.full_name).containsIgnoringCase("Francesco");
+    assertThat(sessionResults.classification.get(0).total_laps).isEqualTo(42);
+    assertThat(sessionResults.files).isNotNull();
   }
 
 
   @Test
-  public void getRaceClassification() {
-    Classification classification = given()
+  void getRaceClassification() {
+    SessionResults sessionResults = given()
         .when().get("/api/internal/session/2021/QAT/motogp/rac/results")
         .then()
-        .statusCode(200).extract().as(Classification.class);
-    assertThat(classification.classification.size()).isEqualTo(22);
-    assertThat(classification.classification.get(0).position).isEqualTo(1);
-    assertThat(classification.classification.get(0).total_laps).isEqualTo(22);
-    assertThat(classification.file).containsIgnoringCase("Classification.pdf");
-    assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("poleLap")).findFirst().get().rider.full_name).containsIgnoringCase("Bagnaia");
+        .statusCode(200).extract().as(SessionResults.class);
+    assertThat(sessionResults.classification.size()).isEqualTo(22);
+    assertThat(sessionResults.classification.get(0).position).isEqualTo(1);
+    assertThat(sessionResults.classification.get(0).total_laps).isEqualTo(22);
+    assertThat(sessionResults.file).containsIgnoringCase("Classification.pdf");
+    assertThat(sessionResults.records.stream().filter(r -> r.type.equalsIgnoreCase("poleLap")).findFirst().get().rider.full_name).containsIgnoringCase("Bagnaia");
   }
 
 
   @Test
-  public void getSessionClassificationAsCsv() {
+  void getSessionClassificationAsCsv() {
     String content = given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/csv")
         .then()
@@ -270,7 +270,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getSessionClassificationAsCsvFails() throws IOException {
+  void getSessionClassificationAsCsvFails() throws IOException {
     CsvConverter<RiderClassification, RiderClassificationCSV> classificationCsvConverter = Mockito.mock(CsvConverter.class);
     Mockito.when(csvFactory.getRiderCsvConverter()).thenReturn(classificationCsvConverter);
     Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
@@ -282,7 +282,7 @@ public class TestInternalSessionEndpoint {
 
 
   @Test
-  public void getRaceClassificationDetails() {
+  void getRaceClassificationDetails() {
     List<SessionClassificationOutput> details = given()
         .when().get("/api/internal/session/2021/QAT/motogp/rac/results/details")
         .then()
@@ -329,7 +329,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getRaceClassificationDetailsFails() {
+  void getRaceClassificationDetailsFails() {
     given()
         .when().get("/api/internal/session/2021/NOP/motogp/rac/results/details")
         .then()
@@ -337,7 +337,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getRaceClassificationDetailsAsCsv() {
+  void getRaceClassificationDetailsAsCsv() {
     String content = given()
         .when().get("/api/internal/session/2021/QAT/motogp/rac/results/details/csv")
         .then()
@@ -353,7 +353,7 @@ public class TestInternalSessionEndpoint {
 
 
   @Test
-  public void getPracticeClassificationDetailsError() {
+  void getPracticeClassificationDetailsError() {
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp4/results/details")
         .then()
@@ -361,7 +361,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getPracticeClassificationDetails() {
+  void getPracticeClassificationDetails() {
     List<SessionClassificationOutput> details = given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/details")
         .then()
@@ -404,7 +404,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getTestClassificationDetails() {
+  void getTestClassificationDetails() {
     List<SessionClassificationOutput> details = given()
         .when().get("/api/internal/session/test/2022/JE1/GP/FP2/results/details")
         .then()
@@ -453,7 +453,7 @@ public class TestInternalSessionEndpoint {
 
 
   @Test
-  public void getTestClassificationDetailsError() {
+  void getTestClassificationDetailsError() {
     given()
         .when().get("/api/internal/session/test/2022/MY1/GP/FP1/results/details")
         .then()
@@ -461,7 +461,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getPracticeClassificationDetailsAsCsv() {
+  void getPracticeClassificationDetailsAsCsv() {
     String content = given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/details/csv")
         .then()
@@ -476,7 +476,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getTestPracticeClassificationDetailsAsCsv() {
+  void getTestPracticeClassificationDetailsAsCsv() {
     String content = given()
         .when().get("/api/internal/session/test/2022/JE1/motogp/fp2/results/details/csv")
         .then()
@@ -493,7 +493,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void throwsErrorIfCantParsePdfWhenRaceClassificationDetails() {
+  void throwsErrorIfCantParsePdfWhenRaceClassificationDetails() {
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/FP2/topspeed")
         .then()
@@ -501,7 +501,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getPracticeClassificationDetailsAsCsvFails() throws IOException {
+  void getPracticeClassificationDetailsAsCsvFails() throws IOException {
     CsvConverter<SessionClassificationOutput, SessionClassificationCSV> classificationCsvConverter = Mockito.mock(CsvConverter.class);
     Mockito.when(csvFactory.getClassificationCsvConverter()).thenReturn(classificationCsvConverter);
     Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
@@ -512,7 +512,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getTestPracticeClassificationDetailsAsCsvFails() throws IOException {
+  void getTestPracticeClassificationDetailsAsCsvFails() throws IOException {
     CsvConverter<SessionClassificationOutput, SessionClassificationCSV> classificationCsvConverter = Mockito.mock(CsvConverter.class);
     Mockito.when(csvFactory.getClassificationCsvConverter()).thenReturn(classificationCsvConverter);
     Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
@@ -523,7 +523,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getTestAnalysis() {
+  void getTestAnalysis() {
     List<LapAnalysis> details = given()
         .when().get("/api/internal/session/test/2022/JE1/motogp/FP2/analysis")
         .then()
@@ -547,7 +547,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void throwsErrorIfCantParseTestAnalysisPdf() {
+  void throwsErrorIfCantParseTestAnalysisPdf() {
     given()
         .when().get("/api/internal/session/test/2022/JE1/motogp/fp1/analysis")
         .then()
@@ -555,7 +555,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void throws404IfCantFindTestAnalysis() {
+  void throws404IfCantFindTestAnalysis() {
     given()
         .when().get("/api/internal/session/test/2022/MY1/motogp/fp1/analysis")
         .then()
@@ -563,7 +563,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getPracticeAnalysis() {
+  void getPracticeAnalysis() {
     List<LapAnalysis> details = given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp3/analysis")
         .then()
@@ -622,7 +622,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void throwsErrorIfCantParseAnalysisPdf() {
+  void throwsErrorIfCantParseAnalysisPdf() {
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp2/analysis")
         .then()
@@ -630,7 +630,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void throwsErrorIfNoAnalysisPdf() {
+  void throwsErrorIfNoAnalysisPdf() {
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp4/analysis")
         .then()
@@ -638,7 +638,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getRaceAnalysis() {
+  void getRaceAnalysis() {
     List<LapAnalysis> details = given()
         .when().get("/api/internal/session/2021/QAT/motogp/RAC/analysis")
         .then()
@@ -694,7 +694,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getPracticeAnalysisAsCsv() {
+  void getPracticeAnalysisAsCsv() {
     String content = given()
         .when().get("/api/internal/session/2021/QAT/motogp/RAC/analysis/csv")
         .then()
@@ -711,7 +711,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getTestPracticeAnalysisAsCsv() {
+  void getTestPracticeAnalysisAsCsv() {
     String content = given()
         .when().get("/api/internal/session/test/2022/JE1/motogp/FP2/analysis/csv")
         .then()
@@ -730,7 +730,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getPracticeAnalysisAsCsvFails() throws IOException {
+  void getPracticeAnalysisAsCsvFails() throws IOException {
     CsvConverter<LapAnalysis, LapAnalysis> lapAnalysisCsvConverter = Mockito.mock(CsvConverter.class);
     Mockito.when(csvFactory.getLapAnalysisCsvConverter()).thenReturn(lapAnalysisCsvConverter);
     Mockito.when(lapAnalysisCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
@@ -741,7 +741,7 @@ public class TestInternalSessionEndpoint {
   }
 
   @Test
-  public void getTestPracticeAnalysisAsCsvFails() throws IOException {
+  void getTestPracticeAnalysisAsCsvFails() throws IOException {
     CsvConverter<LapAnalysis, LapAnalysis> lapAnalysisCsvConverter = Mockito.mock(CsvConverter.class);
     Mockito.when(csvFactory.getLapAnalysisCsvConverter()).thenReturn(lapAnalysisCsvConverter);
     Mockito.when(lapAnalysisCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));

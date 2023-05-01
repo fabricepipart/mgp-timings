@@ -17,7 +17,7 @@ class TestInternalRiderEndpoint {
 
 
   @Test
-  public void getRiderInfo() {
+  void getRiderInfo() {
     RiderDetails riderDetails = given()
         .when().get("/api/internal/rider/8150")
         .then()

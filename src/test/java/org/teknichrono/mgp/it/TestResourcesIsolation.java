@@ -15,7 +15,7 @@ public class TestResourcesIsolation {
   private static final Logger LOGGER = Logger.getLogger(TestResourcesIsolation.class);
 
   @Test
-  public void makeSureAllResourcesUseWiremock() throws Exception {
+  void makeSureAllResourcesUseWiremock() throws Exception {
     ensureIsolation("__files");
   }
 

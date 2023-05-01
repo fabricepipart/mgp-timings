@@ -23,7 +23,7 @@ public class TestSessionAnalysisEndpoint {
 
 
   @Test
-  public void getTestAnalysis() {
+  void getTestAnalysis() {
     SessionAnalysisOutput analysis = given()
         .when().get("/api/2022/JE1/motogp/FP2/analysis")
         .then()
@@ -47,7 +47,7 @@ public class TestSessionAnalysisEndpoint {
 
 
   @Test
-  public void getSessionAnalysisFailsBecauseOfSession() {
+  void getSessionAnalysisFailsBecauseOfSession() {
     given()
         .when().get("/api/2021/QAT/motogp/fp9/analysis")
         .then()
@@ -55,7 +55,7 @@ public class TestSessionAnalysisEndpoint {
   }
 
   @Test
-  public void getSessionAnalysisFailsBecauseOfEvent() {
+  void getSessionAnalysisFailsBecauseOfEvent() {
     given()
         .when().get("/api/2021/NOP/motogp/fp3/analysis")
         .then()
@@ -63,7 +63,7 @@ public class TestSessionAnalysisEndpoint {
   }
 
   @Test
-  public void throwsErrorIfCantParseTestAnalysisPdf() {
+  void throwsErrorIfCantParseTestAnalysisPdf() {
     given()
         .when().get("/api/2022/JE1/motogp/fp1/analysis")
         .then()
@@ -72,7 +72,7 @@ public class TestSessionAnalysisEndpoint {
 
 
   @Test
-  public void getPracticeAnalysis() {
+  void getPracticeAnalysis() {
     SessionAnalysisOutput analysis = given()
         .when().get("/api/2021/QAT/motogp/fp3/analysis")
         .then()
@@ -131,7 +131,7 @@ public class TestSessionAnalysisEndpoint {
 
 
   @Test
-  public void getRaceAnalysis() {
+  void getRaceAnalysis() {
     SessionAnalysisOutput analysis = given()
         .when().get("/api/2021/QAT/motogp/RAC/analysis")
         .then()

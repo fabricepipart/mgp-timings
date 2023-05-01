@@ -19,7 +19,7 @@ public class TestInternalCategoryEndpoint {
 
 
   @Test
-  public void listsAllCategoriesOfEvent() {
+  void listsAllCategoriesOfEvent() {
     given()
         .when().get("/api/internal/category/2021/QAT")
         .then()
@@ -31,7 +31,7 @@ public class TestInternalCategoryEndpoint {
   }
 
   @Test
-  public void containsThreeCategories() {
+  void containsThreeCategories() {
     given()
         .when().get("/api/internal/category/2021/ITA")
         .then()
@@ -44,7 +44,7 @@ public class TestInternalCategoryEndpoint {
 
 
   @Test
-  public void listsAllCategoriesOfTest() {
+  void listsAllCategoriesOfTest() {
     given()
         .when().get("/api/internal/category/test/2022/JE1")
         .then()
@@ -57,7 +57,7 @@ public class TestInternalCategoryEndpoint {
 
 
   @Test
-  public void listsDetailsOfCategoryOfEvent() {
+  void listsDetailsOfCategoryOfEvent() {
     Category cat = given()
         .when().get("/api/internal/category/2021/ITA/MOTO3")
         .then()
@@ -68,7 +68,7 @@ public class TestInternalCategoryEndpoint {
 
 
   @Test
-  public void listsDetailsOfCategoryOfTest() {
+  void listsDetailsOfCategoryOfTest() {
     Category cat = given()
         .when().get("/api/internal/category/test/2022/JE1/GP")
         .then()

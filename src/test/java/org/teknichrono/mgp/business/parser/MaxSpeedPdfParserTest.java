@@ -14,7 +14,7 @@ class MaxSpeedPdfParserTest {
 
 
   @Test
-  public void cantReadPdf() {
+  void cantReadPdf() {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
     Assertions.assertThrows(PdfParsingException.class, () -> {
       parser.parse("file://nowayitexists", new ArrayList<>());
@@ -23,7 +23,7 @@ class MaxSpeedPdfParserTest {
 
 
   @Test
-  public void canReadLine() throws PdfParsingException {
+  void canReadLine() throws PdfParsingException {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
     ArrayList<RiderClassification> riderDetails = getRiderDetails();
     MaxSpeed maxSpeed = parser.parseLine("33 Brad BINDER RSA Red Bull KTM Factory Racing KTM 347.2", riderDetails);
@@ -46,7 +46,7 @@ class MaxSpeedPdfParserTest {
 
 
   @Test
-  public void cantReadLine() {
+  void cantReadLine() {
     MaxSpeedPdfParser parser = new MaxSpeedPdfParser();
     ArrayList<RiderClassification> riderDetails = getRiderDetails();
     Assertions.assertThrows(PdfParsingException.class, () -> {

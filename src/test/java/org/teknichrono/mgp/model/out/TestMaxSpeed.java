@@ -7,7 +7,7 @@ import org.teknichrono.mgp.api.model.MaxSpeed;
 class TestMaxSpeed {
 
   @Test
-  public void isCompleteUntilAllFilled() {
+  void isCompleteUntilAllFilled() {
     MaxSpeed speed = new MaxSpeed();
     Assertions.assertTrue(speed.testIfIncomplete());
     speed.number = 5;

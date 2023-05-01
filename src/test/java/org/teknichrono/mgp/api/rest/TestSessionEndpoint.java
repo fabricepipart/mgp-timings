@@ -1,5 +1,6 @@
 package org.teknichrono.mgp.api.rest;
 
+import jakarta.ws.rs.NotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -9,7 +10,6 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.teknichrono.mgp.business.service.SessionService;
 
-import jakarta.ws.rs.NotFoundException;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -29,7 +29,7 @@ class TestSessionEndpoint {
   }
 
   @Test
-  public void notFoundExceptionIfSessionNotFound() {
+  void notFoundExceptionIfSessionNotFound() {
     assertThrows(NotFoundException.class, () -> sessionEndpoint.getSession(2021, "QAT", "MOTOGP", "FP1"));
   }
 

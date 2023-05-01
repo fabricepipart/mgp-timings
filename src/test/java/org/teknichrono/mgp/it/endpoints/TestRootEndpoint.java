@@ -4,8 +4,8 @@ import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.teknichrono.mgp.it.WireMockExtensions;
 import org.teknichrono.mgp.api.model.RootOutput;
+import org.teknichrono.mgp.it.WireMockExtensions;
 
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.*;
@@ -17,7 +17,7 @@ public class TestRootEndpoint {
 
 
   @Test
-  public void listsAllSeasons() {
+  void listsAllSeasons() {
     RootOutput rootOutput = given()
         .when().get(" /api/")
         .then()
