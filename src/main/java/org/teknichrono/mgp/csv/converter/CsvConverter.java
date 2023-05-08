@@ -1,4 +1,4 @@
-package org.teknichrono.mgp.csv.util;
+package org.teknichrono.mgp.csv.converter;
 
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
@@ -13,8 +13,6 @@ import java.util.stream.Collectors;
 
 public class CsvConverter<T extends CSVConvertible<Y>, Y> {
 
-  public static final String CONTENT_DISPOSITION_HEADER = "Content-Disposition";
-  public static final String ATTACHMENT_FILENAME = "attachment;filename=";
   private static final Logger LOGGER = Logger.getLogger(CsvConverter.class);
 
   private StringWriter writer = new StringWriter();

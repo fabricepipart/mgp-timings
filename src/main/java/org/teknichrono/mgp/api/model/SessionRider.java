@@ -5,8 +5,10 @@ import org.teknichrono.mgp.client.model.rider.RiderAttributes;
 import org.teknichrono.mgp.client.model.rider.RiderBiography;
 import org.teknichrono.mgp.client.model.rider.RiderCountry;
 import org.teknichrono.mgp.client.model.rider.RiderDetails;
+import org.teknichrono.mgp.csv.converter.CSVConvertible;
+import org.teknichrono.mgp.csv.model.SessionRiderCSV;
 
-public class SessionRider {
+public class SessionRider implements CSVConvertible<SessionRiderCSV> {
 
   public Boolean wildcard;
   public Integer replacement;
@@ -49,5 +51,10 @@ public class SessionRider {
     this.legacy_id = rider.legacy_id;
     this.merchandise_url = rider.merchandise_url;
     this.published = rider.published;
+  }
+
+  @Override
+  public SessionRiderCSV toCsv() {
+    return SessionRiderCSV.from(this);
   }
 }

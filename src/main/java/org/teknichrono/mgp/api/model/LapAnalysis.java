@@ -2,7 +2,7 @@ package org.teknichrono.mgp.api.model;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
-import org.teknichrono.mgp.csv.util.CSVConvertible;
+import org.teknichrono.mgp.csv.converter.CSVConvertible;
 
 public class LapAnalysis implements CSVConvertible<LapAnalysis> {
 
