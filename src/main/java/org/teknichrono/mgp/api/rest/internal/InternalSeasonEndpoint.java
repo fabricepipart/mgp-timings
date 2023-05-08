@@ -10,7 +10,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import org.teknichrono.mgp.business.service.SeasonService;
 import org.teknichrono.mgp.client.model.result.Season;
-import org.teknichrono.mgp.csv.util.CsvConverterFactory;
+import org.teknichrono.mgp.csv.converter.CsvConverterFactory;
 
 import java.io.IOException;
 import java.util.List;
@@ -38,7 +38,7 @@ public class InternalSeasonEndpoint {
   @Transactional
   public Response listAllToCsv() {
     try {
-      String csvResults = csvConverterFactory.getSeasonCsvConverter().convertToCsv(seasonService.getSeasons(), Season.class);
+      String csvResults = csvConverterFactory.getCsvConverter(Season.class).convertToCsv(seasonService.getSeasons());
       return Response.ok().entity(csvResults).header("Content-Disposition", "attachment;filename=seasons.csv").build();
     } catch (IOException e) {
       return Response.serverError().build();
