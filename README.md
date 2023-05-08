@@ -21,8 +21,7 @@ found [here](https://mgp-timings.teknichrono.fr/swagger?format=json)
 
 The Swagger UI is available even on production for now [here](https://mgp-timings.teknichrono.fr/swagger-ui)
 
-### Main services
-
+### Main services (JSON)
 
 | Service                                                                                                       | URL | Description                                                                                                            |
 |---------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------|
@@ -33,6 +32,18 @@ The Swagger UI is available even on production for now [here](https://mgp-timing
 | [Session results summary](https://mgp-timings.teknichrono.fr/api/2023/POR/GP/FP3)                             | */api/{year}/{eventShortName}/{category}/{session}/* | Results of that sessions                                                                                               |
 | [Lap by lap analysis of a session](https://mgp-timings.teknichrono.fr/api/2023/POR/GP/RAC/analysis)           | */api/{year}/{eventShortName}/{category}/{session}/analysis* | All the laps done by each rider, tyres used, max speed ... (from PDF)                                                  |
 | [Top speeds of the session](https://mgp-timings.teknichrono.fr/api/2023/POR/GP/Q2/topspeed)                   | */api/{year}/{eventShortName}/{category}/{session}/topspeed* | Summary of top speeds (from PDF)                                                                                       |
+
+### CSV services (CSV)
+
+| Service                                                                                                       | URL | Description                                                                                                            |
+|---------------------------------------------------------------------------------------------------------------|-----|------------------------------------------------------------------------------------------------------------------------|
+| [List all races and tests of a given year](https://mgp-timings.teknichrono.fr/api/csv/2023)                   | */api/csv/{year}*| Get all the 3 letters acronyms for each event of the year. Referenced as `eventShortName` below                        |
+| [List info and sessions of an event](https://mgp-timings.teknichrono.fr/api/csv/2023/POR)                         | */api/csv/{year}/{eventShortName}/* | All categories that took part in that event |
+| [List info about an event](https://mgp-timings.teknichrono.fr/api/csv/2023/POR/GP)                                | */api/csv/{year}/{eventShortName}/{category}* | All sessions for that category and event. Category is either `MOTO3`, `MOTO2`, `GP`                                    |
+| [List all riders of a given event and category](https://mgp-timings.teknichrono.fr/api/csv/2023/POR/MOTO3/riders) | */api/csv/{year}/{eventShortName}/{category}/riders* | All riders that participated to that event in that category. With all details.                                         |
+| [Session results summary](https://mgp-timings.teknichrono.fr/api/csv/2023/POR/GP/FP3)                             | */api/csv/{year}/{eventShortName}/{category}/{session}/* | Results of that sessions                                                                                               |
+| [Lap by lap analysis of a session](https://mgp-timings.teknichrono.fr/api/csv/2023/POR/GP/RAC/analysis)           | */api/csv/{year}/{eventShortName}/{category}/{session}/analysis* | All the laps done by each rider, tyres used, max speed ... (from PDF)                                                  |
+| [Top speeds of the session](https://mgp-timings.teknichrono.fr/api/csv/2023/POR/GP/Q2/topspeed)                   | */api/csv/{year}/{eventShortName}/{category}/{session}/topspeed* | Summary of top speeds (from PDF)                                                                                       |
 
 ### Deprecated services
 
