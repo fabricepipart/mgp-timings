@@ -2,9 +2,10 @@ package org.teknichrono.mgp.client.model.result;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
-import org.teknichrono.mgp.csv.util.CSVConvertible;
+import org.teknichrono.mgp.csv.model.SeasonCSV;
+import org.teknichrono.mgp.csv.converter.CSVConvertible;
 
-public class Season implements CSVConvertible<Season> {
+public class Season implements CSVConvertible<SeasonCSV> {
 
   @CsvBindByName(column = "YEAR")
   @CsvBindByPosition(position = 0)
@@ -19,7 +20,7 @@ public class Season implements CSVConvertible<Season> {
   public boolean current;
 
   @Override
-  public Season toCsv() {
-    return this;
+  public SeasonCSV toCsv() {
+    return SeasonCSV.from(this);
   }
 }

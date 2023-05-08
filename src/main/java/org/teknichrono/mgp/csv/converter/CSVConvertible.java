@@ -1,4 +1,4 @@
-package org.teknichrono.mgp.csv.util;
+package org.teknichrono.mgp.csv.converter;
 
 public interface CSVConvertible<T> {
 
