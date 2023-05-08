@@ -1,11 +1,13 @@
 package org.teknichrono.mgp.client.model.result;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.teknichrono.mgp.csv.converter.CSVConvertible;
+import org.teknichrono.mgp.csv.model.SessionCSV;
 
 import java.util.Map;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Session {
+public class Session implements CSVConvertible<SessionCSV> {
 
   public static final String RACE_TYPE = "RAC";
 
@@ -25,6 +27,11 @@ public class Session {
       return type + number;
     }
     return type;
+  }
+
+  @Override
+  public SessionCSV toCsv() {
+    return SessionCSV.from(this);
   }
 }
 
