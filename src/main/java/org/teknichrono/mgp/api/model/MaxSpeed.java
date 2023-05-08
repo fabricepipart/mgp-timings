@@ -1,6 +1,9 @@
 package org.teknichrono.mgp.api.model;
 
-public class MaxSpeed {
+import org.teknichrono.mgp.csv.converter.CSVConvertible;
+import org.teknichrono.mgp.csv.model.MaxSpeedCSV;
+
+public class MaxSpeed implements CSVConvertible<MaxSpeedCSV> {
 
   public Integer number;
   public String rider;
@@ -15,5 +18,10 @@ public class MaxSpeed {
 
   public String toString() {
     return String.format("[number=%d,rider=%s,nation=%s,team=%s,motorcycle=%s,speed=%f]", number, rider, nation, team, motorcycle, speed);
+  }
+
+  @Override
+  public MaxSpeedCSV toCsv() {
+    return MaxSpeedCSV.from(this);
   }
 }
