@@ -1,4 +1,4 @@
-package org.teknichrono.mgp.csv.util;
+package org.teknichrono.mgp.csv.converter;
 
 import com.opencsv.bean.BeanField;
 import com.opencsv.bean.ColumnPositionMappingStrategy;

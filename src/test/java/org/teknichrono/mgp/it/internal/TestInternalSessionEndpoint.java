@@ -14,10 +14,8 @@ import org.teknichrono.mgp.client.model.result.Entry;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
 import org.teknichrono.mgp.client.model.result.Session;
 import org.teknichrono.mgp.client.model.result.SessionResults;
-import org.teknichrono.mgp.csv.model.RiderClassificationCSV;
-import org.teknichrono.mgp.csv.model.SessionClassificationCSV;
-import org.teknichrono.mgp.csv.util.CsvConverter;
-import org.teknichrono.mgp.csv.util.CsvConverterFactory;
+import org.teknichrono.mgp.csv.converter.CsvConverterFactory;
+import org.teknichrono.mgp.csv.converter.CsvConverterInterface;
 import org.teknichrono.mgp.it.WireMockExtensions;
 
 import java.io.IOException;
@@ -271,9 +269,9 @@ public class TestInternalSessionEndpoint {
 
   @Test
   void getSessionClassificationAsCsvFails() throws IOException {
-    CsvConverter<RiderClassification, RiderClassificationCSV> classificationCsvConverter = Mockito.mock(CsvConverter.class);
-    Mockito.when(csvFactory.getRiderCsvConverter()).thenReturn(classificationCsvConverter);
-    Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
+    CsvConverterInterface classificationCsvConverter = Mockito.mock(CsvConverterInterface.class);
+    Mockito.when(csvFactory.getCsvConverter(RiderClassification.class)).thenReturn(classificationCsvConverter);
+    Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList())).thenThrow(new IOException("Nope"));
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/csv")
         .then()
@@ -502,9 +500,9 @@ public class TestInternalSessionEndpoint {
 
   @Test
   void getPracticeClassificationDetailsAsCsvFails() throws IOException {
-    CsvConverter<SessionClassificationOutput, SessionClassificationCSV> classificationCsvConverter = Mockito.mock(CsvConverter.class);
-    Mockito.when(csvFactory.getClassificationCsvConverter()).thenReturn(classificationCsvConverter);
-    Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
+    CsvConverterInterface classificationCsvConverter = Mockito.mock(CsvConverterInterface.class);
+    Mockito.when(csvFactory.getCsvConverter(SessionClassificationOutput.class)).thenReturn(classificationCsvConverter);
+    Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList())).thenThrow(new IOException("Nope"));
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/fp3/results/details/csv")
         .then()
@@ -513,9 +511,9 @@ public class TestInternalSessionEndpoint {
 
   @Test
   void getTestPracticeClassificationDetailsAsCsvFails() throws IOException {
-    CsvConverter<SessionClassificationOutput, SessionClassificationCSV> classificationCsvConverter = Mockito.mock(CsvConverter.class);
-    Mockito.when(csvFactory.getClassificationCsvConverter()).thenReturn(classificationCsvConverter);
-    Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
+    CsvConverterInterface classificationCsvConverter = Mockito.mock(CsvConverterInterface.class);
+    Mockito.when(csvFactory.getCsvConverter(SessionClassificationOutput.class)).thenReturn(classificationCsvConverter);
+    Mockito.when(classificationCsvConverter.convertToCsv(Mockito.anyList())).thenThrow(new IOException("Nope"));
     given()
         .when().get("/api/internal/session/test/2022/JE1/motogp/fp2/results/details/csv")
         .then()
@@ -731,9 +729,9 @@ public class TestInternalSessionEndpoint {
 
   @Test
   void getPracticeAnalysisAsCsvFails() throws IOException {
-    CsvConverter<LapAnalysis, LapAnalysis> lapAnalysisCsvConverter = Mockito.mock(CsvConverter.class);
-    Mockito.when(csvFactory.getLapAnalysisCsvConverter()).thenReturn(lapAnalysisCsvConverter);
-    Mockito.when(lapAnalysisCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
+    CsvConverterInterface lapAnalysisCsvConverter = Mockito.mock(CsvConverterInterface.class);
+    Mockito.when(csvFactory.getCsvConverter(LapAnalysis.class)).thenReturn(lapAnalysisCsvConverter);
+    Mockito.when(lapAnalysisCsvConverter.convertToCsv(Mockito.anyList())).thenThrow(new IOException("Nope"));
     given()
         .when().get("/api/internal/session/2021/QAT/motogp/RAC/analysis/csv")
         .then()
@@ -742,9 +740,9 @@ public class TestInternalSessionEndpoint {
 
   @Test
   void getTestPracticeAnalysisAsCsvFails() throws IOException {
-    CsvConverter<LapAnalysis, LapAnalysis> lapAnalysisCsvConverter = Mockito.mock(CsvConverter.class);
-    Mockito.when(csvFactory.getLapAnalysisCsvConverter()).thenReturn(lapAnalysisCsvConverter);
-    Mockito.when(lapAnalysisCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
+    CsvConverterInterface lapAnalysisCsvConverter = Mockito.mock(CsvConverterInterface.class);
+    Mockito.when(csvFactory.getCsvConverter(LapAnalysis.class)).thenReturn(lapAnalysisCsvConverter);
+    Mockito.when(lapAnalysisCsvConverter.convertToCsv(Mockito.anyList())).thenThrow(new IOException("Nope"));
     given()
         .when().get("/api/internal/session/test/2022/JE1/motogp/FP2/analysis/csv")
         .then()

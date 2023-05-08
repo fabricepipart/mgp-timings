@@ -22,19 +22,15 @@ import org.teknichrono.mgp.client.model.result.Entry;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
 import org.teknichrono.mgp.client.model.result.Session;
 import org.teknichrono.mgp.client.model.result.SessionResults;
-import org.teknichrono.mgp.csv.model.RiderClassificationCSV;
-import org.teknichrono.mgp.csv.model.SessionClassificationCSV;
-import org.teknichrono.mgp.csv.util.CsvConverterFactory;
+import org.teknichrono.mgp.csv.converter.CsvConverterFactory;
+import org.teknichrono.mgp.csv.rest.CSVEndpoint;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
-import static org.teknichrono.mgp.csv.util.CsvConverter.ATTACHMENT_FILENAME;
-import static org.teknichrono.mgp.csv.util.CsvConverter.CONTENT_DISPOSITION_HEADER;
-
 @Path("/internal/session")
-public class InternalSessionEndpoint {
+public class InternalSessionEndpoint extends CSVEndpoint {
 
   private static final Logger LOGGER = Logger.getLogger(InternalSessionEndpoint.class);
 
@@ -154,7 +150,7 @@ public class InternalSessionEndpoint {
   public Response listAllToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     try {
       List<RiderClassification> classification = this.getClassifications(year, eventShortName, category, sessionShortName).classification;
-      String csvResults = csvConverterFactory.getRiderCsvConverter().convertToCsv(classification, RiderClassificationCSV.class);
+      String csvResults = csvConverterFactory.getCsvConverter(RiderClassification.class).convertToCsv(classification);
       String filename = String.format("sessions-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
       return Response.ok().entity(csvResults).header(CONTENT_DISPOSITION_HEADER, ATTACHMENT_FILENAME + filename).build();
     } catch (IOException e) {
@@ -193,7 +189,7 @@ public class InternalSessionEndpoint {
     try {
       String csvResults;
       List<SessionClassificationOutput> details = getClassificationsPdfDetails(year, eventShortName, category, sessionShortName);
-      csvResults = csvConverterFactory.getClassificationCsvConverter().convertToCsv(details, SessionClassificationCSV.class);
+      csvResults = csvConverterFactory.getCsvConverter(SessionClassificationOutput.class).convertToCsv(details);
       String filename = String.format("classification-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
       return Response.ok().entity(csvResults).header(CONTENT_DISPOSITION_HEADER, ATTACHMENT_FILENAME + filename).build();
     } catch (IOException e) {
@@ -208,7 +204,7 @@ public class InternalSessionEndpoint {
   public Response getTestClassificationsPdfDetailsToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     try {
       List<SessionClassificationOutput> details = getTestClassificationsPdfDetails(year, eventShortName, category, sessionShortName);
-      String csvResults = csvConverterFactory.getClassificationCsvConverter().convertToCsv(details, SessionClassificationCSV.class);
+      String csvResults = csvConverterFactory.getCsvConverter(SessionClassificationOutput.class).convertToCsv(details);
       String filename = String.format("test-classification-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
       return Response.ok().entity(csvResults).header(CONTENT_DISPOSITION_HEADER, ATTACHMENT_FILENAME + filename).build();
     } catch (IOException e) {
@@ -249,7 +245,7 @@ public class InternalSessionEndpoint {
   public Response getAnalysisToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     try {
       List<LapAnalysis> lapAnalysis = getAnalysis(year, eventShortName, category, sessionShortName);
-      String csvResults = csvConverterFactory.getLapAnalysisCsvConverter().convertToCsv(lapAnalysis, LapAnalysis.class);
+      String csvResults = csvConverterFactory.getCsvConverter(LapAnalysis.class).convertToCsv(lapAnalysis);
       String filename = String.format("analysis-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
       return Response.ok().entity(csvResults).header(CONTENT_DISPOSITION_HEADER, ATTACHMENT_FILENAME + filename).build();
     } catch (IOException e) {
@@ -265,7 +261,7 @@ public class InternalSessionEndpoint {
   public Response getTestAnalysisToCsv(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     try {
       List<LapAnalysis> lapAnalysis = getTestAnalysis(year, eventShortName, category, sessionShortName);
-      String csvResults = csvConverterFactory.getLapAnalysisCsvConverter().convertToCsv(lapAnalysis, LapAnalysis.class);
+      String csvResults = csvConverterFactory.getCsvConverter(LapAnalysis.class).convertToCsv(lapAnalysis);
       String filename = String.format("test-analysis-%d-%s-%s-%s.csv", year, eventShortName.toLowerCase(), category.toLowerCase(), sessionShortName.toLowerCase());
       return Response.ok().entity(csvResults).header(CONTENT_DISPOSITION_HEADER, ATTACHMENT_FILENAME + filename).build();
     } catch (IOException e) {
