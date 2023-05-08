@@ -1,5 +1,6 @@
-package org.teknichrono.mgp.csv.util;
+package org.teknichrono.mgp.csv.converter;
 
+import com.opencsv.bean.MappingStrategy;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
@@ -13,8 +14,6 @@ import java.util.stream.Collectors;
 
 public class CsvConverter<T extends CSVConvertible<Y>, Y> {
 
-  public static final String CONTENT_DISPOSITION_HEADER = "Content-Disposition";
-  public static final String ATTACHMENT_FILENAME = "attachment;filename=";
   private static final Logger LOGGER = Logger.getLogger(CsvConverter.class);
 
   private StringWriter writer = new StringWriter();
@@ -44,9 +43,9 @@ public class CsvConverter<T extends CSVConvertible<Y>, Y> {
   }
 
   StatefulBeanToCsv<Y> getBeanToCsv(Class<Y> beanClass) {
-    CustomMappingStrategy<Y> mappingStrategy = new CustomMappingStrategy();
+    MappingStrategy<Y> mappingStrategy = new CustomMappingStrategy<>();
     mappingStrategy.setType(beanClass);
-    return new StatefulBeanToCsvBuilder(this.writer).withMappingStrategy(mappingStrategy).build();
+    return new StatefulBeanToCsvBuilder<Y>(this.writer).withMappingStrategy(mappingStrategy).build();
   }
 
 }

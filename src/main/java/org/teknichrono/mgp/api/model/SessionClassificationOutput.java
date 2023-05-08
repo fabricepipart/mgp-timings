@@ -2,7 +2,7 @@ package org.teknichrono.mgp.api.model;
 
 import org.teknichrono.mgp.client.model.result.RiderClassification;
 import org.teknichrono.mgp.csv.model.SessionClassificationCSV;
-import org.teknichrono.mgp.csv.util.CSVConvertible;
+import org.teknichrono.mgp.csv.converter.CSVConvertible;
 
 public class SessionClassificationOutput implements CSVConvertible<SessionClassificationCSV> {
 
