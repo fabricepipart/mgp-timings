@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.teknichrono.mgp.client.model.result.Season;
-import org.teknichrono.mgp.csv.util.CsvConverter;
-import org.teknichrono.mgp.csv.util.CsvConverterFactory;
+import org.teknichrono.mgp.csv.converter.CsvConverterFactory;
+import org.teknichrono.mgp.csv.converter.CsvConverterInterface;
 import org.teknichrono.mgp.it.WireMockExtensions;
 
 import java.io.IOException;
@@ -55,18 +55,17 @@ class TestInternalSeasonEndpoint {
 
     assertThat(lines.size()).isEqualTo(75);
     assertThat(lines.get(0)).contains("YEAR");
-    assertThat(lines.get(0)).contains("ID");
     assertThat(lines.get(0)).contains("CURRENT");
-    assertThat(lines).anyMatch(s -> s.chars().filter(c -> c == ',').count() == 2);
+    assertThat(lines).anyMatch(s -> s.chars().filter(c -> c == ',').count() == 1);
     assertThat(lines).noneMatch(s -> s.contains("null"));
   }
 
 
   @Test
   void listsAllSeasonsAsCsvFails() throws IOException {
-    CsvConverter<Season, Season> seasonCsvConverter = Mockito.mock(CsvConverter.class);
-    Mockito.when(csvFactory.getSeasonCsvConverter()).thenReturn(seasonCsvConverter);
-    Mockito.when(seasonCsvConverter.convertToCsv(Mockito.anyList(), Mockito.any())).thenThrow(new IOException("Nope"));
+    CsvConverterInterface seasonCsvConverter = Mockito.mock(CsvConverterInterface.class);
+    Mockito.when(csvFactory.getCsvConverter(Season.class)).thenReturn(seasonCsvConverter);
+    Mockito.when(seasonCsvConverter.convertToCsv(Mockito.anyList())).thenThrow(new IOException("Nope"));
     given()
         .when().get("/api/internal/season/csv")
         .then()
