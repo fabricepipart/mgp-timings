@@ -25,6 +25,7 @@
 
         <wiremock.version>2.35.0</wiremock.version>
 
+        <sonar.projectKey>fabricepipart_mgp-timings</sonar.projectKey>
         <sonar.organization>fabricepipart</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
