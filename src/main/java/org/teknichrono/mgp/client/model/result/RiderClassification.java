@@ -1,7 +1,7 @@
 package org.teknichrono.mgp.client.model.result;
 
 import org.teknichrono.mgp.csv.model.RiderClassificationCSV;
-import org.teknichrono.mgp.csv.util.CSVConvertible;
+import org.teknichrono.mgp.csv.converter.CSVConvertible;
 
 public class RiderClassification implements CSVConvertible<RiderClassificationCSV> {
 
