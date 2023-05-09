@@ -1,4 +1,4 @@
-package org.teknichrono.mgp.csv.util;
+package org.teknichrono.mgp.csv.converter;
 
 import com.opencsv.bean.BeanField;
 import com.opencsv.bean.ColumnPositionMappingStrategy;
@@ -14,7 +14,7 @@ class CustomMappingStrategy<T> extends ColumnPositionMappingStrategy<T> {
 
     String[] header = new String[numColumns];
 
-    BeanField beanField;
+    BeanField<T, Integer> beanField;
     for (int i = 0; i < numColumns; i++) {
       beanField = findField(i);
       String columnHeaderName = extractHeaderName(beanField);
@@ -23,7 +23,7 @@ class CustomMappingStrategy<T> extends ColumnPositionMappingStrategy<T> {
     return header;
   }
 
-  private String extractHeaderName(final BeanField beanField) {
+  private String extractHeaderName(final BeanField<T, Integer> beanField) {
     if (beanField == null || beanField.getField() == null || beanField.getField().getDeclaredAnnotationsByType(
         CsvBindByName.class).length == 0) {
       return StringUtils.EMPTY;
