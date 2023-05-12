@@ -14,6 +14,16 @@ import org.teknichrono.mgp.client.model.result.SessionResults;
 
 import java.util.List;
 
+/**
+ * Used to be
+ * <p>
+ * seasons_url = "http://localhost:8089/api/results-front/be/results-api/seasons?test=1";
+ * events_url = "http://localhost:8089/api/results-front/be/results-api/season/$season/events?finished=1";
+ * categories_url = "http://localhost:8089/api/results-front/be/results-api/event/$event/categories";
+ * sessions_url = "http://localhost:8089/api/results-front/be/results-api/event/$event/category/category/$category/sessions";
+ * results_url = "http://localhost:8089/api/results-front/be/results-api/session/$sesion/classifications"
+ * results_url = "http://localhost:8089/api/results-front/be/results-api/session/$sesion/test-classifications"
+ */
 @RegisterRestClient(configKey = "results-api")
 public interface ResultsClient {
 
@@ -62,10 +72,4 @@ public interface ResultsClient {
   SessionResults getTestClassification(@PathParam("session") String session);
 
 
-// $seasons_url = "http://localhost:8089/api/results-front/be/results-api/seasons?test=1";
-// $events_url = "http://localhost:8089/api/results-front/be/results-api/season/$season/events?finished=1";
-// $categories_url = "http://localhost:8089/api/results-front/be/results-api/event/$event/categories";
-// $sessions_url = "http://localhost:8089/api/results-front/be/results-api/event/$event/category/category/$category/sessions";
-// $results_url = "http://localhost:8089/api/results-front/be/results-api/session/$sesion/classifications"
-// $results_url = "http://localhost:8089/api/results-front/be/results-api/session/$sesion/test-classifications"
 }
