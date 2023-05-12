@@ -1,9 +1,12 @@
 package org.teknichrono.mgp.client.model.result;
 
+import org.teknichrono.mgp.csv.model.EventCSV;
+import org.teknichrono.mgp.csv.converter.CSVConvertible;
+
 import java.util.List;
 import java.util.Map;
 
-public class Event {
+public class Event implements CSVConvertible<EventCSV> {
 
   public String id;
   public String name;
@@ -16,4 +19,9 @@ public class Event {
   public Map<String, PdfFile> event_files;
   public boolean test;
   public String short_name;
+
+  @Override
+  public EventCSV toCsv() {
+    return EventCSV.from(this);
+  }
 }
