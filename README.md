@@ -49,14 +49,14 @@ The Swagger UI is available even on production for now [here](https://mgp-timing
 
 | Service | URL | Description |
 |---------|-----|-------------|
-| [List all races of a given year](https://mgp-timings.teknichrono.fr/event/2022/names) | */event/{year}/names*| Get all the 3 letters acronyms for each event of the year. Referenced as `eventShortName` below |
-| [List info about an event](https://mgp-timings.teknichrono.fr/session/2022/FRA/GP) | */session/{year}/{eventShortName}/{category}* | All info about an event (conditions, sessions, PDF files available...). Category is either `MOTO3`, `MOTO2`, `GP` |
-| [List all riders of a given race](https://mgp-timings.teknichrono.fr/session/2022/FRA/MOTO3/riders) | */session/{year}/{eventShortName}/{category}/riders* | All riders that participated to that event in that category |
-| [Session results summary](https://mgp-timings.teknichrono.fr/session/2022/QAT/GP/FP3/results/details) | */session/{year}/{eventShortName}/{category}/{session}/results/details* | Results in a simplified table format |
-| [Session results summary as CSV](https://mgp-timings.teknichrono.fr/session/2022/QAT/GP/FP3/results/details/csv) | */session/{year}/{eventShortName}/{category}/{session}/results/details/csv* | Same as above but in a CSV format  |
-| [Details of a session](https://mgp-timings.teknichrono.fr/session/2022/FRA/GP/RAC/analysis) | */session/{year}/{eventShortName}/{category}/{session}/analysis* | All the laps done by each rider, tyres used, max speed ... (from PDF) |
-| [Details of a session as CSV](https://mgp-timings.teknichrono.fr/session/2022/FRA/GP/RAC/analysis/csv) | */session/{year}/{eventShortName}/{category}/{session}/analysis/csv* | Same as above but in a CSV format |
-| [Top speeds of the session](https://mgp-timings.teknichrono.fr/session/2022/QAT/GP/Q2/topspeed)  | */session/{year}/{eventShortName}/{category}/{session}/topspeed* | Summary of top speeds (from PDF) |
+| [List all races of a given year](https://mgp-timings.teknichrono.fr/api/internal/event/2022/names) | */api/internal/event/{year}/names*| Get all the 3 letters acronyms for each event of the year. Referenced as `eventShortName` below |
+| [List info about an event](https://mgp-timings.teknichrono.fr/api/internal/session/2022/FRA/GP) | */api/internal/session/{year}/{eventShortName}/{category}* | All info about an event (conditions, sessions, PDF files available...). Category is either `MOTO3`, `MOTO2`, `GP` |
+| [List all riders of a given race](https://mgp-timings.teknichrono.fr/api/internal/session/2022/FRA/MOTO3/riders) | */api/internal/session/{year}/{eventShortName}/{category}/riders* | All riders that participated to that event in that category |
+| [Session results summary](https://mgp-timings.teknichrono.fr/api/internal/session/2022/QAT/GP/FP3/results/details) | */api/internal/session/{year}/{eventShortName}/{category}/{session}/results/details* | Results in a simplified table format |
+| [Session results summary as CSV](https://mgp-timings.teknichrono.fr/api/internal/session/2022/QAT/GP/FP3/results/details/csv) | */api/internal/session/{year}/{eventShortName}/{category}/{session}/results/details/csv* | Same as above but in a CSV format  |
+| [Details of a session](https://mgp-timings.teknichrono.fr/api/internal/session/2022/FRA/GP/RAC/analysis) | */api/internal/session/{year}/{eventShortName}/{category}/{session}/analysis* | All the laps done by each rider, tyres used, max speed ... (from PDF) |
+| [Details of a session as CSV](https://mgp-timings.teknichrono.fr/api/internal/session/2022/FRA/GP/RAC/analysis/csv) | */api/internal/session/{year}/{eventShortName}/{category}/{session}/analysis/csv* | Same as above but in a CSV format |
+| [Top speeds of the session](https://mgp-timings.teknichrono.fr/api/internal/session/2022/QAT/GP/Q2/topspeed)  | */api/internal/session/{year}/{eventShortName}/{category}/{session}/topspeed* | Summary of top speeds (from PDF) |
 
 Please note that there are many more services, please consult the Swagger UI for more info.
 
