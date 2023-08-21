@@ -48,31 +48,11 @@ public class InternalSeasonEndpoint {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Transactional
-  @Path("/test")
-  public List<Season> tests() {
-    return seasonService.getTestSeasons();
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
   @Path("/current")
   public Season current() {
     Optional<Season> seasonOptional = seasonService.getCurrentSeason();
     if (seasonOptional.isEmpty()) {
       throw new NotFoundException("Could not find the current season");
-    }
-    return seasonOptional.get();
-  }
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  @Transactional
-  @Path("/current/test")
-  public Season currentTest() {
-    Optional<Season> seasonOptional = seasonService.getCurrentTestSeason();
-    if (seasonOptional.isEmpty()) {
-      throw new NotFoundException("Could not find the current test season");
     }
     return seasonOptional.get();
   }
