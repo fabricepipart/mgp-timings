@@ -19,6 +19,7 @@ public class TestSessionResultsEndpoint {
 
 
   @Test
+  @Tag("live")
   void getSessionClassification() {
     SessionResultOutput classification = given()
         .when().get("/api/2021/QAT/motogp/fp3")
@@ -98,6 +99,7 @@ public class TestSessionResultsEndpoint {
   }
 
   @Test
+  @Tag("live")
   void getTestSessionClassification() {
     SessionResultOutput classification = given()
         .when().get("/api/2022/JE1/GP/FP2")
@@ -149,6 +151,7 @@ public class TestSessionResultsEndpoint {
 
 
   @Test
+  @Tag("live")
   void getRaceClassification() {
     SessionResultOutput classification = given()
         .when().get("/api/2021/QAT/motogp/rac")
