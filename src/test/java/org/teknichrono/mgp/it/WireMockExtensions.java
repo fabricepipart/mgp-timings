@@ -19,6 +19,10 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
 
   @Override
   public Map<String, String> start() {
+    if ("false".equals(System.getProperty("mgp-timings.mocking"))) {
+      return Map.of();
+    }
+
     wireMockServer = new WireMockServer(8089);
     wireMockServer.start();
     configureFor(8089);
