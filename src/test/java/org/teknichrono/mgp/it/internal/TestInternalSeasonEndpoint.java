@@ -34,13 +34,13 @@ class TestInternalSeasonEndpoint {
         .when().get(" /api/internal/season")
         .then()
         .statusCode(200)
-        .body("$.size()", is(74),
+        .body("$.size()", is(75),
             "[0].current", is(Boolean.TRUE),
-            "[0].id", is("db8dc197-c7b2-4c1b-b3a4-6dc534c014ef"),
-            "[0].year", is(2022),
+            "[0].id", is("db8dc197-c7b2-4c1b-b3a4-6dc534c023ef"),
+            "[0].year", is(2023),
             "[73].current", is(Boolean.FALSE),
-            "[73].id", is("72de1fab-255c-4b9a-9d4b-79ce47ab61c5"),
-            "[73].year", is(1949));
+            "[74].id", is("72de1fab-255c-4b9a-9d4b-79ce47ab61c5"),
+            "[74].year", is(1949));
   }
 
   @Test
@@ -53,7 +53,7 @@ class TestInternalSeasonEndpoint {
 
     List<String> lines = content.lines().collect(Collectors.toList());
 
-    assertThat(lines).hasSize(75);
+    assertThat(lines).hasSize(76);
     assertThat(lines.get(0))
         .contains("YEAR")
         .contains("CURRENT");
@@ -75,39 +75,14 @@ class TestInternalSeasonEndpoint {
   }
 
   @Test
-  void listsAllTests() {
-    given()
-        .when().get(" /api/internal/season/test")
-        .then()
-        .statusCode(200)
-        .body("$.size()", is(8),
-            "[0].current", is(Boolean.TRUE),
-            "[0].id", is("db8dc197-c7b2-4c1b-b3a4-6dc534c014ef"),
-            "[0].year", is(2022),
-            "[7].current", is(Boolean.FALSE),
-            "[7].year", is(2015));
-  }
-
-  @Test
   void getCurrentSeason() {
     given()
         .when().get(" /api/internal/season/current")
         .then()
         .statusCode(200)
         .body("current", is(Boolean.TRUE),
-            "id", is("db8dc197-c7b2-4c1b-b3a4-6dc534c014ef"),
-            "year", is(2022));
-  }
-
-  @Test
-  void getCurrentTest() {
-    given()
-        .when().get(" /api/internal/season/current/test")
-        .then()
-        .statusCode(200)
-        .body("current", is(Boolean.TRUE),
-            "id", is("db8dc197-c7b2-4c1b-b3a4-6dc534c014ef"),
-            "year", is(2022));
+            "id", is("db8dc197-c7b2-4c1b-b3a4-6dc534c023ef"),
+            "year", is(2023));
   }
 
 }
