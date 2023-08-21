@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.teknichrono</groupId>
     <artifactId>mgp-timings</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>3.0-SNAPSHOT</version>
     <name>Moto GP Timings</name>
     <description>Gather timings of all publicly available MotoGP sessions</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
 
         <image.namespace>ci</image.namespace>
         <fabric8.openshift.imageChangeTrigger>false</fabric8.openshift.imageChangeTrigger>
@@ -145,11 +145,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.jacoco</groupId>
-            <artifactId>org.jacoco.agent</artifactId>
-            <classifier>runtime</classifier>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jacoco</artifactId>
             <scope>test</scope>
-            <version>${jacoco.version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.tomakehurst</groupId>
@@ -255,73 +253,30 @@
                 <version>${jacoco.version}</version>
                 <executions>
                     <execution>
-                        <id>instrument-ut</id>
+                        <id>default-prepare-agent</id>
                         <goals>
-                            <goal>instrument</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>restore-ut</id>
-                        <goals>
-                            <goal>restore-instrumented-classes</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report-ut</id>
-                        <goals>
-                            <goal>report</goal>
+                            <goal>prepare-agent</goal>
                         </goals>
                         <configuration>
-                            <dataFile>${project.build.directory}/jacoco-ut.exec</dataFile>
-                            <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>instrument-it</id>
-                        <phase>pre-integration-test</phase>
-                        <goals>
-                            <goal>instrument</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>restore-it</id>
-                        <phase>post-integration-test</phase>
-                        <goals>
-                            <goal>restore-instrumented-classes</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>report-it</id>
-                        <phase>post-integration-test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                        <configuration>
-                            <dataFile>${project.build.directory}/jacoco-it.exec</dataFile>
-                            <outputDirectory>${project.reporting.outputDirectory}/jacoco-it</outputDirectory>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>merge-results</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>merge</goal>
-                        </goals>
-                        <configuration>
-                            <fileSets>
-                                <fileSet>
-                                    <directory>${project.build.directory}</directory>
-                                    <includes>
-                                        <include>*.exec</include>
-                                    </includes>
-                                </fileSet>
-                            </fileSets>
+                            <exclClassLoaders>*QuarkusClassLoader</exclClassLoaders>
                             <destFile>${project.build.directory}/jacoco.exec</destFile>
+                            <append>true</append>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>default-prepare-agent-integration</id>
+                        <goals>
+                            <goal>prepare-agent-integration</goal>
+                        </goals>
+                        <configuration>
+                            <destFile>${project.build.directory}/jacoco.exec</destFile>
+                            <append>true</append>
                         </configuration>
                     </execution>
                     <execution>
-                        <id>post-merge-report</id>
-                        <phase>verify</phase>
+                        <id>report</id>
+                        <phase>post-integration-test</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
@@ -330,6 +285,7 @@
                             <outputDirectory>${project.reporting.outputDirectory}/jacoco</outputDirectory>
                         </configuration>
                     </execution>
+
                 </executions>
             </plugin>
         </plugins>

@@ -11,7 +11,8 @@
           "name": "France",
           "region_iso": ""
         },
-        "legacy_id": 7236
+        "legacy_id": 7236,
+        "rider_api_uuid": "7236"
       },
       "team": {
         "id": "1862b786-5bc8-4fdb-a503-d45bead09ec8",
@@ -40,7 +41,8 @@
           "name": "Germany",
           "region_iso": ""
         },
-        "legacy_id": 6267
+        "legacy_id": 6267,
+        "rider_api_uuid": "6267"
       },
       "team": {
         "id": "4e10b734-1e8f-418f-a2d7-7178d2887366",
@@ -69,7 +71,8 @@
           "name": "Italy",
           "region_iso": ""
         },
-        "legacy_id": 8148
+        "legacy_id": 8148,
+        "rider_api_uuid": "8148"
       },
       "team": {
         "id": "dbcd18aa-2c93-4934-858e-ef80049f6957",
@@ -98,7 +101,8 @@
           "name": "Italy",
           "region_iso": ""
         },
-        "legacy_id": 8431
+        "legacy_id": 8431,
+        "rider_api_uuid": "8431"
       },
       "team": {
         "id": "a41a8e1f-5b29-46b2-80e7-8a0ab6bf924e",
@@ -127,7 +131,8 @@
           "name": "Spain",
           "region_iso": ""
         },
-        "legacy_id": 7409
+        "legacy_id": 7409,
+        "rider_api_uuid": "7409"
       },
       "team": {
         "id": "e37b36d6-3701-49cf-961f-7734b190d57f",
@@ -156,7 +161,8 @@
           "name": "France",
           "region_iso": ""
         },
-        "legacy_id": 8520
+        "legacy_id": 8520,
+        "rider_api_uuid": "8520"
       },
       "team": {
         "id": "2e041f95-0faa-4c9d-b575-e7eb376836c3",
@@ -185,7 +191,8 @@
           "name": "Italy",
           "region_iso": ""
         },
-        "legacy_id": 7741
+        "legacy_id": 7741,
+        "rider_api_uuid": "7741"
       },
       "team": {
         "id": "3bda0b31-3129-416d-ab70-1ae76e22b8d5",
@@ -214,7 +221,8 @@
           "name": "Italy",
           "region_iso": ""
         },
-        "legacy_id": 8295
+        "legacy_id": 8295,
+        "rider_api_uuid": "8295"
       },
       "team": {
         "id": "1e642629-5531-44fd-a271-798d740c00fb",
@@ -243,7 +251,8 @@
           "name": "Spain",
           "region_iso": ""
         },
-        "legacy_id": 8947
+        "legacy_id": 8947,
+        "rider_api_uuid": "8947"
       },
       "team": {
         "id": "841f623b-8c22-4885-b81f-f752923ab9ad",
@@ -272,7 +281,8 @@
           "name": "Japan",
           "region_iso": ""
         },
-        "legacy_id": 6976
+        "legacy_id": 6976,
+        "rider_api_uuid": "6976"
       },
       "team": {
         "id": "3da296f9-fa91-4d4f-8e8f-6298b1a9627c",
@@ -301,7 +311,8 @@
           "name": "Italy",
           "region_iso": ""
         },
-        "legacy_id": 7246
+        "legacy_id": 7246,
+        "rider_api_uuid": "7246"
       },
       "team": {
         "id": "a86166df-d247-4c80-a6eb-2a338e3475c7",
@@ -330,7 +341,8 @@
           "name": "South Africa",
           "region_iso": ""
         },
-        "legacy_id": 7646
+        "legacy_id": 7646,
+        "rider_api_uuid": "7646"
       },
       "team": {
         "id": "d802c7e6-2e9a-47b6-855c-923458904d02",
@@ -359,7 +371,8 @@
           "name": "Spain",
           "region_iso": ""
         },
-        "legacy_id": 8141
+        "legacy_id": 8141,
+        "rider_api_uuid": "8141"
       },
       "team": {
         "id": "3acdec3d-7e07-4686-8611-55a92350acbe",
@@ -388,7 +401,8 @@
           "name": "Spain",
           "region_iso": ""
         },
-        "legacy_id": 6854
+        "legacy_id": 6854,
+        "rider_api_uuid": "6854"
       },
       "team": {
         "id": "3e73b75d-53e2-4ab0-86f5-aa0f18192304",
@@ -417,7 +431,8 @@
           "name": "Spain",
           "region_iso": ""
         },
-        "legacy_id": 8150
+        "legacy_id": 8150,
+        "rider_api_uuid": "8150"
       },
       "team": {
         "id": "f40f6cc8-a4c3-44e4-a2e8-3e93d9a64f8c",
@@ -446,7 +461,8 @@
           "name": "Australia",
           "region_iso": ""
         },
-        "legacy_id": 8049
+        "legacy_id": 8049,
+        "rider_api_uuid": "8049"
       },
       "team": {
         "id": "51154ae1-6228-4b17-94dd-31719809d16b",
@@ -475,7 +491,8 @@
           "name": "Spain",
           "region_iso": ""
         },
-        "legacy_id": 7086
+        "legacy_id": 7086,
+        "rider_api_uuid": "7086"
       },
       "team": {
         "id": "06be669d-467c-4ca4-885d-27c22ccdcc49",
@@ -504,7 +521,8 @@
           "name": "Italy",
           "region_iso": ""
         },
-        "legacy_id": 158
+        "legacy_id": 158,
+        "rider_api_uuid": "158"
       },
       "team": {
         "id": "73af304d-a21c-416e-90db-8f599d922678",
@@ -533,7 +551,8 @@
           "name": "Italy",
           "region_iso": ""
         },
-        "legacy_id": 8273
+        "legacy_id": 8273,
+        "rider_api_uuid": "8273"
       },
       "team": {
         "id": "e2c1ded7-1280-4096-a2fb-cae4e837ebf1",
@@ -562,7 +581,8 @@
           "name": "Spain",
           "region_iso": ""
         },
-        "legacy_id": 8173
+        "legacy_id": 8173,
+        "rider_api_uuid": "8173"
       },
       "team": {
         "id": "52eae362-5ebb-4400-8c03-942da97e617c",
@@ -591,7 +611,8 @@
           "name": "Portugal",
           "region_iso": ""
         },
-        "legacy_id": 7199
+        "legacy_id": 7199,
+        "rider_api_uuid": "7199"
       },
       "team": {
         "id": "e118eac7-8c41-4667-bb45-1a5d4b8341bc",
@@ -620,7 +641,8 @@
           "name": "Spain",
           "region_iso": ""
         },
-        "legacy_id": 8146
+        "legacy_id": 8146,
+        "rider_api_uuid": "8146"
       },
       "team": {
         "id": "fe3e1100-ed6c-4da1-894d-feb381413d07",
@@ -649,7 +671,8 @@
           "name": "Spain",
           "region_iso": ""
         },
-        "legacy_id": 7444
+        "legacy_id": 7444,
+        "rider_api_uuid": "7444"
       },
       "team": {
         "id": "4e10b734-1e8f-418f-a2d7-7178d2887366",
