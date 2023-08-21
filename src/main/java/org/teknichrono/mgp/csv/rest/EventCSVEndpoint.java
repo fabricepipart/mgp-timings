@@ -11,7 +11,6 @@ import jakarta.ws.rs.core.Response;
 import org.teknichrono.mgp.business.service.EventService;
 import org.teknichrono.mgp.client.model.result.Event;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Path("/csv")
@@ -25,9 +24,7 @@ public class EventCSVEndpoint extends CSVEndpoint {
   @Transactional
   @Path("/{year}")
   public Response getYearEvents(@PathParam("year") int year) {
-    List<Event> events = new ArrayList<>();
-    events.addAll(eventService.getEventsOfYear(year));
-    events.addAll(eventService.getTestsOfYear(year));
+    List<Event> events = eventService.getEvents(year);
     if (events.isEmpty()) {
       throw new NotFoundException("Could not find any event for year " + year);
     }

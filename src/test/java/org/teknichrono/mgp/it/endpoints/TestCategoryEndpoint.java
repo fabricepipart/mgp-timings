@@ -17,6 +17,7 @@ public class TestCategoryEndpoint {
 
 
   @Test
+  @Tag("live")
   void listsAllSessionsOfCategoryOfEvent() {
     CategoryOutput categoryOutput = given()
         .when().get("/api/2021/QAT/motogp")

@@ -16,6 +16,7 @@ import static io.restassured.RestAssured.given;
 public class TestEventEndpoint {
 
   @Test
+  @Tag("live")
   void getOneParticularEvent() {
     EventOutput event = given()
         .when().get(" /api/2021/QAT")
@@ -25,12 +26,13 @@ public class TestEventEndpoint {
     Assertions.assertThat(event.short_name).isEqualToIgnoringCase("QAT");
     Assertions.assertThat(event.countryName).containsIgnoringCase("QA");
     Assertions.assertThat(event.eventFilesUrls).isNotEmpty();
-    Assertions.assertThat(event.circuitName).containsIgnoringCase("Losail");
+    Assertions.assertThat(event.circuitName).containsAnyOf("Losail", "Lusail");
     Assertions.assertThat(event.categories).filteredOn(c -> c.name.contains("Moto3")).isNotEmpty();
 
   }
 
   @Test
+  @Tag("live")
   void getOneParticularTest() {
     EventOutput event = given()
         .when().get(" /api/2022/JE1")

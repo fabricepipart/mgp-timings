@@ -30,7 +30,7 @@ public class CategoryCSVEndpoint extends CSVEndpoint {
   @Transactional
   @Path("/{year}/{eventShortName}")
   public Response getEventCategories(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName) {
-    Optional<Event> event = eventService.getEventOrTestOfYear(year, eventShortName);
+    Optional<Event> event = eventService.getEvent(year, eventShortName);
     if (event.isEmpty()) {
       throw new NotFoundException();
     }
