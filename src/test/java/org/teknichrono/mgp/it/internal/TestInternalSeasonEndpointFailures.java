@@ -24,7 +24,6 @@ class TestInternalSeasonEndpointFailures {
 
   @BeforeEach
   public void setup() {
-    Mockito.when(seasonService.getCurrentTestSeason()).thenReturn(Optional.empty());
     Mockito.when(seasonService.getCurrentSeason()).thenReturn(Optional.empty());
   }
 
