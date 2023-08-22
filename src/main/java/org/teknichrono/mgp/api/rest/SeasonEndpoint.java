@@ -38,11 +38,11 @@ public class SeasonEndpoint {
       throw new NotFoundException("Could not find the season " + year);
     }
     SeasonOutput toReturn = SeasonOutput.from(seasonOptional.get());
-    List<Choice> racesNames = eventService.getEventsOfYear(year).stream()
+    List<Choice> racesNames = eventService.getRaces(year).stream()
         .map(e -> Choice.from(e.short_name, buildName(e)))
         .collect(Collectors.toList());
     toReturn.races.addAll(racesNames);
-    List<Choice> testsNames = eventService.getTestsOfYear(year).stream()
+    List<Choice> testsNames = eventService.getTests(year).stream()
         .map(e -> Choice.from(e.short_name, buildName(e)))
         .collect(Collectors.toList());
     toReturn.tests.addAll(testsNames);

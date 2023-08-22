@@ -51,7 +51,7 @@ public class SessionService {
   AnalysisPdfParser analysisPdfParser;
 
   public List<Session> getSessions(int year, String eventShortName, String category) {
-    Optional<Event> event = eventService.getEventOrTestOfYear(year, eventShortName);
+    Optional<Event> event = eventService.getEvent(year, eventShortName);
     if (event.isEmpty()) {
       return Collections.emptyList();
     }
@@ -81,9 +81,9 @@ public class SessionService {
     }
     Session session = sessionMatch.get();
     if (session.test) {
-      return Optional.of(resultsClient.getTestClassification(session.id));
+      return Optional.of(resultsClient.getClassification(session.id, true));
     }
-    return Optional.of(resultsClient.getClassification(session.id));
+    return Optional.of(resultsClient.getClassification(session.id, false));
   }
 
   public List<SessionClassificationOutput> getResultDetails(int year, String eventShortName, String category, String sessionShortName) throws PdfParsingException {
