@@ -16,6 +16,7 @@ import static org.assertj.core.api.Assertions.*;
 public class TestSessionTopSpeedsEndpoint {
 
   @Test
+  @Tag("live")
   void parsesMaxSpeedPdf() {
     SessionTopSpeedsOutput speeds = given()
         .when().get("/api/2021/QAT/motogp/FP1/topspeed")

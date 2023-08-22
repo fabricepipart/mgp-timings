@@ -23,6 +23,7 @@ public class TestSessionAnalysisEndpoint {
 
 
   @Test
+  @Tag("live")
   void getTestAnalysis() {
     SessionAnalysisOutput analysis = given()
         .when().get("/api/2022/JE1/motogp/FP2/analysis")
@@ -72,6 +73,7 @@ public class TestSessionAnalysisEndpoint {
 
 
   @Test
+  @Tag("live")
   void getPracticeAnalysis() {
     SessionAnalysisOutput analysis = given()
         .when().get("/api/2021/QAT/motogp/fp3/analysis")
@@ -131,6 +133,7 @@ public class TestSessionAnalysisEndpoint {
 
 
   @Test
+  @Tag("live")
   void getRaceAnalysis() {
     SessionAnalysisOutput analysis = given()
         .when().get("/api/2021/QAT/motogp/RAC/analysis")
