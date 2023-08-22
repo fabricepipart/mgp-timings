@@ -17,6 +17,7 @@ public class TestCategoryRidersEndpoint {
 
 
   @Test
+  @Tag("live")
   void listRidersOfCategoryOfEvent() {
     CategoryRidersOutput riders = given()
         .when().get("/api/2021/QAT/GP/riders")

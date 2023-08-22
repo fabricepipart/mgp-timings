@@ -1,12 +1,12 @@
 package org.teknichrono.mgp.business.service;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.teknichrono.mgp.client.model.result.Category;
 import org.teknichrono.mgp.client.model.result.Event;
 import org.teknichrono.mgp.client.rest.ResultsClient;
 
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
@@ -22,7 +22,7 @@ public class CategoryService {
   EventService eventService;
 
   public List<Category> categoriesOfEvent(int year, String eventShortName) {
-    Optional<Event> event = eventService.getEventOrTestOfYear(year, eventShortName);
+    Optional<Event> event = eventService.getEvent(year, eventShortName);
     if (event.isPresent()) {
       return resultsClient.getCategoriesOfEvent(event.get().id);
     }

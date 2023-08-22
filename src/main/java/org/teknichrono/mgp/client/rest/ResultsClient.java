@@ -29,47 +29,34 @@ public interface ResultsClient {
 
   @GET
   @Path("/seasons")
-  List<Season> getTestSeasons(@QueryParam("test") boolean test);
-
-  @GET
-  @Path("/seasons")
   List<Season> getSeasons();
 
   @GET
-  @Path("/season/{season}/events")
-  List<Event> getEventsOfSeason(@PathParam("season") String season);
+  @Path("/events")
+  List<Event> getEventsOfSeason(@QueryParam("seasonUuid") String season);
 
   @GET
-  @Path("/season/{season}/events")
-  List<Event> getTestEventsOfSeason(@PathParam("season") String season, @QueryParam("test") boolean test);
+  @Path("/events")
+  List<Event> getFinishedEventsOfSeason(@QueryParam("seasonUuid") String season, @QueryParam("isFinished") boolean finished);
 
   @GET
-  @Path("/season/{season}/events")
-  List<Event> getFinishedEventsOfSeason(@PathParam("season") String season, @QueryParam("finished") boolean finished);
+  @Path("/events")
+  Event getEvent(@QueryParam("eventUuid") String event);
 
   @GET
-  @Path("/event/{event}")
-  Event getEvent(@PathParam("event") String event);
+  @Path("/categories")
+  List<Category> getCategoriesOfEvent(@QueryParam("eventUuid") String event);
 
   @GET
-  @Path("/event/{event}/categories")
-  List<Category> getCategoriesOfEvent(@PathParam("event") String event);
+  @Path("/sessions")
+  List<Session> getSessions(@QueryParam("eventUuid") String event, @QueryParam("categoryUuid") String category);
 
   @GET
-  @Path("/event/{event}/category/{category}/sessions")
-  List<Session> getSessions(@PathParam("event") String event, @PathParam("category") String category);
+  @Path("/event/{eventUuid}/entry")
+  EntryList getEntries(@PathParam("eventUuid") String event, @QueryParam("categoryUuid") String category);
 
   @GET
-  @Path("/event/{event}/category/{category}/entry")
-  EntryList getEntries(@PathParam("event") String event, @PathParam("category") String category);
-
-  @GET
-  @Path("/session/{session}/classifications")
-  SessionResults getClassification(@PathParam("session") String session);
-
-  @GET
-  @Path("/session/{session}/test-classifications")
-  SessionResults getTestClassification(@PathParam("session") String session);
-
+  @Path("/session/{sessionUuid}/classification")
+  SessionResults getClassification(@PathParam("sessionUuid") String session, @QueryParam("test") boolean test);
 
 }

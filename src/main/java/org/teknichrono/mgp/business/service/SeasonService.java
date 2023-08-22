@@ -24,15 +24,7 @@ public class SeasonService {
     return resultsClient.getSeasons().stream().filter(s -> s.year == year).findFirst();
   }
 
-  public List<Season> getTestSeasons() {
-    return resultsClient.getTestSeasons(true);
-  }
-
   public Optional<Season> getCurrentSeason() {
     return resultsClient.getSeasons().stream().filter(s -> s.current).findAny();
-  }
-
-  public Optional<Season> getCurrentTestSeason() {
-    return resultsClient.getTestSeasons(true).stream().filter(s -> s.current).findAny();
   }
 }

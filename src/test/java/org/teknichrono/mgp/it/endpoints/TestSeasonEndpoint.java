@@ -16,6 +16,7 @@ import static io.restassured.RestAssured.given;
 public class TestSeasonEndpoint {
 
   @Test
+  @Tag("live")
   void listsAllEvents() {
     SeasonOutput seasonOutput = given()
         .when().get(" /api/2021")
