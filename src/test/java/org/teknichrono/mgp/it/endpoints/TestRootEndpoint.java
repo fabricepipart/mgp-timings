@@ -24,8 +24,9 @@ public class TestRootEndpoint {
         .statusCode(200)
         .extract().as(RootOutput.class);
     assertThat(rootOutput).isNotNull();
-    assertThat(rootOutput.years).isNotNull().hasSize(74);
+    assertThat(rootOutput.years).isNotNull().hasSize(75);
     assertThat(rootOutput.years).contains(2022);
+    assertThat(rootOutput.years).contains(2023);
     assertThat(rootOutput.years).contains(1949);
   }
 }

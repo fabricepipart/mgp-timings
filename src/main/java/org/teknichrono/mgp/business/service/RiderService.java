@@ -1,5 +1,7 @@
 package org.teknichrono.mgp.business.service;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.teknichrono.mgp.api.model.SessionRider;
 import org.teknichrono.mgp.client.model.result.Category;
@@ -10,8 +12,6 @@ import org.teknichrono.mgp.client.model.rider.RiderDetails;
 import org.teknichrono.mgp.client.rest.ResultsClient;
 import org.teknichrono.mgp.client.rest.RidersClient;
 
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -33,12 +33,12 @@ public class RiderService {
   @Inject
   CategoryService categoryService;
 
-  public RiderDetails getRider(Integer legacyId) {
-    return riderClient.getRider(legacyId);
+  public RiderDetails getRider(String id) {
+    return riderClient.getRider(id);
   }
 
   public Optional<List<Entry>> getEntries(int year, String eventShortName, String category) {
-    Optional<Event> event = eventService.getEventOrTestOfYear(year, eventShortName);
+    Optional<Event> event = eventService.getEvent(year, eventShortName);
     Optional<Category> cat = categoryService.categoryOfEvent(year, eventShortName, category);
     if (event.isEmpty() || cat.isEmpty()) {
       return Optional.empty();
@@ -58,7 +58,7 @@ public class RiderService {
     List<SessionRider> riders = new ArrayList<>();
     for (Entry e : entries.get()) {
       SessionRider rider = new SessionRider();
-      rider.fill(e, getRider(e.rider.legacy_id));
+      rider.fill(e, getRider(e.rider.rider_api_uuid));
       riders.add(rider);
     }
     return Optional.of(riders);
