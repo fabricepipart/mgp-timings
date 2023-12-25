@@ -1,5 +1,6 @@
 package org.teknichrono.mgp.business.parser;
 
+import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.text.PDFTextStripper;
@@ -99,7 +100,7 @@ public class PdfParserUtils {
     List<String> lines = new ArrayList<>();
     try {
       InputStream in = new URL(url).openStream();
-      try (PDDocument doc = PDDocument.load(in)) {
+      try (PDDocument doc = Loader.loadPDF(in.readAllBytes())) {
         PDFTextStripperByArea stripper = new PDFTextStripperByArea();
         stripper.setSortByPosition(true);
         Rectangle left = new Rectangle(x, y, width, height);
@@ -129,7 +130,7 @@ public class PdfParserUtils {
     String[] lines;
     try {
       InputStream in = new URL(url).openStream();
-      try (PDDocument doc = PDDocument.load(in)) {
+      try (PDDocument doc = Loader.loadPDF(in.readAllBytes())) {
         PDFTextStripper tStripper = new PDFTextStripper();
         tStripper.setSortByPosition(true);
         String pdfFileInText = tStripper.getText(doc);
