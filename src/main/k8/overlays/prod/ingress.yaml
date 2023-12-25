@@ -10,7 +10,7 @@ spec:
   tls:
     - hosts:
         - mgp-timings.evo.teknichrono.fr
-      secretName: letsencrypt-certificate
+      secretName: mgp-timings-ingress-tls
   rules:
     - host: mgp-timings.evo.teknichrono.fr
       http:
