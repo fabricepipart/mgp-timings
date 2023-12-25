@@ -15,10 +15,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - mgp-timings.teknichrono.fr
+        - mgp-timings.evo.teknichrono.fr
       secretName: letsencrypt-certificate
   rules:
-    - host: mgp-timings.teknichrono.fr
+    - host: mgp-timings.evo.teknichrono.fr
       http:
         paths:
           - path: /
