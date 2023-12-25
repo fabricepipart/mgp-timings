@@ -12,7 +12,7 @@ jobs:
 
   ci-server:
     env:
-      secrets-available: ${{secrets.KUBE_CONFIG}}
+      secrets-available: ${{secrets.KUBE_CONFIG_EVO}}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -60,11 +60,11 @@ jobs:
       - uses: azure/k8s-set-context@v3
         if: ${{env.secrets-available}}
         with:
-          kubeconfig: ${{ secrets.KUBE_CONFIG }}
+          kubeconfig: ${{ secrets.KUBE_CONFIG_EVO }}
       - name: Update Production environment
         if: ${{ github.ref == 'refs/heads/main' && env.secrets-available != '' }}
         timeout-minutes: 10
         run: |
           kubectl delete all -n mgp-timings -l app=mgp-timings --wait=true
           kubectl kustomize target/classes/overlays/prod | kubectl apply -n mgp-timings -f -
-          while ! curl -fs https://mgp-timings.teknichrono.fr/q/health/live > /dev/null; do echo 'Not started yet ...'; sleep 5; done
+          while ! curl -fs https://mgp-timings.evo.teknichrono.fr/q/health/live > /dev/null; do echo 'Not started yet ...'; sleep 5; done
