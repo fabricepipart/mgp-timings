@@ -50,7 +50,7 @@ jobs:
           REPO: fabricepipart/mgp-timings
         run: |
           docker push $REPO:$VERSION
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
         if: ${{env.secrets-available}}
         with:
           token: ${{secrets.CODECOV_TOKEN}}
