@@ -18,7 +18,7 @@
 
         <jacoco.version>0.8.11</jacoco.version>
         <surefire-plugin.version>3.2.5</surefire-plugin.version>
-        <quarkus.version>3.7.0</quarkus.version>
+        <quarkus.version>3.7.1</quarkus.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <lombok.version>1.18.30</lombok.version>
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
