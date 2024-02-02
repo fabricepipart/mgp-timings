@@ -38,18 +38,11 @@ jobs:
       - name: Build Maven and Docker
         env:
           VERSION: ${{ steps.versioning.outputs.new_tag }}
-          REPO: fabricepipart/mgp-timings
+          QUARKUS_CONTAINER_IMAGE_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          QUARKUS_CONTAINER_IMAGE_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
           mvn -B -U versions:set -DnewVersion=${VERSION} &> /dev/null
           mvn -B -U clean verify
-          docker build -f src/main/docker/Dockerfile -t $REPO:$VERSION .
-      - name: Push Docker
-        if: ${{env.secrets-available}}
-        env:
-          VERSION: ${{ steps.versioning.outputs.new_tag }}
-          REPO: fabricepipart/mgp-timings
-        run: |
-          docker push $REPO:$VERSION
       - uses: codecov/codecov-action@v4
         if: ${{env.secrets-available}}
         with:
