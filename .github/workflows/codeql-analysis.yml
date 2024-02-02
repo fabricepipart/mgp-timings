@@ -57,7 +57,10 @@ jobs:
       # If this step fails, then you should remove it and run the build manually (see below)
       - name: Autobuild
         uses: github/codeql-action/autobuild@v3
-
+        env:
+          VERSION: ${{ steps.versioning.outputs.new_tag }}
+          QUARKUS_CONTAINER_IMAGE_BUILD: false
+          QUARKUS_CONTAINER_IMAGE_PUSH: false
       # ℹ️ Command-line programs to run using the OS shell.
       # 📚 https://git.io/JvXDl
 

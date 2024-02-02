@@ -12,10 +12,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
 
-        <image.namespace>ci</image.namespace>
-        <fabric8.openshift.imageChangeTrigger>false</fabric8.openshift.imageChangeTrigger>
-        <fabric8.openshift.enableAutomaticTrigger>true</fabric8.openshift.enableAutomaticTrigger>
-
         <jacoco.version>0.8.11</jacoco.version>
         <surefire-plugin.version>3.2.5</surefire-plugin.version>
         <quarkus.version>3.7.1</quarkus.version>
@@ -28,6 +24,9 @@
         <sonar.projectKey>fabricepipart_mgp-timings</sonar.projectKey>
         <sonar.organization>fabricepipart</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
+        <quarkus.container-image.image>fabricepipart/mgp-timings:${project.version}</quarkus.container-image.image>
+        
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -66,6 +65,10 @@
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-openapi</artifactId>
+        </dependency>
+        <dependency>
+          <groupId>io.quarkus</groupId>
+          <artifactId>quarkus-container-image-jib</artifactId>
         </dependency>
         <!-- Transaction Manager extension -->
         <dependency>
@@ -174,8 +177,6 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.12.1</version>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.mapstruct</groupId>
