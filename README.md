@@ -116,4 +116,3 @@ Note: you can connect your IDE for debugging on port 5005.
 ### QuarkusTest
 
 ```mvn clean verify```
-
