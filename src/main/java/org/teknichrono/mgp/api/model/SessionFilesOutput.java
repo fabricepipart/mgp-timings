@@ -1,5 +1,6 @@
 package org.teknichrono.mgp.api.model;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.teknichrono.mgp.client.model.result.PdfFile;
 import org.teknichrono.mgp.client.model.result.SessionFileType;
 
@@ -23,7 +24,7 @@ public class SessionFilesOutput {
   public String averageSpeed;
   public String worldStanding;
 
-  public static SessionFilesOutput from(Map<SessionFileType, PdfFile> session_files) {
+  public static SessionFilesOutput from(Map<SessionFileType, Object> session_files) {
     SessionFilesOutput output = new SessionFilesOutput();
     if (session_files != null) {
       output.analysisByLap = getUrl(session_files, SessionFileType.ANALYSIS_BY_LAP);
@@ -44,13 +45,24 @@ public class SessionFilesOutput {
     return output;
   }
 
-  private static String getUrl(Map<SessionFileType, PdfFile> sessionFiles, SessionFileType analysisByLap) {
+  private static String getUrl(Map<SessionFileType, Object> sessionFiles, SessionFileType analysisByLap) {
     if (sessionFiles.containsKey(analysisByLap)) {
-      String value = sessionFiles.get(analysisByLap).url;
+      String value = getUrlFromMap(sessionFiles, analysisByLap);
       if (!"".equalsIgnoreCase(value)) {
         return value;
       }
     }
     return null;
+  }
+
+  public static String getUrlFromMap(Map<SessionFileType, Object> sessionFiles, SessionFileType analysisByLap) {
+    Object valueObj = sessionFiles.get(analysisByLap);
+    String url = "";
+    if (valueObj != null && valueObj instanceof String) {
+      url = (String) valueObj;
+    } else if (valueObj != null && valueObj instanceof Map) {
+      url = new ObjectMapper().convertValue(valueObj, PdfFile.class).url;
+    }
+    return url;
   }
 }

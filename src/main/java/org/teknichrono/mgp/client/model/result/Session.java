@@ -18,7 +18,7 @@ public class Session implements CSVConvertible<SessionCSV> {
   public SessionCondition condition;
   public String date;
   public String status;
-  public Map<SessionFileType, PdfFile> session_files;
+  public Map<SessionFileType, Object> session_files;
   public String circuit;
 
 

@@ -17,6 +17,9 @@ public enum SessionFileType {
   @JsonProperty("grid") GRID,
   @JsonProperty("fast_lap_sequence") FAST_LAP_SEQUENCE,
   @JsonProperty("average_speed") AVERAGE_SPEED,
-  @JsonProperty("world_standing") WORLD_STANDING;
+  @JsonProperty("world_standing") WORLD_STANDING,
+  @JsonProperty("combined_sessions") COMBINED_SESSIONS,
+  @JsonProperty("combined_days") COMBINED_DAYS,
+  ;
 
 }

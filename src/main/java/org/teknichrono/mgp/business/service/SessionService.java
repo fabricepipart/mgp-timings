@@ -7,6 +7,7 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.teknichrono.mgp.api.model.LapAnalysis;
 import org.teknichrono.mgp.api.model.MaxSpeed;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
+import org.teknichrono.mgp.api.model.SessionFilesOutput;
 import org.teknichrono.mgp.business.parser.AnalysisPdfParser;
 import org.teknichrono.mgp.business.parser.MaxSpeedPdfParser;
 import org.teknichrono.mgp.business.parser.PdfParsingException;
@@ -108,7 +109,7 @@ public class SessionService {
     Session session = sessionOptional.get();
     SessionResults classifications = classificationsOptional.get();
     if (session.session_files.keySet().contains(ANALYSIS)) {
-      String url = session.session_files.get(ANALYSIS).url;
+      String url = SessionFilesOutput.getUrlFromMap(session.session_files, ANALYSIS);
       return Optional.of(analysisPdfParser.parse(url, classifications.classification));
 
     }
@@ -124,7 +125,7 @@ public class SessionService {
     Session session = sessionOptional.get();
     SessionResults classifications = classificationsOptional.get();
     if (session.session_files.keySet().contains(MAXIMUM_SPEED)) {
-      String url = session.session_files.get(MAXIMUM_SPEED).url;
+      String url = SessionFilesOutput.getUrlFromMap(session.session_files, MAXIMUM_SPEED);
       return Optional.of(maxSpeedPdfParser.parse(url, classifications.classification));
     }
     return Optional.empty();

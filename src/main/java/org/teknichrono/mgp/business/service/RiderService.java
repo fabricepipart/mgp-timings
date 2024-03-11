@@ -58,8 +58,10 @@ public class RiderService {
     List<SessionRider> riders = new ArrayList<>();
     for (Entry e : entries.get()) {
       SessionRider rider = new SessionRider();
-      rider.fill(e, getRider(e.rider.rider_api_uuid));
-      riders.add(rider);
+      if (e.rider.rider_api_uuid != null) {
+        rider.fill(e, getRider(e.rider.rider_api_uuid));
+        riders.add(rider);
+      }
     }
     return Optional.of(riders);
   }
