@@ -48,7 +48,7 @@ jobs:
           QUARKUS_CONTAINER_IMAGE_PUSH: ${{ env.secrets-available != '' }}
         run: |
           mvn -B -U versions:set -DnewVersion=${VERSION} &> /dev/null
-          mvn -B -U clean verify
+          mvn -B -U clean verify -Dquarkus.profile=release
 
       - uses: codecov/codecov-action@v4
         if: ${{env.secrets-available}}
