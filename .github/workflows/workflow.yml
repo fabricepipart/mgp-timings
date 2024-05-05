@@ -13,6 +13,10 @@ jobs:
     env:
       secrets-available: ${{secrets.KUBE_CONFIG_EVO}}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
     steps:
 
       - uses: actions/checkout@v4
@@ -38,7 +42,8 @@ jobs:
           REPO_OWNER: fabricepipart
           RELEASE_BRANCHES: main
           DEFAULT_BRANCH: main
-          DRY_RUN: ${{ env.secrets-available == '' }}
+          DRY_RUN: ${{ github.event_name == 'pull_request' }}
+          PRERELEASE: ${{ github.event_name == 'pull_request' }}
 
       - name: Build Maven and Docker
         env:
@@ -48,7 +53,7 @@ jobs:
           QUARKUS_CONTAINER_IMAGE_PUSH: ${{ env.secrets-available != '' }}
         run: |
           mvn -B -U versions:set -DnewVersion=${VERSION} &> /dev/null
-          mvn -B -U clean verify
+          mvn -B -U clean verify -Dquarkus.profile=release
 
       - uses: codecov/codecov-action@v4
         if: ${{env.secrets-available}}

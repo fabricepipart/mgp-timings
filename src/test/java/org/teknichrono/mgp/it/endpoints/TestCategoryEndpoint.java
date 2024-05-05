@@ -59,3 +59,6 @@ public class TestCategoryEndpoint {
   }
 
 }
+
+//https://api.pulselive.motogp.com/motogp/v1/results/sessions?eventUuid=0561c82b-4738-4bb6-88d0-6df77f002a43&categoryUuid=e8c110ad-64aa-4e8e-8a86-f2f152f6a942
+//https://api.pulselive.motogp.com/motogp/v1/results/sessions?eventUuid=aacf14f8-fd7f-42d3-be6e-54add0eab84f&categoryUuid=e8c110ad-64aa-4e8e-8a86-f2f152f6a942

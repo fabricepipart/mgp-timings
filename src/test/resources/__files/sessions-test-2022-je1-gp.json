@@ -13,58 +13,8 @@
     "date": "2021-11-18T09:00:00+00:00",
     "status": "Official",
     "session_files": {
-      "classification": {
-        "url": "http:\/\/localhost:8089\/files\/testresults\/2022_JEREZ_MotoGP____OFFICIAL_TEST_classification_1.pdf",
-        "menu_position": 1
-      },
-      "analysis": {
-        "url": "http:\/\/localhost:8089\/files\/testresults\/2022_JEREZ_MotoGP____OFFICIAL_TEST_analysis_1.pdf",
-        "menu_position": 2
-      },
-      "average_speed": {
-        "url": "",
-        "menu_position": 2
-      },
-      "fast_lap_sequence": {
-        "url": "",
-        "menu_position": 2
-      },
-      "lap_chart": {
-        "url": "",
-        "menu_position": 2
-      },
-      "analysis_by_lap": {
-        "url": "",
-        "menu_position": 2
-      },
-      "fast_lap_rider": {
-        "url": "",
-        "menu_position": 2
-      },
-      "grid": {
-        "url": "",
-        "menu_position": 2
-      },
-      "session": {
-        "url": "",
-        "menu_position": 2
-      },
-      "best_partial_time": {
-        "url": "",
-        "menu_position": 2
-      },
-      "maximum_speed": {
-        "url": "",
-        "menu_position": 2
-      },
-      "combined_practice": {
-        "url": "",
-        "menu_position": 2
-      },
-      "combined_classification": {
-        "url": "",
-        "menu_position": 2
-      }
+      "classification": "http://localhost:8089/files/testresults/2022_JEREZ_MotoGP____OFFICIAL_TEST_classification_1.pdf",
+      "analysis": "http://localhost:8089/files/testresults/2022_JEREZ_MotoGP____OFFICIAL_TEST_analysis_1.pdf"
     },
     "circuit": "Circuito de Jerez - \u00c1ngel Nieto"
   },
@@ -82,58 +32,9 @@
     "date": "2021-11-19T09:00:00+00:00",
     "status": "Official",
     "session_files": {
-      "classification": {
-        "url": "http:\/\/localhost:8089\/files\/testresults\/2022_JEREZ_MotoGP____OFFICIAL_TEST_classification_2.pdf",
-        "menu_position": 1
-      },
-      "analysis": {
-        "url": "http:\/\/localhost:8089\/files\/testresults\/2022_JEREZ_MotoGP____OFFICIAL_TEST_analysis_2.pdf",
-        "menu_position": 2
-      },
-      "average_speed": {
-        "url": "",
-        "menu_position": 2
-      },
-      "fast_lap_sequence": {
-        "url": "",
-        "menu_position": 2
-      },
-      "lap_chart": {
-        "url": "",
-        "menu_position": 2
-      },
-      "analysis_by_lap": {
-        "url": "",
-        "menu_position": 2
-      },
-      "fast_lap_rider": {
-        "url": "",
-        "menu_position": 2
-      },
-      "grid": {
-        "url": "",
-        "menu_position": 2
-      },
-      "session": {
-        "url": "",
-        "menu_position": 2
-      },
-      "best_partial_time": {
-        "url": "",
-        "menu_position": 2
-      },
-      "maximum_speed": {
-        "url": "",
-        "menu_position": 2
-      },
-      "combined_practice": {
-        "url": "",
-        "menu_position": 2
-      },
-      "combined_classification": {
-        "url": "",
-        "menu_position": 2
-      }
+      "classification": "http://localhost:8089/files/testresults/2022_JEREZ_MotoGP____OFFICIAL_TEST_classification_2.pdf",
+      "analysis": "http://localhost:8089/files/testresults/2022_JEREZ_MotoGP____OFFICIAL_TEST_analysis_2.pdf",
+      "combined_sessions": "http://localhost:8089/files/testresults/2022_JEREZ_MotoGP____OFFICIAL_TEST_combined_sessions_2.pdf"
     },
     "circuit": "Circuito de Jerez - \u00c1ngel Nieto"
   }
