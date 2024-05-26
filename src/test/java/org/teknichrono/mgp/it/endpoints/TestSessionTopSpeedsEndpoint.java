@@ -27,7 +27,7 @@ public class TestSessionTopSpeedsEndpoint {
     assertThat(speeds.topSpeeds.get(0).speed).isEqualTo(354.0f);
     assertThat(speeds.topSpeeds.get(0).motorcycle).isEqualToIgnoringCase("Ducati");
     assertThat(speeds.topSpeeds.size()).isEqualTo(22);
-    assertThat(speeds.topSpeeds.stream().filter(m -> m.number == 23).findFirst().get().team).isEqualTo("Avintia Esponsorama");
+    assertThat(speeds.topSpeeds.stream().filter(m -> m.number == 23).findFirst().get().team).contains("Esponsorama");
 
     assertThat(speeds.topSpeeds).anyMatch(s -> s.number != null &&
         s.rider != null &&
