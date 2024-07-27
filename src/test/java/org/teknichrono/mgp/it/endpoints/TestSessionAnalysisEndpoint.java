@@ -44,6 +44,11 @@ public class TestSessionAnalysisEndpoint {
     assertTrue(analysis.analysis.stream().noneMatch(l -> l.backTyreLapNumber != null));
     assertTrue(analysis.analysis.stream().anyMatch(l -> l.cancelled));
     assertTrue(analysis.analysis.stream().anyMatch(l -> l.pit));
+    assertTrue(analysis.analysis.stream().anyMatch(l -> !l.sectors.isEmpty()));
+    assertTrue(analysis.analysis.stream().anyMatch(l -> l.sectors.stream().anyMatch(s -> s.sectorNumber.intValue() > 0)));
+    assertTrue(analysis.analysis.stream().anyMatch(l -> l.sectors.stream().anyMatch(s -> !s.time.isEmpty())));
+    assertTrue(analysis.analysis.get(0).sectors.get(0).time.equalsIgnoreCase("31.640"));
+
   }
 
 
@@ -111,6 +116,11 @@ public class TestSessionAnalysisEndpoint {
     assertTrue(analysis.analysis.stream().anyMatch(l -> l.cancelled));
     assertTrue(analysis.analysis.stream().anyMatch(l -> l.pit));
 
+    assertTrue(analysis.analysis.stream().anyMatch(l -> !l.sectors.isEmpty()));
+    assertTrue(analysis.analysis.stream().anyMatch(l -> l.sectors.stream().anyMatch(s -> s.sectorNumber.intValue() > 0)));
+    assertTrue(analysis.analysis.stream().anyMatch(l -> l.sectors.stream().anyMatch(s -> !s.time.isEmpty())));
+    assertEquals("32.129", analysis.analysis.get(0).sectors.get(0).time);
+
     assertEquals(2, analysis.analysis.stream().filter(l -> l.unfinished.booleanValue()).collect(Collectors.toList()).size());
 
     List<LapAnalysis> mariniLaps = analysis.analysis.stream().filter(l -> l.rider.contains("Marini")).collect(Collectors.toList());
@@ -171,6 +181,11 @@ public class TestSessionAnalysisEndpoint {
     assertTrue(analysis.analysis.stream().allMatch(l -> l.backTyreLapNumber >= 0));
     assertTrue(analysis.analysis.stream().anyMatch(l -> l.cancelled));
     assertTrue(analysis.analysis.stream().anyMatch(l -> l.unfinished));
+
+    assertTrue(analysis.analysis.stream().anyMatch(l -> !l.sectors.isEmpty()));
+    assertTrue(analysis.analysis.stream().anyMatch(l -> l.sectors.stream().anyMatch(s -> s.sectorNumber.intValue() > 0)));
+    assertTrue(analysis.analysis.stream().anyMatch(l -> l.sectors.stream().anyMatch(s -> !s.time.isEmpty())));
+    assertEquals("31.392", analysis.analysis.get(0).sectors.get(0).time);
 
     assertEquals(2, analysis.analysis.stream().filter(l -> l.unfinished.booleanValue()).collect(Collectors.toList()).size());
 

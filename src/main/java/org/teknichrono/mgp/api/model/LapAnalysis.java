@@ -4,9 +4,13 @@ import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
 import org.teknichrono.mgp.csv.converter.CSVConvertible;
 
+import java.util.List;
+
 public class LapAnalysis implements CSVConvertible<LapAnalysis> {
 
   public static final String UNFINISHED_LAP = "unfinished";
+  public static final String LAP = "Lap";
+  public static final String SPEED = "Speed";
 
 
   @CsvBindByName(column = "NUMBER")
@@ -68,6 +72,8 @@ public class LapAnalysis implements CSVConvertible<LapAnalysis> {
   @CsvBindByName(column = "UNFINISHED")
   @CsvBindByPosition(position = 14)
   public Boolean unfinished = Boolean.FALSE;
+
+  public List<SectorTime> sectors;
 
 
   public LapAnalysis() {
