@@ -17,6 +17,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
+@java.lang.SuppressWarnings("java:S5852")
 public class PdfParserUtils {
 
 
@@ -46,12 +48,21 @@ public class PdfParserUtils {
 
 
   public static String parseTime(String line) {
-    Pattern p = Pattern.compile("\\s[0-9]*:?[0-9]+'[0-9]{2}\\.[0-9]{3}");
-    Matcher m = p.matcher(line);
-    if (m.find()) {
-      return m.group().trim();
+    List<String> times = parseTimes(line);
+    if (!times.isEmpty()) {
+      return times.get(0);
     }
     return null;
+  }
+
+  public static List<String> parseTimes(String line) {
+    List<String> toReturn = new ArrayList<>();
+    Pattern p = Pattern.compile("\\s\\d*:?\\d*'?\\d{2}\\.\\d{3}");
+    Matcher m = p.matcher(line);
+    while (m.find()) {
+      toReturn.add(m.group().trim());
+    }
+    return toReturn;
   }
 
   public static String parseFrontTyre(String line) {

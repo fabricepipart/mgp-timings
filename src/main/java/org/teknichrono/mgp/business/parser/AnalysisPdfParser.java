@@ -2,6 +2,7 @@ package org.teknichrono.mgp.business.parser;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import org.teknichrono.mgp.api.model.LapAnalysis;
+import org.teknichrono.mgp.api.model.SectorTime;
 import org.teknichrono.mgp.client.model.result.RiderClassification;
 
 import java.util.ArrayList;
@@ -43,6 +44,7 @@ public class AnalysisPdfParser {
         lapAnalysis.cancelled = line.contains("*");
         lapAnalysis.maxSpeed = PdfParserUtils.parseSpeed(line);
         lapAnalysis.time = PdfParserUtils.parseTime(line);
+        lapAnalysis.sectors = addSectors(line);
         lapAnalysis = resetLapAnalysisIfNecessary(toReturn, lapAnalysis);
       } else if (line.toLowerCase().contains(LapAnalysis.UNFINISHED_LAP.toLowerCase())) {
         lapAnalysis.lapNumber = lapAnalysis.lapNumber != null ? lapAnalysis.lapNumber + 1 : 1;
@@ -55,6 +57,21 @@ public class AnalysisPdfParser {
       }
     }
     return lapAnalysis;
+  }
+
+  private List<SectorTime> addSectors(String line) {
+    List<String> times = PdfParserUtils.parseTimes(line);
+    if (times.size() > 1) {
+      times.remove(0);
+    }
+    List<SectorTime> sectors = new ArrayList<>();
+    for (int i = 0; i < times.size(); i++) {
+      SectorTime s = new SectorTime();
+      s.sectorNumber = i + 1;
+      s.time = times.get(i);
+      sectors.add(s);
+    }
+    return sectors;
   }
 
   private LapAnalysis resetLapAnalysisIfNecessary(List<LapAnalysis> toReturn, LapAnalysis lapAnalysis) {
