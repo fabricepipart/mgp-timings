@@ -1,0 +1,892 @@
+{
+  "entry": [
+    {
+      "id": "861481c1-9f87-40c6-810d-2472bb0386dc",
+      "number": 1,
+      "rider": {
+        "id": "06989a4b-12bc-4cb5-bad6-bb8dab9097f3",
+        "full_name": "Andrea Dovizioso",
+        "country": {
+          "iso": "IT",
+          "name": "Italy",
+          "region_iso": ""
+        },
+        "legacy_id": 5885,
+        "number": 4,
+        "rider_api_uuid": "fe9fa956-0cd0-4009-9484-25e7cb5bdf88"
+      },
+      "team": {
+        "id": "55aa230f-3885-4893-ba12-17752939703f",
+        "name": "Ducati Team",
+        "legacy_id": 68,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Ducati Team",
+      "constructor": {
+        "id": "b9d93efb-3cd0-4681-9de4-c412a866d568",
+        "name": "Ducati",
+        "legacy_id": 110
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "1b26df91-16a7-4444-a660-93146b81a90d",
+      "number": 2,
+      "rider": {
+        "id": "cd3f95da-c69a-4319-bf49-810ded6648cf",
+        "full_name": "Colin Edwards",
+        "country": {
+          "iso": "US",
+          "name": "United States of America",
+          "region_iso": ""
+        },
+        "legacy_id": 6201,
+        "number": 5,
+        "rider_api_uuid": "82701656-30d7-4a4d-b12a-f1f066d2cbd5"
+      },
+      "team": {
+        "id": "f0591d82-a229-406d-b4eb-ef15f016e9c6",
+        "name": "NGM Forward Racing",
+        "legacy_id": 69,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "NGM Forward Racing",
+      "constructor": {
+        "id": "3d332da4-cd2a-46e0-bd44-b709c2ceeb01",
+        "name": "Forward Yamaha",
+        "legacy_id": 537
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": true
+    },
+    {
+      "id": "fbf8c818-c417-4566-ae2b-2969fe34c770",
+      "number": 3,
+      "rider": {
+        "id": "5b323ae2-9b30-4c9e-a8db-dd65639597b5",
+        "full_name": "Stefan Bradl",
+        "country": {
+          "iso": "DE",
+          "name": "Germany",
+          "region_iso": ""
+        },
+        "legacy_id": 6267,
+        "number": 6,
+        "rider_api_uuid": "f5f54b1e-b2c3-4bfe-9f04-e5f722a7b9e4"
+      },
+      "team": {
+        "id": "c7717bd6-664d-477f-9bee-42ee1a6bc912",
+        "name": "LCR Honda MotoGP",
+        "legacy_id": 70,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "LCR Honda MotoGP",
+      "constructor": {
+        "id": "3a036648-7b14-4257-8c62-245e47e4d42b",
+        "name": "Honda",
+        "legacy_id": 1
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "bb41c575-baa0-4f59-9a76-5a2b791792ca",
+      "number": 4,
+      "rider": {
+        "id": "6f49d7e1-8202-4fe1-b7e4-98e21dca4832",
+        "full_name": "Hiroshi Aoyama",
+        "country": {
+          "iso": "JP",
+          "name": "Japan",
+          "region_iso": ""
+        },
+        "legacy_id": 5863,
+        "number": 7,
+        "rider_api_uuid": "eee55d7a-a378-42d8-8906-6e2f0d124fd4"
+      },
+      "team": {
+        "id": "ca0782df-cab9-4a15-950f-86913428b57e",
+        "name": "Drive M7 Aspar",
+        "legacy_id": 71,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Drive M7 Aspar",
+      "constructor": {
+        "id": "3a036648-7b14-4257-8c62-245e47e4d42b",
+        "name": "Honda",
+        "legacy_id": 1
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": true
+    },
+    {
+      "id": "361a0fa1-15b7-4710-9f33-ab01e6eece3e",
+      "number": 5,
+      "rider": {
+        "id": "03ee67ab-7716-4f27-99f1-0900990a3fa3",
+        "full_name": "Hector Barbera",
+        "country": {
+          "iso": "ES",
+          "name": "Spain",
+          "region_iso": ""
+        },
+        "legacy_id": 6066,
+        "number": 8,
+        "rider_api_uuid": "b7374486-d13a-4177-af37-4d119fd3b2c9"
+      },
+      "team": {
+        "id": "6d469ff5-8f79-4015-91e5-6cec81915867",
+        "name": "Avintia Racing",
+        "legacy_id": 72,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Avintia Racing",
+      "constructor": {
+        "id": "eec09cba-070e-4246-807a-0fd87808ac01",
+        "name": "Avintia",
+        "legacy_id": 538
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": true
+    },
+    {
+      "id": "46c71d70-df68-4049-9826-15bdc8d1268e",
+      "number": 6,
+      "rider": {
+        "id": "09a9727b-25d7-4b4a-937b-df5ffc6ee06a",
+        "full_name": "Danilo Petrucci",
+        "country": {
+          "iso": "IT",
+          "name": "Italy",
+          "region_iso": ""
+        },
+        "legacy_id": 8148,
+        "number": 9,
+        "rider_api_uuid": "c403dc28-7881-4d3d-99d4-5fe5eb1236e5"
+      },
+      "team": {
+        "id": "c5b5e79f-94c0-442c-b099-a8a24612bff3",
+        "name": "IodaRacing Project",
+        "legacy_id": 73,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "IodaRacing Project",
+      "constructor": {
+        "id": "d3614a0d-6a2b-4dac-88ad-39171857a35a",
+        "name": "ART",
+        "legacy_id": 484
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": true
+    },
+    {
+      "id": "5745583f-fe28-40c2-9668-0c920411c223",
+      "number": 7,
+      "rider": {
+        "id": "f5166764-7699-48c2-9635-6f8499606f0d",
+        "full_name": "Karel Abraham",
+        "country": {
+          "iso": "CZ",
+          "name": "Czechia",
+          "region_iso": ""
+        },
+        "legacy_id": 6867,
+        "number": 17,
+        "rider_api_uuid": "18a36d21-4531-46f3-ba48-2c801703e409"
+      },
+      "team": {
+        "id": "2500a615-a667-4ca1-84cc-bdc88a4501a1",
+        "name": "Cardion AB Motoracing",
+        "legacy_id": 74,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Cardion AB Motoracing",
+      "constructor": {
+        "id": "3a036648-7b14-4257-8c62-245e47e4d42b",
+        "name": "Honda",
+        "legacy_id": 1
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": true
+    },
+    {
+      "id": "4733491c-605d-4ff0-af6f-142e4e449a5a",
+      "number": 8,
+      "rider": {
+        "id": "cbb253b4-467a-4510-8f24-1a661d9ded1f",
+        "full_name": "Alvaro Bautista",
+        "country": {
+          "iso": "ES",
+          "name": "Spain",
+          "region_iso": ""
+        },
+        "legacy_id": 4323,
+        "number": 19,
+        "rider_api_uuid": "47b6c685-654a-483c-b1ef-09724ac9bc34"
+      },
+      "team": {
+        "id": "91f33947-5e99-4fe0-95e5-6580b91ac535",
+        "name": "GO&FUN Honda Gresini",
+        "legacy_id": 75,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "GO&FUN Honda Gresini",
+      "constructor": {
+        "id": "3a036648-7b14-4257-8c62-245e47e4d42b",
+        "name": "Honda",
+        "legacy_id": 1
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "da897288-4202-4780-9766-17feadb2ed77",
+      "number": 9,
+      "rider": {
+        "id": "a24f6a26-0095-42b7-b020-f66a4160a71d",
+        "full_name": "Broc Parkes",
+        "country": {
+          "iso": "AU",
+          "name": "Australia",
+          "region_iso": ""
+        },
+        "legacy_id": 5623,
+        "number": 23,
+        "rider_api_uuid": "8b13afe3-6068-43e4-866b-209f8cb40f9f"
+      },
+      "team": {
+        "id": "608a4c14-38af-40e7-bee4-221963d26fbc",
+        "name": "Paul Bird Motorsport",
+        "legacy_id": 76,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Paul Bird Motorsport",
+      "constructor": {
+        "id": "e1cadbbe-2525-4186-bc22-c1e7f3bffe63",
+        "name": "PBM",
+        "legacy_id": 512
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": true,
+      "independentTeamRider": true
+    },
+    {
+      "id": "c2a956e8-e1db-4cd7-adfb-8162efdc1aa4",
+      "number": 10,
+      "rider": {
+        "id": "d6a82e1f-ee5b-4990-adb9-adf909f74f42",
+        "full_name": "Dani Pedrosa",
+        "country": {
+          "iso": "ES",
+          "name": "Spain",
+          "region_iso": ""
+        },
+        "legacy_id": 5515,
+        "number": 26,
+        "rider_api_uuid": "a8071fde-27fa-49f0-96c8-a53030fcd0dc"
+      },
+      "team": {
+        "id": "9529815b-92c5-4cf8-a922-2a87b383b785",
+        "name": "Repsol Honda Team",
+        "legacy_id": 77,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Repsol Honda Team",
+      "constructor": {
+        "id": "3a036648-7b14-4257-8c62-245e47e4d42b",
+        "name": "Honda",
+        "legacy_id": 1
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "86dbfe7b-2e6b-463a-8fc3-a7c438e7a3ae",
+      "number": 11,
+      "rider": {
+        "id": "06b40f46-736c-4228-ae0c-d2d85a07af44",
+        "full_name": "Andrea Iannone",
+        "country": {
+          "iso": "IT",
+          "name": "Italy",
+          "region_iso": ""
+        },
+        "legacy_id": 6848,
+        "number": 29,
+        "rider_api_uuid": "8c0dc3c9-48bc-4e28-95c7-5671171ed7a6"
+      },
+      "team": {
+        "id": "100ff40e-336f-48da-a2fa-018990570153",
+        "name": "Pramac Racing",
+        "legacy_id": 78,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Pramac Racing",
+      "constructor": {
+        "id": "b9d93efb-3cd0-4681-9de4-c412a866d568",
+        "name": "Ducati",
+        "legacy_id": 110
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "c6514cf3-babe-47c2-85f1-b62becb3b9b6",
+      "number": 12,
+      "rider": {
+        "id": "c2e99a2c-ec5b-4757-8728-ed3254ebbeee",
+        "full_name": "Cal Crutchlow",
+        "country": {
+          "iso": "GB",
+          "name": "United Kingdom of Great Britain and Northern Ireland",
+          "region_iso": ""
+        },
+        "legacy_id": 8010,
+        "number": 35,
+        "rider_api_uuid": "ec9adf3a-985f-4eb6-8ffd-54b688f49846"
+      },
+      "team": {
+        "id": "c88e53bf-f394-47ec-9041-366842579dcf",
+        "name": "Ducati Team",
+        "legacy_id": 79,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Ducati Team",
+      "constructor": {
+        "id": "b9d93efb-3cd0-4681-9de4-c412a866d568",
+        "name": "Ducati",
+        "legacy_id": 110
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": true,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "16fe8b81-d589-4c86-8274-1b5b5a468453",
+      "number": 13,
+      "rider": {
+        "id": "fa277754-e5c4-434f-a50d-f7fb9c2c69d8",
+        "full_name": "Bradley Smith",
+        "country": {
+          "iso": "GB",
+          "name": "United Kingdom of Great Britain and Northern Ireland",
+          "region_iso": ""
+        },
+        "legacy_id": 7030,
+        "number": 38,
+        "rider_api_uuid": "a0875b6b-ff29-40d8-93b4-88097b83fac0"
+      },
+      "team": {
+        "id": "24d58869-e4e7-4bbb-80eb-dcc6a883a616",
+        "name": "Monster Yamaha Tech 3",
+        "legacy_id": 80,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Monster Yamaha Tech 3",
+      "constructor": {
+        "id": "babb4c4c-3608-4811-93ad-3b88cc407547",
+        "name": "Yamaha",
+        "legacy_id": 3
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "b0325666-b09f-426d-8cb3-304b09949028",
+      "number": 14,
+      "rider": {
+        "id": "4cff2dfb-2feb-4264-9a17-8a67189c204c",
+        "full_name": "Aleix Espargaro",
+        "country": {
+          "iso": "ES",
+          "name": "Spain",
+          "region_iso": ""
+        },
+        "legacy_id": 6854,
+        "number": 41,
+        "rider_api_uuid": "a2f51450-cb43-4d32-8eef-bda9ebb435ed"
+      },
+      "team": {
+        "id": "70b947ec-b20e-4a7a-a741-c95e86fe980e",
+        "name": "NGM Forward Racing",
+        "legacy_id": 81,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "NGM Forward Racing",
+      "constructor": {
+        "id": "3d332da4-cd2a-46e0-bd44-b709c2ceeb01",
+        "name": "Forward Yamaha",
+        "legacy_id": 537
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": true
+    },
+    {
+      "id": "8460e05f-90b5-49b1-b7b1-862d0803c15c",
+      "number": 15,
+      "rider": {
+        "id": "40c19361-abe5-46e8-bed9-b3fa648dd7ac",
+        "full_name": "Pol Espargaro",
+        "country": {
+          "iso": "ES",
+          "name": "Spain",
+          "region_iso": ""
+        },
+        "legacy_id": 7086,
+        "number": 44,
+        "rider_api_uuid": "b8b255af-e344-4ca7-818b-480c18a11088"
+      },
+      "team": {
+        "id": "f63df7a1-138d-4939-a188-3d0a4d7a093a",
+        "name": "Monster Yamaha Tech 3",
+        "legacy_id": 82,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Monster Yamaha Tech 3",
+      "constructor": {
+        "id": "babb4c4c-3608-4811-93ad-3b88cc407547",
+        "name": "Yamaha",
+        "legacy_id": 3
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": true,
+      "independentTeamRider": false
+    },
+    {
+      "id": "61c8a8d8-4f7d-4dc3-9376-2f1156874be7",
+      "number": 16,
+      "rider": {
+        "id": "8a4f54fd-038e-4c1a-a319-c9ec1a43aa77",
+        "full_name": "Scott Redding",
+        "country": {
+          "iso": "GB",
+          "name": "United Kingdom of Great Britain and Northern Ireland",
+          "region_iso": ""
+        },
+        "legacy_id": 7173,
+        "number": 45,
+        "rider_api_uuid": "48d39d4a-30fa-4764-a2e2-367869e19644"
+      },
+      "team": {
+        "id": "08444d0b-bf2b-4eeb-bad5-23d7beac806f",
+        "name": "GO&FUN Honda Gresini",
+        "legacy_id": 83,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "GO&FUN Honda Gresini",
+      "constructor": {
+        "id": "3a036648-7b14-4257-8c62-245e47e4d42b",
+        "name": "Honda",
+        "legacy_id": 1
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": true,
+      "independentTeamRider": true
+    },
+    {
+      "id": "0aa084b7-506a-4675-8c55-d5590e7db58b",
+      "number": 17,
+      "rider": {
+        "id": "640859bc-3f12-44fe-949a-4eab1f48f02a",
+        "full_name": "Valentino Rossi",
+        "country": {
+          "iso": "IT",
+          "name": "Italy",
+          "region_iso": ""
+        },
+        "legacy_id": 158,
+        "number": 46,
+        "rider_api_uuid": "d6f009a8-5a57-49b1-8c68-a9c78349d500"
+      },
+      "team": {
+        "id": "e2ee60b2-31c9-498b-8b43-1249c1f2ebb0",
+        "name": "Movistar Yamaha MotoGP",
+        "legacy_id": 84,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Movistar Yamaha MotoGP",
+      "constructor": {
+        "id": "babb4c4c-3608-4811-93ad-3b88cc407547",
+        "name": "Yamaha",
+        "legacy_id": 3
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "41e51da6-d7e7-44f9-9c32-fe3c1263f4dc",
+      "number": 18,
+      "rider": {
+        "id": "eed93130-03ac-4f5d-9d2e-b207ab47154e",
+        "full_name": "Michele Pirro",
+        "country": {
+          "iso": "IT",
+          "name": "Italy",
+          "region_iso": ""
+        },
+        "legacy_id": 6231,
+        "number": 51
+      },
+      "team": {
+        "id": "c88e53bf-f394-47ec-9041-366842579dcf",
+        "name": "Ducati Team",
+        "legacy_id": 79,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Ducati Team",
+      "constructor": {
+        "id": "b9d93efb-3cd0-4681-9de4-c412a866d568",
+        "name": "Ducati",
+        "legacy_id": 110
+      },
+      "wildcard": false,
+      "replacement": 35,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "fdd14538-bf18-4ab4-a5c1-4a80dc9e6024",
+      "number": 19,
+      "rider": {
+        "id": "e2ecf736-8b5c-4ea6-b6b7-c742b3ede647",
+        "full_name": "Mike Di Meglio",
+        "country": {
+          "iso": "FR",
+          "name": "France",
+          "region_iso": ""
+        },
+        "legacy_id": 6204,
+        "number": 63,
+        "rider_api_uuid": "7b12d298-b3e7-41a2-bb41-41a8deec644d"
+      },
+      "team": {
+        "id": "af9315e4-a76b-4361-994f-3acd76d8c717",
+        "name": "Avintia Racing",
+        "legacy_id": 85,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Avintia Racing",
+      "constructor": {
+        "id": "eec09cba-070e-4246-807a-0fd87808ac01",
+        "name": "Avintia",
+        "legacy_id": 538
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": true,
+      "independentTeamRider": true
+    },
+    {
+      "id": "ae5d5b3e-be22-4c72-bddc-6a9d58748532",
+      "number": 20,
+      "rider": {
+        "id": "77359205-483f-4500-9a47-e92a0eea1484",
+        "full_name": "Yonny Hernandez",
+        "country": {
+          "iso": "CO",
+          "name": "Colombia",
+          "region_iso": ""
+        },
+        "legacy_id": 7761,
+        "number": 68,
+        "rider_api_uuid": "77f20edc-7a6b-4e6b-bc19-3bc0c1685d35"
+      },
+      "team": {
+        "id": "cf1b4715-8333-4a1e-af7a-037665163297",
+        "name": "Energy T.I. Pramac Racing",
+        "legacy_id": 86,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Energy T.I. Pramac Racing",
+      "constructor": {
+        "id": "b9d93efb-3cd0-4681-9de4-c412a866d568",
+        "name": "Ducati",
+        "legacy_id": 110
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "ea9e579f-7982-49b4-884d-a29ddc3b23da",
+      "number": 21,
+      "rider": {
+        "id": "5a72762c-de4c-4942-a042-1371cf68784a",
+        "full_name": "Nicky Hayden",
+        "country": {
+          "iso": "US",
+          "name": "United States of America",
+          "region_iso": ""
+        },
+        "legacy_id": 6200,
+        "number": 69,
+        "rider_api_uuid": "e6bee675-310c-4083-9183-1e2ee7b297aa"
+      },
+      "team": {
+        "id": "9c163cce-3085-4686-a224-d3a5f48fce80",
+        "name": "Drive M7 Aspar",
+        "legacy_id": 87,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Drive M7 Aspar",
+      "constructor": {
+        "id": "3a036648-7b14-4257-8c62-245e47e4d42b",
+        "name": "Honda",
+        "legacy_id": 1
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": true
+    },
+    {
+      "id": "b6f531b2-512a-4c64-9264-42a6f004db1d",
+      "number": 22,
+      "rider": {
+        "id": "3a459ac5-bcd0-44ec-8a9d-ffaaaf01c607",
+        "full_name": "Michael Laverty",
+        "country": {
+          "iso": "GB",
+          "name": "United Kingdom of Great Britain and Northern Ireland",
+          "region_iso": ""
+        },
+        "legacy_id": 8271,
+        "number": 70,
+        "rider_api_uuid": "bd4e106a-8789-4d54-a9a2-67458569d164"
+      },
+      "team": {
+        "id": "2f2c6997-1f84-43b1-8b1d-8d6c79f5188a",
+        "name": "Paul Bird Motorsport",
+        "legacy_id": 88,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Paul Bird Motorsport",
+      "constructor": {
+        "id": "e1cadbbe-2525-4186-bc22-c1e7f3bffe63",
+        "name": "PBM",
+        "legacy_id": 512
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": true
+    },
+    {
+      "id": "28da2888-aa01-4362-95b0-24a7143a9144",
+      "number": 23,
+      "rider": {
+        "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
+        "full_name": "Marc Marquez",
+        "country": {
+          "iso": "ES",
+          "name": "Spain",
+          "region_iso": ""
+        },
+        "legacy_id": 7444,
+        "number": 93,
+        "rider_api_uuid": "23e50438-a657-4fb0-a190-3262b5472f29"
+      },
+      "team": {
+        "id": "d06385f5-abed-4673-9d0c-bc7f93f3b9a1",
+        "name": "Repsol Honda Team",
+        "legacy_id": 89,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Repsol Honda Team",
+      "constructor": {
+        "id": "3a036648-7b14-4257-8c62-245e47e4d42b",
+        "name": "Honda",
+        "legacy_id": 1
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    },
+    {
+      "id": "c8965c68-3e55-4407-9685-b8413716983d",
+      "number": 24,
+      "rider": {
+        "id": "fe7f3311-ebb9-404b-9ab5-ea44b103991e",
+        "full_name": "Jorge Lorenzo",
+        "country": {
+          "iso": "ES",
+          "name": "Spain",
+          "region_iso": ""
+        },
+        "legacy_id": 6060,
+        "number": 99,
+        "rider_api_uuid": "d4eaf846-05bc-4a2a-86e4-0f93c27d3234"
+      },
+      "team": {
+        "id": "2e2b7864-de88-4bcc-ae8d-0daf80224b2c",
+        "name": "Movistar Yamaha MotoGP",
+        "legacy_id": 90,
+        "season": {
+          "id": "bf5c15b5-f062-4a88-a304-29892743108d",
+          "year": 2014,
+          "current": false
+        }
+      },
+      "team_name": "Movistar Yamaha MotoGP",
+      "constructor": {
+        "id": "babb4c4c-3608-4811-93ad-3b88cc407547",
+        "name": "Yamaha",
+        "legacy_id": 3
+      },
+      "wildcard": false,
+      "replacement": null,
+      "replaced": false,
+      "rookieOfTheYear": false,
+      "independentTeamRider": false
+    }
+  ],
+  "file": "http://localhost:8089/files/results/2014/ARG/MotoGP/Entry.pdf"
+}

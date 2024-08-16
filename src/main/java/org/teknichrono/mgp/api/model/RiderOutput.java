@@ -15,4 +15,12 @@ public class RiderOutput {
     rider.number = r.number;
     return rider;
   }
+
+  public static RiderOutput from(SessionRider r) {
+    RiderOutput rider = new RiderOutput();
+    rider.full_name = r.name + " " + r.surname;
+    rider.country = r.country;
+    rider.number = r.number;
+    return rider;
+  }
 }

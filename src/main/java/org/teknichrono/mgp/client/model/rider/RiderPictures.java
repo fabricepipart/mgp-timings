@@ -1,6 +1,7 @@
 package org.teknichrono.mgp.client.model.rider;
 
 public class RiderPictures {
+  public RiderPicture profile;
   public RiderPicture main;
   public RiderPicture bike;
   public RiderPicture helmet;

@@ -1,6 +1,7 @@
 package org.teknichrono.mgp.api.model;
 
 import org.teknichrono.mgp.client.model.result.Country;
+import org.teknichrono.mgp.client.model.rider.RiderCountry;
 
 public class CountryOutput {
 
@@ -19,6 +20,13 @@ public class CountryOutput {
   public static CountryOutput from(String nation) {
     CountryOutput country = new CountryOutput();
     country.iso = nation;
+    return country;
+  }
+
+  public static CountryOutput from(RiderCountry c) {
+    CountryOutput country = new CountryOutput();
+    country.name = c.name;
+    country.iso = c.iso;
     return country;
   }
 }

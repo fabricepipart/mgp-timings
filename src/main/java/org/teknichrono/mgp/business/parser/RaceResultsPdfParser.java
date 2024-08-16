@@ -3,46 +3,41 @@ package org.teknichrono.mgp.business.parser;
 import jakarta.enterprise.context.ApplicationScoped;
 import org.teknichrono.mgp.api.model.CountryOutput;
 import org.teknichrono.mgp.api.model.SessionClassificationOutput;
-import org.teknichrono.mgp.client.model.result.RiderClassification;
-import org.teknichrono.mgp.client.model.result.SessionResults;
+import org.teknichrono.mgp.api.model.SessionEvent;
+import org.teknichrono.mgp.api.model.SessionResultOutput;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @ApplicationScoped
-public class RaceResultsPdfParser {
+public class RaceResultsPdfParser extends ResultsPdfParser {
 
-  public List<SessionClassificationOutput> parse(SessionResults classifications) throws PdfParsingException {
-    List<SessionClassificationOutput> partialResults = getPartialResults(classifications.classification);
-    return fillFromPdf(partialResults, classifications.file);
-  }
-
-  private List<SessionClassificationOutput> getPartialResults(List<RiderClassification> classifications) {
-    List<SessionClassificationOutput> partialResults = new ArrayList<>();
-    for (RiderClassification c : classifications) {
-      SessionClassificationOutput details = SessionClassificationOutput.from(c);
-      partialResults.add(details);
+  protected void fillSessionDataIfNecessary(String line, SessionResultOutput sessionResults) {
+    String time = PdfParserUtils.parseHour(line);
+    if (time != null && line.trim().startsWith(time)) {
+      String message = line.replace(time, "").trim();
+      sessionResults.events.add(SessionEvent.from(time, message));
     }
-    return partialResults;
   }
 
-  private List<SessionClassificationOutput> fillFromPdf(List<SessionClassificationOutput> partialResults, String url) throws PdfParsingException {
-    List<SessionClassificationOutput> toReturn = new ArrayList<>();
-    String[] lines = PdfParserUtils.readPdfLines(url);
-    for (String line : lines) {
-      for (SessionClassificationOutput details : partialResults) {
-        String lowerCaseLine = line.toLowerCase();
-        if (PdfParserUtils.startsWithNumber(line) &&
-            details.rider != null && details.rider.number != null &&
-            lowerCaseLine.contains(details.rider.number.toString()) &&
-            lowerCaseLine.contains(details.rider.full_name.toLowerCase())) {
-          details.rider.country = CountryOutput.from(PdfParserUtils.parseNation(line));
-          details.averageSpeed = PdfParserUtils.parseSpeed(line);
-          details.totalTime = PdfParserUtils.parseTime(line);
-          toReturn.add(details);
-        }
+  protected void completeResultInfo(String line, SessionClassificationOutput details) {
+    String nation = PdfParserUtils.parseNation(line);
+    details.rider.country = CountryOutput.from(nation);
+
+    parseIntegersOfLine(details, line.split(nation)[0]);
+
+    details.averageSpeed = Optional.ofNullable(details.averageSpeed).orElse(PdfParserUtils.parseSpeed(line));
+    List<String> durations = PdfParserUtils.parseTimes(line);
+    if (durations != null && !durations.isEmpty()) {
+      details.totalTime = durations.get(0);
+      if (durations.size() > 1) {
+        Float gapToFirst = PdfParserUtils.parseDurationAsFloat(durations.get(1));
+        details.gapToFirst = Optional.ofNullable(details.gapToFirst).orElse(gapToFirst);
+      }
+      Integer lapsToFirst = PdfParserUtils.parseLaps(line);
+      if (lapsToFirst != null) {
+        details.lapsToFirst = Optional.ofNullable(details.lapsToFirst).orElse(lapsToFirst);
       }
     }
-    return toReturn;
   }
 }

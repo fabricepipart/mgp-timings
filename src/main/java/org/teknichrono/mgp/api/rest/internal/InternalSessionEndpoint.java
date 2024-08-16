@@ -169,7 +169,7 @@ public class InternalSessionEndpoint extends CSVEndpoint {
   @Path("/{year}/{eventShortName}/{category}/{session}/results/details")
   public List<SessionClassificationOutput> getClassificationsPdfDetails(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String category, @PathParam("session") String sessionShortName) {
     try {
-      List<SessionClassificationOutput> results = sessionService.getResultDetails(year, eventShortName, category, sessionShortName);
+      List<SessionClassificationOutput> results = sessionService.getResultDetails(year, eventShortName, category, sessionShortName).classifications;
       return results;
     } catch (PdfParsingException e) {
       String message = String.format("Error when parsing the PDF for session %s / %s of event %s of %d", sessionShortName, category, eventShortName, year);

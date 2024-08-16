@@ -57,5 +57,19 @@ class TestPdfParserUtils {
     Assertions.assertThat(times.get(0)).isEqualTo("36'35.345");
   }
 
+  @Test
+  void testReadsLaps() {
+    String line = "35 Cal CRUTCHLOW GBR Ducati Team DUCATI 18'11.451 155.9 15 laps";
+    Integer laps = PdfParserUtils.parseLaps(line);
+    Assertions.assertThat(laps).isNotNull().isEqualTo(15);
+  }
+
+  @Test
+  void testReadsDoesNotReadLaps() {
+    String line = "1 36'35.345 31.640 15.695 31.856 31.120 283.4";
+    Integer laps = PdfParserUtils.parseLaps(line);
+    Assertions.assertThat(laps).isNull();
+  }
+
 
 }

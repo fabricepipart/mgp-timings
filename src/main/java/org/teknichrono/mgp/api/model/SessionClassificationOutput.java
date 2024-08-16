@@ -1,8 +1,8 @@
 package org.teknichrono.mgp.api.model;
 
 import org.teknichrono.mgp.client.model.result.RiderClassification;
-import org.teknichrono.mgp.csv.model.SessionClassificationCSV;
 import org.teknichrono.mgp.csv.converter.CSVConvertible;
+import org.teknichrono.mgp.csv.model.SessionClassificationCSV;
 
 public class SessionClassificationOutput implements CSVConvertible<SessionClassificationCSV> {
 
@@ -17,7 +17,7 @@ public class SessionClassificationOutput implements CSVConvertible<SessionClassi
   public Float topSpeed;
   public Float averageSpeed;
   public Float gapToFirst;
-  public int lapsToFirst;
+  public Integer lapsToFirst;
   public Float gapToPrevious;
   public Integer points;
   public String totalTime;
@@ -46,7 +46,7 @@ public class SessionClassificationOutput implements CSVConvertible<SessionClassi
       }
       if (classification.gap.lap != null && Integer.parseInt(classification.gap.lap) > 0) {
         output.gapToFirst = null;
-        output.lapsToFirst = Integer.parseInt(classification.gap.lap);
+        output.lapsToFirst = Integer.valueOf(classification.gap.lap);
       }
     }
     output.totalTime = classification.time;

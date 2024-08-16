@@ -4,5 +4,5 @@ public class RiderCategory {
 
   public String id;
   public String name;
-  public Integer legacyId;
+  public Integer legacy_id;
 }

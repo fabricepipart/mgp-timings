@@ -29,7 +29,7 @@ public class SessionResultsCSVEndpoint extends CSVEndpoint {
   @Path("/{year}/{eventShortName}/{category}/{shortSessionName}")
   public Response getSessionResult(@PathParam("year") int year, @PathParam("eventShortName") String eventShortName, @PathParam("category") String categoryName, @PathParam("shortSessionName") String shortSessionName) {
     try {
-      List<SessionClassificationOutput> resultDetails = sessionService.getResultDetails(year, eventShortName, categoryName, shortSessionName);
+      List<SessionClassificationOutput> resultDetails = sessionService.getResultDetails(year, eventShortName, categoryName, shortSessionName).classifications;
       String filename = String.format("sessions-classification-%d-%s-%s-%s.csv", year, eventShortName, categoryName, shortSessionName);
       return csvOutput(resultDetails, SessionClassificationOutput.class, filename);
     } catch (PdfParsingException e) {

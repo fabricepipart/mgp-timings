@@ -6,13 +6,15 @@ import jakarta.ws.rs.NotFoundException;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.teknichrono.mgp.api.model.LapAnalysis;
 import org.teknichrono.mgp.api.model.MaxSpeed;
-import org.teknichrono.mgp.api.model.SessionClassificationOutput;
 import org.teknichrono.mgp.api.model.SessionFilesOutput;
+import org.teknichrono.mgp.api.model.SessionResultOutput;
+import org.teknichrono.mgp.api.model.SessionRider;
 import org.teknichrono.mgp.business.parser.AnalysisPdfParser;
 import org.teknichrono.mgp.business.parser.MaxSpeedPdfParser;
 import org.teknichrono.mgp.business.parser.PdfParsingException;
 import org.teknichrono.mgp.business.parser.PracticeResultsPdfParser;
 import org.teknichrono.mgp.business.parser.RaceResultsPdfParser;
+import org.teknichrono.mgp.business.parser.ResultsPdfParser;
 import org.teknichrono.mgp.client.model.result.Category;
 import org.teknichrono.mgp.client.model.result.Event;
 import org.teknichrono.mgp.client.model.result.Session;
@@ -24,6 +26,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.teknichrono.mgp.client.model.result.SessionFileType.ANALYSIS;
+import static org.teknichrono.mgp.client.model.result.SessionFileType.CLASSIFICATION;
 import static org.teknichrono.mgp.client.model.result.SessionFileType.MAXIMUM_SPEED;
 
 @ApplicationScoped
@@ -38,6 +41,9 @@ public class SessionService {
 
   @Inject
   CategoryService categoryService;
+
+  @Inject
+  RiderService riderService;
 
   @Inject
   RaceResultsPdfParser raceResultsPdfParser;
@@ -81,23 +87,69 @@ public class SessionService {
       return Optional.empty();
     }
     Session session = sessionMatch.get();
-    if (session.test) {
-      return Optional.of(resultsClient.getClassification(session.id, true));
+    SessionResults classification = resultsClient.getClassification(session.id, session.test);
+    // Sometimes the returned classification is actually empty
+    if (classification == null || classification.classification == null || classification.classification.isEmpty()) {
+      return Optional.empty();
     }
-    return Optional.of(resultsClient.getClassification(session.id, false));
+    return Optional.of(classification);
   }
 
-  public List<SessionClassificationOutput> getResultDetails(int year, String eventShortName, String category, String sessionShortName) throws PdfParsingException {
-    Optional<SessionResults> results = getResults(year, eventShortName, category, sessionShortName);
-    if (results.isEmpty()) {
+  public SessionResultOutput getResultDetails(int year, String eventShortName, String category, String sessionShortName) throws PdfParsingException {
+    Optional<Session> sessionMatch = getSessionByName(year, eventShortName, category, sessionShortName);
+    // Session must exist
+    if (sessionMatch.isEmpty()) {
+      throw new NotFoundException(String.format("Could not find the session %s / %s of event %s of %d", sessionShortName, category, eventShortName, year));
+    }
+    Session session = sessionMatch.get();
+    SessionResultOutput output = SessionResultOutput.from(session);
+
+    // We must have at least one classification source
+    Optional<SessionResults> optionalResults = getResults(year, eventShortName, category, sessionShortName);
+    String pdfUrl = getPdfUrl(sessionMatch, optionalResults);
+    if (optionalResults.isEmpty() && (pdfUrl == null || pdfUrl.isEmpty())) {
       throw new NotFoundException(String.format("Could not find the results details for session %s / %s of event %s of %d", sessionShortName, category, eventShortName, year));
     }
-    SessionResults classifications = results.get();
-    if (sessionShortName.equalsIgnoreCase(Session.RACE_TYPE)) {
-      return raceResultsPdfParser.parse(classifications);
-    } else {
-      return practiceResultsPdfParser.parse(classifications);
+
+    // Fill data with API results
+    if (optionalResults.isPresent()) {
+      SessionResults results = optionalResults.get();
+      output.fillRecords(results);
+      output.fillWith(results.classification);
     }
+
+    // Fill data with PDF results
+    if (pdfUrl != null && !pdfUrl.isEmpty()) {
+      List<SessionRider> ridersOfEvent = riderService.getRidersOfEvent(year, eventShortName, category).orElse(Collections.emptyList());
+      getPdfParser(sessionShortName).parseAndComplete(output, ridersOfEvent, pdfUrl);
+    }
+    return output;
+  }
+
+  static String getPdfUrl(Optional<Session> optionalSession, Optional<SessionResults> optionalResults) {
+    if (optionalResults.isPresent()) {
+      SessionResults results = optionalResults.get();
+      if (results.files != null) {
+        return results.files.classification;
+      }
+      if (results.file != null) {
+        return results.file;
+      }
+    }
+    if (optionalSession.isPresent()) {
+      Session session = optionalSession.get();
+      if (session.session_files != null && session.session_files.get(CLASSIFICATION) != null) {
+        return SessionFilesOutput.getUrlFromMap(session.session_files, CLASSIFICATION);
+      }
+    }
+    return null;
+  }
+
+  private ResultsPdfParser getPdfParser(String sessionShortName) {
+    if (sessionShortName.equalsIgnoreCase(Session.RACE_TYPE)) {
+      return raceResultsPdfParser;
+    }
+    return practiceResultsPdfParser;
   }
 
   public Optional<List<LapAnalysis>> getAnalysis(int year, String eventShortName, String category, String sessionShortName) throws PdfParsingException {
