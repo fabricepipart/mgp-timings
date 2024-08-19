@@ -20,5 +20,6 @@ public class RiderDetails {
   public Boolean injured;
   public Boolean banned;
   public Boolean wildcard;
+  public String legend_picture;
 
 }

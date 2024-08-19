@@ -1,6 +1,6 @@
 package org.teknichrono.mgp.it.internal;
 
-import io.quarkus.test.common.QuarkusTestResource;
+import io.quarkus.test.common.WithTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Tag;
@@ -16,7 +16,7 @@ import static org.hamcrest.CoreMatchers.is;
 
 @Tag("integration")
 @QuarkusTest
-@QuarkusTestResource(WireMockExtensions.class)
+@WithTestResource(WireMockExtensions.class)
 public class TestInternalEventEndpoint {
 
 

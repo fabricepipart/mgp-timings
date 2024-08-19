@@ -1,6 +1,6 @@
 package org.teknichrono.mgp.it.internal;
 
-import io.quarkus.test.common.QuarkusTestResource;
+import io.quarkus.test.common.WithTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.mockito.InjectSpy;
 import org.junit.jupiter.api.Tag;
@@ -22,7 +22,7 @@ import static org.hamcrest.CoreMatchers.is;
 
 @Tag("integration")
 @QuarkusTest
-@QuarkusTestResource(WireMockExtensions.class)
+@WithTestResource(WireMockExtensions.class)
 class TestInternalSeasonEndpoint {
 
   @InjectSpy

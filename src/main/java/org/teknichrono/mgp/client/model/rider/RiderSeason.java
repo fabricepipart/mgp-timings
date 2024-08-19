@@ -11,5 +11,6 @@ public class RiderSeason {
   public String short_nickname;
   public Boolean current;
   public RiderPictures pictures;
+  public String type;
 
 }

@@ -40,7 +40,7 @@ public class RiderService {
   public Optional<List<Entry>> getEntries(int year, String eventShortName, String category) {
     Optional<Event> event = eventService.getEvent(year, eventShortName);
     Optional<Category> cat = categoryService.categoryOfEvent(year, eventShortName, category);
-    if (event.isEmpty() || cat.isEmpty()) {
+    if (event.isEmpty() || event.get().test || cat.isEmpty()) {
       return Optional.empty();
     }
     EntryList entries = resultsClient.getEntries(event.get().id, cat.get().id);
@@ -58,10 +58,11 @@ public class RiderService {
     List<SessionRider> riders = new ArrayList<>();
     for (Entry e : entries.get()) {
       SessionRider rider = new SessionRider();
+      rider.fill(e);
       if (e.rider.rider_api_uuid != null) {
-        rider.fill(e, getRider(e.rider.rider_api_uuid));
-        riders.add(rider);
+        rider.fill(getRider(e.rider.rider_api_uuid));
       }
+      riders.add(rider);
     }
     return Optional.of(riders);
   }

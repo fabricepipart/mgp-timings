@@ -1,8 +1,8 @@
 package org.teknichrono.mgp.it.internal;
 
-import io.quarkus.test.common.QuarkusTestResource;
+import io.quarkus.test.InjectMock;
+import io.quarkus.test.common.WithTestResource;
 import io.quarkus.test.junit.QuarkusTest;
-import io.quarkus.test.junit.mockito.InjectMock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ import static io.restassured.RestAssured.given;
 
 @Tag("integration")
 @QuarkusTest
-@QuarkusTestResource(WireMockExtensions.class)
+@WithTestResource(WireMockExtensions.class)
 class TestInternalSeasonEndpointFailures {
 
   @InjectMock

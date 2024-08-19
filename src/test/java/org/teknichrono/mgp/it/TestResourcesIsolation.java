@@ -31,7 +31,7 @@ public class TestResourcesIsolation {
           try (Stream<String> s = Files.lines(Paths.get(file.toURI()))) {
             if (s.anyMatch(it -> it.contains("resources.motogp.com"))) {
               LOGGER.error("The file " + file.getPath() + " contains a URL that is not isolated for tests" +
-                  " You should replace 'resources.motogp.com' with 'localhost:8089'");
+                  " You should replace 'https://resources.motogp.com' with 'http://localhost:8089'");
               fail();
             }
           }

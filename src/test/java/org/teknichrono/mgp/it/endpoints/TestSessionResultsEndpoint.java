@@ -1,6 +1,6 @@
 package org.teknichrono.mgp.it.endpoints;
 
-import io.quarkus.test.common.QuarkusTestResource;
+import io.quarkus.test.common.WithTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("integration")
 @QuarkusTest
-@QuarkusTestResource(WireMockExtensions.class)
+@WithTestResource(WireMockExtensions.class)
 public class TestSessionResultsEndpoint {
 
 
@@ -25,13 +25,13 @@ public class TestSessionResultsEndpoint {
         .when().get("/api/2021/QAT/motogp/fp3")
         .then()
         .statusCode(200).extract().as(SessionResultOutput.class);
-    assertThat(classification.classifications.size()).isEqualTo(22);
+    assertThat(classification.classifications).hasSize(22);
     assertThat(classification.classifications.get(0).rider.full_name).containsIgnoringCase("Franco");
     assertThat(classification.classifications.get(0).totalLaps).isEqualTo(17);
     assertThat(classification.sessionFiles.classification).isNotNull();
     assertThat(classification.records.stream().filter(r -> r.type.equalsIgnoreCase("bestLap")).findFirst().get().rider.full_name).containsIgnoringCase("Lorenzo");
 
-    assertThat(classification.classifications.size()).isEqualTo(22);
+    assertThat(classification.classifications).hasSize(22);
     assertThat(classification.classifications.get(0).position).isEqualTo(1);
     assertThat(classification.classifications.get(0).rider.number).isEqualTo(21);
     assertThat(classification.classifications.get(0).rider.full_name).containsIgnoringCase("MORBIDELLI");
@@ -48,6 +48,10 @@ public class TestSessionResultsEndpoint {
     assertThat(classification.classifications.get(1).gapToPrevious).isEqualTo(0.165f);
     assertThat(classification.classifications.get(1).rider.country.iso).isEqualTo("SPA");
 
+    testClassifications(classification);
+  }
+
+  private static void testClassifications(SessionResultOutput classification) {
     assertTrue(classification.classifications.stream().allMatch(d -> d.position > 0));
     assertTrue(classification.classifications.stream().allMatch(d -> d.rider.number > 0));
     assertTrue(classification.classifications.stream().allMatch(d -> d.rider.full_name != null));
@@ -61,9 +65,48 @@ public class TestSessionResultsEndpoint {
 
     float current = 0f;
     for (SessionClassificationOutput d : classification.classifications) {
-      assertThat(d.gapToFirst).isGreaterThanOrEqualTo(current);
-      current = d.gapToFirst;
+      if (d.gapToFirst != null) {
+        assertThat(d.gapToFirst).isGreaterThanOrEqualTo(current);
+        current = d.gapToFirst;
+      }
     }
+  }
+
+  @Test
+  void getSessionClassificationWhenApiCallReturnsNothing() {
+    SessionResultOutput classification = given()
+        .when().get("/api/2014/ARG/MOTOGP/FP1")
+        .then()
+        .statusCode(200).extract().as(SessionResultOutput.class);
+    assertThat(classification.classifications).hasSize(23);
+    assertThat(classification.classifications.get(0).rider.full_name).containsIgnoringCase("Jorge");
+    assertThat(classification.classifications.get(0).totalLaps).isEqualTo(18);
+    assertThat(classification.sessionFiles.classification).isNotNull();
+    assertThat(classification.records).isEmpty();
+    assertThat(classification.classifications.get(0).position).isEqualTo(1);
+    assertThat(classification.classifications.get(0).rider.number).isEqualTo(99);
+    assertThat(classification.classifications.get(0).rider.full_name).containsIgnoringCase("Lorenzo");
+    assertThat(classification.classifications.get(0).rider.country.iso).isEqualTo("SPA");
+    assertThat(classification.classifications.get(0).team).containsIgnoringCase("Yamaha");
+    assertThat(classification.classifications.get(0).constructor).containsIgnoringCase("Yamaha");
+    assertThat(classification.classifications.get(0).bestLapTime).isEqualTo("1'42.804");
+    assertThat(classification.classifications.get(0).bestLapNumber).isEqualTo(16);
+    assertThat(classification.classifications.get(0).topSpeed).isEqualTo(322.1f);
+
+    assertThat(classification.classifications.get(1).constructor).isEqualTo("Forward Yamaha");
+    assertThat(classification.classifications.get(1).gapToPrevious).isEqualTo(0.481f);
+    assertThat(classification.classifications.get(1).rider.country.iso).isEqualTo("SPA");
+    assertThat(classification.classifications.get(1).gapToFirst).isEqualTo(0.481f);
+
+    testClassifications(classification);
+  }
+
+  @Test
+  void getSessionClassificationWhenApiCallReturnsNothingAndNoPdfAvailable() {
+    given()
+        .when().get("/api/2014/ARG/MOTOGP/FP2")
+        .then()
+        .statusCode(404);
   }
 
   @Test
@@ -190,16 +233,30 @@ public class TestSessionResultsEndpoint {
       }
     }
 
+    testRaceClassifications(classification);
+  }
+
+  private static void testRaceClassifications(SessionResultOutput classification) {
     assertTrue(classification.classifications.stream().anyMatch(d -> d.position > 0));
     assertTrue(classification.classifications.stream().anyMatch(d -> d.rider.number > 0));
     assertTrue(classification.classifications.stream().anyMatch(d -> d.rider.full_name != null));
     assertTrue(classification.classifications.stream().anyMatch(d -> d.rider.country.iso.length() == 3));
     assertTrue(classification.classifications.stream().anyMatch(d -> d.team != null));
     assertTrue(classification.classifications.stream().anyMatch(d -> d.constructor != null));
-    assertTrue(classification.classifications.stream().anyMatch(d -> d.totalLaps > 0));
+    assertTrue(classification.classifications.stream().anyMatch(d -> d.totalLaps == null || d.totalLaps > 0));
     assertTrue(classification.classifications.stream().anyMatch(d -> d.averageSpeed > 0));
     assertTrue(classification.classifications.stream().anyMatch(d -> d.totalTime != null));
   }
 
+
+  @Test
+  void getRaceClassificationWhenApiCallReturnsNothing() {
+    SessionResultOutput classification = given()
+        .when().get("/api/2014/ARG/MOTOGP/RAC")
+        .then()
+        .statusCode(200).extract().as(SessionResultOutput.class);
+    assertThat(classification.classifications.size()).isEqualTo(23);
+    testRaceClassifications(classification);
+  }
 
 }

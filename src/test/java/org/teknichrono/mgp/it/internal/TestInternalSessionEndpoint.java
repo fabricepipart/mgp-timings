@@ -1,6 +1,6 @@
 package org.teknichrono.mgp.it.internal;
 
-import io.quarkus.test.common.QuarkusTestResource;
+import io.quarkus.test.common.WithTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.mockito.InjectSpy;
 import io.restassured.common.mapper.TypeRef;
@@ -33,7 +33,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("integration")
 @QuarkusTest
-@QuarkusTestResource(WireMockExtensions.class)
+@WithTestResource(WireMockExtensions.class)
 public class TestInternalSessionEndpoint {
 
   @InjectSpy

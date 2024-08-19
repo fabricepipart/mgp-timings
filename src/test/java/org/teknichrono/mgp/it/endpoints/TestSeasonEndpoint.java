@@ -1,6 +1,6 @@
 package org.teknichrono.mgp.it.endpoints;
 
-import io.quarkus.test.common.QuarkusTestResource;
+import io.quarkus.test.common.WithTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Tag;
@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 
 @Tag("integration")
 @QuarkusTest
-@QuarkusTestResource(WireMockExtensions.class)
+@WithTestResource(WireMockExtensions.class)
 public class TestSeasonEndpoint {
 
   @Test

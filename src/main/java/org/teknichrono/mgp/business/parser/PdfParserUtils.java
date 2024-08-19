@@ -16,6 +16,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 
 @java.lang.SuppressWarnings("java:S5852")
@@ -63,6 +64,20 @@ public class PdfParserUtils {
       toReturn.add(m.group().trim());
     }
     return toReturn;
+  }
+
+  public static String parseHour(String line) {
+    Pattern p = Pattern.compile("\\d+:\\d+'?\\d{2}");
+    Matcher m = p.matcher(line);
+    if (m.find()) {
+      return m.group().trim();
+    }
+    return null;
+  }
+
+  public static List<String> parseIntegers(String line) {
+    String lineWithoutLapsToFirst = line.replaceAll("\\d+ laps", "");
+    return Stream.of(lineWithoutLapsToFirst.split(" ")).filter(s -> s.matches("\\d+")).toList();
   }
 
   public static String parseFrontTyre(String line) {
@@ -174,5 +189,26 @@ public class PdfParserUtils {
     Pattern p = Pattern.compile("^[0-9]{1,2}\\s+.*");
     Matcher m = p.matcher(line);
     return m.matches();
+  }
+
+  public static Float parseDurationAsFloat(String s) {
+    float toReturn = 0f;
+    String[] minutesAndSeconds = s.split("\'");
+    if (minutesAndSeconds != null) {
+      if (minutesAndSeconds.length == 2) {
+        toReturn += 60f * Float.parseFloat(minutesAndSeconds[0]);
+      }
+      toReturn += Float.parseFloat(minutesAndSeconds[minutesAndSeconds.length - 1]);
+    }
+    return toReturn;
+  }
+
+  public static Integer parseLaps(String line) {
+    Pattern p = Pattern.compile("(?<laps>\\d+) lap(s)?");
+    Matcher m = p.matcher(line);
+    if (m.find()) {
+      return Integer.parseInt(m.group("laps").trim());
+    }
+    return null;
   }
 }
