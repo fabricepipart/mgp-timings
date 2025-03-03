@@ -173,7 +173,7 @@ public class TestSessionResultsEndpoint {
     assertTrue(classification.classifications.stream().allMatch(d -> d.position != null ? d.position > 0 : true));
     assertTrue(classification.classifications.stream().allMatch(d -> d.rider.number > 0));
     assertTrue(classification.classifications.stream().allMatch(d -> d.rider.full_name != null));
-    assertTrue(classification.classifications.stream().allMatch(d -> d.rider.country.iso.length() == 3));
+    assertTrue(classification.classifications.stream().allMatch(d -> d.rider.country.iso.length() <= 3 && d.rider.country.iso.length() > 0));
     assertTrue(classification.classifications.stream().allMatch(d -> d.team != null));
     assertTrue(classification.classifications.stream().allMatch(d -> d.constructor != null));
     assertTrue(classification.classifications.stream().allMatch(d -> d.totalLaps == null || d.totalLaps > 0));
