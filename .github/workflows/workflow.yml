@@ -55,7 +55,7 @@ jobs:
           mvn -B -U versions:set -DnewVersion=${VERSION} &> /dev/null
           mvn -B -U clean verify -Dquarkus.profile=release
 
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
         if: ${{env.secrets-available}}
         with:
           token: ${{secrets.CODECOV_TOKEN}}
