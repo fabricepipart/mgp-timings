@@ -13,7 +13,7 @@
         <java.version>17</java.version>
 
         <jacoco.version>0.8.13</jacoco.version>
-        <surefire-plugin.version>3.5.3</surefire-plugin.version>
+        <surefire-plugin.version>3.5.4</surefire-plugin.version>
         <quarkus.version>3.24.4</quarkus.version>
         <mapstruct.version>1.6.3</mapstruct.version>
         <lombok.version>1.18.38</lombok.version>
